@@ -1,0 +1,22 @@
+import react from "@vitejs/plugin-react";
+import { resolve } from "path";
+import { defineConfig } from "vitest/config";
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "src"),
+      "@prisma": resolve(__dirname, "src/infrastructure/db/generated/prisma"),
+    },
+  },
+  test: {
+    environment: "node",
+    include: ["tests/**/*.test.ts", "tests/**/*.test.tsx"],
+    coverage: {
+      provider: "v8",
+      reporter: ["text", "lcov"],
+      reportsDirectory: "coverage",
+    },
+  },
+});

@@ -1,0 +1,19 @@
+node_modules
+dist
+build
+.next
+coverage
+
+# Prisma generated output
+generated
+prisma/migrations
+
+# Lock files
+pnpm-lock.yaml
+
+# Auto-generated files
+CHANGELOG.md
+README.md
+
+# Claude Code local settings
+.claude/
