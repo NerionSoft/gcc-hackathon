@@ -11,6 +11,7 @@ function buildEnv() {
     // connector returns a typed "data gap / key missing" result — never fake data.
     EPC_API_KEY: optionalEnv("EPC_API_KEY"),
     COMPANIES_HOUSE_API_KEY: optionalEnv("COMPANIES_HOUSE_API_KEY"),
+    LR_DATA_API_KEY: optionalEnv("LR_DATA_API_KEY"),
     // Local SQLite database for the business model (no external services).
     SQLITE_PATH: optionalEnv("SQLITE_PATH") ?? "data/cpi.db",
     NEXT_PUBLIC_APP_URL: optionalEnv("NEXT_PUBLIC_APP_URL"),

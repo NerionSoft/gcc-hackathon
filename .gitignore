@@ -52,3 +52,6 @@ next-env.d.ts
 /data/*.db-journal
 /data/*.db-wal
 /data/*.db-shm
+
+# GIAS bulk extract (60+ MB; the filtered per-district subsets in data/cache/dfe-schools/ ARE committed)
+/data/cache/dfe-schools-raw.csv
