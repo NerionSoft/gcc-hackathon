@@ -1,4 +1,4 @@
-import type { PropertyStatus, Severity } from "@/db/schema";
+import type { DimensionCode, PropertyStatus, Severity } from "@/db/schema";
 
 /**
  * Severity → colour, the ONLY decorative use of colour in the app (SPEC §6:
@@ -50,6 +50,15 @@ export const STATUS_TONE: Record<PropertyStatus, StatusTone> = {
   flagged: "amber",
   escalated: "red",
   closed: "neutral",
+};
+
+export const DIMENSION_LABEL: Record<DimensionCode, string> = {
+  BUILDING: "Building",
+  UNIT: "Unit",
+  BLOCK: "Block",
+  PEOPLE: "People",
+  LAND: "Land",
+  MARKET: "Market",
 };
 
 export const STATUS_LABEL: Record<PropertyStatus, string> = {

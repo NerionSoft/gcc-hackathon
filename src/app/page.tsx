@@ -1,9 +1,5 @@
-export default function HomePage() {
-  return (
-    <div>
-      <main>
-        <p>Hello NerionSoft !</p>
-      </main>
-    </div>
-  );
+import { PortfolioView } from "@/presentation/features/portfolio/portfolio-view";
+
+export default function PortfolioPage() {
+  return <PortfolioView />;
 }

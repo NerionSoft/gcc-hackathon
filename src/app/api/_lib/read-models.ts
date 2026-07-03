@@ -63,7 +63,10 @@ export function getPortfolioTiles(): PortfolioTile[] {
          FROM risk_signals
          GROUP BY property_id
        ) s ON s.property_id = p.id
-       ORDER BY p.id`,
+       -- Deterministic scatter: keyed on the id's trailing digits so the 50
+       -- real properties interleave with the synthetic mass instead of
+       -- stacking in the wall's first rows (better idle wall, better F2 shot).
+       ORDER BY substr(p.id, -2), p.id`,
     )
     .all() as TileAggRow[];
 
@@ -311,7 +314,10 @@ function previewCard(
     return { code, severity: severitySchema.parse(severity), title: titles.get(code) ?? code };
   });
   const worst = worstOf(parts.map((p) => p.severity));
-  const name = parts.map((p) => p.title).join(" + ");
+  const name =
+    parts.length === 1
+      ? `${parts[0].title} — ${parts[0].severity}`
+      : parts.map((p) => p.title).join(" + ");
   return clusterCardSchema.parse({
     id: `preview-${signature.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
     name,

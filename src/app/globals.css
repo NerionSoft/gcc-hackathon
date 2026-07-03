@@ -52,3 +52,21 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #c9c9c2 transparent;
 }
+
+/*
+ * Scan sweep: pure-CSS pulse so hundreds of simultaneously scanning tiles
+ * cost nothing beyond the compositor (F1: zero jank at 2,800 items).
+ */
+@keyframes tile-scan-pulse {
+  0%,
+  100% {
+    background-color: #ffffff;
+  }
+  50% {
+    background-color: #eef1f6;
+  }
+}
+
+.tile-scanning {
+  animation: tile-scan-pulse 0.9s ease-in-out infinite;
+}
