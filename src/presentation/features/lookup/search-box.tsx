@@ -85,7 +85,11 @@ export function SearchBox({ className }: { className?: string }) {
     <div ref={rootRef} className={cx("relative", className)}>
       <div className="flex items-center gap-2 rounded-(--radius-badge) border border-line bg-surface px-2.5 py-1.5 focus-within:border-primary/50">
         {busy ? (
-          <Loader2 aria-hidden className="h-4 w-4 shrink-0 animate-spin text-ink-secondary" strokeWidth={1.5} />
+          <Loader2
+            aria-hidden
+            className="h-4 w-4 shrink-0 animate-spin text-ink-secondary"
+            strokeWidth={1.5}
+          />
         ) : (
           <Search aria-hidden className="h-4 w-4 shrink-0 text-ink-secondary" strokeWidth={1.5} />
         )}

@@ -25,7 +25,12 @@ export function DataTable<Row>({
   className?: string;
 }) {
   return (
-    <div className={cx("overflow-x-auto rounded-(--radius-card) border border-line bg-surface", className)}>
+    <div
+      className={cx(
+        "overflow-x-auto rounded-(--radius-card) border border-line bg-surface",
+        className,
+      )}
+    >
       <table className="w-full border-collapse text-[13px]">
         <thead>
           <tr className="border-b border-line bg-background">
@@ -51,7 +56,10 @@ export function DataTable<Row>({
             </tr>
           ) : (
             rows.map((row) => (
-              <tr key={rowKey(row)} className="border-b border-line last:border-b-0 hover:bg-background">
+              <tr
+                key={rowKey(row)}
+                className="border-b border-line last:border-b-0 hover:bg-background"
+              >
                 {columns.map((col) => (
                   <td key={col.key} className={cx("px-3 py-2 align-top", col.className)}>
                     {col.render(row)}

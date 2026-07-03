@@ -8,9 +8,28 @@ CPI is an OSINT agent applied to property — **to the asset and its public cont
 
 > **Cardinal rule, enforced in code:** *evidence beats assertion*. No risk signal exists without a `sourceRef` (dataset + record + URL + retrieval time) and a confidence. The access layer rejects and journals anything less — it is not left to a prompt.
 
-## Status — Phase 1 (foundation)
+## Status — Phases 1–3 (foundation + agent engine)
 
-This branch delivers the foundation: local SQLite data model with hard invariants, the UK open-data connector pack, the real-data fetch pipeline, and the seeded demo portfolio. Agents, workflows, and the UI come in later phases (see `docs/SPEC.md`).
+Phase 1 delivered the foundation: local SQLite data model with hard invariants, the UK open-data connector pack, the real-data fetch pipeline, and the seeded demo portfolio. Phases 2–3 (this branch) add the agent engine: the 6 Mastra investigators, the `civic-risk-scan` workflow with its human review gates (suspend/resume), the hard-coded evidence-integrity and fairness rules, the evidence-feed simulator, and the API surface for the UI. The UI itself comes in later phases (see `docs/SPEC.md`).
+
+### The engine in one run
+
+```bash
+pnpm tsx scripts/run-engine.ts --smoke   # 3 real properties through the full pipeline
+pnpm tsx scripts/run-engine.ts           # the whole portfolio (needs OPENAI_API_KEY)
+```
+
+The script drives the real workflow through every gate and prints the sourced
+signals (dataset + record id + URL + retrieval time on every finding), the
+deterministic clusters, the review approvals, the escalations and the final
+civic-impact metrics.
+
+- `src/mastra/agents/` — the 6 layer investigators (building-inspector, unit-profiler, block-scanner, people-investigator, land-surveyor, market-analyst) + `assessment-composer` + `verdict-adjudicator`. Prompts are versioned in `src/mastra/prompts/` (English), never inline. Every LLM output crosses Zod with 1 retry (parse error fed back), then a graceful, audited fallback.
+- `src/mastra/workflows/civic-risk-scan.ts` — scanPortfolio → deterministic clusterByRiskPattern → composeAssessments → ⏸ awaitAssessmentReview → publishCluster (throws while `reviewedAt` is null) → ⏸ adjudicateEvidence (event-driven) → ⏸ awaitHumanAdjudication → closeOut.
+- `src/mastra/engine/adjudication.ts` — the two **hard-coded** rules that override any model output: evidence integrity (high-severity single source / conflicting sources → forced red + escalation) and the anti-redlining fairness guardrail (protected-characteristic proxies excluded + `fairness_guardrail_triggered`).
+- `src/mastra/simulator/` — replays the 40 pre-written seeded feed updates at a configurable pace (deterministic; no live LLM loop).
+- `src/app/api/` — scan start/status, portfolio wall, **single-property lookup** (`POST /api/lookup` — a portfolio of one, same engine), clusters + review decisions, adjudications + expert actions, audit journal, simulator controls, impact metrics.
+- LLM host: **Venice.ai** (OpenAI-compatible) serving DeepSeek models — see `.env.example`. Without a key the engine degrades gracefully: synthetic replay, deterministic verdicts and composed fallbacks still run; live investigation of real properties is skipped with a typed audit event.
 
 ## Quick start
 
@@ -125,6 +144,7 @@ Every property row carries a `provenance` column (`real_open_data` / `synthetic`
 | `pnpm seed` | Rebuild `data/cpi.db` (framework + portfolio + evidence feed) |
 | `pnpm fetch-data` | Live open-data pipeline → `data/properties/` + `data/cache/` |
 | `pnpm test` / `test:e2e` | Vitest invariants / Playwright |
+| `pnpm tsx scripts/run-engine.ts [--smoke]` | End-to-end engine proof in the console |
 | `pnpm lint` / `typecheck` / `format` | Quality gates |
 
 ---

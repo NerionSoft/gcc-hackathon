@@ -1,12 +1,6 @@
 import { cx } from "@/presentation/ui/cx";
 
-export function Card({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
+export function Card({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
     <div
       className={cx(

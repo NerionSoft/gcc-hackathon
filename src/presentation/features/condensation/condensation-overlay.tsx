@@ -4,7 +4,10 @@ import { useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import type { Severity } from "@/db/schema";
 import type { ClusterCard as ClusterCardData } from "@/presentation/data/contracts";
-import { ClusterCardFace, useTickingCount } from "@/presentation/features/condensation/cluster-card";
+import {
+  ClusterCardFace,
+  useTickingCount,
+} from "@/presentation/features/condensation/cluster-card";
 import { SEVERITY_META } from "@/presentation/ui/severity";
 
 /**
@@ -96,7 +99,10 @@ export function CondensationOverlay({
       {/* The migrating tiles */}
       {tiles.map((tile) => {
         const meta = tile.severity ? SEVERITY_META[tile.severity] : null;
-        const tintDelay = 0.05 + (tile.y / Math.max(1, area.height)) * 0.4 + (tile.x / Math.max(1, area.width)) * 0.15;
+        const tintDelay =
+          0.05 +
+          (tile.y / Math.max(1, area.height)) * 0.4 +
+          (tile.x / Math.max(1, area.width)) * 0.15;
 
         if (tile.clusterIndex < 0 || !meta) {
           // Out-of-scope: acknowledged, then quietly leaves the frame.

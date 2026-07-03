@@ -36,7 +36,9 @@ export function DossierView({ dossier }: { dossier: DossierResponse }) {
             <h1 className="text-lg font-semibold tracking-tight text-ink">{property.address}</h1>
             <StatusPill status={property.status} />
             <NeutralBadge>
-              {property.provenance === "real_open_data" ? "real open data" : "synthetic (scale demo)"}
+              {property.provenance === "real_open_data"
+                ? "real open data"
+                : "synthetic (scale demo)"}
             </NeutralBadge>
           </div>
           <p className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[12px] text-ink-secondary">
@@ -80,7 +82,9 @@ export function DossierView({ dossier }: { dossier: DossierResponse }) {
         <CardBody>
           {verdict && adjudication ? (
             <div className="space-y-2">
-              <p className="text-[13px] leading-relaxed text-ink">{adjudication.verdictRationale}</p>
+              <p className="text-[13px] leading-relaxed text-ink">
+                {adjudication.verdictRationale}
+              </p>
               {adjudication.escalationReason && (
                 <p className="font-mono text-[11px] text-severity-red">
                   escalated: {adjudication.escalationReason}
@@ -141,14 +145,16 @@ export function DossierView({ dossier }: { dossier: DossierResponse }) {
       <Card>
         <CardHeader
           title="All extracted signals"
-          aside={<NeutralBadge>{formatInt(signals.length)} findings · every one sourced</NeutralBadge>}
+          aside={
+            <NeutralBadge>{formatInt(signals.length)} findings · every one sourced</NeutralBadge>
+          }
         />
         <CardBody className="p-0">
           {signals.length === 0 ? (
             <p className="px-4 py-4 text-[13px] leading-relaxed text-ink-secondary">
               No stored signals. This is one of the 50 real properties investigated live by the
-              agent team — findings appear here once the scan engine lands. No evidence, no
-              finding: this dossier never shows an unsourced claim.
+              agent team — findings appear here once the scan engine lands. No evidence, no finding:
+              this dossier never shows an unsourced claim.
             </p>
           ) : (
             dimensionCodeSchema.options.map((code) => {
@@ -180,7 +186,11 @@ function Fact({ label, value, mono = false }: { label: string; value: string; mo
       <div className="text-[10px] font-medium uppercase tracking-wide text-ink-secondary">
         {label}
       </div>
-      <div className={mono ? "truncate font-mono text-[13px] text-ink" : "truncate text-[13px] text-ink"}>
+      <div
+        className={
+          mono ? "truncate font-mono text-[13px] text-ink" : "truncate text-[13px] text-ink"
+        }
+      >
         {value}
       </div>
     </div>

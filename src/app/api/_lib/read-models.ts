@@ -112,9 +112,9 @@ export function getPortfolioSummary(): PortfolioSummary {
     v: number;
   };
   const signalCount = db.prepare("SELECT COUNT(*) AS n FROM risk_signals").get() as { n: number };
-  const freshness = db
-    .prepare("SELECT MAX(source_retrieved_at) AS m FROM risk_signals")
-    .get() as { m: string | null };
+  const freshness = db.prepare("SELECT MAX(source_retrieved_at) AS m FROM risk_signals").get() as {
+    m: string | null;
+  };
   const framework = db
     .prepare("SELECT name, version FROM risk_frameworks ORDER BY effective_date DESC LIMIT 1")
     .get() as { name: string; version: string } | undefined;
@@ -210,9 +210,9 @@ function derivePreviewClusters(): ClusterCard[] {
     ).map((r) => [r.code, r.title]),
   );
 
-  const scanned = db
-    .prepare("SELECT DISTINCT property_id AS id FROM risk_signals")
-    .all() as Array<{ id: string }>;
+  const scanned = db.prepare("SELECT DISTINCT property_id AS id FROM risk_signals").all() as Array<{
+    id: string;
+  }>;
   const adverse = db
     .prepare(
       `SELECT property_id, signal_code, dimension_code, severity
@@ -321,9 +321,7 @@ function previewCard(
   return clusterCardSchema.parse({
     id: `preview-${signature.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
     name,
-    description: parts
-      .map((p) => `${p.title} at ${p.severity} severity (${p.code})`)
-      .join("; "),
+    description: parts.map((p) => `${p.title} at ${p.severity} severity (${p.code})`).join("; "),
     pattern: signature,
     groupingRationale: `These properties share the same worst-signal signature: ${signature}. Grouping is deterministic (signature match), not model-driven.`,
     propertyIds: memberIds.sort(),
