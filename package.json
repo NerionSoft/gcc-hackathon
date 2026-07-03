@@ -23,9 +23,12 @@
   },
   "dependencies": {
     "@mastra/core": "^1.48.0",
+    "@tanstack/react-virtual": "^3.14.5",
     "better-sqlite3": "^12.6.0",
     "dotenv": "^17.4.2",
     "eslint-config-prettier": "^10.1.8",
+    "framer-motion": "^12.42.2",
+    "lucide-react": "^1.23.0",
     "next": "16.2.6",
     "pino": "^10.3.1",
     "prettier": "^3.8.3",
@@ -35,6 +38,8 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "@fontsource/ibm-plex-sans": "^5.2.8",
     "@playwright/test": "^1.60.0",
     "@tailwindcss/postcss": "^4",
     "@types/better-sqlite3": "^7.6.13",
