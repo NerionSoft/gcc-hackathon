@@ -70,6 +70,11 @@ export async function startCampaign(input: {
   return runId;
 }
 
+/** Forget the active run pointer (F7 director reset — a fresh scan starts clean). */
+export function clearActiveCampaign(): void {
+  globalRef.__cpiActiveRunId = undefined;
+}
+
 /** The most recent run's id (in-memory first, storage as fallback). */
 export async function getActiveRunId(): Promise<string | undefined> {
   if (globalRef.__cpiActiveRunId) return globalRef.__cpiActiveRunId;
