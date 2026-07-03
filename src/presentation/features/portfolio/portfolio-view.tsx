@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { LayoutGroup, motion } from "framer-motion";
 import { AlertTriangle } from "lucide-react";
 import { usePortfolioData } from "@/presentation/features/portfolio/use-portfolio-data";
-import { useScanSimulation } from "@/presentation/features/portfolio/use-scan-simulation";
+import { useCampaignScan } from "@/presentation/features/portfolio/use-campaign-scan";
 import {
   applyFilters,
   EMPTY_FILTERS,
@@ -21,6 +21,7 @@ import {
 import { ClusterCardFace } from "@/presentation/features/condensation/cluster-card";
 import { NeutralBadge } from "@/presentation/ui/primitives/badge";
 import { Card, CardBody } from "@/presentation/ui/primitives/card";
+import { cx } from "@/presentation/ui/cx";
 
 type Stage = "wall" | "condensing" | "clusters";
 
@@ -29,9 +30,17 @@ const MAX_ANIMATED_TILES = 260;
 
 export function PortfolioView() {
   const router = useRouter();
-  const { tiles, summary, clusters, error } = usePortfolioData();
-  const sim = useScanSimulation(tiles);
+  const { tiles, summary, clusters, error, refetchClusters } = usePortfolioData();
+  // A prior campaign that persisted real clusters means the portfolio is
+  // already scanned — jump straight to the settled wall.
+  const initialComplete = clusters ? !clusters.preview : false;
+  const sim = useCampaignScan(tiles, { initialComplete, onComplete: refetchClusters });
   const { statusOf } = sim;
+
+  const openCluster = useCallback(
+    (id: string) => router.push(`/clusters/${encodeURIComponent(id)}`),
+    [router],
+  );
   const [filters, setFilters] = useState<WallFilters>(EMPTY_FILTERS);
   const [stage, setStage] = useState<Stage>("wall");
   const [captured, setCaptured] = useState<CapturedTile[]>([]);
@@ -203,21 +212,37 @@ export function PortfolioView() {
                 {clusters.preview && (
                   <NeutralBadge>signature preview — engine clustering pending</NeutralBadge>
                 )}
+                {!clusters.preview && (
+                  <span className="font-mono text-[11px] text-ink-secondary">
+                    open a cluster to review its assessment ↓
+                  </span>
+                )}
                 <span className="ml-auto font-mono text-[11px] text-ink-secondary">
                   shift+R replays the condensation
                 </span>
               </div>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {clusters.clusters.map((cluster) => (
-                  <motion.div
-                    key={cluster.id}
-                    layoutId={`cluster-${cluster.id}`}
-                    transition={{ duration: 0.45, ease: [0.22, 0.9, 0.24, 1] }}
-                    className="h-[150px]"
-                  >
-                    <ClusterCardFace cluster={cluster} count={cluster.propertyCount} />
-                  </motion.div>
-                ))}
+                {clusters.clusters.map((cluster) => {
+                  const clickable = !clusters.preview;
+                  return (
+                    <motion.button
+                      type="button"
+                      key={cluster.id}
+                      layoutId={`cluster-${cluster.id}`}
+                      transition={{ duration: 0.45, ease: [0.22, 0.9, 0.24, 1] }}
+                      onClick={clickable ? () => openCluster(cluster.id) : undefined}
+                      disabled={!clickable}
+                      className={cx(
+                        "block h-[150px] rounded-(--radius-card) text-left",
+                        clickable
+                          ? "cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                          : "cursor-default",
+                      )}
+                    >
+                      <ClusterCardFace cluster={cluster} count={cluster.propertyCount} />
+                    </motion.button>
+                  );
+                })}
               </div>
             </div>
           )}

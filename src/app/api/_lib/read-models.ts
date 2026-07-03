@@ -1,10 +1,11 @@
 import { getDb } from "@/db/client";
-import { getAdjudication } from "@/db/access/adjudications";
+import { getAdjudication, listAdjudications } from "@/db/access/adjudications";
 import { getProperty } from "@/db/access/properties";
 import { listSignalsForProperty } from "@/db/access/signals";
-import { listClusters } from "@/db/access/clusters";
+import { getCluster, listClusters } from "@/db/access/clusters";
 import { severitySchema, type Severity } from "@/db/schema";
 import type {
+  AdjudicationBoardItem,
   ClusterCard,
   DossierResponse,
   PortfolioSummary,
@@ -12,6 +13,7 @@ import type {
   SearchResult,
 } from "@/presentation/data/contracts";
 import {
+  adjudicationBoardItemSchema,
   clusterCardSchema,
   dossierResponseSchema,
   portfolioSummarySchema,
@@ -328,6 +330,42 @@ function previewCard(
     propertyCount: memberIds.length,
     dominantSeverity: worst,
     status: "preview",
+  });
+}
+
+// ============================================
+// Adjudication war room (F4)
+// ============================================
+
+/**
+ * The war-room board: each adjudication joined to its property (address,
+ * capital) and cluster (name) so the UI renders sourced cards without N extra
+ * fetches. Ordered by most recent activity so freshly-reclassified cards
+ * surface first.
+ */
+export function getAdjudicationBoard(): AdjudicationBoardItem[] {
+  const clusterNames = new Map(listClusters().map((c) => [c.id, c.name]));
+  return listAdjudications().map((a) => {
+    const property = getProperty(a.propertyId);
+    return adjudicationBoardItemSchema.parse({
+      id: a.id,
+      propertyId: a.propertyId,
+      clusterId: a.clusterId,
+      clusterName: clusterNames.get(a.clusterId) ?? getCluster(a.clusterId)?.name ?? a.clusterId,
+      address: property?.address ?? a.propertyId,
+      postcode: property?.postcode ?? "",
+      localAuthority: property?.localAuthority ?? "",
+      propertyType: property?.propertyType ?? "residential",
+      capitalType: property?.capitalType ?? "public",
+      value: property?.value ?? 0,
+      status: a.status,
+      compositeVerdict: a.compositeVerdict,
+      verdictRationale: a.verdictRationale,
+      latestEvidence: a.latestEvidence,
+      escalationReason: a.escalationReason,
+      assessedAt: a.assessedAt,
+      lastActivityAt: a.lastActivityAt,
+    });
   });
 }
 

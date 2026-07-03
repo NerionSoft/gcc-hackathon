@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getClusterCards } from "@/app/api/_lib/read-models";
 import { ClusterCardFace } from "@/presentation/features/condensation/cluster-card";
 import { NeutralBadge } from "@/presentation/ui/primitives/badge";
@@ -23,15 +24,26 @@ export default function ClustersPage() {
         </span>
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {clusters.map((cluster) => (
-          <div key={cluster.id} className="h-[150px]">
-            <ClusterCardFace cluster={cluster} count={cluster.propertyCount} />
-          </div>
-        ))}
+        {clusters.map((cluster) =>
+          preview ? (
+            <div key={cluster.id} className="h-[150px]">
+              <ClusterCardFace cluster={cluster} count={cluster.propertyCount} />
+            </div>
+          ) : (
+            <Link
+              key={cluster.id}
+              href={`/clusters/${encodeURIComponent(cluster.id)}`}
+              className="block h-[150px] rounded-(--radius-card) focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+            >
+              <ClusterCardFace cluster={cluster} count={cluster.propertyCount} />
+            </Link>
+          ),
+        )}
       </div>
       <p className="mt-4 text-[12px] text-ink-secondary">
-        Cluster sheets — grouped evidence, plain-language disclosure and the human review gate —
-        open from these cards in the next phase.
+        {preview
+          ? "Run the portfolio scan to replace this signature preview with the engine's clusters, then open each one to review its assessment."
+          : "Open a cluster to review its sourced assessment, plain-language disclosure and evidence, then approve or request changes."}
       </p>
     </div>
   );

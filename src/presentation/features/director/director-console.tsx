@@ -5,6 +5,7 @@ import Link from "next/link";
 import {
   Activity,
   ArrowUpRight,
+  CheckCheck,
   Clapperboard,
   Gauge,
   Pause,
@@ -22,6 +23,7 @@ import { cx } from "@/presentation/ui/cx";
 import {
   useCampaignControl,
   useResetControl,
+  useReviewAllControl,
   useSimulatorControl,
 } from "@/presentation/features/director/use-director";
 
@@ -57,8 +59,10 @@ function Dot({ tone }: { tone: "idle" | "active" | "done" }) {
 
 function CampaignSection() {
   const { status, idle, busy, error, start } = useCampaignControl();
+  const review = useReviewAllControl();
   const running = !idle;
   const gates = status?.suspendedSteps ?? [];
+  const atReviewGate = gates.includes("await-assessment-review");
   const byStatus = status?.counts.byStatus ?? {};
   const stat = (key: string) => formatInt(byStatus[key] ?? 0);
 
@@ -104,13 +108,33 @@ function CampaignSection() {
             run {status.runId}
           </p>
         )}
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <Button variant="primary" onClick={() => void start()} disabled={busy || running}>
             <Play aria-hidden className="h-3.5 w-3.5" strokeWidth={1.5} />
             {busy ? "Starting…" : running ? "Scan running" : "Start scan"}
           </Button>
+          {atReviewGate && (
+            <Button
+              variant="secondary"
+              onClick={() => void review.approveAll()}
+              disabled={review.busy}
+            >
+              <CheckCheck aria-hidden className="h-3.5 w-3.5" strokeWidth={1.5} />
+              {review.busy ? "Approving…" : "Approve all pending clusters"}
+            </Button>
+          )}
         </div>
+        {atReviewGate && (
+          <p className="text-[11px] leading-relaxed text-ink-secondary">
+            Demo fast-forward: approves every pending cluster on the reviewer&apos;s behalf through
+            the real review gate (reviewer + timestamp stamped, audit written), so the campaign
+            reaches the evidence-monitoring gate. In a real run each cluster is reviewed on its own
+            sheet.
+          </p>
+        )}
+        {review.result && <p className="text-[12px] text-severity-green">{review.result}</p>}
         {error && <p className="text-[12px] text-severity-red">{error}</p>}
+        {review.error && <p className="text-[12px] text-severity-red">{review.error}</p>}
       </CardBody>
     </Card>
   );
