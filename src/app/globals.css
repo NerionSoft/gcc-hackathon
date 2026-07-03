@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Bleu ardoise / bleu-vert profond — confiance, territoire. Calm, not corporate-cold. */
+  --color-primary-50: #eef4f4;
+  --color-primary-100: #d7e6e6;
+  --color-primary-200: #b0cccd;
+  --color-primary-300: #82adb0;
+  --color-primary-400: #578f93;
+  --color-primary-500: #3a7276;
+  --color-primary-600: #2c5b5f;
+  --color-primary-700: #234a4d;
+  --color-primary-800: #1c3a3d;
+  --color-primary-900: #172f31;
+
+  /* Semantic verdict colors — sober, never garish on a subject like safety. */
+  --color-favorable: #2f7a4f;
+  --color-favorable-bg: #eaf5ee;
+  --color-vigilance: #a86a15;
+  --color-vigilance-bg: #fbf1e2;
+  --color-alerte: #a13f3f;
+  --color-alerte-bg: #f8ecec;
+  --color-indisponible: #6b7280;
+  --color-indisponible-bg: #f1f2f4;
+
+  --color-canvas: #faf9f7;
+  --color-surface: #ffffff;
+  --color-ink: #1c2224;
+  --color-ink-muted: #5b6467;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
