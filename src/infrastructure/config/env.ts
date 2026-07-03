@@ -5,8 +5,13 @@ function optionalEnv(key: string): string | undefined {
 function buildEnv() {
   const raw = {
     // LLM access for the Mastra agents (later phases). Optional so the app
-    // boots and the data pipeline runs without it.
+    // boots and the data pipeline runs without it. OPENAI_BASE_URL lets an
+    // OpenAI-compatible host (e.g. Venice.ai serving DeepSeek models) stand
+    // in for api.openai.com.
     OPENAI_API_KEY: optionalEnv("OPENAI_API_KEY"),
+    OPENAI_BASE_URL: optionalEnv("OPENAI_BASE_URL"),
+    /** Model id served by the OpenAI-compatible host, e.g. a DeepSeek model on Venice. */
+    OPENAI_MODEL: optionalEnv("OPENAI_MODEL"),
     // Free API keys for keyed open-data sources. When absent, the matching
     // connector returns a typed "data gap / key missing" result — never fake data.
     EPC_API_KEY: optionalEnv("EPC_API_KEY"),

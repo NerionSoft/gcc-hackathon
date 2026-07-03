@@ -81,7 +81,7 @@ flowchart LR
 
 **Enabling keyed sources.** Register (free) and set in `.env`:
 
-- `EPC_API_KEY` — register at [epc.opendatacommunities.org](https://epc.opendatacommunities.org/); set the value to `base64(email:api-key)`.
+- `EPC_API_KEY` — bearer token from [get-energy-performance-data.communities.gov.uk](https://get-energy-performance-data.communities.gov.uk/) (GOV.UK One Login; this service replaced epc.opendatacommunities.org).
 - `COMPANIES_HOUSE_API_KEY` — create a REST key at the [Companies House developer hub](https://developer.company-information.service.gov.uk/).
 - `LR_DATA_API_KEY` — register at [use-land-property-data.service.gov.uk](https://use-land-property-data.service.gov.uk/).
 

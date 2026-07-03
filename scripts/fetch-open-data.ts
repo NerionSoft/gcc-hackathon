@@ -46,7 +46,7 @@ const logger = getLogger("fetch-open-data");
 
 interface TargetArea {
   key: string;
-  town: string; // PPD town value
+  district: string; // PPD district value (≈ local authority)
   localAuthority: string;
   ukhpiSlug: string;
   onsRegionCode: string; // English region, for IPHRP rent index
@@ -58,7 +58,7 @@ interface TargetArea {
 const TARGET_AREAS: TargetArea[] = [
   {
     key: "hull",
-    town: "KINGSTON UPON HULL",
+    district: "CITY OF KINGSTON UPON HULL",
     localAuthority: "Kingston upon Hull",
     ukhpiSlug: "city-of-kingston-upon-hull",
     onsRegionCode: "E12000003",
@@ -67,7 +67,7 @@ const TARGET_AREAS: TargetArea[] = [
   },
   {
     key: "great-yarmouth",
-    town: "GREAT YARMOUTH",
+    district: "GREAT YARMOUTH",
     localAuthority: "Great Yarmouth",
     ukhpiSlug: "great-yarmouth",
     onsRegionCode: "E12000006",
@@ -76,7 +76,7 @@ const TARGET_AREAS: TargetArea[] = [
   },
   {
     key: "middlesbrough",
-    town: "MIDDLESBROUGH",
+    district: "MIDDLESBROUGH",
     localAuthority: "Middlesbrough",
     ukhpiSlug: "middlesbrough",
     onsRegionCode: "E12000001",
@@ -85,7 +85,7 @@ const TARGET_AREAS: TargetArea[] = [
   },
   {
     key: "stoke",
-    town: "STOKE-ON-TRENT",
+    district: "STOKE-ON-TRENT",
     localAuthority: "Stoke-on-Trent",
     ukhpiSlug: "stoke-on-trent",
     onsRegionCode: "E12000005",
@@ -94,7 +94,7 @@ const TARGET_AREAS: TargetArea[] = [
   },
   {
     key: "islington",
-    town: "LONDON",
+    district: "ISLINGTON",
     localAuthority: "Islington",
     ukhpiSlug: "islington",
     onsRegionCode: "E12000007",
@@ -103,7 +103,7 @@ const TARGET_AREAS: TargetArea[] = [
   },
   {
     key: "brighton",
-    town: "BRIGHTON",
+    district: "BRIGHTON AND HOVE",
     localAuthority: "Brighton and Hove",
     ukhpiSlug: "brighton-and-hove",
     onsRegionCode: "E12000008",
@@ -210,8 +210,8 @@ async function main(): Promise<void> {
   >();
 
   for (const area of TARGET_AREAS) {
-    logger.info("Harvesting real addresses", { area: area.key, town: area.town });
-    const transactions = await pricePaid.searchTransactionsByTown(area.town, 60);
+    logger.info("Harvesting real addresses", { area: area.key, district: area.district });
+    const transactions = await pricePaid.searchTransactionsByDistrict(area.district, 80);
     if (transactions.status !== "ok") {
       logger.error("Could not harvest addresses — skipping area", {
         area: area.key,

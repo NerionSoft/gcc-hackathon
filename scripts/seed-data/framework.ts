@@ -49,7 +49,8 @@ export const CIVIC_PROPERTY_RISK_V1: RiskFramework = {
             "Latest Energy Performance Certificate band and retrofit exposure for the building.",
           source: {
             dataset: "epc-domestic",
-            endpoint: "https://epc.opendatacommunities.org/api/v1/domestic/search",
+            endpoint:
+              "https://api.get-energy-performance-data.communities.gov.uk/api/domestic/search",
             licence: "OGL v3.0 (EPC data © Crown copyright)",
           },
           method:

@@ -70,12 +70,16 @@ export async function searchTransactionsByPostcode(
   return runSearch(url);
 }
 
-/** Recent-ish transactions across a town (used to harvest real addresses). */
-export async function searchTransactionsByTown(
-  town: string,
+/**
+ * Transactions across a PPD district (≈ local authority, e.g.
+ * "CITY OF KINGSTON UPON HULL", "ISLINGTON") — used to harvest real
+ * addresses that verifiably sit inside the target authority.
+ */
+export async function searchTransactionsByDistrict(
+  district: string,
   limit = 50,
 ): Promise<ConnectorResult<PricePaidRecord>> {
-  const url = `${meta.endpoint}?propertyAddress.town=${encodeURIComponent(town.toUpperCase())}&_pageSize=${limit}`;
+  const url = `${meta.endpoint}?propertyAddress.district=${encodeURIComponent(district.toUpperCase())}&_pageSize=${limit}`;
   return runSearch(url);
 }
 
