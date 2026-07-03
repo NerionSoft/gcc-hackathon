@@ -59,7 +59,12 @@ export function computeImpactMetrics(): ImpactMetrics {
 
   const hiddenRisks = (
     db
-      .prepare("SELECT COUNT(*) AS n FROM risk_signals WHERE severity IN ('amber', 'red')")
+      .prepare(
+        `SELECT COUNT(*) AS n FROM risk_signals s
+         JOIN properties p ON p.id = s.property_id
+         WHERE s.severity IN ('amber', 'red')
+           AND p.status NOT IN ('unscanned', 'scanning', 'out_of_scope')`,
+      )
       .get() as { n: number }
   ).n;
   const sourcesCited = (
