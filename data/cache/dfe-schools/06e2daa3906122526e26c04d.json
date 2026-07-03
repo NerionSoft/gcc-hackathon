@@ -1,0 +1,127 @@
+{
+  "key": "district:N19",
+  "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=N19",
+  "retrievedAt": "2026-07-03T13:04:56.304Z",
+  "body": [
+    {
+      "urn": "100011",
+      "name": "Brookfield Primary School",
+      "localAuthority": "Camden",
+      "postcode": "N19 5DH",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100011"
+    },
+    {
+      "urn": "100384",
+      "name": "Margaret McMillan Nursery School",
+      "localAuthority": "Islington",
+      "postcode": "N19 3SF",
+      "phase": "Nursery",
+      "establishmentType": "Local authority nursery school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100384"
+    },
+    {
+      "urn": "100403",
+      "name": "Duncombe Primary School",
+      "localAuthority": "Islington",
+      "postcode": "N19 4JA",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100403"
+    },
+    {
+      "urn": "100408",
+      "name": "Hargrave Park Primary School",
+      "localAuthority": "Islington",
+      "postcode": "N19 5BS",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100408"
+    },
+    {
+      "urn": "100429",
+      "name": "Yerbury Primary School",
+      "localAuthority": "Islington",
+      "postcode": "N19 4RR",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100429"
+    },
+    {
+      "urn": "100439",
+      "name": "St John's Upper Holloway CofE Primary School",
+      "localAuthority": "Islington",
+      "postcode": "N19 5RR",
+      "phase": "Primary",
+      "establishmentType": "Voluntary aided school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100439"
+    },
+    {
+      "urn": "100441",
+      "name": "St Joseph's Catholic Primary School",
+      "localAuthority": "Islington",
+      "postcode": "N19 5NE",
+      "phase": "Primary",
+      "establishmentType": "Voluntary aided school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100441"
+    },
+    {
+      "urn": "100444",
+      "name": "St Mark's CofE Primary School",
+      "localAuthority": "Islington",
+      "postcode": "N19 4JF",
+      "phase": "Primary",
+      "establishmentType": "Voluntary aided school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100444"
+    },
+    {
+      "urn": "143659",
+      "name": "City of London Academy, Highgate Hill",
+      "localAuthority": "Islington",
+      "postcode": "N19 3EU",
+      "phase": "Secondary",
+      "establishmentType": "Free schools",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/143659"
+    },
+    {
+      "urn": "143702",
+      "name": "The Bridge Satellite Provision",
+      "localAuthority": "Islington",
+      "postcode": "N19 3DL",
+      "phase": "Not applicable",
+      "establishmentType": "Free schools special",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/143702"
+    }
+  ]
+}

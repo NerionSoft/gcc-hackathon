@@ -1,0 +1,10 @@
+{
+  "key": "https://www.planning.data.gov.uk/entity.json?latitude=52.99539&longitude=-2.100048&dataset=conservation-area&dataset=listed-building-outline&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&dataset=brownfield-land&dataset=brownfield-site&limit=100&exclude_field=geometry,point",
+  "url": "https://www.planning.data.gov.uk/entity.json?latitude=52.99539&longitude=-2.100048&dataset=conservation-area&dataset=listed-building-outline&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&dataset=brownfield-land&dataset=brownfield-site&limit=100&exclude_field=geometry,point",
+  "retrievedAt": "2026-07-03T13:12:15.500Z",
+  "body": {
+    "entities": [],
+    "links": {},
+    "count": 0
+  }
+}

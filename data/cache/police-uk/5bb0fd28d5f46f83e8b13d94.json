@@ -1,0 +1,2236 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=51.530058,-0.11078299999999999:51.530058,-0.104383:51.534058,-0.104383:51.534058,-0.11078299999999999&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=51.530058,-0.11078299999999999:51.530058,-0.104383:51.534058,-0.104383:51.534058,-0.11078299999999999&date=2026-04",
+  "retrievedAt": "2026-07-03T13:13:18.295Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134644780,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134637182,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134639062,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134638542,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531132",
+        "street": {
+          "id": 1682013,
+          "name": "On or near Owen Street"
+        },
+        "longitude": "-0.105470"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134638562,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531945",
+        "street": {
+          "id": 1681908,
+          "name": "On or near Pentonville Road"
+        },
+        "longitude": "-0.106273"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134642559,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134644273,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532265",
+        "street": {
+          "id": 1681581,
+          "name": "On or near Angel Mews"
+        },
+        "longitude": "-0.107153"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134644660,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134645734,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134640551,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.530665",
+        "street": {
+          "id": 1681300,
+          "name": "On or near Mylne Street"
+        },
+        "longitude": "-0.109440"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134640868,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134649580,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134649632,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533711",
+        "street": {
+          "id": 1681526,
+          "name": "On or near Chapel Place"
+        },
+        "longitude": "-0.108175"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "04fa8cc5f2555a844f3960a306eeb32ae3aa571cdbd123ae7233ea65c1fe22b9",
+      "id": 134677222,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533578",
+        "street": {
+          "id": 1681445,
+          "name": "On or near White Conduit Street"
+        },
+        "longitude": "-0.108815"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "e2744656ee82bc455d7b69d5c30db034a3732c7ca4600e2650ce4c21a351cd3a",
+      "id": 134677597,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531132",
+        "street": {
+          "id": 1682013,
+          "name": "On or near Owen Street"
+        },
+        "longitude": "-0.105470"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "d3831672839a8ed716a80e033cf1c477d01d1bd85dd893564755a3af808751dc",
+      "id": 134677673,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "87923ac67d34a8f873844d6aa1d973d5913a186ed4f379c944f919107417b145",
+      "id": 134677965,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531132",
+        "street": {
+          "id": 1682013,
+          "name": "On or near Owen Street"
+        },
+        "longitude": "-0.105470"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "064053a60811a2db526b5cfbabc16fd4b396835b86ff429efa66872126d965f3",
+      "id": 134677528,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532793",
+        "street": {
+          "id": 1681395,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.109251"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "bf5fab77c692fe02e1684babe1f637e0f89286bf0a0b255cd5cce41645895805",
+      "id": 134676884,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531132",
+        "street": {
+          "id": 1682013,
+          "name": "On or near Owen Street"
+        },
+        "longitude": "-0.105470"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "4c31f245993732185aaa373a2f1a3d8733fe26c70c56f4f7457a4056f0343572",
+      "id": 134677775,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532384",
+        "street": {
+          "id": 1681146,
+          "name": "On or near Penton Grove"
+        },
+        "longitude": "-0.110061"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "88402966f44a23bd0b3bf1a414e5698566acec9287bf5de6af1406c0bbe942ae",
+      "id": 134669142,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "8ae798a7652f170fa3facac303b59bca7bee7d3fd1536cd81a293ba95e63cd21",
+      "id": 134666916,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "866e88bd26df99c42d9595e4506ed32e4bf46d3c26ebeb0aa5b30f80db6d08d2",
+      "id": 134669099,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "4cee1f91186c3e9962652c51e1758b7f485b7e037ba4d056470d24ffe013ebf9",
+      "id": 134666911,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533711",
+        "street": {
+          "id": 1681526,
+          "name": "On or near Chapel Place"
+        },
+        "longitude": "-0.108175"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "ab2196c04ffcd41c5142813e17f8b7fc0d5332152d41264393ddf3fd67a31be5",
+      "id": 134669447,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "67119f04dfac2ddf3f1862c25eca2212ff9d3abddded591afe50402e6ee8b5a0",
+      "id": 134668026,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "302c1e357eb8ac0c5d72ac4ccd28b0c10ccd2c53c2ed801ce0eeb53001c516f2",
+      "id": 134668080,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "58d45339d59a81584947cd57e40161c4cbf5d09b0f7d300adf150b83b8f7e398",
+      "id": 134668463,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "8691a36e8daa5c23b4e577038fa0392862c46ee18cf4cbff48d9b8704a21feb1",
+      "id": 134724390,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "a433319a1ef36f9955a9112d2b5d5bc6dabc5ed3afd54091a2e397ea1003ec5c",
+      "id": 134722871,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Formal action is not in the public interest",
+        "date": "2026-04"
+      },
+      "persistent_id": "ae5406be5b1650b87e936116ed3b391367ad4b1616f04a5f760985939cbde896",
+      "id": 134723244,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532630",
+        "street": {
+          "id": 1681981,
+          "name": "On or near Angel"
+        },
+        "longitude": "-0.105812"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Offender given penalty notice",
+        "date": "2026-04"
+      },
+      "persistent_id": "ec2e9b35d30e32d6e73bccf3f1cd30bf91b2654fd2c5460c0b697a293d34aec4",
+      "id": 134724243,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "8a288513d65e1a2aa16e2da8357661b323f830e472bbbff4c2fcfa30af300d41",
+      "id": 134725647,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531945",
+        "street": {
+          "id": 1681908,
+          "name": "On or near Pentonville Road"
+        },
+        "longitude": "-0.106273"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "beaac88efe1e814f41ed4ef7dd9f53dbe99ff19c1abca23c9efda2b21cc555b7",
+      "id": 134704167,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "d1629a2c55c6750041910cecbc36c6fbb3e3b0ae0b55e3afc233059d76ba6e37",
+      "id": 134703523,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532793",
+        "street": {
+          "id": 1681395,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.109251"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "a809996f238e26095a161fc1b18251c9b0702ba4869aeddc666c8c6fbabe46f6",
+      "id": 134692509,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532384",
+        "street": {
+          "id": 1681146,
+          "name": "On or near Penton Grove"
+        },
+        "longitude": "-0.110061"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "526933e6776cdd9a7a867410c75eef700ae53465f46b1ad233b1e529f00bbe85",
+      "id": 134703982,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "45c95c5dc7836a7d247c78871eb225f59d0d23b298455c6f34d6403c6d9a1bc3",
+      "id": 134707916,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532630",
+        "street": {
+          "id": 1681981,
+          "name": "On or near Angel"
+        },
+        "longitude": "-0.105812"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "2c5c61000472a74d9d5afda8b0e60fd9aab6af0c6ae8c9b8cdeb517c85e2663c",
+      "id": 134708647,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532082",
+        "street": {
+          "id": 1681440,
+          "name": "On or near Further/higher Educational Building"
+        },
+        "longitude": "-0.108660"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "0028836e8217e72a89b58674eb2773ce50aa46e38ef2b35e380194f7621f8615",
+      "id": 134705873,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531480",
+        "street": {
+          "id": 1681964,
+          "name": "On or near Theatre/concert Hall"
+        },
+        "longitude": "-0.105874"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "4a45f99fb25cad4c9185ed6410f6c020e39648c7be9efe71edd25df1c8d4e182",
+      "id": 134705494,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532082",
+        "street": {
+          "id": 1681440,
+          "name": "On or near Further/higher Educational Building"
+        },
+        "longitude": "-0.108660"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "d2469c4e80fa80f1c94a7902328d66949a109228dc22934faf9a5aa5451e1b17",
+      "id": 134705489,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533711",
+        "street": {
+          "id": 1681526,
+          "name": "On or near Chapel Place"
+        },
+        "longitude": "-0.108175"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "aab279bbf9eafa63f68b3ba393c467b384339bc98cfa0d94b9cd2f37c7e03f99",
+      "id": 134705484,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532082",
+        "street": {
+          "id": 1681440,
+          "name": "On or near Further/higher Educational Building"
+        },
+        "longitude": "-0.108660"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "38a86e4bc5f9510f2a28857c7a0902a20a9c6beb309d6399a01ed8b62887a5fa",
+      "id": 134705216,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531480",
+        "street": {
+          "id": 1681964,
+          "name": "On or near Theatre/concert Hall"
+        },
+        "longitude": "-0.105874"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "3fa1fcd50f8b4da2c356e5820c64c5c23f6299ec5230672ab8ba8203080b64a8",
+      "id": 134704970,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "possession-of-weapons",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532630",
+        "street": {
+          "id": 1681981,
+          "name": "On or near Angel"
+        },
+        "longitude": "-0.105812"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "9d8cdaa39bf254803068a464163101450beb38cb3c94a84d7110f0b868bfc34d",
+      "id": 134713411,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "a6dd3a29fb37bcaacc57168fe77a58b54ce8dcca4bd32a41d4d2cdab85457a1e",
+      "id": 134711119,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.530455",
+        "street": {
+          "id": 1681767,
+          "name": "On or near Chadwell Street"
+        },
+        "longitude": "-0.106464"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "30d8d0a68f3cfbad3062816e491e069863482fe257398798eb1b5a1504204b4f",
+      "id": 134663833,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "4a3d1790481f9d91bbfee46a4fd991288ce667c25a001babb35fdad385f47324",
+      "id": 134663718,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Formal action is not in the public interest",
+        "date": "2026-04"
+      },
+      "persistent_id": "856fb6c8205dffccd2bf56e6c1f61103faa1509b932189e1a5dbab8302e5de99",
+      "id": 134711143,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "1ed3b7df355524b2de2870566443d5de334a297af01aad1146f058a0990c095b",
+      "id": 134662232,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531945",
+        "street": {
+          "id": 1681908,
+          "name": "On or near Pentonville Road"
+        },
+        "longitude": "-0.106273"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "3e9c3a1195d784c067ef46aa56e6e1984c0ab0064fd57537685fd8ffe33f128c",
+      "id": 134664433,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533888",
+        "street": {
+          "id": 1681708,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.107432"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "75aecccf10a72690d39dbe099318673f32002996a04fb496c93ceecd4de131bc",
+      "id": 134664090,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533888",
+        "street": {
+          "id": 1681708,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.107432"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "8c81a4fcf695ff7166e90939a3c60a74a85d1da080b1bd8329cabb1badc1bfa9",
+      "id": 134664846,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "44d2e85a5458ca62d97d4628efd28f0f2f6ef49534b313101a9ba44248bbb5c0",
+      "id": 134663241,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "8e4cd803f17af603a14fecddad8ead2f42483f94e06c4637777db17a95fd815e",
+      "id": 134664976,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533888",
+        "street": {
+          "id": 1681708,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.107432"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "c687a86129fbd58db0fc98e09049f039b628cd2224057fc04482eeb5a6c0c6dc",
+      "id": 134664634,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "eee26f91fe331dc391850680296d1cc52599733e356e5cb0c358a295c4166774",
+      "id": 134711118,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "728b49f174f6db9484bc8c300185cd6a689ddc71efbeef790e88f4b1a65cf818",
+      "id": 134711090,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "1beca08c122182a2fa8f555ad0170a90faafc4516a66f0a83084b9cb59b04100",
+      "id": 134664079,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "d65166a3d1c0f4fef9f54f68bc266f5178c4ac1626961cee2eda12658fc98890",
+      "id": 134714330,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "robbery",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533578",
+        "street": {
+          "id": 1681445,
+          "name": "On or near White Conduit Street"
+        },
+        "longitude": "-0.108815"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "98492dd4cc326501787ecdb929c8191ebf71f835474c809606fcf0eb7db8724e",
+      "id": 134679988,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "0ae4a6c1618e1d04234844409713359f0d459a179368741f4caa9a868cad24e4",
+      "id": 134700064,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "190499f47440257d9aa11db88e88286ad43e96ab28b9633e097156fb509085d7",
+      "id": 134696389,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "27600a453bf2427a89c03183b4ec0c594c67b79fad68246c138f9dcece341abc",
+      "id": 134696124,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "4cf85161f5f85e93828953108984592d97840747d9324aeffb4430fb66c0e1bd",
+      "id": 134696080,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "2d599b78abb1773f8e61b5d600599594d483899adff51afbc01d1aca27d93f8a",
+      "id": 134694312,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "df0d34350a7e61c34b4a99da2e43e228bb030bd7edc4b9ed697e4d44dfed92ef",
+      "id": 134699595,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533888",
+        "street": {
+          "id": 1681708,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.107432"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "687d4529ca8c14057f25067b79d9105c6636a17fddb466cd0fbd8b93335ba15a",
+      "id": 134695737,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533711",
+        "street": {
+          "id": 1681526,
+          "name": "On or near Chapel Place"
+        },
+        "longitude": "-0.108175"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Local resolution",
+        "date": "2026-04"
+      },
+      "persistent_id": "bea3fac1fe8f735df23ff0a1ac0f3d06d96d5ba9c8087a00d77b457a07da7064",
+      "id": 134693805,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533888",
+        "street": {
+          "id": 1681708,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.107432"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "909815a94ad65b1abd8db532efd1b21bec05a0d5eeb999be799a793723b87b1d",
+      "id": 134693354,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533888",
+        "street": {
+          "id": 1681708,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.107432"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "98d0ccb5c49df7c1cbde5a01456b41945ee4c14b14bcfbb62b0a2097a4c91455",
+      "id": 134698907,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "a5499e5014b2b930a24652ba1680184dca81d0fcbfd7a5edc993576d6c59442e",
+      "id": 134696657,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532265",
+        "street": {
+          "id": 1681581,
+          "name": "On or near Angel Mews"
+        },
+        "longitude": "-0.107153"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "fe94021c9457f909f0a00b417cb494f52464ac8d0ce443c205da15db28729b37",
+      "id": 134683705,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531945",
+        "street": {
+          "id": 1681908,
+          "name": "On or near Pentonville Road"
+        },
+        "longitude": "-0.106273"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "65d018f26a7da594c11615ae47aba96c446a6e61434bade326c69dbfee62defd",
+      "id": 134682045,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "c97b855ad1b6af122a68b6e3aeca1817ccd24acc8459397b510ef6ddca21ffaa",
+      "id": 134683077,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531945",
+        "street": {
+          "id": 1681908,
+          "name": "On or near Pentonville Road"
+        },
+        "longitude": "-0.106273"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "8305b1d85982bc07cd1990178c5c3133b3295b122e9ec27409e41393e8f4f17f",
+      "id": 134686288,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531480",
+        "street": {
+          "id": 1681964,
+          "name": "On or near Theatre/concert Hall"
+        },
+        "longitude": "-0.105874"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "d68215799591d9fe17b63caf60a3c54081cd494c98832b1a2f5cb633cfa1924c",
+      "id": 134685924,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "48769ce1acbf4859213636ec29ad0539d5666790ef3081ae48b960e4882af5b1",
+      "id": 134685080,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532630",
+        "street": {
+          "id": 1681981,
+          "name": "On or near Angel"
+        },
+        "longitude": "-0.105812"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "67e7b030041165771ad9f1a5b8c924c46e0d391abac6ffbe9b326f2e1104138c",
+      "id": 134684743,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531942",
+        "street": {
+          "id": 1681973,
+          "name": "On or near Goswell Road"
+        },
+        "longitude": "-0.106114"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "60a3fef361b1304b09c70c569709de96d645a44682b4b3bf8b4b2f91a1fa8278",
+      "id": 134682924,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533578",
+        "street": {
+          "id": 1681445,
+          "name": "On or near White Conduit Street"
+        },
+        "longitude": "-0.108815"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "db48e1fae3413010a80d725e5a3aab7bc82ace67bab419ee9032c858da69275a",
+      "id": 134681464,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531945",
+        "street": {
+          "id": 1681908,
+          "name": "On or near Pentonville Road"
+        },
+        "longitude": "-0.106273"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "d317a2a412eecb2d411ae30a30be9dcfa4d1053eca270f8ed7b1b7d1ca70b661",
+      "id": 134684326,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "59b9af47489399171721d14d554918c298e9c6886b8bda5fe94ebeb6c609bd3f",
+      "id": 134682947,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533578",
+        "street": {
+          "id": 1681445,
+          "name": "On or near White Conduit Street"
+        },
+        "longitude": "-0.108815"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "d6e6d17bdf162b96a08dc56b11ab583c2a2b191decae448ff98bb80a5c1a1dda",
+      "id": 134682650,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532384",
+        "street": {
+          "id": 1681146,
+          "name": "On or near Penton Grove"
+        },
+        "longitude": "-0.110061"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "99683c8e6026165d1c212530014ebbd7cfb4b40abf80b0d92df04b7840c06924",
+      "id": 134682842,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532384",
+        "street": {
+          "id": 1681146,
+          "name": "On or near Penton Grove"
+        },
+        "longitude": "-0.110061"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "340627e50886400207abdeb234a5ed006521a3e9a4e96c763f5d5a60a96c23d1",
+      "id": 134684439,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.531132",
+        "street": {
+          "id": 1682013,
+          "name": "On or near Owen Street"
+        },
+        "longitude": "-0.105470"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "ab83f51956dadd401b03a537a63389180061359d4e60fdf8fcb937915ab3cc5f",
+      "id": 134683453,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "c5abbcf4cabd8d8add03f47c1a22661866df95c85aadbb6aa3cea190a87834ab",
+      "id": 134686100,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532444",
+        "street": {
+          "id": 1682120,
+          "name": "On or near Nightclub"
+        },
+        "longitude": "-0.104911"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "4e06c7f516c0e17e2984321627d60e24f8c95531e6a9ab30df0063ac9d7188a2",
+      "id": 134712478,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533578",
+        "street": {
+          "id": 1681445,
+          "name": "On or near White Conduit Street"
+        },
+        "longitude": "-0.108815"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "6b651ed047cfac8f90dd8c9fd5a7785b1ddac7f835b6739c36a32625e44b8772",
+      "id": 134722473,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532384",
+        "street": {
+          "id": 1681146,
+          "name": "On or near Penton Grove"
+        },
+        "longitude": "-0.110061"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "c960b17cd703a84e4e1f49831c4bcb8deaef54a26274b59a1fad24f053b9e84f",
+      "id": 134672894,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "4c0ca15865ecec8edd31437f9a60810605fc11a34d97e3d9f8fc6ce512746078",
+      "id": 134670718,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "1af60f407a956fb00c5affee1bd71c1ebc99d541832b22e9e3180367e2751e8a",
+      "id": 134681280,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.532762",
+        "street": {
+          "id": 1681910,
+          "name": "On or near White Lion Street"
+        },
+        "longitude": "-0.106224"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "f4b216bd595ac882e55cecc91bc72f9902636cadd8dafa242a2bbd155d151106",
+      "id": 134715148,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "19acef8f0b5217eafd90b4556c3be0e3b18e688cefc95d25cd34152d3623dbef",
+      "id": 134715622,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.530985",
+        "street": {
+          "id": 1681481,
+          "name": "On or near Claremont Close"
+        },
+        "longitude": "-0.108648"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "6215cdcfd2e5d94a54d8b167e5fe2de1810006cb85a01f21a724a66e6d73cbd9",
+      "id": 134716932,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533578",
+        "street": {
+          "id": 1681445,
+          "name": "On or near White Conduit Street"
+        },
+        "longitude": "-0.108815"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "cb12da4d5e5584d5a6a72856a9d65677b3fcebad1de197e1b1bd678a2812a30c",
+      "id": 134656098,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "a2317544306b0371aa539016ad8ed08c6f13ecf4573d9e66429331c53f428320",
+      "id": 134720655,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "33dd83d501d9e00b2532861b7eabbbbac2bf8ac7f6c708ba1cc1ff02c8b1f871",
+      "id": 134718829,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "abc946376321f035997aabf327aed45f8b98109b9b527b33facc0944597bc7d9",
+      "id": 134720789,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "87f4d62f975aad0bdd189f1c500f2f821b0b91c736f4bf3603336fb78e366416",
+      "id": 134720790,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "876fbedbfec24561d06c04d31d9a81b2e0acaec42e7f12d1658d342d849bdc7a",
+      "id": 134712391,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "c0e20513badbb5f13b9e9a47379b144f9bbdb515ba4549995a817d8746b05e98",
+      "id": 134720899,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533651",
+        "street": {
+          "id": 1681776,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.106707"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "3049193775ac52b6393905dc1333fc70cfb529336a7e954ffc15056a1db83422",
+      "id": 134656965,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "bc7963c712fb8d9011fac2c74df6031854fac7de6762851ed6355081abc32914",
+      "id": 134708960,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533375",
+        "street": {
+          "id": 1681067,
+          "name": "On or near Grant Street"
+        },
+        "longitude": "-0.110726"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "9ed14350ea47e88f00b2c9efa0132ca9ecf9161ee7bfce20db5561053e952eb7",
+      "id": 134681105,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.533469",
+        "street": {
+          "id": 1681381,
+          "name": "On or near Chapel Market"
+        },
+        "longitude": "-0.109338"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "0979d8a6253f45cd12aa079f3ad579b50595780cdbbb02baa5d18a8eb256452f",
+      "id": 134710296,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

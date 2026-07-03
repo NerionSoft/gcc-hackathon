@@ -1,0 +1,337 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=51.567042,-0.135293:51.567042,-0.12889299999999998:51.571042000000006,-0.12889299999999998:51.571042000000006,-0.135293&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=51.567042,-0.135293:51.567042,-0.12889299999999998:51.571042000000006,-0.12889299999999998:51.571042000000006,-0.135293&date=2026-04",
+  "retrievedAt": "2026-07-03T13:13:14.253Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.570973",
+        "street": {
+          "id": 1677982,
+          "name": "On or near Cheverton Road"
+        },
+        "longitude": "-0.131001"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134648317,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.568037",
+        "street": {
+          "id": 1677256,
+          "name": "On or near Pauntley Street"
+        },
+        "longitude": "-0.135263"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134646602,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.568195",
+        "street": {
+          "id": 1677899,
+          "name": "On or near St John's Way"
+        },
+        "longitude": "-0.131620"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "48e3a95b8a1242d14cf8deac64143f1477a212e2e8ccda39c2a624984387fc37",
+      "id": 134667522,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.568037",
+        "street": {
+          "id": 1677256,
+          "name": "On or near Pauntley Street"
+        },
+        "longitude": "-0.135263"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "18e9e6f8d9a0112c33ecbb255ae2ca4541663fe43ffc1f4b918428e50cbd6c03",
+      "id": 134706725,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.568996",
+        "street": {
+          "id": 1677671,
+          "name": "On or near Parolles Road"
+        },
+        "longitude": "-0.133333"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "2c381ab8bc02eb57c35eeca42a43500b9c08ca8ef4f277028e27e6f6580bed8b",
+      "id": 134703868,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.568608",
+        "street": {
+          "id": 1678094,
+          "name": "On or near Duncombe Road"
+        },
+        "longitude": "-0.129294"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "a5bf38ae3ce93aae5e6ca6cbc5601bd2e234ad4b361750e35a40abb94cf07d1c",
+      "id": 134708162,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.567448",
+        "street": {
+          "id": 1677733,
+          "name": "On or near Miranda Road"
+        },
+        "longitude": "-0.132718"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "4185024d4299a9bc0d098196f36dc6b72027d0e4a6b1e1f220a1373ca33214ec",
+      "id": 134707990,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.568491",
+        "street": {
+          "id": 1677740,
+          "name": "On or near Prospero Road"
+        },
+        "longitude": "-0.132142"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "249b4fe41c22d230ccc702726bf2ebd115790a23aac813603885e31f1122d2b2",
+      "id": 134686208,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.568218",
+        "street": {
+          "id": 1677624,
+          "name": "On or near Lysander Mews"
+        },
+        "longitude": "-0.133048"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "87f383d80d3e1d62627dd97f5d2a1cb380a07c2f460e53d28c88e8edc737328f",
+      "id": 134701111,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.569987",
+        "street": {
+          "id": 1677398,
+          "name": "On or near Gladsmuir Road"
+        },
+        "longitude": "-0.134562"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "0be5867e84d24c9ccc1169d5b931b21867c40741d41ba5b69ed31e1a0db48ed5",
+      "id": 134701376,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.567873",
+        "street": {
+          "id": 1677741,
+          "name": "On or near Lysander Grove"
+        },
+        "longitude": "-0.132845"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "94eab35feccacdf8e9980599d16530ee5f5b8269c5154958ffd076861274fca7",
+      "id": 134689782,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.567873",
+        "street": {
+          "id": 1677741,
+          "name": "On or near Lysander Grove"
+        },
+        "longitude": "-0.132845"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "880e2658ea5224e302e3b97145d52758ba682db51ac1ae58446685e6c5828bd6",
+      "id": 134692301,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.567448",
+        "street": {
+          "id": 1677733,
+          "name": "On or near Miranda Road"
+        },
+        "longitude": "-0.132718"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "c08f3a6a0706db62b1f8f83df784c789183b15cd6214a6a24adf3e03509ed30b",
+      "id": 134655068,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.567219",
+        "street": {
+          "id": 1678034,
+          "name": "On or near Turpin Way"
+        },
+        "longitude": "-0.130736"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "be8e5a0005975c10a5ab86844aef58387070223f074b72ae677ce4f1c7d629f5",
+      "id": 134659881,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.568195",
+        "street": {
+          "id": 1677899,
+          "name": "On or near St John's Way"
+        },
+        "longitude": "-0.131620"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "41cf39b8ad6fde7a54b02bbf92fbbafbe722c98b7be0bad8091ee6ce0ef20b7c",
+      "id": 134655453,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.567219",
+        "street": {
+          "id": 1678034,
+          "name": "On or near Turpin Way"
+        },
+        "longitude": "-0.130736"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "9a300f48860ec518a6af190219ff42b08258c94cfc9889629c5c256987b53462",
+      "id": 134712508,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

@@ -1,0 +1,2209 @@
+{
+  "_provenance": {
+    "real": [
+      "property.address",
+      "property.postcode",
+      "property.localAuthority",
+      "property.lat/lng (postcode centroid, postcodes.io/ONS)",
+      "property.tenure",
+      "property.propertyType",
+      "openData.* (every connector response below)"
+    ],
+    "simulated": [
+      "property.value",
+      "property.intendedUse",
+      "property.capitalType"
+    ],
+    "note": "Real England addresses from HM Land Registry Price Paid Data, enriched with SIMULATED investment-scenario metadata for the demo persona. Never present the simulated fields as real commitments.",
+    "areaRiskContext": "Potteries legacy: former clay pits, mine workings, ground instability."
+  },
+  "property": {
+    "id": "real-stoke-003",
+    "uprn": null,
+    "address": "87, HORTON DRIVE, STOKE-ON-TRENT",
+    "postcode": "ST3 5HJ",
+    "localAuthority": "Stoke-on-Trent",
+    "lat": 52.99539,
+    "lng": -2.100048,
+    "propertyType": "residential",
+    "tenure": "freehold",
+    "value": 87000,
+    "intendedUse": "Key-worker housing scheme",
+    "capitalType": "public",
+    "status": "unscanned",
+    "provenance": "real_open_data"
+  },
+  "openData": {
+    "landRegistryPricePaid": {
+      "dataset": "land-registry-price-paid",
+      "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=ST3%205HJ&_pageSize=25",
+      "licence": "OGL v3.0",
+      "fromCache": true,
+      "status": "ok",
+      "retrievedAt": "2026-07-03T13:14:31.648Z",
+      "records": [
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/5B3A9B44-89AD-4A58-96FD-C9061E0C8036/current",
+          "pricePaid": 58000,
+          "transactionDate": "Fri, 29 Nov 1996",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "87, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/ACBF354D-00FC-40CB-9201-0CDD94823584/current",
+          "pricePaid": 45000,
+          "transactionDate": "Tue, 19 Nov 1996",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "detached",
+          "address": "CAEDERWEN, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/9D71B609-7873-473C-B298-B47292C33314/current",
+          "pricePaid": 51000,
+          "transactionDate": "Fri, 26 Jan 1996",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "63, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/92EFE090-F32B-47DF-8F37-6EF7A3AB750F/current",
+          "pricePaid": 162500,
+          "transactionDate": "Fri, 22 Sep 2006",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "63, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/426CFF94-76EC-45F7-8366-8454EBB78787/current",
+          "pricePaid": 55000,
+          "transactionDate": "Fri, 17 Jul 1998",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "28, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/53111D79-D0F6-44F9-9E8D-1E4E2AB3ABD3/current",
+          "pricePaid": 59950,
+          "transactionDate": "Fri, 05 Nov 1999",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "63, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/424C4E8B-AE6B-45FC-ADC7-B4B6C802828F/current",
+          "pricePaid": 64000,
+          "transactionDate": "Fri, 12 Feb 1999",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "detached",
+          "address": "BRAEMAR, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/F14DD48D-2871-4213-BEE1-D5630FD32709/current",
+          "pricePaid": 135000,
+          "transactionDate": "Fri, 25 Mar 2011",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "detached",
+          "address": "BRAEMAR, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/BDA1E6D7-0253-41B8-A3FC-E7CFF7AD8588/current",
+          "pricePaid": 69950,
+          "transactionDate": "Fri, 26 Oct 2001",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "CRAIGSTON, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/A18BD42D-5C1A-43FF-BCDD-6C24A0B064F0/current",
+          "pricePaid": 73500,
+          "transactionDate": "Thu, 23 Aug 2001",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "79, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/9A418CE6-8682-426D-BAF4-96D0739BC1A5/current",
+          "pricePaid": 74500,
+          "transactionDate": "Wed, 17 Oct 2001",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "67, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/BE5ED35D-D9BF-40C8-9FCA-D68C568E8913/current",
+          "pricePaid": 73500,
+          "transactionDate": "Thu, 23 May 2002",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "89, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/C767DB73-719C-4E4A-A472-8392F1018BDB/current",
+          "pricePaid": 75000,
+          "transactionDate": "Fri, 19 Apr 2002",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "31, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/3E942A07-07C8-41D5-9BF8-7611DC79E56C/current",
+          "pricePaid": 97500,
+          "transactionDate": "Fri, 28 Nov 2003",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "40, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/5080D0CA-184C-4200-B45D-4B87D86ADFC3/current",
+          "pricePaid": 135000,
+          "transactionDate": "Wed, 29 Sep 2004",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "terraced",
+          "address": "69, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/AB2EC3B6-EDB1-4189-9499-F740759550CF/current",
+          "pricePaid": 158000,
+          "transactionDate": "Fri, 29 Feb 2008",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "detached",
+          "address": "57, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/FB9A4E65-52C5-4141-A53E-F6CD8B09DF2A/current",
+          "pricePaid": 101000,
+          "transactionDate": "Tue, 02 Jun 2009",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "38, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/34428D7E-6B9D-B86C-E050-A8C06205059C/current",
+          "pricePaid": 143000,
+          "transactionDate": "Fri, 29 Apr 2016",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "38, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/93E167FC-1B11-4DB7-88E4-14081989AE83/current",
+          "pricePaid": 138000,
+          "transactionDate": "Fri, 08 Jul 2011",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "40, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/773788C3-114B-2CE4-E053-6C04A8C05E57/current",
+          "pricePaid": 175000,
+          "transactionDate": "Fri, 24 Aug 2018",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "40, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/75148CEC-03A4-493D-A201-A1D1B16F1FB4/current",
+          "pricePaid": 135000,
+          "transactionDate": "Wed, 28 Mar 2012",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "87, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/FFB317BA-C999-4417-99BE-4BDA237559FA/current",
+          "pricePaid": 124000,
+          "transactionDate": "Fri, 24 Aug 2012",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "53, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/C73839BA-BD7F-4772-90CA-E6DD44BDD8E0/current",
+          "pricePaid": 180000,
+          "transactionDate": "Fri, 15 May 2015",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "detached",
+          "address": "55, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/E2BC0B82-2C70-4DCD-A608-009562765F93/current",
+          "pricePaid": 141000,
+          "transactionDate": "Fri, 31 Jul 2015",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "26, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        },
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/66D7DCA9-549C-4B8A-94C1-C0C2D51299C8/current",
+          "pricePaid": 115000,
+          "transactionDate": "Fri, 13 Mar 2015",
+          "newBuild": false,
+          "estateType": "freehold",
+          "propertyType": "semi-detached",
+          "address": "KENNAN, HORTON DRIVE, STOKE-ON-TRENT",
+          "postcode": "ST3 5HJ"
+        }
+      ]
+    },
+    "planning": {
+      "dataset": "planning-data",
+      "url": "https://www.planning.data.gov.uk/entity.json?latitude=52.99539&longitude=-2.100048&dataset=conservation-area&dataset=listed-building-outline&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&dataset=brownfield-land&dataset=brownfield-site&limit=100&exclude_field=geometry,point",
+      "licence": "OGL v3.0",
+      "fromCache": true,
+      "status": "no_data",
+      "retrievedAt": "2026-07-03T13:14:31.648Z",
+      "detail": "The source answered but holds no records for this query."
+    },
+    "eaFloodAreas": {
+      "dataset": "ea-flood-monitoring",
+      "url": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=52.99539&long=-2.100048&dist=3&_limit=50",
+      "licence": "OGL v3.0",
+      "fromCache": true,
+      "status": "ok",
+      "retrievedAt": "2026-07-03T13:14:31.648Z",
+      "records": [
+        {
+          "notation": "033FWF3TRENT03",
+          "label": "River Trent at Abbey Hulton and Bucknall",
+          "riverOrSea": "River Trent",
+          "areaUrl": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3TRENT03",
+          "kind": "warning_area"
+        },
+        {
+          "notation": "033WAF309",
+          "label": "Stoke Trent",
+          "riverOrSea": "Ford Green Brook, Lyme Brook, River Trent",
+          "areaUrl": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309",
+          "kind": "alert_area"
+        },
+        {
+          "notation": "033WAF313",
+          "label": "River Blithe and River Swarbourn",
+          "riverOrSea": "River Blithe, River Swarbourne",
+          "areaUrl": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF313",
+          "kind": "alert_area"
+        },
+        {
+          "notation": "033WAF317",
+          "label": "River Churnet and River Tean",
+          "riverOrSea": "River Churnet, River Tean",
+          "areaUrl": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF317",
+          "kind": "alert_area"
+        },
+        {
+          "notation": "033WAF312",
+          "label": "River Sow and River Penk",
+          "riverOrSea": "Sandyford Brook, Ridings Brook, Saredon Brook",
+          "areaUrl": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF312",
+          "kind": "alert_area"
+        },
+        {
+          "notation": "033FWF3BLITHE01",
+          "label": "River Blithe at Blythe Bridge",
+          "riverOrSea": "River Blithe",
+          "areaUrl": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3BLITHE01",
+          "kind": "warning_area"
+        }
+      ]
+    },
+    "eaCurrentFloods": {
+      "dataset": "ea-flood-monitoring",
+      "url": "https://environment.data.gov.uk/flood-monitoring/id/floods?lat=52.99539&long=-2.100048&dist=5",
+      "licence": "OGL v3.0",
+      "fromCache": true,
+      "status": "no_data",
+      "retrievedAt": "2026-07-03T13:14:31.648Z",
+      "detail": "The source answered but holds no records for this query."
+    },
+    "policeUkCrime": {
+      "dataset": "police-uk-street-crime",
+      "url": "https://data.police.uk/api/crimes-street/all-crime?poly=52.99339,-2.1032480000000002:52.99339,-2.096848:52.99739,-2.096848:52.99739,-2.1032480000000002&date=2026-04",
+      "licence": "OGL v3.0",
+      "fromCache": true,
+      "status": "ok",
+      "retrievedAt": "2026-07-03T13:14:31.649Z",
+      "records": [
+        {
+          "month": "2026-04",
+          "totalIncidents": 3,
+          "byCategory": {
+            "violent-crime": 3
+          },
+          "sampleStreets": [
+            "On or near Coupe Drive",
+            "On or near Horton Drive",
+            "On or near Fernlea Grove"
+          ],
+          "recordUrl": "https://data.police.uk/api/crimes-street/all-crime?poly=52.99339,-2.1032480000000002:52.99339,-2.096848:52.99739,-2.096848:52.99739,-2.1032480000000002&date=2026-04"
+        }
+      ]
+    },
+    "defraNoise": {
+      "dataset": "defra-road-noise-lden-round-3",
+      "url": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=52.99479,-2.100648,52.99599,-2.099448,urn:ogc:def:crs:EPSG::4326",
+      "licence": "OGL v3.0",
+      "fromCache": true,
+      "status": "ok",
+      "retrievedAt": "2026-07-03T13:14:31.649Z",
+      "records": [
+        {
+          "featureId": "Road_Noise_Lden_England_Round_3.1595836",
+          "noiseClass": "70.0-74.9",
+          "recordUrl": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=52.99479,-2.100648,52.99599,-2.099448,urn:ogc:def:crs:EPSG::4326"
+        },
+        {
+          "featureId": "Road_Noise_Lden_England_Round_3.1439639",
+          "noiseClass": "65.0-69.9",
+          "recordUrl": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=52.99479,-2.100648,52.99599,-2.099448,urn:ogc:def:crs:EPSG::4326"
+        },
+        {
+          "featureId": "Road_Noise_Lden_England_Round_3.144352",
+          "noiseClass": ">=75.0",
+          "recordUrl": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=52.99479,-2.100648,52.99599,-2.099448,urn:ogc:def:crs:EPSG::4326"
+        }
+      ]
+    },
+    "bgsRadon": {
+      "dataset": "bgs-radon-indicative-atlas",
+      "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer/identify?geometry=-2.100048,52.99539&geometryType=esriGeometryPoint&sr=4326&layers=all&tolerance=1&mapExtent=-2.110048,52.98539,-2.0900480000000003,53.00539&imageDisplay=400,400,96&returnGeometry=false&f=json",
+      "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
+      "fromCache": true,
+      "status": "ok",
+      "retrievedAt": "2026-07-03T13:14:31.649Z",
+      "records": [
+        {
+          "tile": "SJ9344",
+          "classMax": 3,
+          "description": "Some parts of this 1km grid square are in bands of elevated radon potential. Maximum radon potential is 3-5 %. Check the radon potential of individual addresses at UKRadon.org",
+          "recordUrl": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer/identify?geometry=-2.100048,52.99539&geometryType=esriGeometryPoint&sr=4326&layers=all&tolerance=1&mapExtent=-2.110048,52.98539,-2.0900480000000003,53.00539&imageDisplay=400,400,96&returnGeometry=false&f=json"
+        }
+      ]
+    },
+    "bgsGroundStability": {
+      "status": "data_gap",
+      "dataset": "bgs-radon-indicative-atlas",
+      "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer",
+      "retrievedAt": "2026-07-03T13:14:31.649Z",
+      "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
+      "fromCache": false,
+      "reason": "no_open_endpoint",
+      "detail": "BGS GeoSure (shrink–swell, landslides, ground stability) is a licensed dataset with no open query API. Reported as a data gap; consider ordering GeoSure or using local-authority SFRA documents."
+    },
+    "dfeSchools": {
+      "dataset": "dfe-gias-establishments",
+      "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=ST3",
+      "licence": "OGL v3.0",
+      "fromCache": true,
+      "status": "ok",
+      "retrievedAt": "2026-07-03T13:14:31.649Z",
+      "records": [
+        {
+          "urn": "124030",
+          "name": "Sandford Hill Primary School",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 5AQ",
+          "phase": "Primary",
+          "establishmentType": "Community school",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/124030"
+        },
+        {
+          "urn": "124227",
+          "name": "St Paul's CofE (C) Primary School",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 2RH",
+          "phase": "Primary",
+          "establishmentType": "Voluntary controlled school",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/124227"
+        },
+        {
+          "urn": "136145",
+          "name": "Ormiston Sir Stanley Matthews Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 3JD",
+          "phase": "Secondary",
+          "establishmentType": "Academy sponsor led",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/136145"
+        },
+        {
+          "urn": "136549",
+          "name": "Belgrave St Bartholomew's Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 4TP",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/136549"
+        },
+        {
+          "urn": "138548",
+          "name": "Sutherland Primary Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 3DY",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/138548"
+        },
+        {
+          "urn": "138551",
+          "name": "The Crescent Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 6HZ",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/138551"
+        },
+        {
+          "urn": "140285",
+          "name": "Newstead Primary Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 3LQ",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140285"
+        },
+        {
+          "urn": "140296",
+          "name": "St Augustine's Catholic Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 7DF",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140296"
+        },
+        {
+          "urn": "140297",
+          "name": "St Gregory's Catholic Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 2QN",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140297"
+        },
+        {
+          "urn": "140299",
+          "name": "St Matthews Church of England Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 7NE",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140299"
+        },
+        {
+          "urn": "140304",
+          "name": "St Thomas More Catholic Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 2NJ",
+          "phase": "Secondary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140304"
+        },
+        {
+          "urn": "140330",
+          "name": "Kinetic Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 7DJ",
+          "phase": "Not applicable",
+          "establishmentType": "Other independent school",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140330"
+        },
+        {
+          "urn": "140872",
+          "name": "Sandon Primary Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 7AW",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140872"
+        },
+        {
+          "urn": "142186",
+          "name": "Ormiston Meridian Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 7DF",
+          "phase": "Secondary",
+          "establishmentType": "Academy sponsor led",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/142186"
+        },
+        {
+          "urn": "142989",
+          "name": "Park Hall Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 5QU",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/142989"
+        },
+        {
+          "urn": "142991",
+          "name": "Gladstone Primary Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 5EW",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/142991"
+        },
+        {
+          "urn": "143350",
+          "name": "Meir Heath Academy",
+          "localAuthority": "Staffordshire",
+          "postcode": "ST3 7JQ",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/143350"
+        },
+        {
+          "urn": "143356",
+          "name": "Weston Junior Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 6NG",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/143356"
+        },
+        {
+          "urn": "143358",
+          "name": "Weston Infant Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 6PT",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/143358"
+        },
+        {
+          "urn": "143485",
+          "name": "Alexandra Junior School",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 7JG",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/143485"
+        },
+        {
+          "urn": "143489",
+          "name": "Alexandra Infants' School",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 4PZ",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/143489"
+        },
+        {
+          "urn": "145950",
+          "name": "Intuition Holistic Education",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 4JD",
+          "phase": "Not applicable",
+          "establishmentType": "Other independent special school",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/145950"
+        },
+        {
+          "urn": "146473",
+          "name": "The Meadows Primary Academy",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 3AZ",
+          "phase": "Primary",
+          "establishmentType": "Academy converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/146473"
+        },
+        {
+          "urn": "146497",
+          "name": "Kemball School",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 3JD",
+          "phase": "Not applicable",
+          "establishmentType": "Academy special converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/146497"
+        },
+        {
+          "urn": "147985",
+          "name": "Rowan House School",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 6AT",
+          "phase": "Not applicable",
+          "establishmentType": "Other independent special school",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/147985"
+        },
+        {
+          "urn": "149990",
+          "name": "Abbey Hill Academy & College",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 5PP",
+          "phase": "Not applicable",
+          "establishmentType": "Academy special converter",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/149990"
+        },
+        {
+          "urn": "150790",
+          "name": "Co-op Academy Florence MacWilliams",
+          "localAuthority": "Stoke-on-Trent",
+          "postcode": "ST3 6AP",
+          "phase": "Secondary",
+          "establishmentType": "Free schools",
+          "status": "Open",
+          "ofstedRating": null,
+          "ofstedLastInspection": null,
+          "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/150790"
+        }
+      ]
+    },
+    "epc": {
+      "status": "data_gap",
+      "dataset": "epc-domestic",
+      "url": "https://api.get-energy-performance-data.communities.gov.uk/api/domestic/search?postcode=ST3%205HJ&page=25",
+      "retrievedAt": "2026-07-03T13:14:31.649Z",
+      "licence": "OGL v3.0 (contains EPC data © Crown copyright)",
+      "fromCache": false,
+      "reason": "key_missing",
+      "detail": "EPC open data needs a free bearer token from get-energy-performance-data.communities.gov.uk (see .env.example / README). Energy findings are unavailable until it is configured."
+    },
+    "companiesHouse": {
+      "status": "data_gap",
+      "dataset": "companies-house-register",
+      "url": "https://api.company-information.service.gov.uk/search/companies?q=87%2C%20HORTON%20DRIVE%2C%20STOKE-ON-TRENT&items_per_page=10",
+      "retrievedAt": "2026-07-03T13:14:31.649Z",
+      "licence": "OGL v3.0 (Companies House public register)",
+      "fromCache": false,
+      "reason": "key_missing",
+      "detail": "Companies House needs a free API key (see .env.example / README). Ownership findings are unavailable until it is configured."
+    },
+    "landRegistryCcodOcod": {
+      "status": "data_gap",
+      "dataset": "land-registry-ccod-ocod",
+      "url": "https://use-land-property-data.service.gov.uk/api/v1/datasets/ocod",
+      "retrievedAt": "2026-07-03T13:14:31.649Z",
+      "licence": "HM Land Registry Free Datasets Licence (CCOD/OCOD)",
+      "fromCache": false,
+      "reason": "key_missing",
+      "detail": "Land Registry CCOD/OCOD needs a free 'Use land and property data' API key (see .env.example / README). Corporate-ownership findings are unavailable until it is configured."
+    },
+    "ukhpi": {
+      "dataset": "uk-house-price-index",
+      "url": "https://landregistry.data.gov.uk/data/ukhpi/region/stoke-on-trent/month/2026-01.json",
+      "licence": "OGL v3.0",
+      "fromCache": true,
+      "status": "ok",
+      "retrievedAt": "2026-07-03T13:14:31.637Z",
+      "records": [
+        {
+          "recordUri": "http://landregistry.data.gov.uk/data/ukhpi/region/stoke-on-trent/month/2026-01",
+          "region": "stoke-on-trent",
+          "month": "2026-01",
+          "averagePrice": 148414,
+          "housePriceIndex": 107.5,
+          "percentageAnnualChange": 1.7,
+          "salesVolume": 156
+        }
+      ]
+    },
+    "onsRents": {
+      "dataset": "ons-private-housing-rental-prices",
+      "url": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+      "licence": "OGL v3.0",
+      "fromCache": true,
+      "status": "ok",
+      "retrievedAt": "2026-07-03T13:14:31.638Z",
+      "records": [
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-05",
+          "rentalPriceIndex": 88.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-06",
+          "rentalPriceIndex": 90.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-07",
+          "rentalPriceIndex": 92.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-08",
+          "rentalPriceIndex": 94.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-09",
+          "rentalPriceIndex": 96.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-10",
+          "rentalPriceIndex": 94.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-11",
+          "rentalPriceIndex": 95.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-12",
+          "rentalPriceIndex": 96.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-13",
+          "rentalPriceIndex": 97.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-14",
+          "rentalPriceIndex": 99
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-15",
+          "rentalPriceIndex": 100.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-16",
+          "rentalPriceIndex": 102.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-17",
+          "rentalPriceIndex": 104.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-18",
+          "rentalPriceIndex": 106.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-19",
+          "rentalPriceIndex": 108
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-20",
+          "rentalPriceIndex": 109.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-21",
+          "rentalPriceIndex": 112.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-22",
+          "rentalPriceIndex": 115.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Apr-23",
+          "rentalPriceIndex": 120.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-05",
+          "rentalPriceIndex": 88.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-06",
+          "rentalPriceIndex": 91.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-07",
+          "rentalPriceIndex": 93.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-08",
+          "rentalPriceIndex": 95.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-09",
+          "rentalPriceIndex": 95.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-10",
+          "rentalPriceIndex": 94.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-11",
+          "rentalPriceIndex": 95.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-12",
+          "rentalPriceIndex": 96.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-13",
+          "rentalPriceIndex": 98
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-14",
+          "rentalPriceIndex": 99.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-15",
+          "rentalPriceIndex": 101.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-16",
+          "rentalPriceIndex": 102.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-17",
+          "rentalPriceIndex": 105
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-18",
+          "rentalPriceIndex": 106.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-19",
+          "rentalPriceIndex": 108.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-20",
+          "rentalPriceIndex": 110.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-21",
+          "rentalPriceIndex": 113.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-22",
+          "rentalPriceIndex": 117
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Aug-23",
+          "rentalPriceIndex": 123.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-05",
+          "rentalPriceIndex": 89.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-06",
+          "rentalPriceIndex": 91.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-07",
+          "rentalPriceIndex": 93.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-08",
+          "rentalPriceIndex": 95.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-09",
+          "rentalPriceIndex": 94.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-10",
+          "rentalPriceIndex": 95.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-11",
+          "rentalPriceIndex": 96.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-12",
+          "rentalPriceIndex": 97.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-13",
+          "rentalPriceIndex": 98.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-14",
+          "rentalPriceIndex": 99.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-15",
+          "rentalPriceIndex": 101.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-16",
+          "rentalPriceIndex": 103.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-17",
+          "rentalPriceIndex": 105.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-18",
+          "rentalPriceIndex": 107.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-19",
+          "rentalPriceIndex": 109
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-20",
+          "rentalPriceIndex": 111.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-21",
+          "rentalPriceIndex": 114.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-22",
+          "rentalPriceIndex": 119
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Dec-23",
+          "rentalPriceIndex": 125.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-05",
+          "rentalPriceIndex": 87.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-06",
+          "rentalPriceIndex": 90.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-07",
+          "rentalPriceIndex": 92.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-08",
+          "rentalPriceIndex": 94
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-09",
+          "rentalPriceIndex": 96
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-10",
+          "rentalPriceIndex": 94.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-11",
+          "rentalPriceIndex": 95.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-12",
+          "rentalPriceIndex": 96.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-13",
+          "rentalPriceIndex": 97.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-14",
+          "rentalPriceIndex": 98.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-15",
+          "rentalPriceIndex": 100.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-16",
+          "rentalPriceIndex": 101.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-17",
+          "rentalPriceIndex": 104.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-18",
+          "rentalPriceIndex": 105.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-19",
+          "rentalPriceIndex": 107.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-20",
+          "rentalPriceIndex": 109.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-21",
+          "rentalPriceIndex": 111.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-22",
+          "rentalPriceIndex": 115.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Feb-23",
+          "rentalPriceIndex": 119.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-05",
+          "rentalPriceIndex": 87.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-06",
+          "rentalPriceIndex": 90.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-07",
+          "rentalPriceIndex": 92.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-08",
+          "rentalPriceIndex": 94.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-09",
+          "rentalPriceIndex": 95.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-10",
+          "rentalPriceIndex": 94.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-11",
+          "rentalPriceIndex": 95.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-12",
+          "rentalPriceIndex": 96.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-13",
+          "rentalPriceIndex": 97.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-14",
+          "rentalPriceIndex": 98.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-15",
+          "rentalPriceIndex": 100
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-16",
+          "rentalPriceIndex": 101.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-17",
+          "rentalPriceIndex": 104
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-18",
+          "rentalPriceIndex": 105.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-19",
+          "rentalPriceIndex": 107.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-20",
+          "rentalPriceIndex": 109.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-21",
+          "rentalPriceIndex": 111.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-22",
+          "rentalPriceIndex": 114.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-23",
+          "rentalPriceIndex": 119.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jan-24",
+          "rentalPriceIndex": 126.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-05",
+          "rentalPriceIndex": 88.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-06",
+          "rentalPriceIndex": 90.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-07",
+          "rentalPriceIndex": 92.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-08",
+          "rentalPriceIndex": 95
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-09",
+          "rentalPriceIndex": 95.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-10",
+          "rentalPriceIndex": 94.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-11",
+          "rentalPriceIndex": 95.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-12",
+          "rentalPriceIndex": 97
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-13",
+          "rentalPriceIndex": 98
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-14",
+          "rentalPriceIndex": 99.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-15",
+          "rentalPriceIndex": 101
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-16",
+          "rentalPriceIndex": 102.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-17",
+          "rentalPriceIndex": 104.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-18",
+          "rentalPriceIndex": 106.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-19",
+          "rentalPriceIndex": 108.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-20",
+          "rentalPriceIndex": 110.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-21",
+          "rentalPriceIndex": 113
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-22",
+          "rentalPriceIndex": 116.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jul-23",
+          "rentalPriceIndex": 123.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-05",
+          "rentalPriceIndex": 88.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-06",
+          "rentalPriceIndex": 90.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-07",
+          "rentalPriceIndex": 92.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-08",
+          "rentalPriceIndex": 94.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-09",
+          "rentalPriceIndex": 95.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-10",
+          "rentalPriceIndex": 94.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-11",
+          "rentalPriceIndex": 95.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-12",
+          "rentalPriceIndex": 96.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-13",
+          "rentalPriceIndex": 98
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-14",
+          "rentalPriceIndex": 99.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-15",
+          "rentalPriceIndex": 100.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-16",
+          "rentalPriceIndex": 102.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-17",
+          "rentalPriceIndex": 104.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-18",
+          "rentalPriceIndex": 106.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-19",
+          "rentalPriceIndex": 108
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-20",
+          "rentalPriceIndex": 110.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-21",
+          "rentalPriceIndex": 112.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-22",
+          "rentalPriceIndex": 116.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Jun-23",
+          "rentalPriceIndex": 122.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-05",
+          "rentalPriceIndex": 87.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-06",
+          "rentalPriceIndex": 90.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-07",
+          "rentalPriceIndex": 92.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-08",
+          "rentalPriceIndex": 94.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-09",
+          "rentalPriceIndex": 96
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-10",
+          "rentalPriceIndex": 94.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-11",
+          "rentalPriceIndex": 95.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-12",
+          "rentalPriceIndex": 96.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-13",
+          "rentalPriceIndex": 97.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-14",
+          "rentalPriceIndex": 98.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-15",
+          "rentalPriceIndex": 100.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-16",
+          "rentalPriceIndex": 102.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-17",
+          "rentalPriceIndex": 104.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-18",
+          "rentalPriceIndex": 106.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-19",
+          "rentalPriceIndex": 107.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-20",
+          "rentalPriceIndex": 109.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-21",
+          "rentalPriceIndex": 111.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-22",
+          "rentalPriceIndex": 115.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Mar-23",
+          "rentalPriceIndex": 120.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-05",
+          "rentalPriceIndex": 88.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-06",
+          "rentalPriceIndex": 90.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-07",
+          "rentalPriceIndex": 92.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-08",
+          "rentalPriceIndex": 94.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-09",
+          "rentalPriceIndex": 95.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-10",
+          "rentalPriceIndex": 94.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-11",
+          "rentalPriceIndex": 95.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-12",
+          "rentalPriceIndex": 96.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-13",
+          "rentalPriceIndex": 97.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-14",
+          "rentalPriceIndex": 99.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-15",
+          "rentalPriceIndex": 100.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-16",
+          "rentalPriceIndex": 102.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-17",
+          "rentalPriceIndex": 104.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-18",
+          "rentalPriceIndex": 106.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-19",
+          "rentalPriceIndex": 107.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-20",
+          "rentalPriceIndex": 110.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-21",
+          "rentalPriceIndex": 112.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-22",
+          "rentalPriceIndex": 116
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "May-23",
+          "rentalPriceIndex": 122
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-05",
+          "rentalPriceIndex": 89.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-06",
+          "rentalPriceIndex": 91.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-07",
+          "rentalPriceIndex": 93.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-08",
+          "rentalPriceIndex": 95.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-09",
+          "rentalPriceIndex": 94.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-10",
+          "rentalPriceIndex": 95.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-11",
+          "rentalPriceIndex": 96.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-12",
+          "rentalPriceIndex": 97.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-13",
+          "rentalPriceIndex": 98.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-14",
+          "rentalPriceIndex": 99.7
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-15",
+          "rentalPriceIndex": 101.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-16",
+          "rentalPriceIndex": 103.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-17",
+          "rentalPriceIndex": 105.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-18",
+          "rentalPriceIndex": 107.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-19",
+          "rentalPriceIndex": 108.8
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-20",
+          "rentalPriceIndex": 111.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-21",
+          "rentalPriceIndex": 114.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-22",
+          "rentalPriceIndex": 118.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Nov-23",
+          "rentalPriceIndex": 125.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-05",
+          "rentalPriceIndex": 89.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-06",
+          "rentalPriceIndex": 91.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-07",
+          "rentalPriceIndex": 93.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-08",
+          "rentalPriceIndex": 95.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-09",
+          "rentalPriceIndex": 95.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-10",
+          "rentalPriceIndex": 95
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-11",
+          "rentalPriceIndex": 96.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-12",
+          "rentalPriceIndex": 97.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-13",
+          "rentalPriceIndex": 98
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-14",
+          "rentalPriceIndex": 99.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-15",
+          "rentalPriceIndex": 101.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-16",
+          "rentalPriceIndex": 103.5
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-17",
+          "rentalPriceIndex": 105.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-18",
+          "rentalPriceIndex": 107.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-19",
+          "rentalPriceIndex": 108.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-20",
+          "rentalPriceIndex": 111.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-21",
+          "rentalPriceIndex": 113.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-22",
+          "rentalPriceIndex": 118
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Oct-23",
+          "rentalPriceIndex": 124.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-05",
+          "rentalPriceIndex": 89.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-06",
+          "rentalPriceIndex": 91.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-07",
+          "rentalPriceIndex": 93.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-08",
+          "rentalPriceIndex": 95.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-09",
+          "rentalPriceIndex": 95.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-10",
+          "rentalPriceIndex": 94.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-11",
+          "rentalPriceIndex": 96.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-12",
+          "rentalPriceIndex": 97.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-13",
+          "rentalPriceIndex": 98
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-14",
+          "rentalPriceIndex": 99.3
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-15",
+          "rentalPriceIndex": 101.2
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-16",
+          "rentalPriceIndex": 103.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-17",
+          "rentalPriceIndex": 105.1
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-18",
+          "rentalPriceIndex": 106.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-19",
+          "rentalPriceIndex": 108.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-20",
+          "rentalPriceIndex": 110.9
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-21",
+          "rentalPriceIndex": 113.4
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-22",
+          "rentalPriceIndex": 117.6
+        },
+        {
+          "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
+          "regionCode": "E12000005",
+          "month": "Sep-23",
+          "rentalPriceIndex": 124.3
+        }
+      ]
+    }
+  }
+}

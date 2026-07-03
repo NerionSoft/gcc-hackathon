@@ -1,0 +1,52 @@
+{
+  "key": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=53.088296&long=-2.232134&dist=3&_limit=50",
+  "url": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=53.088296&long=-2.232134&dist=3&_limit=50",
+  "retrievedAt": "2026-07-03T12:44:01.288Z",
+  "body": {
+    "@context": "http://environment.data.gov.uk/flood-monitoring/meta/context.jsonld",
+    "meta": {
+      "publisher": "Environment Agency",
+      "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "documentation": "http://environment.data.gov.uk/flood-monitoring/doc/reference",
+      "version": "0.9",
+      "comment": "Status: Beta service",
+      "hasFormat": [
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.csv?lat=53.088296&long=-2.232134&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.rdf?lat=53.088296&long=-2.232134&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.ttl?lat=53.088296&long=-2.232134&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.html?lat=53.088296&long=-2.232134&dist=3&_limit=50"
+      ],
+      "limit": 50
+    },
+    "items": [
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309",
+        "county": "Staffordshire, Stoke-on-Trent",
+        "description": "Low-lying land and roads between Norton Green and Darlaston on the River Trent and on the Lyme Brook and Ford Green Brook",
+        "eaAreaName": "West Midlands",
+        "fwdCode": "033WAF309",
+        "label": "Stoke Trent",
+        "lat": 52.96209,
+        "long": -2.18889,
+        "notation": "033WAF309",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309/polygon",
+        "quickDialNumber": "208011",
+        "riverOrSea": "Ford Green Brook, Lyme Brook, River Trent"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/013WAFDA",
+        "county": "Cheshire East, Cheshire West and Chester, Derbyshire, Halton, Staffordshire, Warrington",
+        "description": "The Dane catchment includes the River Wheelock, Arclid, Smoker and Fowle Brooks and their tributaries",
+        "eaAreaName": "Gtr Mancs Mersey and Ches",
+        "fwdCode": "013WAFDA",
+        "label": "River Dane catchment including Kidsgrove, Sandbach, Congleton, Middlewich and Northeast Crewe",
+        "lat": 53.18411,
+        "long": -2.34317,
+        "notation": "013WAFDA",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/013WAFDA/polygon",
+        "quickDialNumber": "143112",
+        "riverOrSea": "River Dane"
+      }
+    ]
+  }
+}

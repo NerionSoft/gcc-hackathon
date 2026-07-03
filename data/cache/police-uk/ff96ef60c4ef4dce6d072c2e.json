@@ -1,0 +1,25 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=54.524418,-1.1911720000000001:54.524418,-1.184772:54.528418,-1.184772:54.528418,-1.1911720000000001&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=54.524418,-1.1911720000000001:54.524418,-1.184772:54.528418,-1.184772:54.528418,-1.1911720000000001&date=2026-04",
+  "retrievedAt": "2026-07-03T13:11:54.017Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.527970",
+        "street": {
+          "id": 2074343,
+          "name": "On or near Towthorpe"
+        },
+        "longitude": "-1.186861"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134956472,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

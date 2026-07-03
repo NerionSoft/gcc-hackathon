@@ -1,0 +1,163 @@
+{
+  "key": "district:W14",
+  "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=W14",
+  "retrievedAt": "2026-07-03T12:48:29.639Z",
+  "body": [
+    {
+      "urn": "100317",
+      "name": "James Lee Nursery School",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 9BH",
+      "phase": "Nursery",
+      "establishmentType": "Local authority nursery school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100317"
+    },
+    {
+      "urn": "100321",
+      "name": "Addison Primary School",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 0DT",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100321"
+    },
+    {
+      "urn": "100322",
+      "name": "Avonmore Primary School",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 9LY",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100322"
+    },
+    {
+      "urn": "100350",
+      "name": "St Mary's Catholic Primary School",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 0LT",
+      "phase": "Primary",
+      "establishmentType": "Voluntary aided school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100350"
+    },
+    {
+      "urn": "100527",
+      "name": "St James Senior Girls' School",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 8SH",
+      "phase": "Not applicable",
+      "establishmentType": "Other independent school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100527"
+    },
+    {
+      "urn": "130408",
+      "name": "Ealing, Hammersmith and West London College",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 9BL",
+      "phase": "16 plus",
+      "establishmentType": "Further education",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/130408"
+    },
+    {
+      "urn": "131165",
+      "name": "The Fulham Prep School Ltd",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 9SD",
+      "phase": "Not applicable",
+      "establishmentType": "Other independent school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/131165"
+    },
+    {
+      "urn": "131268",
+      "name": "St James Preparatory School",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 8SH",
+      "phase": "Not applicable",
+      "establishmentType": "Other independent school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/131268"
+    },
+    {
+      "urn": "134273",
+      "name": "Normand Croft Community School for Early Years and Primary Education",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 9PA",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/134273"
+    },
+    {
+      "urn": "135175",
+      "name": "Parayhouse School",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 9BL",
+      "phase": "Not applicable",
+      "establishmentType": "Non-maintained special school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/135175"
+    },
+    {
+      "urn": "140213",
+      "name": "Kensington Primary Academy",
+      "localAuthority": "Kensington and Chelsea",
+      "postcode": "W14 8PU",
+      "phase": "Primary",
+      "establishmentType": "Academy sponsor led",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140213"
+    },
+    {
+      "urn": "141931",
+      "name": "The Cardinal Vaughan Memorial RC School",
+      "localAuthority": "Kensington and Chelsea",
+      "postcode": "W14 8BZ",
+      "phase": "Secondary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/141931"
+    },
+    {
+      "urn": "151698",
+      "name": "Wetherby Pembridge",
+      "localAuthority": "Hammersmith and Fulham",
+      "postcode": "W14 8UX",
+      "phase": "Not applicable",
+      "establishmentType": "Other independent school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/151698"
+    }
+  ]
+}

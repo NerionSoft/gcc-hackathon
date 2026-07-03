@@ -1,480 +1,132 @@
-# Platform Starter Next.js
+# Civic Property Intelligence (CPI)
 
-| CI/CD | Stack | Qualite | Tooling |
-|---|---|---|---|
-| [![CI](https://github.com/NerionSoft/platform-starter-nextjs/actions/workflows/ci.yml/badge.svg)](https://github.com/NerionSoft/platform-starter-nextjs/actions/workflows/ci.yml) [![Release](https://github.com/NerionSoft/platform-starter-nextjs/actions/workflows/release.yml/badge.svg)](https://github.com/NerionSoft/platform-starter-nextjs/actions/workflows/release.yml) | ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js) ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-7-2D3748?logo=prisma&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-4169E1?logo=postgresql&logoColor=white) ![Better Auth](https://img.shields.io/badge/Better_Auth-1.6-22c55e) ![Zod](https://img.shields.io/badge/Zod-4-3E67B1?logo=zod&logoColor=white) ![Pino](https://img.shields.io/badge/Pino-10-687634) | ![Vitest](https://img.shields.io/badge/Vitest-4-6E9F18?logo=vitest&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-1.60-2EAD33?logo=playwright&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-9-4B32C3?logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/Prettier-3-F7B93E?logo=prettier&logoColor=black) ![SonarQube](https://img.shields.io/badge/SonarQube-integrated-4E9BCD?logo=sonarqube&logoColor=white) | ![pnpm](https://img.shields.io/badge/pnpm-11-F69220?logo=pnpm&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-≥24-339933?logo=node.js&logoColor=white) |
+**An open-source, evidence-first property due-diligence agent team built on UK open data.**
 
----
+Before capital commits to a property — a council exercising first refusal, a housing association acquiring stock, a community land trust buying its first building — the big, connected players already ran their due diligence. Everyone else finds out about the flood zone, the offshore owner, or the contaminated ground *after* signing. The information is public; it is just scattered across a dozen open registers.
 
-Template de demarrage Next.js de NerionSoft, avec architecture hexagonale, authentification, CI/CD centralisee et qualite de code integree.
+CPI is an OSINT agent applied to property — **to the asset and its public context, never to people** — that investigates before capital commits and produces a clear, graded, **sourced** risk verdict. The agent decides severity, composite verdicts, and escalation; the human expert ("Nadia") reviews every pattern and **remains the only one who commits capital**.
 
-## Table des matieres
+> **Cardinal rule, enforced in code:** *evidence beats assertion*. No risk signal exists without a `sourceRef` (dataset + record + URL + retrieval time) and a confidence. The access layer rejects and journals anything less — it is not left to a prompt.
 
-- [Demarrage rapide](#demarrage-rapide)
-- [Script de setup](#script-de-setup)
-- [Architecture](#architecture)
-- [Conventions](#conventions)
-- [CI/CD](#cicd)
-- [Les a priori du starter](#les-a-priori-du-starter)
-- [Documentation](#documentation)
+## Status — Phase 1 (foundation)
 
----
+This branch delivers the foundation: local SQLite data model with hard invariants, the UK open-data connector pack, the real-data fetch pipeline, and the seeded demo portfolio. Agents, workflows, and the UI come in later phases (see `docs/SPEC.md`).
 
-## Demarrage rapide
+## Quick start
 
 ```bash
-# 1. Cloner le repo
-git clone https://github.com/NerionSoft/platform-starter-nextjs.git
-cd platform-starter-nextjs
-
-# 2. Installer les dependances (lance aussi prisma generate via postinstall)
 pnpm install
-
-# 3. Configurer l'environnement
-cp .env.example .env
-# Editer .env avec vos valeurs
-
-# 4. Lancer en dev
-pnpm dev
+cp .env.example .env   # optional — everything runs with zero env
+pnpm seed              # build data/cpi.db from the committed open-data cache
+pnpm dev               # http://localhost:3000
 ```
 
-### Variables d'environnement
-
-| Variable | Requis | Description |
-|---|---|---|
-| `DATABASE_URL` | Oui | Connection string PostgreSQL |
-| `BETTER_AUTH_SECRET` | Oui | Secret pour better-auth (`openssl rand -base64 32`) |
-| `NEXT_PUBLIC_APP_URL` | Non | URL publique de l'app (callbacks auth, cookies) |
-| `LOG_LEVEL` | Non | Niveau de log Pino (`debug`, `info`, `warn`, `error`) |
-
-### Scripts disponibles
-
-| Commande | Description |
-|---|---|
-| `pnpm dev` | Serveur de developpement |
-| `pnpm build` | Build de production |
-| `pnpm start` | Demarrage en production |
-| `pnpm lint` | Linting ESLint |
-| `pnpm format` | Formatage Prettier |
-| `pnpm format:check` | Verification du formatage |
-| `pnpm test` | Tests unitaires (Vitest) |
-| `pnpm test:watch` | Tests en mode watch |
-| `pnpm test:coverage` | Tests avec couverture (V8 + LCOV) |
-| `pnpm test:e2e` | Tests end-to-end (Playwright) |
-| `pnpm auth:generate` | Generer le schema Prisma depuis la config auth |
-
----
-
-## Script de setup
-
-A la creation d'un nouveau projet, le script interactif renomme l'hexagone d'exemple vers votre domaine metier :
+No external services required. Optional:
 
 ```bash
-node scripts/setup.mjs
+pnpm fetch-data        # re-run the live open-data pipeline (refreshes data/properties/)
+pnpm test              # invariant tests
+pnpm lint && pnpm typecheck
 ```
-
-Il demande :
-1. **Nom du projet** (pour `package.json`)
-2. **Description du projet**
-3. **Nom du premier domaine** (ex: `billing`)
-4. **Nom de la premiere entite** (ex: `invoice`)
-
-Le script effectue ensuite automatiquement :
-- Renommage de `example-hexagone/` vers `<domaine>/`
-- Remplacement de `Example`/`example` par votre entite (PascalCase, camelCase, UPPER_SNAKE)
-- Mise a jour des routes API : `/api/example-hexagone/v1/examples/` vers `/api/<domaine>/v1/<entites>/`
-- Mise a jour des imports, du schema Prisma et de `instrumentation.ts`
-
-Apres le setup, recherchez `TODO(starter)` dans le code pour trouver les points de personnalisation restants :
-
-```bash
-grep -r "TODO(starter)" src/
-```
-
----
 
 ## Architecture
 
-Ce starter suit une **architecture hexagonale** (Ports & Adapters) organisee par bounded contexts appeles **hexagones**. L'objectif est de separer strictement la logique metier de l'infrastructure pour rendre le code testable, maintenable et independant des choix techniques.
-
-### Regle de dependance
-
-Les couches internes ne dependent jamais des couches externes :
-
-```mermaid
-block-beta
-  columns 1
-  block:infra["Infrastructure\n(frameworks, DB, HTTP, logging, runtime)"]:1
-  end
-  block:app["Application\n(use cases, DTOs, ports, queries)"]:1
-  end
-  block:domain["Domain\n(entites, value objects, erreurs metier)"]:1
-  end
-
-  infra --> app
-  app --> domain
-```
-
-### Structure des repertoires
-
-```
-src/
-├── app/                              # Next.js App Router (delivery)
-│   ├── api/
-│   │   ├── auth/[...all]/            #   Routes Better Auth
-│   │   └── <hexagone>/v1/<resource>/ #   Routes API versionnees par hexagone
-│   ├── layout.tsx                    #   Layout racine (fonts, Tailwind)
-│   ├── page.tsx                      #   Page d'accueil
-│   └── globals.css                   #   Styles globaux
-│
-├── <nom>-hexagone/                   # Un hexagone = un bounded context
-│   ├── domain/
-│   │   ├── entities/                 #   Entites (classes riches avec factory)
-│   │   ├── value-objects/            #   Enums, types valeur
-│   │   └── errors/                   #   Erreurs metier typees (DomainError)
-│   ├── application/
-│   │   ├── usecases/                 #   Cas d'usage (orchestration)
-│   │   ├── ports/                    #   Interfaces (contrats des adapters)
-│   │   ├── dto/                      #   Schemas de validation Zod
-│   │   └── queries/                  #   Filtres, tri, pagination
-│   ├── adapters/
-│   │   ├── in-memory/                #   Adapter memoire (tests, dev)
-│   │   ├── prisma/                   #   Adapter Prisma (production)
-│   │   │   ├── repositories/         #     Implementation des ports
-│   │   │   └── mappers/              #     Prisma row -> entite domaine
-│   │   └── http/                     #   Mapping erreur domaine -> HTTP
-│   └── <nom>.module.ts              #   Composition root (branche ports -> adapters)
-│
-├── infrastructure/                   # Couche technique transverse
-│   ├── auth/                         #   Better Auth (adapter concret)
-│   ├── config/                       #   Variables d'environnement (env.ts)
-│   ├── db/                           #   Client Prisma + Neon adapter
-│   ├── http/
-│   │   ├── api-handler.ts            #   HOF : logging, error handling, auth context
-│   │   └── proxy/                    #   Middleware Next.js (auth, headers, locale)
-│   ├── logging/                      #   Logger Pino avec correlation ID
-│   └── runtime/                      #   AsyncLocalStorage (request context)
-│
-├── presentation/                     # Couche UI
-│   ├── ui/
-│   │   ├── primitives/               #   Composants atomiques
-│   │   ├── compounds/                #   Composants composes
-│   │   └── layout/                   #   Composants de layout
-│   └── features/<feature>/
-│       ├── components/               #   Composants specifiques
-│       ├── hook/                     #   Hooks React
-│       └── state/                    #   Gestion d'etat locale
-│
-├── shared/                           # Code partage entre hexagones
-│   ├── auth/                         #   Port AuthContext + helpers
-│   ├── errors/                       #   DomainError (classe de base)
-│   ├── types/                        #   Types partages
-│   ├── hooks/                        #   Hooks React partages
-│   ├── lib/                          #   Utilitaires
-│   └── locales/                      #   Fichiers i18n (fr/, en/)
-│
-├── proxy.ts                          # Point d'entree du middleware
-└── instrumentation.ts                # Enregistrement des error mappings au demarrage
-
-tests/
-├── unit/usecases/                    # Tests unitaires des use cases
-├── integration/                      # Tests d'integration
-├── e2e/                              # Tests Playwright
-└── shared/{mocks,fixtures,utils}/    # Donnees de test partagees
-
-docs/
-├── architecture.md                   # Vue d'ensemble de l'architecture
-├── conventions.md                    # Conventions de nommage et code
-└── adr/                              # Architecture Decision Records
-    ├── 001-hexagonal-architecture.md
-    ├── 002-domain-error-pattern.md
-    ├── 003-registry-based-error-mapping.md
-    ├── 004-module-composition-root.md
-    ├── 005-pino-structured-logging.md
-    ├── 006-authentication-architecture.md
-    └── 007-environment-config-service.md
-```
-
-### Flux d'une requete API
-
-```mermaid
-flowchart TD
-  A["HTTP Request"] --> B["proxy.ts\n(middleware Next.js)"]
-  B -- "authProxy : verifie session,\nredirige si necessaire" --> C["app/api/‹hexagone›/v1/‹resource›/route.ts"]
-  C -- "apiHandler() : correlation ID,\nlogging, auth context, error handling" --> D["‹hexagone›.module.ts\nInstancie le use case avec le bon adapter"]
-  D --> E["application/usecases/‹action›.usecase.ts\nOrchestre la logique metier via les ports"]
-  E --> F["application/ports/‹entity›.repository.ts\n(interface)"]
-  F --> G["adapters/prisma/ ou in-memory/\nAccede a la BDD, mappe vers entite domaine"]
-  G --> H["Response JSON standardisee\n{ data | error { code, message, correlationId } }"]
-```
-
-### Utilite de chaque couche
-
-| Couche | Responsabilite | Depend de |
-|---|---|---|
-| **domain/** | Entites, regles metier, erreurs. Zero dependance externe. | Rien |
-| **application/** | Use cases, ports (interfaces), DTOs Zod. | domain/ |
-| **adapters/** | Implementations concretes des ports (Prisma, InMemory, HTTP mappings). | application/, domain/ |
-| **infrastructure/** | Auth, DB, logging, config, middleware. Generique, ne connait aucun hexagone. | Frameworks |
-| **presentation/** | Composants React, hooks, etat UI. | shared/ |
-| **shared/** | Primitives transverses : DomainError, AuthContext, types. | Rien |
-| **app/** | Routing Next.js. Colle entre infrastructure et hexagones. | Tout |
-
-### Direction des imports
-
 ```mermaid
 flowchart LR
-  shared["shared/"]
-  domain["domain/"]
-  application["application/"]
-  adapters["adapters/"]
-  module["module"]
-  infra["infrastructure/"]
-  routes["routes & instrumentation"]
-
-  routes --> module
-  routes --> infra
-  module --> adapters
-  adapters --> application
-  adapters --> domain
-  adapters --> infra
-  application --> domain
-  domain --> shared
-  application --> shared
-  adapters --> shared
-  infra --> shared
-  module --> shared
-  routes --> shared
+  subgraph sources["UK open data (OGL v3.0 mostly)"]
+    LR1[Land Registry PPD / UKHPI]
+    EA[Environment Agency flood]
+    PL[planning.data.gov.uk]
+    PU[police.uk]
+    EPC[EPC MHCLG*]
+    CH[Companies House*]
+    CCOD[LR CCOD/OCOD*]
+    DEFRA[Defra noise]
+    BGS[BGS radon]
+    DFE[DfE GIAS]
+    ONS[ONS rents]
+  end
+  sources --> C[src/connectors/<br/>normalized ConnectorResult + licence]
+  C --> F[scripts/fetch-open-data.ts<br/>50 real properties → data/properties/]
+  F --> S[scripts/seed.ts<br/>+2,750 synthetic + framework + evidence feed]
+  S --> DB[(SQLite — src/db/<br/>Zod schemas + hard invariants)]
+  DB --> M[src/mastra/ agents & workflows<br/>phases 2–3]
+  M --> UI[src/app/ portfolio wall, review gates<br/>phases 4–7]
 ```
 
-**Interdit :**
-- `domain/` ne doit jamais importer depuis `application/`, `adapters/` ou `infrastructure/`
-- `application/` ne doit jamais importer depuis `adapters/` ou `infrastructure/`
-- `infrastructure/` ne doit jamais importer depuis un hexagone specifique
+`*` = needs a free API key (see below); without one the connector returns a typed **data gap**, never fake data.
 
----
+- `src/db/` — Zod schemas (single source of truth) + better-sqlite3 tables + access layer. See `docs/adr/0001-sqlite-via-better-sqlite3.md`.
+  - A `RiskSignal` can never be persisted or emitted without a complete `sourceRef` and `confidence` — invalid candidates are journalled as `signal_extraction_failed` audit events.
+  - `audit_events` is append-only: the access module exposes no update/delete, and DB triggers abort raw attempts.
+- `src/connectors/` — one thin typed client per open source, all returning the same `ConnectorResult` (`ok | no_data | data_gap | error`), each declaring its licence. Cache-first (deterministic, offline-replayable). **Forkable**: this folder is the UK country pack; a France pack (DVF, Géorisques…) would replace it without touching anything else.
+- `scripts/fetch-open-data.ts` — harvests ~50 **real** addresses (from HM Land Registry Price Paid Data) across risk-interesting English local authorities, really queries every keyless source, caches raw bundles under `data/properties/`.
+- `scripts/seed.ts` — rebuilds `data/cpi.db`: 50 real + ~2,750 synthetic properties, the **Civic Property Risk v1** framework (6 dimensions, sourced signal definitions with British-English severity rubrics), and 40 pre-written evidence-feed updates for the demo simulator.
 
-## Conventions
+## Data sources & licences
 
-### Nommage des fichiers
+| Source | Dataset | Key needed | Licence |
+|---|---|---|---|
+| HM Land Registry | Price Paid Data, UK House Price Index | No | OGL v3.0 |
+| Environment Agency | Real-time flood monitoring (areas + warnings) | No | OGL v3.0 |
+| MHCLG | planning.data.gov.uk (conservation, listed, brownfield, flood-risk zones…) | No | OGL v3.0 |
+| police.uk | Street-level crime | No | OGL v3.0 |
+| Defra | Strategic noise mapping (road Lden, round 3) | No | OGL v3.0 |
+| BGS | Radon Indicative Atlas (GeoIndex) | No | © UKRI (open viewing service) |
+| DfE | Get Information About Schools (daily bulk extract) | No | OGL v3.0 |
+| ONS | Index of Private Housing Rental Prices | No | OGL v3.0 |
+| MHCLG | Energy Performance Certificates | **Yes** (free) | OGL v3.0 |
+| Companies House | Public register search | **Yes** (free) | OGL v3.0 |
+| HM Land Registry | CCOD / OCOD corporate ownership | **Yes** (free) | LR Free Datasets Licence |
 
-| Type | Convention | Exemple |
+**Enabling keyed sources.** Register (free) and set in `.env`:
+
+- `EPC_API_KEY` — bearer token from [get-energy-performance-data.communities.gov.uk](https://get-energy-performance-data.communities.gov.uk/) (GOV.UK One Login; this service replaced epc.opendatacommunities.org).
+- `COMPANIES_HOUSE_API_KEY` — create a REST key at the [Companies House developer hub](https://developer.company-information.service.gov.uk/).
+- `LR_DATA_API_KEY` — register at [use-land-property-data.service.gov.uk](https://use-land-property-data.service.gov.uk/).
+
+Without a key, those connectors return an explicit `data_gap / key_missing` result that flows into the dossier as an honest gap — the demo never fabricates data from keyed sources.
+
+**Known data gaps by design:** BGS GeoSure (shrink–swell/ground stability) is a licensed dataset with no open query API — reported as a typed data gap; CCOD/OCOD per-title lookups need the monthly bulk file, which the demo does not download (dataset metadata only).
+
+## Real vs simulated — the exact boundary
+
+| | Real | Simulated |
 |---|---|---|
-| Entite | `<nom>.entity.ts` | `example.entity.ts` |
-| Use case | `<verbe>-<nom>.usecase.ts` | `create-example.usecase.ts` |
-| Port (interface) | `<nom>.repository.ts` | `example.repository.ts` |
-| Adapter Prisma | `prisma-<nom>.repository.ts` | `prisma-example.repository.ts` |
-| Adapter InMemory | `in-memory-<nom>.repository.ts` | `in-memory-example.repository.ts` |
-| DTO | `<verbe>-<nom>.dto.ts` | `create-example.dto.ts` |
-| Erreurs | `<nom>.errors.ts` | `example.errors.ts` |
-| Value object | `<nom>.enum.ts` | `example-status.enum.ts` |
-| Mapper | `PascalCase.ts` | `ExampleMapper.ts` |
-| Module | `<nom>.module.ts` | `example.module.ts` |
-| Error mapping | `<nom>-error-mappings.ts` | `example-error-mappings.ts` |
-| Query | `<nom>.query.ts` | `example.query.ts` |
-| Test unitaire | `<nom>.test.ts` | `create-example.usecase.test.ts` |
-| Test e2e | `<nom>.spec.ts` | `home.spec.ts` |
+| ~50 cohort properties | Address, postcode, local authority, coordinates (postcode centroid), tenure, property type, **every open-data response** in `data/properties/*.json` | The investment scenario: `value`, `intendedUse`, `capitalType` (Nadia's organisation is a fictional persona) |
+| ~2,750 scale properties | — | Everything (fictional streets, sector-9 postcodes, `provenance: "synthetic"`), with pre-computed plausible signals whose `recordId`s are prefixed `synthetic:` |
+| Evidence feed (40 updates) | — | Pre-written, replayed deterministically; `recordId`s prefixed `simulated-feed:` |
 
-### Routes API
+Every property row carries a `provenance` column (`real_open_data` / `synthetic`); every bundle in `data/properties/` carries a `_provenance` block. Synthetic parts are never presented as real.
 
-Pattern : `/api/<hexagone>/v1/<resource>` (resource au pluriel, versioning explicite).
+## Ethics & fairness
 
-Les routes sont fines : validation Zod, appel du use case, retour de la reponse. Toutes wrappees par `apiHandler()`.
+- **No redlining, enforced:** risk is measured on facts about the asset and its physical, legal, financial, and environmental context — never on protected characteristics of the people who live there. Synthetic distributions are driven only by asset context (coastal exposure, building-stock age, corporate-ownership opacity). Later phases block any protected-characteristic proxy from entering a verdict (`fairness_guardrail_triggered`).
+- **No capital decisions:** there is no "recommend buy/commit" output anywhere; the agent grades risk, the human commits.
+- **Assets, not people:** public registers only, no scraping behind authentication, no surveillance of individuals.
+- **Provenance ledger:** every action writes an immutable audit event; any verdict traces back to the exact public record.
 
-### Path aliases TypeScript
+## Fork it for another country
 
-| Alias | Chemin |
+`src/connectors/` is the country pack. To build a France pack: implement the same `ConnectorResult` contract over DVF (transactions), Géorisques (flood/soil/pollution), BAN (addresses), Infogreffe/RNE (ownership), and swap the framework's signal `source` fields. Schema, invariants, agents, and UI stay untouched.
+
+## Known limits
+
+- Coordinates are postcode centroids (postcodes.io/ONS), not parcel geometry.
+- EA flood *alert/warning areas* stand in for Flood Map for Planning zones 2/3 (whose spatial service is heavier to query); rubric thresholds reflect that.
+- police.uk months are pinned in the fetch script for cache determinism.
+- UPRNs are null (OS Open UPRN is bulk-only); single-property lookup in later phases resolves by address/postcode.
+
+## Scripts
+
+| Command | What it does |
 |---|---|
-| `@/*` | `./src/*` |
-| `@prisma/*` | `./src/infrastructure/db/generated/prisma/*` |
-
-### Prettier
-
-Double quotes, semicolons, trailing commas, print width 100, tab width 2.
-
-### ESLint
-
-`eslint-config-next/core-web-vitals` + `eslint-config-next/typescript`, integre avec Prettier via `eslint-config-prettier`.
-
-### Gestion des erreurs
-
-Les erreurs metier heritent de `DomainError<T>` avec un code en `UPPER_SNAKE_CASE` prefixe par le domaine :
-
-```typescript
-export class ExampleNotFoundError extends DomainError<{ exampleId: string }> {
-  constructor(ctx: { exampleId: string }) {
-    super("EXAMPLE_NOT_FOUND", "Example not found", ctx, "example", "fetch");
-  }
-}
-```
-
-Chaque hexagone definit son mapping erreur -> HTTP dans `adapters/http/` et l'enregistre au demarrage via `instrumentation.ts`. L'API handler reste agnostique du domaine.
-
-### Authentification
-
-L'auth est abstraite derriere un port (`AuthContextProvider`) avec un adapter Better Auth. Le contexte est propage via `AsyncLocalStorage` :
-
-```typescript
-requireAuth()           // AuthContext ou UnauthorizedError (401)
-requireAdmin()          // verifie isAdmin ou ForbiddenError (403)
-requireOrganization()   // verifie qu'une org est selectionnee
-```
-
-Le middleware `authProxy` protege les routes :
-- **Publiques** : `/api/auth`, `/sign-in`, `/sign-up`
-- **Protegees** : `/dashboard/*`, `/admin/*`, `/api/<hexagone>/v1/*`
-- **Pages auth** : redirige vers `/dashboard` si deja connecte
-
-### Logging
-
-Pino structure avec correlation ID automatique par requete. Pretty print en dev, JSON en prod. Niveaux configurables via `LOG_LEVEL`.
+| `pnpm dev` / `build` / `start` | Next.js app |
+| `pnpm seed` | Rebuild `data/cpi.db` (framework + portfolio + evidence feed) |
+| `pnpm fetch-data` | Live open-data pipeline → `data/properties/` + `data/cache/` |
+| `pnpm test` / `test:e2e` | Vitest invariants / Playwright |
+| `pnpm lint` / `typecheck` / `format` | Quality gates |
 
 ---
 
-## CI/CD
-
-### Workflows reutilisables
-
-Le projet utilise des **workflows centralises** heberges dans [`NerionSoft/nerionsoft-cicd`](https://github.com/NerionSoft/nerionsoft-cicd), communs a tous les starters NerionSoft.
-
-#### `ci.yml` — Integration continue
-
-**Declenchement** : push et PR vers `main` et `integration`.
-
-Etapes (toutes configurables via `with:`) :
-
-| Etape | Defaut | Description |
-|---|---|---|
-| `run-lint` | `true` | Linting ESLint |
-| `run-format` | `true` | Verification Prettier |
-| `run-typecheck` | `true` | Verification TypeScript |
-| `run-test` | `true` | Tests unitaires Vitest |
-| `run-build` | `true` | Build Next.js |
-| `run-e2e` | `true` | Tests Playwright |
-| `run-sonar` | `false` | Analyse SonarQube (active ici) |
-
-#### `release.yml` — Release automatisee
-
-**Declenchement** : push vers `main`.
-
-Utilise [Release Please](https://github.com/googleapis/release-please) pour generer automatiquement le `CHANGELOG.md`, creer des PRs de release et publier des GitHub Releases a partir des [conventional commits](https://www.conventionalcommits.org/).
-
-### Dependabot
-
-Verification quotidienne des dependances npm sur la branche `integration`. Les mises a jour mineures et patches sont groupees dans une seule PR.
-
-### SonarQube
-
-Configure via `sonar-project.properties` :
-- Sources : `src/`
-- Tests : `tests/`
-- Couverture : LCOV (`coverage/lcov.info`)
-- Exclusions : `generated/`, `node_modules/`, `.next/`, `build/`
-
-### Strategie de branches
-
-| Branche | Role |
-|---|---|
-| `main` | Production. Les merges declenchent une release. |
-| `integration` | Integration. Recoit les PRs de feature et Dependabot. |
-
----
-
-## Les a priori du starter
-
-Ce template fait partie de la plateforme de starters NerionSoft. Certains choix sont communs a tous les starters et refletent une philosophie d'equipe.
-
-### Architecture hexagonale
-
-Separer le code metier du code technique permet de :
-- **Tester sans infrastructure** : les use cases sont testes avec des adapters InMemory, sans BDD ni serveur
-- **Changer de techno sans toucher au domaine** : remplacer Prisma, Better Auth ou Pino ne modifie que les adapters
-- **Onboarder rapidement** : chaque hexagone est autonome et comprehensible isolement
-
-Le fichier `<nom>.module.ts` sert de **composition root** : il branche les ports vers les adapters concrets. En dev/test on utilise InMemory, en production on utilise Prisma.
-
-Chaque decision architecturale est documentee dans un [ADR](docs/adr/) (Architecture Decision Record).
-
-### CI/CD reutilisable et centralisee
-
-Tous les starters partagent les memes workflows via `NerionSoft/nerionsoft-cicd` :
-- Niveau de qualite **uniforme** entre tous les projets (lint, format, typecheck, tests, build, e2e, SonarQube)
-- Mise a jour de la CI **une seule fois** pour tous les projets
-- Fichiers de workflow **simples et declaratifs** dans chaque repo
-
-### Qualite du code integree des le jour 1
-
-Le starter impose d'emblee :
-- **ESLint 9** (flat config) avec les regles Next.js + TypeScript
-- **Prettier** pour un formatage uniforme
-- **TypeScript strict** pour eliminer les bugs a la compilation
-- **SonarQube** pour la couverture et la detection de code smells
-- **Vitest** pour les tests unitaires rapides avec couverture V8
-- **Playwright** pour les tests e2e sur Chromium
-
-Aucun hook git local (`husky`, `lint-staged`) : la qualite est enforced par la CI, pas par la machine du developpeur.
-
-### Better Auth + organisations
-
-Better Auth est choisi pour :
-- Integration native avec Next.js et Prisma
-- Support des **organisations**, **membres** et **roles** out-of-the-box
-- Modele extensible via plugins (OAuth, 2FA, email providers)
-
-L'auth est encapsulee derriere un port (`AuthContextProvider`) et un `AsyncLocalStorage` dedie, donc remplacable sans toucher au domaine.
-
-### Prisma + Neon
-
-- **Prisma 7** pour le schema-first avec TypeScript natif
-- **Neon adapter** pour une connexion serverless-friendly a PostgreSQL
-- Le client genere est place dans `src/infrastructure/db/generated/prisma/` et gitignore (regenere a chaque `pnpm install`)
-
-### Convention d'API versionnee
-
-Les routes suivent `/api/<hexagone>/v1/<resource>`. Le wrapper `apiHandler()` fournit :
-- **Correlation ID** (header `x-correlation-id`) pour le tracing distribue
-- **Logging structure** (methode, path, status, duree)
-- **Resolution du contexte auth** via `AsyncLocalStorage`
-- **Gestion d'erreurs standardisee** : DomainError -> HTTP status, ZodError -> 400, erreurs inconnues -> 500
-
-### Middleware proxy
-
-Le middleware (`proxy.ts`) est organise en **proxies chainables** :
-- `authProxy` : protection des routes, redirections sign-in/sign-out
-- Architecture extensible pour ajouter `securityHeadersProxy`, `localeProxy`, etc.
-
-### Validation Zod
-
-Chaque DTO d'entree est defini avec un schema Zod. La validation echoue automatiquement avec une reponse 400 structuree grace au `apiHandler`.
-
-### Tests pyramidaux
-
-Le dossier `tests/` encourage la **pyramide de tests** :
-- `unit/` : rapides, isoles, testent les use cases avec des adapters InMemory
-- `integration/` : testent les interactions entre couches
-- `e2e/` : testent le flux complet via Playwright
-
-### Configuration d'environnement lazy
-
-L'objet `env` utilise un `Proxy` pour valider les variables au premier acces, pas a l'import. Si une variable requise manque, l'application crash immediatement avec un message clair.
-
-### Script de setup interactif
-
-Le script `node scripts/setup.mjs` automatise le renommage mecanique de l'hexagone d'exemple vers votre domaine. Il se supprime ensuite lui-meme.
-
----
-
-## Documentation
-
-| Document | Description |
-|---|---|
-| [`docs/architecture.md`](docs/architecture.md) | Vue d'ensemble de l'architecture, diagrammes et flux |
-| [`docs/conventions.md`](docs/conventions.md) | Conventions de nommage, imports et patterns |
-| [`docs/adr/`](docs/adr/) | Architecture Decision Records (7 ADRs) |
-| [`.env.example`](.env.example) | Template des variables d'environnement |
-
----
-
-## Licence
-
-Proprietary - NerionSoft
+*Data: HM Land Registry, EPC (MHCLG), Environment Agency, police.uk, Companies House, planning.data.gov.uk, Defra, BGS, DfE, ONS — Open Government Licence v3.0 unless stated otherwise.*

@@ -1,0 +1,1945 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=50.817211,-0.133143:50.817211,-0.126743:50.821211000000005,-0.126743:50.821211000000005,-0.133143&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=50.817211,-0.133143:50.817211,-0.126743:50.821211000000005,-0.126743:50.821211000000005,-0.133143&date=2026-04",
+  "retrievedAt": "2026-07-03T13:13:22.181Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820431",
+        "street": {
+          "id": 2197139,
+          "name": "On or near Veronica Way"
+        },
+        "longitude": "-0.128289"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935433,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820550",
+        "street": {
+          "id": 2197060,
+          "name": "On or near Upper Rock Gardens"
+        },
+        "longitude": "-0.130088"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936699,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819728",
+        "street": {
+          "id": 2197138,
+          "name": "On or near Grafton Street"
+        },
+        "longitude": "-0.128743"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935711,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819350",
+        "street": {
+          "id": 2196993,
+          "name": "On or near New Steine"
+        },
+        "longitude": "-0.132095"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935709,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818399",
+        "street": {
+          "id": 2197201,
+          "name": "On or near A259"
+        },
+        "longitude": "-0.127150"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935076,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820502",
+        "street": {
+          "id": 2196962,
+          "name": "On or near Wentworth Street"
+        },
+        "longitude": "-0.132134"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936060,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819399",
+        "street": {
+          "id": 2196653,
+          "name": "On or near Nightclub"
+        },
+        "longitude": "-0.132916"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935199,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819606",
+        "street": {
+          "id": 2197152,
+          "name": "On or near Upper St James's Street"
+        },
+        "longitude": "-0.127839"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134934319,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819382",
+        "street": {
+          "id": 2197070,
+          "name": "On or near Wyndham Street"
+        },
+        "longitude": "-0.128459"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134934542,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819606",
+        "street": {
+          "id": 2197152,
+          "name": "On or near Upper St James's Street"
+        },
+        "longitude": "-0.127839"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936701,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820550",
+        "street": {
+          "id": 2197060,
+          "name": "On or near Upper Rock Gardens"
+        },
+        "longitude": "-0.130088"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134937400,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936825,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134937609,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819350",
+        "street": {
+          "id": 2196993,
+          "name": "On or near New Steine"
+        },
+        "longitude": "-0.132095"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936499,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935072,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.821023",
+        "street": {
+          "id": 2196957,
+          "name": "On or near Ardingly Street"
+        },
+        "longitude": "-0.132653"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936498,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820687",
+        "street": {
+          "id": 2197100,
+          "name": "On or near St Mary's Place"
+        },
+        "longitude": "-0.129088"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936700,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820431",
+        "street": {
+          "id": 2197139,
+          "name": "On or near Veronica Way"
+        },
+        "longitude": "-0.128289"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134937401,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819701",
+        "street": {
+          "id": 2196994,
+          "name": "On or near Rock Place"
+        },
+        "longitude": "-0.131002"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935518,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "bicycle-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "9a7c8a8eda9a695447831fe5fdfd0932b3ab040fd86a85bc5b6b26a1d1e72378",
+      "id": 134925730,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820687",
+        "street": {
+          "id": 2197100,
+          "name": "On or near St Mary's Place"
+        },
+        "longitude": "-0.129088"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "c4260f3ebc15554282372927a143781252e4c36794cba9f77833950a98da31f4",
+      "id": 134926169,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819606",
+        "street": {
+          "id": 2197152,
+          "name": "On or near Upper St James's Street"
+        },
+        "longitude": "-0.127839"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "817725927900876a351d850ac170635ecfc7f1cfe8e9f1c6e77b0302aa77556d",
+      "id": 134926172,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819701",
+        "street": {
+          "id": 2196994,
+          "name": "On or near Rock Place"
+        },
+        "longitude": "-0.131002"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "bf06eda6b68929cfd609a5d9ca35de4f9c69917222ae0ec06e4d5c9af5aa2712",
+      "id": 134928399,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.821023",
+        "street": {
+          "id": 2196957,
+          "name": "On or near Ardingly Street"
+        },
+        "longitude": "-0.132653"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "b27c207cc568bc1a6d3b8a4c900dbba4d576e7d322b5e31c2f6468d3c57a1804",
+      "id": 134926565,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820687",
+        "street": {
+          "id": 2197100,
+          "name": "On or near St Mary's Place"
+        },
+        "longitude": "-0.129088"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Local resolution",
+        "date": "2026-04"
+      },
+      "persistent_id": "8b005ef44f8958dcab701d8fb5f26e7fa2b8713bc9c502465324632eef13cad6",
+      "id": 134923423,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819941",
+        "street": {
+          "id": 2196939,
+          "name": "On or near Camelford Street"
+        },
+        "longitude": "-0.133022"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "18d0de306f9c4ec2cb5050cb353f5a7729ab139d10466c2b23c4ee67add6b535",
+      "id": 134928825,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "5379faa155d8c060305ca942701308261a0cb012ced56c3aedbc85e3953dff2e",
+      "id": 134926948,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819606",
+        "street": {
+          "id": 2197152,
+          "name": "On or near Upper St James's Street"
+        },
+        "longitude": "-0.127839"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "49961cb145985bb2e22101542b6bbd86e28d660b8e0c9f0c86b0b5f559db4c61",
+      "id": 134927604,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "53aba5ea387583b22f5742d1cdafece21d58b4efd40c083c9bc54fd94e0bec10",
+      "id": 134926570,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "609c167a20d51500b636e87e40393fdab6cf4e162e65c3865e3c4ae7cf281035",
+      "id": 134930725,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819399",
+        "street": {
+          "id": 2196653,
+          "name": "On or near Nightclub"
+        },
+        "longitude": "-0.132916"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "2afb86f263b38d1ec59bec30bf5b84a238fe419ce5c730111033824d2ce8c250",
+      "id": 134934082,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820431",
+        "street": {
+          "id": 2197139,
+          "name": "On or near Veronica Way"
+        },
+        "longitude": "-0.128289"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "e1d77c81e7c5651cdc14ca645b2192e6836496964a61cb7a1c99b5e6e7ac1aa0",
+      "id": 134927992,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820431",
+        "street": {
+          "id": 2197139,
+          "name": "On or near Veronica Way"
+        },
+        "longitude": "-0.128289"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "b314c4ea1996f0593bb8582099e6fcb05198131fbfe6bafbe626bad7d5354d9f",
+      "id": 134929196,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819606",
+        "street": {
+          "id": 2197152,
+          "name": "On or near Upper St James's Street"
+        },
+        "longitude": "-0.127839"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "f1f4f4b8fa3c891300cdb76732e521e00e7ea0ba32a3da43b6ae26c3b34a28ef",
+      "id": 134927272,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819399",
+        "street": {
+          "id": 2196653,
+          "name": "On or near Nightclub"
+        },
+        "longitude": "-0.132916"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "4e1a7f889ee11a6918fce53bd6d46b02fe208b8d1e0b5293c0ad63b2b120e23d",
+      "id": 134929613,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818908",
+        "street": {
+          "id": 2196394,
+          "name": "On or near Aquarium"
+        },
+        "longitude": "-0.132538"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "3c8f71e10a37c0848954753879e3949d9b9a197fe6e142fb9ff81e14d3e8ed5f",
+      "id": 134929959,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818908",
+        "street": {
+          "id": 2196394,
+          "name": "On or near Aquarium"
+        },
+        "longitude": "-0.132538"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "7f6238acae09a12705824387fce1df26fc8a162e2c7a9ae8045a534431fbf4c0",
+      "id": 134931888,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819399",
+        "street": {
+          "id": 2196653,
+          "name": "On or near Nightclub"
+        },
+        "longitude": "-0.132916"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "663abaf205cf9dd576c6fd8273fccf3fcea5505eabea63db9b4466472e48e80f",
+      "id": 134929961,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "4e639052e0541b69f239e5d69d80ea2b6114123f7c0e71a4a69619dae6fdd84c",
+      "id": 134933323,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819382",
+        "street": {
+          "id": 2197070,
+          "name": "On or near Wyndham Street"
+        },
+        "longitude": "-0.128459"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "993688d1161d4c4d07621f0905cd9207dfc9ae3cc6e125483998dfe655018dbf",
+      "id": 134924381,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820120",
+        "street": {
+          "id": 2197061,
+          "name": "On or near Lower Rock Gardens"
+        },
+        "longitude": "-0.130190"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "bbc67c2d56da71322868ced1fcd42d8d45e08dcb2e84ca25072bfd18e319a43f",
+      "id": 134924986,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819701",
+        "street": {
+          "id": 2196994,
+          "name": "On or near Rock Place"
+        },
+        "longitude": "-0.131002"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "82c431a3835327d88ed327737f01264d8356b437cbe1b6babfcfe4de043345d1",
+      "id": 134930320,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "38b959a0ca23529cc44f0944edc935159f4379dc754d49061d3ccbe42386e1f3",
+      "id": 134923421,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "c5a7867bf3dca668e90aeb66220270058606f9337941f360eb8b9e52d53f1e49",
+      "id": 134925349,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "c86f649184996a3a033eeb570bb1ed091c291007123de24496747c549922dedd",
+      "id": 134932293,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819123",
+        "street": {
+          "id": 2197182,
+          "name": "On or near Marine Gardens"
+        },
+        "longitude": "-0.127475"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "12b92300bb64eac2cf24357276d005a6eeb80e43703aa532b304786ce06d7144",
+      "id": 134932291,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818908",
+        "street": {
+          "id": 2196394,
+          "name": "On or near Aquarium"
+        },
+        "longitude": "-0.132538"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "6162a1ed91a5815d28f90291fdb301629ef92fce217d7f87820a3e9820791f60",
+      "id": 134929194,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.821023",
+        "street": {
+          "id": 2196957,
+          "name": "On or near Ardingly Street"
+        },
+        "longitude": "-0.132653"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "afbce6f6c0f64093dd864eb1a6563b4aa59dec5d18a77f70878c6431b0b265f0",
+      "id": 134928826,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819399",
+        "street": {
+          "id": 2196653,
+          "name": "On or near Nightclub"
+        },
+        "longitude": "-0.132916"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "3940048ec928ee09ec1a81062028a33bca4449006c310458f9f4ad453b039175",
+      "id": 134934083,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818399",
+        "street": {
+          "id": 2197201,
+          "name": "On or near A259"
+        },
+        "longitude": "-0.127150"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Further investigation is not in the public interest",
+        "date": "2026-04"
+      },
+      "persistent_id": "df80543bc096b01bab846fa75d0d84c8e60f4be2c5a8df3e9a43933ecbfce9c6",
+      "id": 134926175,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "116e5ccbe4c6f00c290ea8f6e6eb902c4069804c473fc3dc836e2f93e49a73ad",
+      "id": 134926943,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "262efb409db09b6d88ea566f52ad946f68e914bbc2a3b713c4dbf174278b862f",
+      "id": 134924711,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "2aa27d8e207c4e415e8c4dab283d925a5ba442f82f6ac6fc505b3a8cff2d742f",
+      "id": 134926568,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "0db475ac7804376d2a4833dcd3d437c064ae95cc95e0110a4aba7be1332fc571",
+      "id": 134924708,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "robbery",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "b1cc1af7ecfb953951f5c6db42839170d7257e332bf34d94b04aef2d027d3afe",
+      "id": 134923422,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "robbery",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "51d0a9dc4fdffb1238b162dd63dec1b8fae13d1a348ed2cda471c937f262efc2",
+      "id": 134926165,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "91b4d93858516c9824a482af0d49948444ce25bbf09510f2d505cf2fb2f864cf",
+      "id": 134924984,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "9886bcc42a79015e96787c9257a06f54e6332027e6445dbff2083f72a2e89ad5",
+      "id": 134932955,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "2a46f2bdf2ac7fd090b5143993436c36c6566f39bae2bbe10bccbf340b3bd6b3",
+      "id": 134930317,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "feb1cc0221bd6caedeab9dee4c3883a736313053699eb420858556ac5817f5a1",
+      "id": 134933684,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "c8b764f228246f2c6aafc95cd044dd918e54e24b76f74be6d3d91eb547691e00",
+      "id": 134926944,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "fb2b15abcdaaa568aeec813d62f763bb39fc4739fb93a3d07361999b9d87ef7a",
+      "id": 134923420,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "67926e07277cc7ec046671e02fbf77f38f29c46e023671d0378ca08cd8f35373",
+      "id": 134932954,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "942ac6d85e11f4561920ae659e0369cf06671c64946607e0ff15968a7cc94a73",
+      "id": 134934086,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "7d66541da3cb2a31435f76891b228d3cbbc1d38d5483f92034307d7bbc11094e",
+      "id": 134929962,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "a0ce25e551ac50538802a6539beac92337f51fe6a46759a1d4815f8e9e67f527",
+      "id": 134924985,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818908",
+        "street": {
+          "id": 2196394,
+          "name": "On or near Aquarium"
+        },
+        "longitude": "-0.132538"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "66b891898e82481c8c17ee75168740cf50913bb8b954ebbc00acb70fd0197eb8",
+      "id": 134925725,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819728",
+        "street": {
+          "id": 2197138,
+          "name": "On or near Grafton Street"
+        },
+        "longitude": "-0.128743"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "7d6bac3b6df82722e3ff6b37caf8fd7116d810d4ed920c4c37f109231661a8a7",
+      "id": 134923424,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.821175",
+        "street": {
+          "id": 2197028,
+          "name": "On or near St James's Avenue"
+        },
+        "longitude": "-0.130361"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "f7187db7886ec5da05daefd236a752f747fc243ea8b1982951f458f90905f13d",
+      "id": 134932288,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819701",
+        "street": {
+          "id": 2196994,
+          "name": "On or near Rock Place"
+        },
+        "longitude": "-0.131002"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "d62743955d97e1b17f8cf0214efcde4b2330a39c6e31fa310b3d2065594eed93",
+      "id": 134926566,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820052",
+        "street": {
+          "id": 2197029,
+          "name": "On or near Atlingworth Street"
+        },
+        "longitude": "-0.129312"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "89de15923bcfaa584cba98b63082e8a3ba39e12035048389090d397dd4ea8111",
+      "id": 134931492,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820687",
+        "street": {
+          "id": 2197100,
+          "name": "On or near St Mary's Place"
+        },
+        "longitude": "-0.129088"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "ac53ec125d6300a153de80f3aaed8c866e388254ed7c910ae94b43656b14150f",
+      "id": 134934090,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "de238b49547f7670937aa818e8c17ac8e5f7040b52c1ad0456411c4adfd38645",
+      "id": 134924987,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820052",
+        "street": {
+          "id": 2197029,
+          "name": "On or near Atlingworth Street"
+        },
+        "longitude": "-0.129312"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "ce9a03e787cfe91d0fc65bb2ca7dbae88d3dff3d0998bb1af3641dd3b40fa4ce",
+      "id": 134933322,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819399",
+        "street": {
+          "id": 2196653,
+          "name": "On or near Nightclub"
+        },
+        "longitude": "-0.132916"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "dc8ab76b4caab75bb8ebfb217dd6ccf91f5d1c74e6e41e857ea70fa26129f1cd",
+      "id": 134934085,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820120",
+        "street": {
+          "id": 2197061,
+          "name": "On or near Lower Rock Gardens"
+        },
+        "longitude": "-0.130190"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "41b1cdbfc5947ff77d876df15f748c2e11f836c15dea29a89a024ea77f51c00b",
+      "id": 134932287,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819399",
+        "street": {
+          "id": 2196653,
+          "name": "On or near Nightclub"
+        },
+        "longitude": "-0.132916"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "97c99ffa8c1940d10e7cd225aab685bedfea07a312448aa3ff84f674b3bac4ee",
+      "id": 134934081,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819399",
+        "street": {
+          "id": 2196653,
+          "name": "On or near Nightclub"
+        },
+        "longitude": "-0.132916"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "0c7e00c0bc8fe13588c2d2eb00397a2a567983bffb791ce4a8ee0a00b6567c83",
+      "id": 134934084,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819350",
+        "street": {
+          "id": 2196993,
+          "name": "On or near New Steine"
+        },
+        "longitude": "-0.132095"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "d6251da61668e892839d854218b896cae124a1f408ef85c6bdceb18f7873a105",
+      "id": 134929964,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820709",
+        "street": {
+          "id": 2196977,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.132154"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "d815e90d5eff713d0bba78e5d3b860c921629060071ab9fab15e76e5253dfb5e",
+      "id": 134928398,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.821023",
+        "street": {
+          "id": 2196957,
+          "name": "On or near Ardingly Street"
+        },
+        "longitude": "-0.132653"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "083f546d7b5ef1a090e2f74a74ba9f29cf8fa364f91f1eedecc286ce92612534",
+      "id": 134927596,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820597",
+        "street": {
+          "id": 2196932,
+          "name": "On or near St James's Street"
+        },
+        "longitude": "-0.132457"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "2c0bd01f25cff5ab0d62a292ed5506585c56f15ff3d3c01eb7334ba58e52506e",
+      "id": 134932623,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818399",
+        "street": {
+          "id": 2197201,
+          "name": "On or near A259"
+        },
+        "longitude": "-0.127150"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "ca430c4ce9b58d5dcebe7da9992ec7711fcadb387bb39dedc39f66bb27227600",
+      "id": 134926176,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819123",
+        "street": {
+          "id": 2197182,
+          "name": "On or near Marine Gardens"
+        },
+        "longitude": "-0.127475"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "1dbc90b998716402c9e205e93c6f8b45d0923d6a1f13932340b1f14725c0a40c",
+      "id": 134931087,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820687",
+        "street": {
+          "id": 2197100,
+          "name": "On or near St Mary's Place"
+        },
+        "longitude": "-0.129088"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "4122d8dd6ccd19ed19783feb990198239f33f42ed24c05f2d4f5f50842184b96",
+      "id": 134932626,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820566",
+        "street": {
+          "id": 2197014,
+          "name": "On or near New Steine Mews"
+        },
+        "longitude": "-0.131095"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "d0cede6189214ac2458a6b41560b72b2d040abd888468c0414da96d115d98088",
+      "id": 134930318,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820431",
+        "street": {
+          "id": 2197139,
+          "name": "On or near Veronica Way"
+        },
+        "longitude": "-0.128289"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "705475df2857ebad2bf301e24e9c354a3e196a479e0e399fc6605e7586f9a4aa",
+      "id": 134931493,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "c887740196562ca666408418e98621cf3e7b1085b6958e69c3596cc5989e708f",
+      "id": 134924712,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.818614",
+        "street": {
+          "id": 2196897,
+          "name": "On or near Charlotte Street"
+        },
+        "longitude": "-0.128234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "2c79d1f107898b191b23d1fa7be0601b62de8c7b2e8ab064e2508f2da7b858ed",
+      "id": 134928828,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819382",
+        "street": {
+          "id": 2197070,
+          "name": "On or near Wyndham Street"
+        },
+        "longitude": "-0.128459"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "e1da8f1333c4f3150cb2d7cec76bf229a2d5c89e97d51a75511f2d4e7cea993e",
+      "id": 134934089,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820983",
+        "street": {
+          "id": 2197164,
+          "name": "On or near Hereford Street"
+        },
+        "longitude": "-0.127358"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "1f33f9d4f3d6cf35e7aa16771c6b99a469b8f0408393b28ef6a8953534c89247",
+      "id": 134929197,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820983",
+        "street": {
+          "id": 2197164,
+          "name": "On or near Hereford Street"
+        },
+        "longitude": "-0.127358"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "62e078904ec5cd4e472571e78983dd7c80ea3d298b6242c326caa2f315e56f1a",
+      "id": 134929618,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.821175",
+        "street": {
+          "id": 2197028,
+          "name": "On or near St James's Avenue"
+        },
+        "longitude": "-0.130361"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Local resolution",
+        "date": "2026-04"
+      },
+      "persistent_id": "11750a22ee9c969a29e3c74842c268abdddba339c4dffb6c7ae3354f7bc11754",
+      "id": 134925350,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.820052",
+        "street": {
+          "id": 2197029,
+          "name": "On or near Atlingworth Street"
+        },
+        "longitude": "-0.129312"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "e815966a16d1037816d03812d143318d1898650df73dbb6e375ee40dbac83f6c",
+      "id": 134933321,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.819185",
+        "street": {
+          "id": 2197192,
+          "name": "On or near Bedford Street"
+        },
+        "longitude": "-0.126820"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Local resolution",
+        "date": "2026-04"
+      },
+      "persistent_id": "6a308ff008738d001a4a08c6836c8c42de0fc6c5ccc3411f280e7ac8d6577404",
+      "id": 134925353,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

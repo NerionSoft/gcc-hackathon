@@ -1,7 +1,4 @@
-import { registerErrorMappings } from "@/infrastructure/http/api-handler";
-import { exampleErrorMappings } from "@/example-hexagone/adapters/http/example-error-mappings";
-
-// TODO(starter): Register error mappings for each hexagone here
+// Error-code → HTTP-status mappings are registered here as modules are added.
 export function register() {
-  registerErrorMappings(exampleErrorMappings);
+  // No mappings yet — later phases register their domain error mappings here.
 }

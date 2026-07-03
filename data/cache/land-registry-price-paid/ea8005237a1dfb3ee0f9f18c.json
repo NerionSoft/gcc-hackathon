@@ -1,0 +1,26 @@
+{
+  "key": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.town=KINGSTON%20UPON%20HULL&_pageSize=60",
+  "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.town=KINGSTON%20UPON%20HULL&_pageSize=60",
+  "retrievedAt": "2026-07-03T12:38:12.658Z",
+  "body": {
+    "format": "linked-data-api",
+    "version": "0.2",
+    "result": {
+      "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=60&propertyAddress.town=KINGSTON%20UPON%20HULL",
+      "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.town=KINGSTON%20UPON%20HULL",
+      "extendedMetadataVersion": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=60&propertyAddress.town=KINGSTON%20UPON%20HULL&_metadata=all",
+      "first": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=60&_page=0&propertyAddress.town=KINGSTON%20UPON%20HULL",
+      "isPartOf": {
+        "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.town=KINGSTON%20UPON%20HULL",
+        "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.town=KINGSTON%20UPON%20HULL",
+        "hasPart": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=60&propertyAddress.town=KINGSTON%20UPON%20HULL",
+        "type": ["http://purl.org/linked-data/api/vocab#ListEndpoint"]
+      },
+      "items": [],
+      "itemsPerPage": 60,
+      "page": 0,
+      "startIndex": 1,
+      "type": ["http://purl.org/linked-data/api/vocab#Page"]
+    }
+  }
+}

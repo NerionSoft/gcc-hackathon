@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
+/*
+ * Civic Property Intelligence — design tokens (SPEC §6, binding).
+ * Register-office sobriety: colour carries severity meaning only,
+ * never decoration. No dark mode, no gradients.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafaf8;
+  --surface: #ffffff;
+  --border: #e5e5e0;
+  --primary: #1b2a4a;
+  --ink: #1a1a1a;
+  --ink-secondary: #6b6b66;
+  --severity-green: #1e8e5a;
+  --severity-amber: #c77d1e;
+  --severity-red: #c0392b;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-surface: var(--surface);
+  --color-line: var(--border);
+  --color-primary: var(--primary);
+  --color-ink: var(--ink);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-severity-green: var(--severity-green);
+  --color-severity-amber: var(--severity-amber);
+  --color-severity-red: var(--severity-red);
+  --font-sans: var(--font-ibm-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  --radius-card: 6px;
+  --radius-badge: 4px;
+  --shadow-card: 0 1px 2px rgba(27, 42, 74, 0.06);
+  --shadow-raised: 0 2px 8px rgba(27, 42, 74, 0.08);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  font-family: var(--font-ibm-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+::selection {
+  background: rgba(27, 42, 74, 0.12);
+}
+
+/* Thin, calm scrollbars for the dense wall */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c9c9c2 transparent;
+}
+
+/*
+ * Scan sweep: pure-CSS pulse so hundreds of simultaneously scanning tiles
+ * cost nothing beyond the compositor (F1: zero jank at 2,800 items).
+ */
+@keyframes tile-scan-pulse {
+  0%,
+  100% {
+    background-color: #ffffff;
+  }
+  50% {
+    background-color: #eef1f6;
+  }
+}
+
+.tile-scanning {
+  animation: tile-scan-pulse 0.9s ease-in-out infinite;
 }

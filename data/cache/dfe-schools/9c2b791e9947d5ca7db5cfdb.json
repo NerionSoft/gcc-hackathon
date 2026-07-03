@@ -1,0 +1,103 @@
+{
+  "key": "district:BN41",
+  "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=BN41",
+  "retrievedAt": "2026-07-03T12:49:16.022Z",
+  "body": [
+    {
+      "urn": "114413",
+      "name": "Brackenbury Primary School",
+      "localAuthority": "Brighton and Hove",
+      "postcode": "BN41 2LA",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/114413"
+    },
+    {
+      "urn": "114430",
+      "name": "Mile Oak Primary School",
+      "localAuthority": "Brighton and Hove",
+      "postcode": "BN41 2WN",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/114430"
+    },
+    {
+      "urn": "114443",
+      "name": "Peter Gladwin Primary School",
+      "localAuthority": "Brighton and Hove",
+      "postcode": "BN41 2PA",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/114443"
+    },
+    {
+      "urn": "114560",
+      "name": "St Nicolas CofE Primary School",
+      "localAuthority": "Brighton and Hove",
+      "postcode": "BN41 2LA",
+      "phase": "Primary",
+      "establishmentType": "Voluntary aided school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/114560"
+    },
+    {
+      "urn": "114570",
+      "name": "St Mary's Catholic Primary School",
+      "localAuthority": "Brighton and Hove",
+      "postcode": "BN41 1LB",
+      "phase": "Primary",
+      "establishmentType": "Voluntary aided school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/114570"
+    },
+    {
+      "urn": "114687",
+      "name": "Hill Park School",
+      "localAuthority": "Brighton and Hove",
+      "postcode": "BN41 2FU",
+      "phase": "Not applicable",
+      "establishmentType": "Community special school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/114687"
+    },
+    {
+      "urn": "137063",
+      "name": "Portslade Aldridge Community Academy",
+      "localAuthority": "Brighton and Hove",
+      "postcode": "BN41 2WS",
+      "phase": "Secondary",
+      "establishmentType": "Academy sponsor led",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/137063"
+    },
+    {
+      "urn": "151063",
+      "name": "Benfield Primary School",
+      "localAuthority": "Brighton and Hove",
+      "postcode": "BN41 1XS",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/151063"
+    }
+  ]
+}
