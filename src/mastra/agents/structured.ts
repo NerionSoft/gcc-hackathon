@@ -67,7 +67,9 @@ async function attempt<T>(
   try {
     const parsed = schema.safeParse(extractJson(response.text ?? ""));
     if (parsed.success) return { value: parsed.data };
-    return { error: parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; ") };
+    return {
+      error: parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "),
+    };
   } catch (error) {
     return { error: error instanceof Error ? error.message : String(error) };
   }
@@ -82,10 +84,7 @@ export async function generateStructured<T>(
   agent: Agent,
   prompt: string,
   schema: z.ZodType<T>,
-  {
-    maxSteps = 6,
-    instructions,
-  }: { maxSteps?: number; instructions?: string } = {},
+  { maxSteps = 6, instructions }: { maxSteps?: number; instructions?: string } = {},
 ): Promise<StructuredResult<T>> {
   assertLlmConfigured();
 

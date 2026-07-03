@@ -97,7 +97,10 @@ describe("hard rule 1 — evidence integrity forces red", () => {
   });
 
   it("forces nothing on an ordinary green/amber evidence base", () => {
-    const outcome = applyHardRules([signal({ severity: "amber" }), signal({ severity: "green", signalCode: "LAND-SOIL" })]);
+    const outcome = applyHardRules([
+      signal({ severity: "amber" }),
+      signal({ severity: "green", signalCode: "LAND-SOIL" }),
+    ]);
     expect(outcome.forcedVerdict).toBeNull();
   });
 

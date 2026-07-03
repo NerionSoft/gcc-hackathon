@@ -65,7 +65,9 @@ export function listPortfolio(filter: PortfolioFilter): {
     params.push(filter.capitalType);
   }
   if (filter.dimension) {
-    clauses.push("EXISTS (SELECT 1 FROM risk_signals d WHERE d.property_id = p.id AND d.dimension_code = ?)");
+    clauses.push(
+      "EXISTS (SELECT 1 FROM risk_signals d WHERE d.property_id = p.id AND d.dimension_code = ?)",
+    );
     params.push(filter.dimension.toUpperCase());
   }
   const severityRank = "CASE s.severity WHEN 'red' THEN 2 WHEN 'amber' THEN 1 ELSE 0 END";
@@ -115,15 +117,19 @@ export function portfolioCounts(): {
 } {
   const db = getDb();
   const byStatus = Object.fromEntries(
-    (db.prepare("SELECT status, COUNT(*) n FROM properties GROUP BY status").all() as {
-      status: string;
-      n: number;
-    }[]).map((r) => [r.status, r.n]),
+    (
+      db.prepare("SELECT status, COUNT(*) n FROM properties GROUP BY status").all() as {
+        status: string;
+        n: number;
+      }[]
+    ).map((r) => [r.status, r.n]),
   );
   const byLocalAuthority = Object.fromEntries(
-    (db
-      .prepare("SELECT local_authority la, COUNT(*) n FROM properties GROUP BY local_authority")
-      .all() as { la: string; n: number }[]).map((r) => [r.la, r.n]),
+    (
+      db
+        .prepare("SELECT local_authority la, COUNT(*) n FROM properties GROUP BY local_authority")
+        .all() as { la: string; n: number }[]
+    ).map((r) => [r.la, r.n]),
   );
   const capital = (
     db

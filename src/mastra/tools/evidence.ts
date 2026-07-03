@@ -53,7 +53,10 @@ const POLICE_MONTH = "2026-04";
 const UKHPI_MONTH = "2026-01";
 
 function slugify(name: string): string {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 /** Live connector call for one source key — used when no bundle exists. */

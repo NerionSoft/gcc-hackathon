@@ -36,7 +36,9 @@ export function computeImpactMetrics(): ImpactMetrics {
   const statusCounts = Object.fromEntries(statusRows.map((r) => [r.status, r.n]));
   const total = statusRows.reduce((n, r) => n + r.n, 0);
   const unprocessed =
-    (statusCounts["unscanned"] ?? 0) + (statusCounts["scanning"] ?? 0) + (statusCounts["out_of_scope"] ?? 0);
+    (statusCounts["unscanned"] ?? 0) +
+    (statusCounts["scanning"] ?? 0) +
+    (statusCounts["out_of_scope"] ?? 0);
   const assessed = total - unprocessed;
 
   const capital = (
@@ -67,17 +69,15 @@ export function computeImpactMetrics(): ImpactMetrics {
       )
       .get() as { n: number }
   ).n;
-  const sourcesCited = (
-    db.prepare("SELECT COUNT(*) AS n FROM risk_signals").get() as { n: number }
-  ).n;
+  const sourcesCited = (db.prepare("SELECT COUNT(*) AS n FROM risk_signals").get() as { n: number })
+    .n;
   const distinctDatasets = (
     db.prepare("SELECT COUNT(DISTINCT source_dataset) AS n FROM risk_signals").get() as {
       n: number;
     }
   ).n;
-  const auditEvents = (
-    db.prepare("SELECT COUNT(*) AS n FROM audit_events").get() as { n: number }
-  ).n;
+  const auditEvents = (db.prepare("SELECT COUNT(*) AS n FROM audit_events").get() as { n: number })
+    .n;
 
   return {
     propertiesTotal: total,
@@ -87,7 +87,8 @@ export function computeImpactMetrics(): ImpactMetrics {
     analystHoursSaved: assessed * ANALYST_HOURS_PER_SITE,
     capitalScreenedGbp: capital,
     escalatedCount: escalated,
-    escalatedPct: adjudicationsTotal > 0 ? Math.round((escalated / adjudicationsTotal) * 1000) / 10 : 0,
+    escalatedPct:
+      adjudicationsTotal > 0 ? Math.round((escalated / adjudicationsTotal) * 1000) / 10 : 0,
     hiddenRisksRevealed: hiddenRisks,
     sourcesCited,
     distinctDatasets,

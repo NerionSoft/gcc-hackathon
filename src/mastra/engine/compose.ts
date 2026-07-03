@@ -3,10 +3,7 @@ import { getCluster, listClusters, upsertCluster } from "@/db/access/clusters";
 import { getProperty, updatePropertyStatus } from "@/db/access/properties";
 import { listSignalsForProperty } from "@/db/access/signals";
 import type { RiskCluster, RiskSignal } from "@/db/schema";
-import {
-  assessmentComposer,
-  composedAssessmentSchema,
-} from "@/mastra/agents/assessment-composer";
+import { assessmentComposer, composedAssessmentSchema } from "@/mastra/agents/assessment-composer";
 import { generateStructured } from "@/mastra/agents/structured";
 import { adjudicateProperty } from "@/mastra/engine/adjudication";
 import { isLlmConfigured } from "@/mastra/llm";
@@ -56,7 +53,10 @@ function clusterSignalDigest(cluster: RiskCluster): SignalDigestEntry[] {
   return [...byCode.values()].sort((a, b) => a.signalCode.localeCompare(b.signalCode));
 }
 
-function fallbackAssessment(cluster: RiskCluster, digest: SignalDigestEntry[]): {
+function fallbackAssessment(
+  cluster: RiskCluster,
+  digest: SignalDigestEntry[],
+): {
   assessment: string;
   disclosure: string;
 } {

@@ -32,12 +32,18 @@ export function ClusterCardFace({
       style={{ borderTop: `3px solid ${meta ? meta.color : "var(--border)"}` }}
     >
       <div className="flex items-start justify-between gap-2">
-        <h3 className="min-w-0 truncate text-[13px] font-semibold leading-tight text-ink" title={cluster.name}>
+        <h3
+          className="min-w-0 truncate text-[13px] font-semibold leading-tight text-ink"
+          title={cluster.name}
+        >
           {cluster.name}
         </h3>
         {cluster.dominantSeverity && <SeverityBadge severity={cluster.dominantSeverity} />}
       </div>
-      <div className="mt-0.5 truncate font-mono text-[10px] text-ink-secondary" title={cluster.pattern}>
+      <div
+        className="mt-0.5 truncate font-mono text-[10px] text-ink-secondary"
+        title={cluster.pattern}
+      >
         {cluster.pattern}
       </div>
       <div className="mt-auto flex items-end justify-between gap-2 pt-2">

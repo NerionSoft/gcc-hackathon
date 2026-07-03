@@ -17,7 +17,11 @@ import {
 
 const NOW = new Date().toISOString();
 
-function property(id: string, localAuthority = "Testshire", propertyType = "residential"): Property {
+function property(
+  id: string,
+  localAuthority = "Testshire",
+  propertyType = "residential",
+): Property {
   return {
     id,
     uprn: null,
@@ -81,10 +85,14 @@ describe("clusterByRiskPattern determinism", () => {
   function makeMembers(): MemberInfo[] {
     const members: MemberInfo[] = [];
     for (let i = 0; i < 100; i += 1) {
-      members.push(member(`clean-${String(i).padStart(3, "0")}`, [signal(`clean-${i}`, "LAND", "green")]));
+      members.push(
+        member(`clean-${String(i).padStart(3, "0")}`, [signal(`clean-${i}`, "LAND", "green")]),
+      );
     }
     for (let i = 0; i < 50; i += 1) {
-      members.push(member(`flood-${String(i).padStart(3, "0")}`, [signal(`flood-${i}`, "LAND", "red")]));
+      members.push(
+        member(`flood-${String(i).padStart(3, "0")}`, [signal(`flood-${i}`, "LAND", "red")]),
+      );
     }
     for (let i = 0; i < 3; i += 1) {
       members.push(
@@ -127,10 +135,14 @@ describe("clusterByRiskPattern determinism", () => {
   it("splits a signature by (localAuthority, propertyType) only when every subgroup is viable", () => {
     const viable: MemberInfo[] = [];
     for (let i = 0; i < 50; i += 1) {
-      viable.push(member(`a-${String(i).padStart(2, "0")}`, [signal(`a-${i}`, "LAND", "red")], "Northtown"));
+      viable.push(
+        member(`a-${String(i).padStart(2, "0")}`, [signal(`a-${i}`, "LAND", "red")], "Northtown"),
+      );
     }
     for (let i = 0; i < 50; i += 1) {
-      viable.push(member(`b-${String(i).padStart(2, "0")}`, [signal(`b-${i}`, "LAND", "red")], "Southtown"));
+      viable.push(
+        member(`b-${String(i).padStart(2, "0")}`, [signal(`b-${i}`, "LAND", "red")], "Southtown"),
+      );
     }
     const split = computeClusters(viable, 40);
     expect(split.map((c) => c.key).sort()).toEqual([
@@ -140,7 +152,10 @@ describe("clusterByRiskPattern determinism", () => {
 
     // One member moved to a third authority → a dust subgroup would appear,
     // so the signature stays together as a single cluster.
-    const unviable = [...viable.slice(0, 99), member("c-00", [signal("c-0", "LAND", "red")], "Westtown")];
+    const unviable = [
+      ...viable.slice(0, 99),
+      member("c-00", [signal("c-0", "LAND", "red")], "Westtown"),
+    ];
     const together = computeClusters(unviable, 40);
     expect(together.map((c) => c.key)).toEqual(["LAND:red"]);
   });

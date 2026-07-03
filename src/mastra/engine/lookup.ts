@@ -63,9 +63,10 @@ export function resolveProperty(query: string): Property {
   const districtMatch = postcodeMatch?.[1] ?? q.toUpperCase().match(UK_DISTRICT_RE)?.[1];
   if (!districtMatch) throw new UnresolvableAddressError(query);
 
-  const neighbours = listProperties({ limit: 5000 }).filter((p) =>
-    p.postcode.toUpperCase().startsWith(`${districtMatch} `) ||
-    p.postcode.toUpperCase().startsWith(districtMatch),
+  const neighbours = listProperties({ limit: 5000 }).filter(
+    (p) =>
+      p.postcode.toUpperCase().startsWith(`${districtMatch} `) ||
+      p.postcode.toUpperCase().startsWith(districtMatch),
   );
   if (neighbours.length === 0) throw new UnresolvableAddressError(query);
 
@@ -115,8 +116,7 @@ export async function lookupProperty(query: string): Promise<LookupDossier> {
   const property = resolveProperty(query);
 
   // A portfolio of one, through the very same scan engine.
-  const scan =
-    property.status === "unscanned" ? await scanProperties([property.id]) : null;
+  const scan = property.status === "unscanned" ? await scanProperties([property.id]) : null;
 
   const refreshed = getProperty(property.id) ?? property;
   const signals = listSignalsForProperty(property.id);
@@ -129,8 +129,7 @@ export async function lookupProperty(query: string): Promise<LookupDossier> {
     action: "lookup_dossier_served",
     entityType: "Property",
     entityId: property.id,
-    rationale:
-      `Single-property dossier: ${signals.length} sourced signals, composite verdict ${verdict}.`,
+    rationale: `Single-property dossier: ${signals.length} sourced signals, composite verdict ${verdict}.`,
     payloadSnapshot: { query, verdict, escalationReason },
   });
 

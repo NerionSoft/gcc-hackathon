@@ -182,9 +182,7 @@ const adjudicateEvidenceStep = createStep({
 
     if (resumeData?.kind === "evidence") {
       const update = listEvidenceUpdates().find((u) => u.id === resumeData.updateId);
-      const adjudication = listAdjudications().find(
-        (a) => a.propertyId === resumeData.propertyId,
-      );
+      const adjudication = listAdjudications().find((a) => a.propertyId === resumeData.propertyId);
       if (!update || !adjudication) {
         logger.warn("Evidence event ignored — unknown update or adjudication", resumeData);
       } else {

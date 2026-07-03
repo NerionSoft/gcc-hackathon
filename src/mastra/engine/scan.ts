@@ -133,7 +133,12 @@ async function investigateDimension(
     return { accepted: [], rejected: 0, fairnessBlocked: 0, failed: true };
   }
 
-  const scan: DimensionScanResult = { accepted: [], rejected: 0, fairnessBlocked: 0, failed: false };
+  const scan: DimensionScanResult = {
+    accepted: [],
+    rejected: 0,
+    fairnessBlocked: 0,
+    failed: false,
+  };
   for (const candidate of result.value.signals) {
     // Fairness guardrail — blocked BEFORE persistence, audited (spec §1).
     const fairness = checkFairness(candidate);

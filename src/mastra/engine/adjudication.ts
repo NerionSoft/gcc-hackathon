@@ -9,7 +9,11 @@ import type {
   RiskSignal,
   Severity,
 } from "@/db/schema";
-import { llmVerdictSchema, verdictAdjudicator, type LlmVerdict } from "@/mastra/agents/verdict-adjudicator";
+import {
+  llmVerdictSchema,
+  verdictAdjudicator,
+  type LlmVerdict,
+} from "@/mastra/agents/verdict-adjudicator";
 import { generateStructured } from "@/mastra/agents/structured";
 import { checkFairness } from "@/mastra/engine/fairness";
 import { isLlmConfigured } from "@/mastra/llm";
@@ -51,10 +55,7 @@ export interface HardRuleOutcome {
  * Apply the two hard-coded rules to a property's evidence base. Pure
  * function — unit-tested directly by the invariant suite.
  */
-export function applyHardRules(
-  signals: RiskSignal[],
-  incoming?: EvidenceUpdate,
-): HardRuleOutcome {
+export function applyHardRules(signals: RiskSignal[], incoming?: EvidenceUpdate): HardRuleOutcome {
   // Rule 2 first: fairness exclusion narrows the evidence the verdict sees.
   const fairnessExcluded = signals.filter((s) => checkFairness(s).blocked);
   const included = signals.filter((s) => !checkFairness(s).blocked);

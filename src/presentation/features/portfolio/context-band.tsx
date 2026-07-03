@@ -2,7 +2,10 @@
 
 import { Combine, Loader2, Play, RotateCcw } from "lucide-react";
 import type { PortfolioSummary } from "@/presentation/data/contracts";
-import type { ScanCounters, ScanPhase } from "@/presentation/features/portfolio/use-scan-simulation";
+import type {
+  ScanCounters,
+  ScanPhase,
+} from "@/presentation/features/portfolio/use-scan-simulation";
 import { NeutralBadge } from "@/presentation/ui/primitives/badge";
 import { Button } from "@/presentation/ui/primitives/button";
 import { MetricStat } from "@/presentation/ui/primitives/metric-stat";

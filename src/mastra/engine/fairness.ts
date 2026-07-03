@@ -28,10 +28,16 @@ const PROTECTED_PROXY_PATTERNS: readonly { label: string; re: RegExp }[] = [
     label: "religion",
     re: /\b(religio\w+|muslim\w*|islam\w*|jewish|christian\w*|hindu\w*|sikh\w*|mosque\w*|synagogue\w*|church-?going)\b/i,
   },
-  { label: "age of residents", re: /\b(elderly (population|residents)|age profile of (the )?residents)\b/i },
+  {
+    label: "age of residents",
+    re: /\b(elderly (population|residents)|age profile of (the )?residents)\b/i,
+  },
   { label: "disability", re: /\b(disabled (population|residents)|disabilit\w+ rate)\b/i },
   { label: "sex/gender", re: /\b(gender (mix|composition)|sex ratio)\b/i },
-  { label: "sexual orientation", re: /\b(sexual orientation|lgbt\w*|gay (population|area|district))\b/i },
+  {
+    label: "sexual orientation",
+    re: /\b(sexual orientation|lgbt\w*|gay (population|area|district))\b/i,
+  },
   { label: "pregnancy/family status", re: /\b(single mothers?|pregnan\w+ rate)\b/i },
   {
     label: "demographic composition",

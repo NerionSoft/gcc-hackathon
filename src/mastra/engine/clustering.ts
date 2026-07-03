@@ -51,7 +51,10 @@ export function severitySignature(signals: RiskSignal[]): string {
 
 /** Deterministic, stable cluster id from its grouping key. */
 function clusterId(key: string): string {
-  return `cluster-${key.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+  return `cluster-${key
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")}`;
 }
 
 /** Dominant signal codes at material severity — the cluster's `pattern`. */
@@ -110,9 +113,7 @@ function describe(proto: ProtoCluster): { name: string; description: string } {
     };
   }
   const scope =
-    proto.localAuthority !== null
-      ? ` in ${proto.localAuthority} (${proto.propertyType})`
-      : "";
+    proto.localAuthority !== null ? ` in ${proto.localAuthority} (${proto.propertyType})` : "";
   return {
     name: `${proto.signature.replaceAll("+", " + ")}${scope}`,
     description: `Shared severity signature ${proto.signature}${scope}. Spread: ${laText}.`,
@@ -121,10 +122,7 @@ function describe(proto: ProtoCluster): { name: string; description: string } {
 
 const rationaleSchema = z.object({ rationale: z.string().min(1) });
 
-async function groupingRationale(
-  proto: ProtoCluster,
-  pattern: string,
-): Promise<string> {
+async function groupingRationale(proto: ProtoCluster, pattern: string): Promise<string> {
   const deterministic =
     `Deterministic group-by: every member shares the per-dimension severity signature ` +
     `"${proto.signature}"` +
@@ -173,10 +171,7 @@ export interface ClusteringOptions {
  * Compute the deterministic clusters over the given members. Pure function
  * of its input — exported for the "same input → same clusters" invariant.
  */
-export function computeClusters(
-  members: MemberInfo[],
-  minClusterSize: number,
-): ProtoCluster[] {
+export function computeClusters(members: MemberInfo[], minClusterSize: number): ProtoCluster[] {
   // Tier 1 — group by signature.
   const bySignature = new Map<string, MemberInfo[]>();
   for (const m of members) {
@@ -204,9 +199,7 @@ export function computeClusters(
       list.push(m);
       byExact.set(key, list);
     }
-    const everySubgroupViable = [...byExact.values()].every(
-      (sub) => sub.length >= minClusterSize,
-    );
+    const everySubgroupViable = [...byExact.values()].every((sub) => sub.length >= minClusterSize);
     if (everySubgroupViable && byExact.size > 1) {
       for (const [key, sub] of [...byExact.entries()].sort(([a], [b]) => a.localeCompare(b))) {
         const [localAuthority, propertyType] = key.split("|");

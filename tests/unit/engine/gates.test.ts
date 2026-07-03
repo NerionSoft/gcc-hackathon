@@ -83,7 +83,9 @@ function seedCluster(id: string, propertyIds: string[], status: "draft" | "pendi
 
 beforeEach(() => {
   const db = getDb();
-  db.exec("DELETE FROM adjudications; DELETE FROM risk_signals; DELETE FROM risk_clusters; DELETE FROM properties;");
+  db.exec(
+    "DELETE FROM adjudications; DELETE FROM risk_signals; DELETE FROM risk_clusters; DELETE FROM properties;",
+  );
 });
 
 describe("review gate — nothing publishes while reviewedAt is null", () => {
@@ -102,11 +104,18 @@ describe("review gate — nothing publishes while reviewedAt is null", () => {
     seedProperty(propertyId);
     const cluster = seedCluster(uid("cluster"), [propertyId], "pending_review");
 
-    const rejected = reviewCluster(cluster.id, "request_changes", "Nadia", "Cite the flood record id.");
+    const rejected = reviewCluster(
+      cluster.id,
+      "request_changes",
+      "Nadia",
+      "Cite the flood record id.",
+    );
     expect(rejected.status).toBe("draft");
     expect(rejected.reviewedAt).toBeNull();
     const events = listAuditEvents({ entityType: "RiskCluster", entityId: cluster.id });
-    expect(events.some((e) => e.action === "assessment_changes_requested" && e.actor === "user:nadia")).toBe(true);
+    expect(
+      events.some((e) => e.action === "assessment_changes_requested" && e.actor === "user:nadia"),
+    ).toBe(true);
   });
 
   it("publishes after a named approval and escalates the forced-red member", async () => {
@@ -193,7 +202,11 @@ describe("human adjudication — red is never resolved without a human justifica
   it("confirm_risk keeps the red verdict and flags the property", () => {
     const propertyId = uid("prop");
     const adjId = seedEscalated(propertyId, uid("cluster"));
-    const confirmed = applyHumanAdjudication(adjId, "confirm_risk", "Risk is real; do not proceed without indemnity.");
+    const confirmed = applyHumanAdjudication(
+      adjId,
+      "confirm_risk",
+      "Risk is real; do not proceed without indemnity.",
+    );
     expect(confirmed.status).toBe("adjudicated");
     expect(confirmed.compositeVerdict).toBe("red");
     expect(getProperty(propertyId)?.status).toBe("flagged");

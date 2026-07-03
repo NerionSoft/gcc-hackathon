@@ -56,9 +56,7 @@ async function main(): Promise<void> {
   // ---------------------------------------------------------------- scan
   h("1. scanPortfolio + clusterByRiskPattern + composeAssessments");
   const real = listProperties({ limit: 5000 }).filter((p) => p.provenance === "real_open_data");
-  const input = SMOKE
-    ? { propertyIds: real.slice(0, 3).map((p) => p.id), minClusterSize: 1 }
-    : {};
+  const input = SMOKE ? { propertyIds: real.slice(0, 3).map((p) => p.id), minClusterSize: 1 } : {};
   const runId = await startCampaign(input);
   console.log(`Campaign run: ${runId}${SMOKE ? " (smoke: 3 real properties)" : ""}`);
 
@@ -171,7 +169,9 @@ async function main(): Promise<void> {
   const auditCount = (db.prepare("SELECT COUNT(*) n FROM audit_events").get() as { n: number }).n;
   console.log(`\nAudit ledger: ${auditCount} append-only events. Sample of the last 5:`);
   for (const e of listAuditEvents({ limit: 5 })) {
-    console.log(`  [${e.timestamp}] ${e.actor.padEnd(10)} ${e.action.padEnd(32)} ${e.entityType}:${e.entityId}`);
+    console.log(
+      `  [${e.timestamp}] ${e.actor.padEnd(10)} ${e.action.padEnd(32)} ${e.entityType}:${e.entityId}`,
+    );
   }
   console.log("\n✅ End-to-end engine run complete.");
   process.exit(0);

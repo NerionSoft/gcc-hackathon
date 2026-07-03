@@ -4,7 +4,12 @@ import { useEffect, useMemo, useState } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import type { PropertyStatus } from "@/db/schema";
 import type { PortfolioTile } from "@/presentation/data/contracts";
-import { Tile, TILE_GAP, TILE_HEIGHT, TILE_MIN_WIDTH } from "@/presentation/features/portfolio/tile";
+import {
+  Tile,
+  TILE_GAP,
+  TILE_HEIGHT,
+  TILE_MIN_WIDTH,
+} from "@/presentation/features/portfolio/tile";
 import { cx } from "@/presentation/ui/cx";
 
 /**
@@ -69,7 +74,11 @@ export function Wall({
             <div
               key={row.key}
               className="absolute left-0 top-0 flex w-full"
-              style={{ transform: `translateY(${row.start}px)`, gap: TILE_GAP, height: TILE_HEIGHT }}
+              style={{
+                transform: `translateY(${row.start}px)`,
+                gap: TILE_GAP,
+                height: TILE_HEIGHT,
+              }}
             >
               {rowTiles.map((tile) => (
                 <div key={tile.id} style={{ width: tileWidth, height: TILE_HEIGHT }}>

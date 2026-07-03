@@ -6,7 +6,12 @@ import { LayoutGroup, motion } from "framer-motion";
 import { AlertTriangle } from "lucide-react";
 import { usePortfolioData } from "@/presentation/features/portfolio/use-portfolio-data";
 import { useScanSimulation } from "@/presentation/features/portfolio/use-scan-simulation";
-import { applyFilters, EMPTY_FILTERS, FilterBar, type WallFilters } from "@/presentation/features/portfolio/filter-bar";
+import {
+  applyFilters,
+  EMPTY_FILTERS,
+  FilterBar,
+  type WallFilters,
+} from "@/presentation/features/portfolio/filter-bar";
 import { ContextBand } from "@/presentation/features/portfolio/context-band";
 import { Wall } from "@/presentation/features/portfolio/wall";
 import {
@@ -35,10 +40,7 @@ export function PortfolioView() {
   const wallAreaRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const tileById = useMemo(
-    () => new Map((tiles ?? []).map((tile) => [tile.id, tile])),
-    [tiles],
-  );
+  const tileById = useMemo(() => new Map((tiles ?? []).map((tile) => [tile.id, tile])), [tiles]);
 
   const clusterIndexById = useMemo(() => {
     const map = new Map<string, number>();
@@ -123,7 +125,11 @@ export function PortfolioView() {
     return (
       <Card className="mx-auto mt-10 max-w-lg">
         <CardBody className="flex items-start gap-3">
-          <AlertTriangle aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-severity-red" strokeWidth={1.5} />
+          <AlertTriangle
+            aria-hidden
+            className="mt-0.5 h-4 w-4 shrink-0 text-severity-red"
+            strokeWidth={1.5}
+          />
           <div>
             <p className="text-[13px] font-medium text-ink">The portfolio failed to load.</p>
             <p className="mt-1 font-mono text-[12px] text-ink-secondary">{error}</p>
@@ -195,9 +201,7 @@ export function PortfolioView() {
                   Risk clusters
                 </h2>
                 {clusters.preview && (
-                  <NeutralBadge>
-                    signature preview — engine clustering pending
-                  </NeutralBadge>
+                  <NeutralBadge>signature preview — engine clustering pending</NeutralBadge>
                 )}
                 <span className="ml-auto font-mono text-[11px] text-ink-secondary">
                   shift+R replays the condensation
