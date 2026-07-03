@@ -16,7 +16,7 @@ import {
 } from "@/types";
 
 /**
- * Géorisques (BRGM / ministère de la Transition écologique) — the richest
+ * Géorisques (BRGM / French Ministry for Ecological Transition) — the richest
  * single source. Doc: georisques.gouv.fr/doc-api (Swagger spec discovered at
  * /api/v3/api-docs/georisques-api-v1, verified live against real addresses).
  *
