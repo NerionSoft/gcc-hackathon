@@ -7,7 +7,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": resolve(__dirname, "src"),
-      "@prisma": resolve(__dirname, "src/infrastructure/db/generated/prisma"),
     },
   },
   test: {

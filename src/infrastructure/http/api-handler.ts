@@ -1,10 +1,6 @@
 import { NextResponse } from "next/server";
 import { ZodError, flattenError } from "zod";
 import { DomainError } from "@/shared/errors/domain-error";
-import { UnauthorizedError } from "@/shared/auth/errors/unauthorized.error";
-import { ForbiddenError } from "@/shared/auth/errors/forbidden.error";
-import { runWithAuthContext } from "@/shared/auth/auth-context";
-import { authContextProvider } from "@/infrastructure/auth";
 import { env } from "@/infrastructure/config/env";
 import { getLogger } from "@/infrastructure/logging/logger";
 import { runWithContext, getCorrelationId } from "@/infrastructure/runtime/request-context";
@@ -37,8 +33,6 @@ interface ErrorResponse {
 }
 
 function getHttpStatus(error: unknown): number {
-  if (error instanceof UnauthorizedError) return 401;
-  if (error instanceof ForbiddenError) return 403;
   if (error instanceof DomainError) {
     return errorStatusRegistry[error.code] || 500;
   }
@@ -49,16 +43,6 @@ function getHttpStatus(error: unknown): number {
 function formatErrorResponse(error: unknown): ErrorResponse {
   const correlationId = getCorrelationId();
   const isDev = env.isDev;
-
-  if (error instanceof UnauthorizedError || error instanceof ForbiddenError) {
-    return {
-      error: {
-        code: error.code,
-        message: error.message,
-        correlationId,
-      },
-    };
-  }
 
   if (error instanceof DomainError) {
     return {
@@ -123,10 +107,7 @@ export function apiHandler(handler: ApiHandler): ApiHandler {
       });
 
       try {
-        const authContext = await authContextProvider.resolve(req.headers);
-
-        const run = async () => handler(req, context);
-        const response = authContext ? await runWithAuthContext(authContext, run) : await run();
+        const response = await handler(req, context);
 
         logger.info("Request completed", {
           method: req.method,

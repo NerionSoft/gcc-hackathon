@@ -47,4 +47,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-src/infrastructure/db/generated/prisma
+# local SQLite database (rebuilt by `pnpm seed`; open-data cache in data/properties/ IS committed)
+/data/*.db
+/data/*.db-journal
+/data/*.db-wal
+/data/*.db-shm
