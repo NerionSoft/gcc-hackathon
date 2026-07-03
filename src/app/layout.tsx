@@ -1,29 +1,25 @@
 import type { Metadata } from "next";
-import { ibmPlexMono, ibmPlexSans } from "./fonts";
-import { AppHeader } from "@/presentation/ui/layout/app-header";
-import { ProvenanceFooter } from "@/presentation/ui/layout/provenance-footer";
+import { Inter } from "next/font/google";
+import { QueryProvider } from "@/components/providers/query-provider";
+import { SiteHeader } from "@/components/layout/site-header";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+
 export const metadata: Metadata = {
-  title: "Civic Property Intelligence",
+  title: "TerraVista — Analyze your future home",
   description:
-    "Open-source intelligence on property assets: sourced, graded risk verdicts from public registers, before capital commits.",
+    "A free citizen assistant that cross-references French public data (risks, prices, air, safety, energy) to inform a property purchase.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
-    >
-      <body className="flex min-h-full flex-col">
-        <AppHeader />
-        <main className="mx-auto w-full max-w-450 flex-1 px-4 py-4">{children}</main>
-        <ProvenanceFooter />
+    <html lang="en" className={inter.variable}>
+      <body>
+        <QueryProvider>
+          <SiteHeader />
+          {children}
+        </QueryProvider>
       </body>
     </html>
   );

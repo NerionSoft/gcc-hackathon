@@ -37,8 +37,11 @@ jobs:
       - name: Unit tests
         run: pnpm test
 
-      - name: Seed (invariants against the committed data cache)
-        run: pnpm seed
-
       - name: Build
         run: pnpm build
+
+      - name: Install Playwright browsers
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: E2E tests (mocked network — no external API calls)
+        run: pnpm test:e2e

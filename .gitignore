@@ -47,11 +47,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# local SQLite database (rebuilt by `pnpm seed`; open-data cache in data/properties/ IS committed)
-/data/*.db
-/data/*.db-journal
-/data/*.db-wal
-/data/*.db-shm
-
-# GIAS bulk extract (60+ MB; the filtered per-district subsets in data/cache/dfe-schools/ ARE committed)
-/data/cache/dfe-schools-raw.csv
+# on-disk source-response cache (rebuilt on demand; demo fixtures under
+# data/demo/ are committed separately and are NOT ignored)
+/data/cache/
