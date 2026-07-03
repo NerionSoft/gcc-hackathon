@@ -1,0 +1,14 @@
+{
+  "key": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=52.675268,1.686377,52.676468,1.6875769999999999,urn:ogc:def:crs:EPSG::4326",
+  "url": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=52.675268,1.686377,52.676468,1.6875769999999999,urn:ogc:def:crs:EPSG::4326",
+  "retrievedAt": "2026-07-03T13:38:32.140Z",
+  "body": {
+    "type": "FeatureCollection",
+    "features": [],
+    "totalFeatures": 0,
+    "numberMatched": 0,
+    "numberReturned": 0,
+    "timeStamp": "2026-07-03T13:38:31.614Z",
+    "crs": null
+  }
+}

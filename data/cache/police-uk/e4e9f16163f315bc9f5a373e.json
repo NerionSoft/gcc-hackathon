@@ -1,0 +1,889 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=50.825404999999996,-0.178098:50.825404999999996,-0.171698:50.829405,-0.171698:50.829405,-0.178098&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=50.825404999999996,-0.178098:50.825404999999996,-0.171698:50.829405,-0.171698:50.829405,-0.178098&date=2026-04",
+  "retrievedAt": "2026-07-03T13:45:56.547Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.826896",
+        "street": {
+          "id": 2194999,
+          "name": "On or near St Aubyns"
+        },
+        "longitude": "-0.176451"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935804,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936339,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825540",
+        "street": {
+          "id": 2195050,
+          "name": "On or near Hove Place"
+        },
+        "longitude": "-0.175396"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936590,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825540",
+        "street": {
+          "id": 2195050,
+          "name": "On or near Hove Place"
+        },
+        "longitude": "-0.175396"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936034,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.826161",
+        "street": {
+          "id": 2194962,
+          "name": "On or near Namrik Mews"
+        },
+        "longitude": "-0.177786"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134934781,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134937181,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.826874",
+        "street": {
+          "id": 2195032,
+          "name": "On or near Seafield Road"
+        },
+        "longitude": "-0.175642"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936915,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825540",
+        "street": {
+          "id": 2195050,
+          "name": "On or near Hove Place"
+        },
+        "longitude": "-0.175396"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "dd3d2c8b1efca7a1d960f34dc9a3374db4469d08aef53ba7a7d72bbdd6c7fff8",
+      "id": 134933643,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825728",
+        "street": {
+          "id": 2195077,
+          "name": "On or near Albany Villas"
+        },
+        "longitude": "-0.173046"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "9fcafaf3d64fc0b7d37f1576b8dfb9e005e66174ace9db2473f233e3429d0031",
+      "id": 134924649,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "possession-of-weapons",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.827233",
+        "street": {
+          "id": 2195140,
+          "name": "On or near Albany Mews"
+        },
+        "longitude": "-0.172107"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "97b77f2dcb852d194fb6cd5a11645109f00b6b54a8af7b03abcad346431c9ad3",
+      "id": 134934020,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825540",
+        "street": {
+          "id": 2195050,
+          "name": "On or near Hove Place"
+        },
+        "longitude": "-0.175396"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "983b1766c0a926435f7539246a5ed06e2b266dcaabefbbb155bcca8bc156dae3",
+      "id": 134925274,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "6ef2b1312d009c05bc8ae473865044989fcc31c41b2a86e4cc66ca191da5faf2",
+      "id": 134924063,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.827233",
+        "street": {
+          "id": 2195140,
+          "name": "On or near Albany Mews"
+        },
+        "longitude": "-0.172107"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Formal action is not in the public interest",
+        "date": "2026-04"
+      },
+      "persistent_id": "5d49958fd001ea1e45ecdc9d858a827f3a0cbacd1dd6158328edfec37f8c5d58",
+      "id": 134932241,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "54dd0e074612eca783b67bc55766f890e88b7c36c3bcdb70bf3eb4d01a0d4d2d",
+      "id": 134924061,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.827233",
+        "street": {
+          "id": 2195140,
+          "name": "On or near Albany Mews"
+        },
+        "longitude": "-0.172107"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "a2134695b718ba2afa1d3b4861c5daf4be6960d6f27c49af8cc18003436947e4",
+      "id": 134930677,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "98939c00d9b7581e184fb3731d2bb5a9015dca550ca1375ecb52eb459b03e16c",
+      "id": 134929538,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "727a8d3746fd69d2c78dc1184636190940faf94b044746525890a9895b008105",
+      "id": 134929535,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "1a13b6ee8d9877c61a6904217fa5fc573a3d29e58954963d6bc60ba72b186c15",
+      "id": 134925672,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "5685ac271495558ef8b1c983446a8c2611cb0386919921a0bc5d495b53b60d78",
+      "id": 134924062,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "59999600e2c281514903d51929e1fd36bd8b93f65fb8eb2c39a4a5f703a830c4",
+      "id": 134925669,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "a99bdb209265c2493ca68664518db88623fdabb74b80a7984a493231dcf52f4c",
+      "id": 134924060,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "e19dada9d28cc8b336fc78ab23900cceac2bf2497dbdeb294256b03d879b97e6",
+      "id": 134925670,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "c8ab21958abe1290afd6b677b10c6c4742e7582418a57c8cd328a3ed3f6ea1d3",
+      "id": 134926080,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "e2420778ea9d0787e9d99d9ac095cb9be72519ced5cb294a095a79f35dfd83d9",
+      "id": 134926079,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "74498f92f153bf49192200240634829071fb1b17378cbe56c89d088b332f71f2",
+      "id": 134925671,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "1592f2c7176857a12e256a6deb6b5dba3a2e520aadb2a2989592d9c867b7f530",
+      "id": 134932238,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "db47be2c37fab1dc3517c06913ebcd57951ce0ad2a1fbec7eaa5f61d67b4bd2f",
+      "id": 134933263,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "4cd11409c9bb2f45cd56bbba6871a0104bb84c55cf79b57ef95a80df45444629",
+      "id": 134932237,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "f5ba90382548a65bf1062139c3283ca1c21f3605ad2728ac0aaadda6f050e7de",
+      "id": 134932236,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "34e487e13df805691c7d910185463f484b3a81adefc8b7b26a317255ca104282",
+      "id": 134927936,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.826874",
+        "street": {
+          "id": 2195032,
+          "name": "On or near Seafield Road"
+        },
+        "longitude": "-0.175642"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "89fe9dfd5d195938b13b6c9bed99c440f00ac2410fe64340368225955e7d29c5",
+      "id": 134929536,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.826161",
+        "street": {
+          "id": 2194962,
+          "name": "On or near Namrik Mews"
+        },
+        "longitude": "-0.177786"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "f6cbdaefbedaf983870fd30eaf86d5ee1316fa1e172280d2487ef0c03701369d",
+      "id": 134931826,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.827233",
+        "street": {
+          "id": 2195140,
+          "name": "On or near Albany Mews"
+        },
+        "longitude": "-0.172107"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Local resolution",
+        "date": "2026-04"
+      },
+      "persistent_id": "8c41b29a1e1fcb149d6ee13be097a92e2a29992433057d2defa6a57397e0e97a",
+      "id": 134924942,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "59e2a87da738432844b940a81ae465f317ee6aefa94486187a08fd9b0359eee2",
+      "id": 134930674,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.826874",
+        "street": {
+          "id": 2195032,
+          "name": "On or near Seafield Road"
+        },
+        "longitude": "-0.175642"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "bac1b0bc2fa1f797ad77c2651159be4475da6d1e2cafef10ae6f79152589ab2d",
+      "id": 134925275,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825540",
+        "street": {
+          "id": 2195050,
+          "name": "On or near Hove Place"
+        },
+        "longitude": "-0.175396"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "2fd257bcdb4af9c3f6094ad892ac5caf2bba2fe510e6a3d483dc1d178a37e7cd",
+      "id": 134927542,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825540",
+        "street": {
+          "id": 2195050,
+          "name": "On or near Hove Place"
+        },
+        "longitude": "-0.175396"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "0384b467d8757b5740b00a290d1cc2c6daf32e6ee8df97550efdd8dde48cfd29",
+      "id": 134929141,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "808766917c58c9ab0e64a99aed3d989e705fa27fd7c1b630546cead845f1d69c",
+      "id": 134929923,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "88f721e2962bd7dbd384f7f38c5a7730f4eed7e52550be7192011bdb905652a9",
+      "id": 134930669,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828866",
+        "street": {
+          "id": 2195012,
+          "name": "On or near Supermarket"
+        },
+        "longitude": "-0.176148"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "6ea92578a6b9c07bc691a92c38edb34c49510d5da6a173863dd4c6f9c7fa93fd",
+      "id": 134928335,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "816ffd0ce9a2c2fa2191da1314136fa0d2fa044d1e8b87af1d701460713b77d9",
+      "id": 134924938,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828763",
+        "street": {
+          "id": 2195031,
+          "name": "On or near Haddington Close"
+        },
+        "longitude": "-0.174461"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "afbe12259198e9976b0409058aecffcd6829d33e4f8865d4ed62b550ecd5ee80",
+      "id": 134924939,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.829079",
+        "street": {
+          "id": 2195122,
+          "name": "On or near Ventnor Villas"
+        },
+        "longitude": "-0.172830"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "5d642ec9f6918a25378ba8fc315221c6fd22b6bc46d78752cbc3f5cd6a11cfe3",
+      "id": 134925283,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

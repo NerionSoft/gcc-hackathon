@@ -40,7 +40,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.520Z",
+      "retrievedAt": "2026-07-03T13:42:42.620Z",
       "records": [
         {
           "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/BF60010F-EF99-4497-B354-21640515CDDC/current",
@@ -180,7 +180,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.520Z",
+      "retrievedAt": "2026-07-03T13:42:42.620Z",
       "records": [
         {
           "entity": 65519776,
@@ -206,7 +206,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.521Z",
+      "retrievedAt": "2026-07-03T13:42:42.621Z",
       "records": [
         {
           "notation": "122WAF975",
@@ -398,7 +398,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "no_data",
-      "retrievedAt": "2026-07-03T13:14:31.521Z",
+      "retrievedAt": "2026-07-03T13:42:42.621Z",
       "detail": "The source answered but holds no records for this query."
     },
     "policeUkCrime": {
@@ -407,7 +407,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.521Z",
+      "retrievedAt": "2026-07-03T13:42:42.621Z",
       "records": [
         {
           "month": "2026-04",
@@ -441,7 +441,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.521Z",
+      "retrievedAt": "2026-07-03T13:42:42.621Z",
       "records": [
         {
           "featureId": "Road_Noise_Lden_England_Round_3.1596181",
@@ -456,7 +456,7 @@
       "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.522Z",
+      "retrievedAt": "2026-07-03T13:42:42.621Z",
       "records": [
         {
           "tile": "TA0829",
@@ -470,7 +470,7 @@
       "status": "data_gap",
       "dataset": "bgs-radon-indicative-atlas",
       "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer",
-      "retrievedAt": "2026-07-03T13:14:31.522Z",
+      "retrievedAt": "2026-07-03T13:42:42.622Z",
       "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
       "fromCache": false,
       "reason": "no_open_endpoint",
@@ -482,7 +482,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.522Z",
+      "retrievedAt": "2026-07-03T13:42:42.622Z",
       "records": [
         {
           "urn": "118131",
@@ -658,7 +658,7 @@
       "status": "data_gap",
       "dataset": "epc-domestic",
       "url": "https://api.get-energy-performance-data.communities.gov.uk/api/domestic/search?postcode=HU3%201NZ&page=25",
-      "retrievedAt": "2026-07-03T13:14:31.522Z",
+      "retrievedAt": "2026-07-03T13:42:42.622Z",
       "licence": "OGL v3.0 (contains EPC data © Crown copyright)",
       "fromCache": false,
       "reason": "key_missing",
@@ -668,7 +668,7 @@
       "status": "data_gap",
       "dataset": "companies-house-register",
       "url": "https://api.company-information.service.gov.uk/search/companies?q=1%2C%20ALEXANDRA%20AVENUE%2C%20HULL&items_per_page=10",
-      "retrievedAt": "2026-07-03T13:14:31.522Z",
+      "retrievedAt": "2026-07-03T13:42:42.622Z",
       "licence": "OGL v3.0 (Companies House public register)",
       "fromCache": false,
       "reason": "key_missing",
@@ -678,7 +678,7 @@
       "status": "data_gap",
       "dataset": "land-registry-ccod-ocod",
       "url": "https://use-land-property-data.service.gov.uk/api/v1/datasets/ocod",
-      "retrievedAt": "2026-07-03T13:14:31.522Z",
+      "retrievedAt": "2026-07-03T13:42:42.622Z",
       "licence": "HM Land Registry Free Datasets Licence (CCOD/OCOD)",
       "fromCache": false,
       "reason": "key_missing",
@@ -690,7 +690,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.492Z",
+      "retrievedAt": "2026-07-03T13:42:42.596Z",
       "records": [
         {
           "recordUri": "http://landregistry.data.gov.uk/data/ukhpi/region/city-of-kingston-upon-hull/month/2026-01",
@@ -709,7 +709,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.502Z",
+      "retrievedAt": "2026-07-03T13:42:42.605Z",
       "records": [
         {
           "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000003&indexandyearchange=index",

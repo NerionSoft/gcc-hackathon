@@ -1,0 +1,110 @@
+{
+  "key": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=52.99539&long=-2.100048&dist=3&_limit=50",
+  "url": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=52.99539&long=-2.100048&dist=3&_limit=50",
+  "retrievedAt": "2026-07-03T13:44:00.446Z",
+  "body": {
+    "@context": "http://environment.data.gov.uk/flood-monitoring/meta/context.jsonld",
+    "meta": {
+      "publisher": "Environment Agency",
+      "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "documentation": "http://environment.data.gov.uk/flood-monitoring/doc/reference",
+      "version": "0.9",
+      "comment": "Status: Beta service",
+      "hasFormat": [
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.csv?lat=52.99539&long=-2.100048&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.rdf?lat=52.99539&long=-2.100048&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.ttl?lat=52.99539&long=-2.100048&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.html?lat=52.99539&long=-2.100048&dist=3&_limit=50"
+      ],
+      "limit": 50
+    },
+    "items": [
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3TRENT03",
+        "county": "Stoke-on-Trent",
+        "description": "River Trent at Abbey Hulton and Bucknall area of Stoke including Fishpond Way, Mill Farm, Leek Road, Atlam Close, Westacre, Broughton Road and Dividy Road",
+        "eaAreaName": "West Midlands",
+        "floodWatchArea": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309",
+        "fwdCode": "033FWF3TRENT03",
+        "label": "River Trent at Abbey Hulton and Bucknall",
+        "lat": 53.02419,
+        "long": -2.15104,
+        "notation": "033FWF3TRENT03",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3TRENT03/polygon",
+        "quickDialNumber": "308164",
+        "riverOrSea": "River Trent"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309",
+        "county": "Staffordshire, Stoke-on-Trent",
+        "description": "Low-lying land and roads between Norton Green and Darlaston on the River Trent and on the Lyme Brook and Ford Green Brook",
+        "eaAreaName": "West Midlands",
+        "fwdCode": "033WAF309",
+        "label": "Stoke Trent",
+        "lat": 52.96209,
+        "long": -2.18889,
+        "notation": "033WAF309",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309/polygon",
+        "quickDialNumber": "208011",
+        "riverOrSea": "Ford Green Brook, Lyme Brook, River Trent"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF313",
+        "county": "Staffordshire, Stoke-on-Trent",
+        "description": "Low-lying land and roads between Blythe Bridge and Nethertown on the River Blithe and between Hoar Cross and Yoxall on the River Swarbourne",
+        "eaAreaName": "West Midlands",
+        "fwdCode": "033WAF313",
+        "label": "River Blithe and River Swarbourn",
+        "lat": 52.84952,
+        "long": -1.92957,
+        "notation": "033WAF313",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF313/polygon",
+        "quickDialNumber": "208014",
+        "riverOrSea": "River Blithe, River Swarbourne"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF317",
+        "county": "Staffordshire",
+        "description": "Low-lying land and roads between Leek and Rocester on the River Churnet and between Adderley and Spath on the River Tean including Cecilly Brook at Cheadle",
+        "eaAreaName": "West Midlands",
+        "fwdCode": "033WAF317",
+        "label": "River Churnet and River Tean",
+        "lat": 53.05848,
+        "long": -1.99927,
+        "notation": "033WAF317",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF317/polygon",
+        "quickDialNumber": "208017",
+        "riverOrSea": "River Churnet, River Tean"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF312",
+        "county": "Staffordshire, Wolverhampton",
+        "description": "Low-lying land and roads between Great Bridgeford and Shugborough on the River Sow, between Coven and Stafford on the River Penk, on the Sandyford Brook, on the Rising Brook, on the Ridings Brook and on the Saredon Brook",
+        "eaAreaName": "West Midlands",
+        "fwdCode": "033WAF312",
+        "label": "River Sow and River Penk",
+        "lat": 52.78398,
+        "long": -2.15762,
+        "notation": "033WAF312",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF312/polygon",
+        "quickDialNumber": "052135",
+        "riverOrSea": "Sandyford Brook, Ridings Brook, Saredon Brook"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3BLITHE01",
+        "county": "Staffordshire",
+        "description": "River Blithe at Blythe Bridge including Uttoxeter Road, Roman Road, Blythe View and Blythe Bridge Mill",
+        "eaAreaName": "West Midlands",
+        "floodWatchArea": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF313",
+        "fwdCode": "033FWF3BLITHE01",
+        "label": "River Blithe at Blythe Bridge",
+        "lat": 52.96839,
+        "long": -2.06815,
+        "notation": "033FWF3BLITHE01",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3BLITHE01/polygon",
+        "quickDialNumber": "308035",
+        "riverOrSea": "River Blithe"
+      }
+    ]
+  }
+}

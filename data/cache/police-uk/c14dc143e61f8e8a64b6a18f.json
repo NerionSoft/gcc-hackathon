@@ -1,0 +1,151 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=53.750761,-0.374955:53.750761,-0.368555:53.754761,-0.368555:53.754761,-0.374955&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=53.750761,-0.374955:53.750761,-0.368555:53.754761,-0.368555:53.754761,-0.374955&date=2026-04",
+  "retrievedAt": "2026-07-03T13:37:35.664Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.754000",
+        "street": {
+          "id": 1498655,
+          "name": "On or near Renfrew Street"
+        },
+        "longitude": "-0.369895"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134517204,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.754000",
+        "street": {
+          "id": 1498655,
+          "name": "On or near Renfrew Street"
+        },
+        "longitude": "-0.369895"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "8ea9505510e79d778b264102a3d3976302aa13c896739c5990d32ee8ef41024d",
+      "id": 134513970,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.754073",
+        "street": {
+          "id": 1498672,
+          "name": "On or near Lanark Street"
+        },
+        "longitude": "-0.369301"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "f5330bb739dff77fd0020a5940d476b332b05ece27966072ccb175be2abcf9c9",
+      "id": 134512587,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.754000",
+        "street": {
+          "id": 1498655,
+          "name": "On or near Renfrew Street"
+        },
+        "longitude": "-0.369895"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "dfcf4122f6490e4c0148ccf6cae4d3277cc64c06401180d3fc5217a681dc42be",
+      "id": 134514237,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.753118",
+        "street": {
+          "id": 1498650,
+          "name": "On or near Newstead Street"
+        },
+        "longitude": "-0.371112"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "b81b58cb4419910a8551a5fed0c9e7e5eded19154208c527a815424a8e5c6de8",
+      "id": 134510819,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.752668",
+        "street": {
+          "id": 1498630,
+          "name": "On or near Wharncliffe Street"
+        },
+        "longitude": "-0.371130"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "6b4ac026a2aef38b059f71c30c032e5b8d773a229ccbffe0d269790b54922e21",
+      "id": 134511527,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.754073",
+        "street": {
+          "id": 1498672,
+          "name": "On or near Lanark Street"
+        },
+        "longitude": "-0.369301"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "c6b9dfe5be5a23ea42a244efe8254b6cb8a5af088ec6608202f560988c946916",
+      "id": 134511765,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

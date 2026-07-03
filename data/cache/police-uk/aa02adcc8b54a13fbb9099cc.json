@@ -1,0 +1,175 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=53.748763,-0.38473799999999997:53.748763,-0.378338:53.752763,-0.378338:53.752763,-0.38473799999999997&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=53.748763,-0.38473799999999997:53.748763,-0.378338:53.752763,-0.378338:53.752763,-0.38473799999999997&date=2026-04",
+  "retrievedAt": "2026-07-03T13:37:21.511Z",
+  "body": [
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.751940",
+        "street": {
+          "id": 1498340,
+          "name": "On or near Woodgate Lane"
+        },
+        "longitude": "-0.383049"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "8d35926525884aecadfb168abd333277467bb8ebb0f36fc0de4286c1ee612758",
+      "id": 134511996,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.749560",
+        "street": {
+          "id": 1498400,
+          "name": "On or near Brougham Street"
+        },
+        "longitude": "-0.379895"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "0f2f1a305f6eed765a40bb2edfc6ff2631b21d3e10dd50a2d9e15ed74fd2aa9f",
+      "id": 134510547,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.750973",
+        "street": {
+          "id": 1498260,
+          "name": "On or near Woodgate Road"
+        },
+        "longitude": "-0.384663"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "eda40480f971b4e0c5c3b56a951fa1b2c43b75f501887e6dfb3400cb6717df3f",
+      "id": 134513398,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.748847",
+        "street": {
+          "id": 1498256,
+          "name": "On or near Riley Way"
+        },
+        "longitude": "-0.384366"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "8879b3b67f5d5f32f6b2f1c15536a9956df441a0a28272f62b3e87d202736c7d",
+      "id": 134514226,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.750973",
+        "street": {
+          "id": 1498260,
+          "name": "On or near Woodgate Road"
+        },
+        "longitude": "-0.384663"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "bdbc4f52f112e8bbee119007d0f41286119d5a1a820685703f33995a6edaaf80",
+      "id": 134513395,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.750973",
+        "street": {
+          "id": 1498260,
+          "name": "On or near Woodgate Road"
+        },
+        "longitude": "-0.384663"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "cc803ad6ace2d80c6e03bd57049e1f91f5cc9c6ed50f664ae0eab75e2eb0e33b",
+      "id": 134513396,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.750973",
+        "street": {
+          "id": 1498260,
+          "name": "On or near Woodgate Road"
+        },
+        "longitude": "-0.384663"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "71f97aece59514e6811f0b8b03d478aedb733ca200c6267dea288bc32743a8b7",
+      "id": 134513397,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.750437",
+        "street": {
+          "id": 1498343,
+          "name": "On or near Spring Bank West"
+        },
+        "longitude": "-0.381590"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "4e3b5ad0772ba17517ed35d00c90faa7c9835c13590d757a3c802355f5b552f0",
+      "id": 134516347,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "key": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=50.822607,-0.14874199999999999,50.823806999999995,-0.147542,urn:ogc:def:crs:EPSG::4326",
+  "url": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=50.822607,-0.14874199999999999,50.823806999999995,-0.147542,urn:ogc:def:crs:EPSG::4326",
+  "retrievedAt": "2026-07-03T13:46:49.630Z",
+  "body": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.319473",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "55.0-59.9"
+        },
+        "bbox": [
+          -0.175311,
+          50.815615,
+          -0.136472,
+          50.82472
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1293066",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "65.0-69.9"
+        },
+        "bbox": [
+          -0.172459,
+          50.820383,
+          -0.145354,
+          50.824498
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.902607",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "60.0-64.9"
+        },
+        "bbox": [
+          -0.172892,
+          50.818024,
+          -0.136319,
+          50.824503
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1538734",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "70.0-74.9"
+        },
+        "bbox": [
+          -0.223496,
+          50.820469,
+          -0.141542,
+          50.85782
+        ]
+      }
+    ],
+    "totalFeatures": 4,
+    "numberMatched": 4,
+    "numberReturned": 4,
+    "timeStamp": "2026-07-03T13:46:49.180Z",
+    "crs": null
+  }
+}

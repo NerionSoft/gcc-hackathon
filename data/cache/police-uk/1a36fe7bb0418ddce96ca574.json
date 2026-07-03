@@ -1,0 +1,601 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=50.821807,-0.165431:50.821807,-0.15903099999999998:50.825807000000005,-0.15903099999999998:50.825807000000005,-0.165431&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=50.821807,-0.165431:50.821807,-0.15903099999999998:50.825807000000005,-0.15903099999999998:50.825807000000005,-0.165431&date=2026-04",
+  "retrievedAt": "2026-07-03T13:46:27.832Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825575",
+        "street": {
+          "id": 2195353,
+          "name": "On or near Palmeira Square"
+        },
+        "longitude": "-0.163326"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935415,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134935905,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.824443",
+        "street": {
+          "id": 2195466,
+          "name": "On or near Alice Street"
+        },
+        "longitude": "-0.162234"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936483,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825575",
+        "street": {
+          "id": 2195353,
+          "name": "On or near Palmeira Square"
+        },
+        "longitude": "-0.163326"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134937389,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936592,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.824159",
+        "street": {
+          "id": 2195071,
+          "name": "On or near Brunswick Mews"
+        },
+        "longitude": "-0.161905"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "deae57a83f888d16ffa3d89083e4c1ce590e6021644c19e6220c51e160bb70bd",
+      "id": 134926096,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825575",
+        "street": {
+          "id": 2195353,
+          "name": "On or near Palmeira Square"
+        },
+        "longitude": "-0.163326"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "382321612c5710ccac588c923a544f7dbbde7a8283d7074dc0cbe5a1978e10b3",
+      "id": 134930684,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.824443",
+        "street": {
+          "id": 2195466,
+          "name": "On or near Alice Street"
+        },
+        "longitude": "-0.162234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "2c6c2b7a03e08277ab8b981e59fc2461651973a9a0f183de0f9ec5acc9d13eb8",
+      "id": 134923750,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.824443",
+        "street": {
+          "id": 2195466,
+          "name": "On or near Alice Street"
+        },
+        "longitude": "-0.162234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "c5df2d832970e24ab5a0fc2f6b16a68a0cf8bd0464368d69f21d9717f0475bcc",
+      "id": 134929933,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825533",
+        "street": {
+          "id": 2195479,
+          "name": "On or near Lansdowne Place"
+        },
+        "longitude": "-0.160658"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "e7e30cd3ae9736e4df9f5577733e2050218f46802eb5f7242cc98bbb325358c1",
+      "id": 134932918,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825415",
+        "street": {
+          "id": 2195372,
+          "name": "On or near St John's Road"
+        },
+        "longitude": "-0.165178"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "02ffca3c6e134b31a11a732d6948f3d9172f0c3bdcf787176d7be93a7d3f2d4a",
+      "id": 134931049,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825575",
+        "street": {
+          "id": 2195353,
+          "name": "On or near Palmeira Square"
+        },
+        "longitude": "-0.163326"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "d6467418c952998d66068e5cb96a70cd51b531b8de9159a28809f151a427bffa",
+      "id": 134929547,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.824443",
+        "street": {
+          "id": 2195466,
+          "name": "On or near Alice Street"
+        },
+        "longitude": "-0.162234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "2c238e198267f31db836e44bd79ce1a021f7fda8c3f542549dbb95c1ab5e89c5",
+      "id": 134933269,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "1ab6de9ddd98ec3ebd9703678d08e78c462ada342b7e4dafa0dffcc85e3f9d28",
+      "id": 134932917,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "d87b1b2a84b8c7bb42ceb9fb8c2bfa818b5ea5fbe27ee7d95ea5ad808f343b7d",
+      "id": 134928345,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.824159",
+        "street": {
+          "id": 2195071,
+          "name": "On or near Brunswick Mews"
+        },
+        "longitude": "-0.161905"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "becd0180af2c65ba03d030b0b5205e148479de46fd6e53f9807f535ad25bafbf",
+      "id": 134926095,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825575",
+        "street": {
+          "id": 2195353,
+          "name": "On or near Palmeira Square"
+        },
+        "longitude": "-0.163326"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "0f666d2bd5ab810f028054a560d3e3115d9c446fcad241473b3893edaafe97ec",
+      "id": 134930683,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.824443",
+        "street": {
+          "id": 2195466,
+          "name": "On or near Alice Street"
+        },
+        "longitude": "-0.162234"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "7eff2183879c332dd38ea586adfd0fbe39270c8fc0ffd19bf8bd322d9f86f335",
+      "id": 134931051,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825533",
+        "street": {
+          "id": 2195479,
+          "name": "On or near Lansdowne Place"
+        },
+        "longitude": "-0.160658"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Offender given a caution",
+        "date": "2026-04"
+      },
+      "persistent_id": "a69edb4767ed093e0dd27c842673aace7b5f5a62980b36e1be238b9983a5626f",
+      "id": 134927948,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "7a03cd2d1ac149ed344db36fa8361404946b5007121931b57d5d3faa21f2cb0b",
+      "id": 134929150,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "45801d3f629ee4ed5e6e244bd93a0a20e689f15c450c906c7decd328c8bfad71",
+      "id": 134934025,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "08a914f37719ab5dd736760314aa3c79771136109b81c5f86bd8676583bd41c7",
+      "id": 134926517,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825533",
+        "street": {
+          "id": 2195479,
+          "name": "On or near Lansdowne Place"
+        },
+        "longitude": "-0.160658"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "01bb2df6f2aab40e5e3cf3d38355a43521b59e0c9e5b0e1d3efe4283b680c74d",
+      "id": 134931446,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825533",
+        "street": {
+          "id": 2195479,
+          "name": "On or near Lansdowne Place"
+        },
+        "longitude": "-0.160658"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "12fb315869c1726cfec3230ad0ccadc7a0acaf820624d86aa19feef99fa3cba5",
+      "id": 134929548,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "cc6606c73ed52f858c0b107ba0b4ab06fe8579ece1417b468a878ce0cd930e9b",
+      "id": 134925682,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825575",
+        "street": {
+          "id": 2195353,
+          "name": "On or near Palmeira Square"
+        },
+        "longitude": "-0.163326"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "13e84e44093f70dadf6dbec2507ba9bfea8d06e7ccabdac64d52a9412c798711",
+      "id": 134933646,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "f99823f8f681328ee890cfc41e2dd1341811b3330b6ae21142e4ac38479e69f8",
+      "id": 134926098,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825422",
+        "street": {
+          "id": 2195475,
+          "name": "On or near Holland Mews"
+        },
+        "longitude": "-0.161599"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "0816a71de3ff1d8e627e2eb8649a82c8b64b35abac092e20b4a0e6f078d6b6a1",
+      "id": 134931841,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.825533",
+        "street": {
+          "id": 2195479,
+          "name": "On or near Lansdowne Place"
+        },
+        "longitude": "-0.160658"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "831cbcd6e6cfdb6a735c14ba34520b799113daafc999dc2a3af37261f04cccd2",
+      "id": 134928347,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

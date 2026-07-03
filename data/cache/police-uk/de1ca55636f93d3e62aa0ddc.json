@@ -1,0 +1,49 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=53.777428,-0.306037:53.777428,-0.29963700000000004:53.781428000000005,-0.29963700000000004:53.781428000000005,-0.306037&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=53.777428,-0.306037:53.777428,-0.29963700000000004:53.781428000000005,-0.29963700000000004:53.781428000000005,-0.306037&date=2026-04",
+  "retrievedAt": "2026-07-03T13:37:40.545Z",
+  "body": [
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.777785",
+        "street": {
+          "id": 1500359,
+          "name": "On or near Kingfisher Rise"
+        },
+        "longitude": "-0.301863"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "a36b2c5e27bbb30a1eee45132d6406cd3977c4488b797a416bfd59618f3e93ef",
+      "id": 134514578,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.780712",
+        "street": {
+          "id": 1500343,
+          "name": "On or near Church Street"
+        },
+        "longitude": "-0.304781"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "3c5c79d614b121b1f5305eb3a540e8c497f8c46e8126049ae0ad79f83d331b60",
+      "id": 134509124,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

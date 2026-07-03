@@ -1,0 +1,25 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=52.673868,1.6837769999999999:52.673868,1.690177:52.677868000000004,1.690177:52.677868000000004,1.6837769999999999&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=52.673868,1.6837769999999999:52.673868,1.690177:52.677868000000004,1.690177:52.677868000000004,1.6837769999999999&date=2026-04",
+  "retrievedAt": "2026-07-03T13:38:31.743Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.675542",
+        "street": {
+          "id": 2029249,
+          "name": "On or near West Avenue"
+        },
+        "longitude": "1.687313"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134586877,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

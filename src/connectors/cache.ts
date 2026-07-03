@@ -22,7 +22,9 @@ export type CacheEntry = z.infer<typeof cacheEntrySchema>;
 const CACHE_ROOT = resolve(process.cwd(), "data", "cache");
 
 function entryPath(sourceId: string, key: string): string {
-  const hash = createHash("sha1").update(key).digest("hex").slice(0, 24);
+  // Filename derivation only (collision resistance, not secrecy); the stored
+  // entry's `key` field is verified on read.
+  const hash = createHash("sha256").update(key).digest("hex").slice(0, 24);
   return join(CACHE_ROOT, sourceId, `${hash}.json`);
 }
 
