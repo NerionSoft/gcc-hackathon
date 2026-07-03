@@ -1,0 +1,91 @@
+{
+  "key": "district:TS1",
+  "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=TS1",
+  "retrievedAt": "2026-07-03T13:43:39.821Z",
+  "body": [
+    {
+      "urn": "111580",
+      "name": "Newport Primary School",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS1 5NQ",
+      "phase": "Primary",
+      "establishmentType": "Foundation school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/111580"
+    },
+    {
+      "urn": "130571",
+      "name": "The Northern School of Art",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS1 1LA",
+      "phase": "16 plus",
+      "establishmentType": "Further education",
+      "status": "Open, but proposed to close",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/130571"
+    },
+    {
+      "urn": "133894",
+      "name": "Teesside University",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS1 3BA",
+      "phase": "Not applicable",
+      "establishmentType": "Higher education institutions",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/133894"
+    },
+    {
+      "urn": "142365",
+      "name": "Sacred Heart Primary School",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS1 4NP",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/142365"
+    },
+    {
+      "urn": "146770",
+      "name": "Ayresome Primary School",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS1 4NT",
+      "phase": "Primary",
+      "establishmentType": "Academy sponsor led",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/146770"
+    },
+    {
+      "urn": "147848",
+      "name": "Outwood Academy Riverside",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS1 2AD",
+      "phase": "Secondary",
+      "establishmentType": "Free schools",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/147848"
+    },
+    {
+      "urn": "150095",
+      "name": "Abingdon Primary School",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS1 3JR",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/150095"
+    }
+  ]
+}

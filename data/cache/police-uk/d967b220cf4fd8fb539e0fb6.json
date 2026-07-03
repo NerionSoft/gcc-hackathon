@@ -1,0 +1,271 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=50.831084,-0.160593:50.831084,-0.154193:50.835084,-0.154193:50.835084,-0.160593&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=50.831084,-0.160593:50.831084,-0.154193:50.835084,-0.154193:50.835084,-0.160593&date=2026-04",
+  "retrievedAt": "2026-07-03T13:46:38.445Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.831155",
+        "street": {
+          "id": 2195496,
+          "name": "On or near Chatsworth Square"
+        },
+        "longitude": "-0.159613"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936340,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.832034",
+        "street": {
+          "id": 2195540,
+          "name": "On or near Lyon Close"
+        },
+        "longitude": "-0.157704"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134934607,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.832034",
+        "street": {
+          "id": 2195540,
+          "name": "On or near Lyon Close"
+        },
+        "longitude": "-0.157704"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936201,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "bicycle-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.831951",
+        "street": {
+          "id": 2195513,
+          "name": "On or near B2120"
+        },
+        "longitude": "-0.159866"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "6fa0f405b58995a0753ee83d1210d83b6a7d957b1ed172277b4c90047627da4c",
+      "id": 134929550,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.832034",
+        "street": {
+          "id": 2195540,
+          "name": "On or near Lyon Close"
+        },
+        "longitude": "-0.157704"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "329678af04dfc497b528541bc79090f9d83373b56a0a7cd765da5b29d4c71f15",
+      "id": 134928772,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.834978",
+        "street": {
+          "id": 2195497,
+          "name": "On or near Burton Villas"
+        },
+        "longitude": "-0.160201"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "a2fa6ca27d38281b7fc2d9301fa894fd9d5a62318844ac603aeb19338c9ae02c",
+      "id": 134929549,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.831951",
+        "street": {
+          "id": 2195513,
+          "name": "On or near B2120"
+        },
+        "longitude": "-0.159866"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "851b4e00bb90693a781f3030f4f97de1b49d207a47be9a6b7f12d555d148f1ee",
+      "id": 134933270,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.831767",
+        "street": {
+          "id": 2195640,
+          "name": "On or near Hospital"
+        },
+        "longitude": "-0.155613"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "6382cdcf0f8a53199322640d3d7b3947f4d6ab4b9487326f8f2230c85727b2b3",
+      "id": 134928775,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.832034",
+        "street": {
+          "id": 2195540,
+          "name": "On or near Lyon Close"
+        },
+        "longitude": "-0.157704"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "18e56512ae04d3ec33bb355bc8b2e6a81982e7f15560b1759c1e211f50bd61ba",
+      "id": 134930272,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.833782",
+        "street": {
+          "id": 2195682,
+          "name": "On or near Glendale Road"
+        },
+        "longitude": "-0.156244"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "feecd51cf878cec017d386aca15702becfb2eae4dfe7c5b1a3d3c8096663cd70",
+      "id": 134930276,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.832034",
+        "street": {
+          "id": 2195540,
+          "name": "On or near Lyon Close"
+        },
+        "longitude": "-0.157704"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "4669e947360c4b343729da6aeeb33f8b0739ad7eae989da51407138e4c11315d",
+      "id": 134929151,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.831951",
+        "street": {
+          "id": 2195513,
+          "name": "On or near B2120"
+        },
+        "longitude": "-0.159866"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "f479473db8ce32e73f44e02da87e1069805207043c20f6898d976fc5dc9e9dad",
+      "id": 134926101,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.834978",
+        "street": {
+          "id": 2195497,
+          "name": "On or near Burton Villas"
+        },
+        "longitude": "-0.160201"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "6d1a0b1dc78f9505c69cdfc5fd528c38cc301e1f83717296608a25c6df7d35a3",
+      "id": 134926100,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

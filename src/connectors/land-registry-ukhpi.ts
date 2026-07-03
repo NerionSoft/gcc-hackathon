@@ -47,7 +47,8 @@ export async function getMonthlyIndicators(
   month: string,
 ): Promise<ConnectorResult<UkhpiRecord>> {
   const url = `${meta.endpoint}/region/${encodeURIComponent(regionSlug)}/month/${month}.json`;
-  const fetched = await fetchJson(url, { sourceId: meta.id });
+  // landregistry.data.gov.uk rate-limits aggressively — keep a gentle pace.
+  const fetched = await fetchJson(url, { sourceId: meta.id, minIntervalMs: 1_200 });
   if (!fetched.ok) return toConnectorError(meta, fetched);
 
   const envelope = rawEnvelopeSchema.safeParse(fetched.body);

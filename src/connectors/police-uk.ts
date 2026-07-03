@@ -90,7 +90,12 @@ export async function streetCrimesNear(
   });
 
   return okResult(
-    { dataset: meta.dataset, url: fetched.url, licence: meta.licence, fromCache: fetched.fromCache },
+    {
+      dataset: meta.dataset,
+      url: fetched.url,
+      licence: meta.licence,
+      fromCache: fetched.fromCache,
+    },
     // A month with zero incidents is still a real, sourced observation.
     [summary],
   );

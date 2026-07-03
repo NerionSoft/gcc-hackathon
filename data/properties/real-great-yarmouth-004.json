@@ -40,7 +40,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.572Z",
+      "retrievedAt": "2026-07-03T13:42:43.970Z",
       "records": [
         {
           "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/9325AD5C-FE9B-4EE8-872F-9BB7CDA7AD29/current",
@@ -300,7 +300,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.970Z",
       "records": [
         {
           "entity": 7010002619,
@@ -318,7 +318,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.970Z",
       "records": [
         {
           "notation": "054FWTBT1F",
@@ -349,7 +349,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "no_data",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.970Z",
       "detail": "The source answered but holds no records for this query."
     },
     "policeUkCrime": {
@@ -358,7 +358,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.970Z",
       "records": [
         {
           "month": "2026-04",
@@ -381,7 +381,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "no_data",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.970Z",
       "detail": "The source answered but holds no records for this query."
     },
     "bgsRadon": {
@@ -390,7 +390,7 @@
       "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.971Z",
       "records": [
         {
           "tile": "TG5015",
@@ -404,7 +404,7 @@
       "status": "data_gap",
       "dataset": "bgs-radon-indicative-atlas",
       "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.971Z",
       "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
       "fromCache": false,
       "reason": "no_open_endpoint",
@@ -416,7 +416,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.971Z",
       "records": [
         {
           "urn": "120816",
@@ -556,7 +556,7 @@
       "status": "data_gap",
       "dataset": "epc-domestic",
       "url": "https://api.get-energy-performance-data.communities.gov.uk/api/domestic/search?postcode=NR29%203NN&page=25",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.971Z",
       "licence": "OGL v3.0 (contains EPC data © Crown copyright)",
       "fromCache": false,
       "reason": "key_missing",
@@ -566,7 +566,7 @@
       "status": "data_gap",
       "dataset": "companies-house-register",
       "url": "https://api.company-information.service.gov.uk/search/companies?q=6%2C%20HEATHER%20AVENUE%2C%20GREAT%20YARMOUTH&items_per_page=10",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.971Z",
       "licence": "OGL v3.0 (Companies House public register)",
       "fromCache": false,
       "reason": "key_missing",
@@ -576,7 +576,7 @@
       "status": "data_gap",
       "dataset": "land-registry-ccod-ocod",
       "url": "https://use-land-property-data.service.gov.uk/api/v1/datasets/ocod",
-      "retrievedAt": "2026-07-03T13:14:31.573Z",
+      "retrievedAt": "2026-07-03T13:42:43.971Z",
       "licence": "HM Land Registry Free Datasets Licence (CCOD/OCOD)",
       "fromCache": false,
       "reason": "key_missing",
@@ -588,7 +588,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.557Z",
+      "retrievedAt": "2026-07-03T13:42:43.961Z",
       "records": [
         {
           "recordUri": "http://landregistry.data.gov.uk/data/ukhpi/region/great-yarmouth/month/2026-01",
@@ -607,7 +607,7 @@
       "licence": "OGL v3.0",
       "fromCache": true,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.559Z",
+      "retrievedAt": "2026-07-03T13:42:43.962Z",
       "records": [
         {
           "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000006&indexandyearchange=index",

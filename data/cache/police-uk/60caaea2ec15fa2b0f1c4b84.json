@@ -1,0 +1,67 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=53.765197,-0.293573:53.765197,-0.287173:53.769197000000005,-0.287173:53.769197000000005,-0.293573&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=53.765197,-0.293573:53.765197,-0.287173:53.769197000000005,-0.287173:53.769197000000005,-0.293573&date=2026-04",
+  "retrievedAt": "2026-07-03T13:37:30.992Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.768236",
+        "street": {
+          "id": 1500535,
+          "name": "On or near Lawrence Avenue"
+        },
+        "longitude": "-0.292826"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134517019,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.768236",
+        "street": {
+          "id": 1500535,
+          "name": "On or near Lawrence Avenue"
+        },
+        "longitude": "-0.292826"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "27ab6c262a13c94f19ed3638cbd2fee3ec5fabbb9425d8300fd9687bebaadda9",
+      "id": 134512076,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.768830",
+        "street": {
+          "id": 1500560,
+          "name": "On or near Astoria Crescent"
+        },
+        "longitude": "-0.289752"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "d25700d2d9722727ee8a242b2156e0cfa1beb0d3fa85984046e408496279d3d8",
+      "id": 134509383,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

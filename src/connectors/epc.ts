@@ -104,7 +104,12 @@ export async function searchCertificatesByPostcode(
   }
 
   return okResult(
-    { dataset: meta.dataset, url: fetched.url, licence: meta.licence, fromCache: fetched.fromCache },
+    {
+      dataset: meta.dataset,
+      url: fetched.url,
+      licence: meta.licence,
+      fromCache: fetched.fromCache,
+    },
     records,
   );
 }

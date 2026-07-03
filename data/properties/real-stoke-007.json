@@ -38,9 +38,9 @@
       "dataset": "land-registry-price-paid",
       "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=ST6%206BL&_pageSize=25",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.662Z",
+      "retrievedAt": "2026-07-03T13:44:20.624Z",
       "records": [
         {
           "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/10A24222-A46B-47B9-9344-38B05253D946/current",
@@ -298,9 +298,9 @@
       "dataset": "planning-data",
       "url": "https://www.planning.data.gov.uk/entity.json?latitude=53.060186&longitude=-2.208766&dataset=conservation-area&dataset=listed-building-outline&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&dataset=brownfield-land&dataset=brownfield-site&limit=100&exclude_field=geometry,point",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "no_data",
-      "retrievedAt": "2026-07-03T13:14:31.663Z",
+      "retrievedAt": "2026-07-03T13:44:21.583Z",
       "detail": "The source answered but holds no records for this query."
     },
     "eaFloodAreas": {
@@ -309,7 +309,7 @@
       "licence": "OGL v3.0",
       "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.522Z",
+      "retrievedAt": "2026-07-03T13:44:22.348Z",
       "records": [
         {
           "notation": "033WAF309",
@@ -331,18 +331,18 @@
       "dataset": "ea-flood-monitoring",
       "url": "https://environment.data.gov.uk/flood-monitoring/id/floods?lat=53.060186&long=-2.208766&dist=5",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "no_data",
-      "retrievedAt": "2026-07-03T13:14:33.522Z",
+      "retrievedAt": "2026-07-03T13:44:22.777Z",
       "detail": "The source answered but holds no records for this query."
     },
     "policeUkCrime": {
       "dataset": "police-uk-street-crime",
       "url": "https://data.police.uk/api/crimes-street/all-crime?poly=53.058186,-2.211966:53.058186,-2.2055659999999997:53.062186000000004,-2.2055659999999997:53.062186000000004,-2.211966&date=2026-04",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.523Z",
+      "retrievedAt": "2026-07-03T13:44:22.860Z",
       "records": [
         {
           "month": "2026-04",
@@ -373,9 +373,9 @@
       "dataset": "defra-road-noise-lden-round-3",
       "url": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=53.059586,-2.2093659999999997,53.060786,-2.208166,urn:ogc:def:crs:EPSG::4326",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.523Z",
+      "retrievedAt": "2026-07-03T13:44:23.281Z",
       "records": [
         {
           "featureId": "Road_Noise_Lden_England_Round_3.1048336",
@@ -433,9 +433,9 @@
       "dataset": "bgs-radon-indicative-atlas",
       "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer/identify?geometry=-2.208766,53.060186&geometryType=esriGeometryPoint&sr=4326&layers=all&tolerance=1&mapExtent=-2.2187659999999996,53.050186000000004,-2.198766,53.070186&imageDisplay=400,400,96&returnGeometry=false&f=json",
       "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.523Z",
+      "retrievedAt": "2026-07-03T13:44:23.418Z",
       "records": [
         {
           "tile": "SJ8651",
@@ -449,7 +449,7 @@
       "status": "data_gap",
       "dataset": "bgs-radon-indicative-atlas",
       "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer",
-      "retrievedAt": "2026-07-03T13:14:33.523Z",
+      "retrievedAt": "2026-07-03T13:44:23.418Z",
       "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
       "fromCache": false,
       "reason": "no_open_endpoint",
@@ -459,9 +459,9 @@
       "dataset": "dfe-gias-establishments",
       "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=ST6",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.523Z",
+      "retrievedAt": "2026-07-03T13:44:23.418Z",
       "records": [
         {
           "urn": "124238",
@@ -829,7 +829,7 @@
       "status": "data_gap",
       "dataset": "epc-domestic",
       "url": "https://api.get-energy-performance-data.communities.gov.uk/api/domestic/search?postcode=ST6%206BL&page=25",
-      "retrievedAt": "2026-07-03T13:14:33.523Z",
+      "retrievedAt": "2026-07-03T13:44:23.418Z",
       "licence": "OGL v3.0 (contains EPC data © Crown copyright)",
       "fromCache": false,
       "reason": "key_missing",
@@ -839,7 +839,7 @@
       "status": "data_gap",
       "dataset": "companies-house-register",
       "url": "https://api.company-information.service.gov.uk/search/companies?q=29%2C%20GREENGATES%20STREET%2C%20STOKE-ON-TRENT&items_per_page=10",
-      "retrievedAt": "2026-07-03T13:14:33.523Z",
+      "retrievedAt": "2026-07-03T13:44:23.418Z",
       "licence": "OGL v3.0 (Companies House public register)",
       "fromCache": false,
       "reason": "key_missing",
@@ -849,7 +849,7 @@
       "status": "data_gap",
       "dataset": "land-registry-ccod-ocod",
       "url": "https://use-land-property-data.service.gov.uk/api/v1/datasets/ocod",
-      "retrievedAt": "2026-07-03T13:14:33.523Z",
+      "retrievedAt": "2026-07-03T13:44:23.418Z",
       "licence": "HM Land Registry Free Datasets Licence (CCOD/OCOD)",
       "fromCache": false,
       "reason": "key_missing",
@@ -859,9 +859,9 @@
       "dataset": "uk-house-price-index",
       "url": "https://landregistry.data.gov.uk/data/ukhpi/region/stoke-on-trent/month/2026-01.json",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.637Z",
+      "retrievedAt": "2026-07-03T13:43:48.583Z",
       "records": [
         {
           "recordUri": "http://landregistry.data.gov.uk/data/ukhpi/region/stoke-on-trent/month/2026-01",
@@ -878,9 +878,9 @@
       "dataset": "ons-private-housing-rental-prices",
       "url": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:31.638Z",
+      "retrievedAt": "2026-07-03T13:43:48.906Z",
       "records": [
         {
           "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000005&indexandyearchange=index",

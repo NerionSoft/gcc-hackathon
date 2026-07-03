@@ -17,3 +17,6 @@ README.md
 
 # Claude Code local settings
 .claude/
+
+# Cached open-data (raw upstream responses, committed for offline demo)
+data/

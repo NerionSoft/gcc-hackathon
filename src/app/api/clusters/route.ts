@@ -1,8 +1,12 @@
 import { NextResponse } from "next/server";
 import { apiHandler } from "@/infrastructure/http/api-handler";
-import { listClusters } from "@/db/access/clusters";
+import { getClusterCards } from "@/app/api/_lib/read-models";
 
-/** F2/F3 — the cluster cards. */
+/**
+ * Read-only: risk clusters. Serves persisted clusters once the engine's
+ * `clusterByRiskPattern` has run; until then a deterministic signature-based
+ * preview (`preview: true`) derived from stored signals.
+ */
 export const GET = apiHandler(async () => {
-  return NextResponse.json({ clusters: listClusters() });
+  return NextResponse.json(getClusterCards());
 });

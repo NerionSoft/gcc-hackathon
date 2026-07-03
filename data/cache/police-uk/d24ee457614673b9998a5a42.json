@@ -1,0 +1,70 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=52.99339,-2.1032480000000002:52.99339,-2.096848:52.99739,-2.096848:52.99739,-2.1032480000000002&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=52.99339,-2.1032480000000002:52.99339,-2.096848:52.99739,-2.096848:52.99739,-2.1032480000000002&date=2026-04",
+  "retrievedAt": "2026-07-03T13:44:00.635Z",
+  "body": [
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.996354",
+        "street": {
+          "id": 1753892,
+          "name": "On or near Coupe Drive"
+        },
+        "longitude": "-2.097712"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "de1cf1e9659b0b2e3ed0500ea706e96dee443058ce27c9d8e21822ba585feac3",
+      "id": 134837436,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.994293",
+        "street": {
+          "id": 1753891,
+          "name": "On or near Horton Drive"
+        },
+        "longitude": "-2.100493"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "cf8a30576e6632cb0badda75256d9090f493b8b48e30d4ac3e61ce0a66c616e9",
+      "id": 134834498,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.996867",
+        "street": {
+          "id": 1754236,
+          "name": "On or near Fernlea Grove"
+        },
+        "longitude": "-2.097087"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "019253b0531957b8efd48bac0231e8b8c2795a953682248d9f1261dc5b86d20a",
+      "id": 134835159,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "key": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=50.818611000000004,-0.130543,50.819811,-0.129343,urn:ogc:def:crs:EPSG::4326",
+  "url": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=50.818611000000004,-0.130543,50.819811,-0.129343,urn:ogc:def:crs:EPSG::4326",
+  "retrievedAt": "2026-07-03T13:46:04.755Z",
+  "body": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.319375",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "55.0-59.9"
+        },
+        "bbox": [
+          -0.136334,
+          50.811343,
+          -0.102931,
+          50.819592
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1232980",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "65.0-69.9"
+        },
+        "bbox": [
+          -0.130229,
+          50.818789,
+          -0.129942,
+          50.818883
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.8543",
+        "geometry": null,
+        "properties": {
+          "noiseclass": ">=75.0"
+        },
+        "bbox": [
+          -0.12952,
+          50.818779,
+          -0.129374,
+          50.818872
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.8545",
+        "geometry": null,
+        "properties": {
+          "noiseclass": ">=75.0"
+        },
+        "bbox": [
+          -0.130506,
+          50.818975,
+          -0.13036,
+          50.819067
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.275258",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "55.0-59.9"
+        },
+        "bbox": [
+          -0.129789,
+          50.819139,
+          -0.12936,
+          50.819323
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.295731",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "55.0-59.9"
+        },
+        "bbox": [
+          -0.13063,
+          50.81942,
+          -0.130051,
+          50.819696
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.873358",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "60.0-64.9"
+        },
+        "bbox": [
+          -0.130633,
+          50.819146,
+          -0.129786,
+          50.819429
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1154873",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "65.0-69.9"
+        },
+        "bbox": [
+          -0.130651,
+          50.818887,
+          -0.130506,
+          50.81898
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1232978",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "65.0-69.9"
+        },
+        "bbox": [
+          -0.129665,
+          50.81869,
+          -0.129378,
+          50.818784
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1267348",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "65.0-69.9"
+        },
+        "bbox": [
+          -0.131204,
+          50.81915,
+          -0.130069,
+          50.819348
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1275418",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "65.0-69.9"
+        },
+        "bbox": [
+          -0.129513,
+          50.818662,
+          -0.127675,
+          50.819139
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1537950",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "70.0-74.9"
+        },
+        "bbox": [
+          -0.140562,
+          50.814284,
+          -0.103847,
+          50.827406
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.726476",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "60.0-64.9"
+        },
+        "bbox": [
+          -0.130371,
+          50.818793,
+          -0.130226,
+          50.818885
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.810260",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "60.0-64.9"
+        },
+        "bbox": [
+          -0.129949,
+          50.818694,
+          -0.129662,
+          50.818789
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.838237",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "60.0-64.9"
+        },
+        "bbox": [
+          -0.129793,
+          50.819049,
+          -0.129364,
+          50.819146
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1232985",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "65.0-69.9"
+        },
+        "bbox": [
+          -0.130077,
+          50.819056,
+          -0.129789,
+          50.81915
+        ]
+      }
+    ],
+    "totalFeatures": 16,
+    "numberMatched": 16,
+    "numberReturned": 16,
+    "timeStamp": "2026-07-03T13:46:04.308Z",
+    "crs": null
+  }
+}

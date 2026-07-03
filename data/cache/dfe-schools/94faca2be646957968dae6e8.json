@@ -1,0 +1,163 @@
+{
+  "key": "district:NR30",
+  "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=NR30",
+  "retrievedAt": "2026-07-03T13:38:09.450Z",
+  "body": [
+    {
+      "urn": "120795",
+      "name": "Caister Junior School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 5ET",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/120795"
+    },
+    {
+      "urn": "120796",
+      "name": "Caister Infant With Nursery School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 5ET",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/120796"
+    },
+    {
+      "urn": "120972",
+      "name": "St. George's Primary School & St. George's Nursery School, Great Yarmouth",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 3BQ",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/120972"
+    },
+    {
+      "urn": "120973",
+      "name": "North Denes Primary School and Nursery",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 4HF",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/120973"
+    },
+    {
+      "urn": "121093",
+      "name": "St Nicholas Priory CofE VA Primary School and Nursery",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 1NL",
+      "phase": "Primary",
+      "establishmentType": "Voluntary aided school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/121093"
+    },
+    {
+      "urn": "121265",
+      "name": "John Grant School, Caister-on-Sea",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 5QW",
+      "phase": "Not applicable",
+      "establishmentType": "Foundation special school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/121265"
+    },
+    {
+      "urn": "133505",
+      "name": "Visiting Teacher Service East at Education Services Centre",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 1EA",
+      "phase": "Not applicable",
+      "establishmentType": "Miscellaneous",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/133505"
+    },
+    {
+      "urn": "138779",
+      "name": "Novaturient School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 1EA",
+      "phase": "Not applicable",
+      "establishmentType": "Other independent special school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/138779"
+    },
+    {
+      "urn": "138793",
+      "name": "Great Yarmouth Primary Academy and Nursery",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 3DT",
+      "phase": "Primary",
+      "establishmentType": "Academy sponsor led",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/138793"
+    },
+    {
+      "urn": "141331",
+      "name": "Caister Academy",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 5LS",
+      "phase": "Secondary",
+      "establishmentType": "Academy sponsor led",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/141331"
+    },
+    {
+      "urn": "142883",
+      "name": "Great Yarmouth Charter Academy",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 4LS",
+      "phase": "Secondary",
+      "establishmentType": "Free schools",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/142883"
+    },
+    {
+      "urn": "147567",
+      "name": "Northgate Primary School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 1BP",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/147567"
+    },
+    {
+      "urn": "148572",
+      "name": "Bure Park Specialist Academy",
+      "localAuthority": "Norfolk",
+      "postcode": "NR30 4AE",
+      "phase": "Not applicable",
+      "establishmentType": "Free schools special",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/148572"
+    }
+  ]
+}

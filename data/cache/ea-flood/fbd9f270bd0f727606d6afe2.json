@@ -1,0 +1,67 @@
+{
+  "key": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=51.569042&long=-0.132093&dist=3&_limit=50",
+  "url": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=51.569042&long=-0.132093&dist=3&_limit=50",
+  "retrievedAt": "2026-07-03T13:44:58.402Z",
+  "body": {
+    "@context": "http://environment.data.gov.uk/flood-monitoring/meta/context.jsonld",
+    "meta": {
+      "publisher": "Environment Agency",
+      "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "documentation": "http://environment.data.gov.uk/flood-monitoring/doc/reference",
+      "version": "0.9",
+      "comment": "Status: Beta service",
+      "hasFormat": [
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.csv?lat=51.569042&long=-0.132093&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.rdf?lat=51.569042&long=-0.132093&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.ttl?lat=51.569042&long=-0.132093&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.html?lat=51.569042&long=-0.132093&dist=3&_limit=50"
+      ],
+      "limit": 50
+    },
+    "items": [
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/062FWF38MuttonBk",
+        "county": "Barnet, Greater London",
+        "description": "The Mutton Brook at Hampstead Garden Suburb",
+        "eaAreaName": "Herts and North London",
+        "floodWatchArea": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/062WAF38BrentBks",
+        "fwdCode": "062FWF38MuttonBk",
+        "label": "Mutton Brook at Hampstead Garden Suburb",
+        "lat": 51.58566,
+        "long": -0.18511,
+        "notation": "062FWF38MuttonBk",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/062FWF38MuttonBk/polygon",
+        "quickDialNumber": "172384",
+        "riverOrSea": "Mutton Brook"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/062WAF38BrentBks",
+        "county": "Barnet, Brent, Greater London, Harrow",
+        "description": "The Silk Stream and the Deans, Edgware, Dollis, Mutton, Wembley and Wealdstone Brooks and their tributaries",
+        "eaAreaName": "Herts and North London",
+        "fwdCode": "062WAF38BrentBks",
+        "label": "Silk Stream and the Deans, Edgware, Dollis, Mutton, Wembley and Wealdstone Brooks",
+        "lat": 51.59658,
+        "long": -0.26002,
+        "notation": "062WAF38BrentBks",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/062WAF38BrentBks/polygon",
+        "quickDialNumber": "172387",
+        "riverOrSea": "Silk Stream;\r\nDollis Brook;\r\nDeans Brook;\r\nEdgware Brook;\r\nMutton Brook;\r\nWealdstone Brook;\r\nWembley Brook"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/062WAF53LLTribs",
+        "county": "Barnet, Enfield, Essex, Greater London, Haringey, Hertfordshire, Redbridge, Waltham Forest",
+        "description": "The Lower Lee tributaries, including the Nazeing Brook, Ching Brook, Cobbins Brook, Pymmes Brook, Rags Brook, Salmons Brook, Turkey Brook, Trinity Marsh Ditch and the Small River Lee",
+        "eaAreaName": "Herts and North London",
+        "fwdCode": "062WAF53LLTribs",
+        "label": "Lower Lee tributaries",
+        "lat": 51.68804,
+        "long": -0.10827,
+        "notation": "062WAF53LLTribs",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/062WAF53LLTribs/polygon",
+        "quickDialNumber": "172912",
+        "riverOrSea": "Ching Brook, Cobbins Brook, Nazeing Brook, Pymmes Brook, Salmons Brook, Turkey Brook, Small River Lee, Rags Brook, Trinity Marsh Ditch"
+      }
+    ]
+  }
+}

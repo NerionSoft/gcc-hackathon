@@ -1,0 +1,85 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=52.998839999999994,-2.144387:52.998839999999994,-2.137987:53.00284,-2.137987:53.00284,-2.144387&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=52.998839999999994,-2.144387:52.998839999999994,-2.137987:53.00284,-2.137987:53.00284,-2.144387&date=2026-04",
+  "retrievedAt": "2026-07-03T13:44:19.143Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.999249",
+        "street": {
+          "id": 1751859,
+          "name": "On or near Sloane Way"
+        },
+        "longitude": "-2.141704"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134842881,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.999249",
+        "street": {
+          "id": 1751859,
+          "name": "On or near Sloane Way"
+        },
+        "longitude": "-2.141704"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134842153,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "vehicle-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "53.001117",
+        "street": {
+          "id": 1751657,
+          "name": "On or near Shardlow Close"
+        },
+        "longitude": "-2.143528"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "0819a1d85befb31fc9f7b25736d073486e1bfba9a2f4d75968115b08a94a6cd9",
+      "id": 134837963,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.999933",
+        "street": {
+          "id": 1751840,
+          "name": "On or near Pool Street"
+        },
+        "longitude": "-2.141319"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "f275b1f339c63ccd03a8bd1d796cc503bff9a211e173ded67eb608f1aa127f81",
+      "id": 134839931,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

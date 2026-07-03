@@ -59,31 +59,45 @@ export async function fetchJson(url: string, options: FetchJsonOptions): Promise
   }
 
   const host = new URL(url).host;
-  await throttle(host, options.minIntervalMs ?? DEFAULT_MIN_INTERVAL_MS);
 
-  try {
-    const response = await fetch(url, {
-      headers: { accept: "application/json", ...options.headers },
-      signal: AbortSignal.timeout(options.timeoutMs ?? DEFAULT_TIMEOUT_MS),
-    });
+  // Respect rate limits: back off and retry on 429 (honouring Retry-After).
+  const RETRY_DELAYS_MS = [5_000, 20_000, 60_000];
+  for (let attempt = 0; ; attempt += 1) {
+    await throttle(host, options.minIntervalMs ?? DEFAULT_MIN_INTERVAL_MS);
+    try {
+      const response = await fetch(url, {
+        headers: { accept: "application/json", ...options.headers },
+        signal: AbortSignal.timeout(options.timeoutMs ?? DEFAULT_TIMEOUT_MS),
+      });
 
-    if (!response.ok) {
-      logger.warn("Connector HTTP error", { url, status: response.status });
-      return {
-        ok: false,
-        error: `HTTP ${response.status} ${response.statusText}`,
-        url,
-        retrievedAt: new Date().toISOString(),
-        httpStatus: response.status,
-      };
+      if (response.status === 429 && attempt < RETRY_DELAYS_MS.length) {
+        const retryAfterSec = Number.parseInt(response.headers.get("retry-after") ?? "", 10);
+        const waitMs = Number.isFinite(retryAfterSec)
+          ? Math.min(retryAfterSec * 1000, 120_000)
+          : RETRY_DELAYS_MS[attempt]!;
+        logger.warn("Rate limited — backing off", { host, url, waitMs, attempt });
+        await sleep(waitMs);
+        continue;
+      }
+
+      if (!response.ok) {
+        logger.warn("Connector HTTP error", { url, status: response.status });
+        return {
+          ok: false,
+          error: `HTTP ${response.status} ${response.statusText}`,
+          url,
+          retrievedAt: new Date().toISOString(),
+          httpStatus: response.status,
+        };
+      }
+
+      const body: unknown = await response.json();
+      const entry = writeCache(options.sourceId, cacheKey, url, body);
+      return { ok: true, body, url, retrievedAt: entry.retrievedAt, fromCache: false };
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      logger.warn("Connector fetch failed", { url, error: message });
+      return { ok: false, error: message, url, retrievedAt: new Date().toISOString() };
     }
-
-    const body: unknown = await response.json();
-    const entry = writeCache(options.sourceId, cacheKey, url, body);
-    return { ok: true, body, url, retrievedAt: entry.retrievedAt, fromCache: false };
-  } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    logger.warn("Connector fetch failed", { url, error: message });
-    return { ok: false, error: message, url, retrievedAt: new Date().toISOString() };
   }
 }
