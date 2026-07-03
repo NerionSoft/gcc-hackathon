@@ -1,0 +1,98 @@
+{
+  "key": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=53.016071&long=-2.166427&dist=3&_limit=50",
+  "url": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=53.016071&long=-2.166427&dist=3&_limit=50",
+  "retrievedAt": "2026-07-03T13:44:04.903Z",
+  "body": {
+    "@context": "http://environment.data.gov.uk/flood-monitoring/meta/context.jsonld",
+    "meta": {
+      "publisher": "Environment Agency",
+      "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "documentation": "http://environment.data.gov.uk/flood-monitoring/doc/reference",
+      "version": "0.9",
+      "comment": "Status: Beta service",
+      "hasFormat": [
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.csv?lat=53.016071&long=-2.166427&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.rdf?lat=53.016071&long=-2.166427&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.ttl?lat=53.016071&long=-2.166427&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.html?lat=53.016071&long=-2.166427&dist=3&_limit=50"
+      ],
+      "limit": 50
+    },
+    "items": [
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3TRENT03",
+        "county": "Stoke-on-Trent",
+        "description": "River Trent at Abbey Hulton and Bucknall area of Stoke including Fishpond Way, Mill Farm, Leek Road, Atlam Close, Westacre, Broughton Road and Dividy Road",
+        "eaAreaName": "West Midlands",
+        "floodWatchArea": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309",
+        "fwdCode": "033FWF3TRENT03",
+        "label": "River Trent at Abbey Hulton and Bucknall",
+        "lat": 53.02419,
+        "long": -2.15104,
+        "notation": "033FWF3TRENT03",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3TRENT03/polygon",
+        "quickDialNumber": "308164",
+        "riverOrSea": "River Trent"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309",
+        "county": "Staffordshire, Stoke-on-Trent",
+        "description": "Low-lying land and roads between Norton Green and Darlaston on the River Trent and on the Lyme Brook and Ford Green Brook",
+        "eaAreaName": "West Midlands",
+        "fwdCode": "033WAF309",
+        "label": "Stoke Trent",
+        "lat": 52.96209,
+        "long": -2.18889,
+        "notation": "033WAF309",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309/polygon",
+        "quickDialNumber": "208011",
+        "riverOrSea": "Ford Green Brook, Lyme Brook, River Trent"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3LYME01",
+        "county": "Staffordshire, Stoke-on-Trent",
+        "description": "Lyme Brook at Newcastle under Lyme and Trent Vale including Silverdale Road, Stanier Street, St Pauls Road, Orme Road, Pool Dam, Hatrell Street, Brook Lane, Lyme Valley Road and Sports Grounds off Rosetree Avenue",
+        "eaAreaName": "West Midlands",
+        "floodWatchArea": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309",
+        "fwdCode": "033FWF3LYME01",
+        "label": "Lyme Brook at Newcastle under Lyme and Trent Vale",
+        "lat": 53.01038,
+        "long": -2.23326,
+        "notation": "033FWF3LYME01",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3LYME01/polygon",
+        "quickDialNumber": "308097",
+        "riverOrSea": "Lyme Brook"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3TRENT04",
+        "county": "Stoke-on-Trent",
+        "description": "River Trent at Stoke on Trent including Joiners Square, the University and Boothen",
+        "eaAreaName": "West Midlands",
+        "floodWatchArea": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309",
+        "fwdCode": "033FWF3TRENT04",
+        "label": "River Trent at Stoke on Trent",
+        "lat": 52.99897,
+        "long": -2.18345,
+        "notation": "033FWF3TRENT04",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3TRENT04/polygon",
+        "quickDialNumber": "308165",
+        "riverOrSea": "River Trent"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3FOWLEA01",
+        "county": "Stoke-on-Trent",
+        "description": "Fowlea Brook from Cliff Vale Industrial Park to Stoke Town Hall",
+        "eaAreaName": "West Midlands",
+        "floodWatchArea": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033WAF309",
+        "fwdCode": "033FWF3FOWLEA01",
+        "label": "Fowlea Brook at Stoke on Trent",
+        "lat": 53.01592,
+        "long": -2.19856,
+        "notation": "033FWF3FOWLEA01",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/033FWF3FOWLEA01/polygon",
+        "quickDialNumber": "308189",
+        "riverOrSea": "Fowlea Brook"
+      }
+    ]
+  }
+}

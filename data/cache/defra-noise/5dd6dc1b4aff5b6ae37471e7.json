@@ -1,0 +1,71 @@
+{
+  "key": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=52.991859,-2.129156,52.993058999999995,-2.127956,urn:ogc:def:crs:EPSG::4326",
+  "url": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=52.991859,-2.129156,52.993058999999995,-2.127956,urn:ogc:def:crs:EPSG::4326",
+  "retrievedAt": "2026-07-03T13:44:14.840Z",
+  "body": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1595511",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "70.0-74.9"
+        },
+        "bbox": [
+          -2.159313,
+          52.983164,
+          -2.128275,
+          52.998858
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.648370",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "55.0-59.9"
+        },
+        "bbox": [
+          -2.500494,
+          52.725536,
+          -2.112022,
+          53.086733
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1078056",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "60.0-64.9"
+        },
+        "bbox": [
+          -2.339917,
+          52.730125,
+          -2.107581,
+          53.005777
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.144352",
+        "geometry": null,
+        "properties": {
+          "noiseclass": ">=75.0"
+        },
+        "bbox": [
+          -2.926144,
+          51.571943,
+          -0.029945,
+          53.530864
+        ]
+      }
+    ],
+    "totalFeatures": 4,
+    "numberMatched": 4,
+    "numberReturned": 4,
+    "timeStamp": "2026-07-03T13:44:14.403Z",
+    "crs": null
+  }
+}

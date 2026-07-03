@@ -1,0 +1,25 @@
+{
+  "key": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer/identify?geometry=-0.174898,50.827405&geometryType=esriGeometryPoint&sr=4326&layers=all&tolerance=1&mapExtent=-0.184898,50.817405,-0.164898,50.837405&imageDisplay=400,400,96&returnGeometry=false&f=json",
+  "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer/identify?geometry=-0.174898,50.827405&geometryType=esriGeometryPoint&sr=4326&layers=all&tolerance=1&mapExtent=-0.184898,50.817405,-0.164898,50.837405&imageDisplay=400,400,96&returnGeometry=false&f=json",
+  "retrievedAt": "2026-07-03T13:45:57.461Z",
+  "body": {
+    "results": [
+      {
+        "layerId": 0,
+        "layerName": "Radon.1km",
+        "displayFieldName": "TILE",
+        "value": "TQ2804",
+        "attributes": {
+          "OBJECTID": "216440",
+          "Shape": "Polygon",
+          "TILE": "TQ2804",
+          "CLASS_MAX": "5",
+          "VERSION": "Radon Indicative Atlas GB v3",
+          "Description": "Some parts of this 1km grid square are in bands of elevated radon potential. Maximum radon potential is 10-30 %. Check the radon potential of individual addresses at UKRadon.org",
+          "Shape_Length": "4000",
+          "Shape_Area": "1000000"
+        }
+      }
+    ]
+  }
+}

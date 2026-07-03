@@ -38,9 +38,9 @@
       "dataset": "land-registry-price-paid",
       "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=BN2%201PH&_pageSize=25",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.592Z",
+      "retrievedAt": "2026-07-03T13:45:58.068Z",
       "records": [
         {
           "recordUri": "http://landregistry.data.gov.uk/data/ppi/transaction/181FDFB6-1398-4D99-9DEA-634E46B04CBC/current",
@@ -298,9 +298,9 @@
       "dataset": "planning-data",
       "url": "https://www.planning.data.gov.uk/entity.json?latitude=50.819211&longitude=-0.129943&dataset=conservation-area&dataset=listed-building-outline&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&dataset=brownfield-land&dataset=brownfield-site&limit=100&exclude_field=geometry,point",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.592Z",
+      "retrievedAt": "2026-07-03T13:45:59.267Z",
       "records": [
         {
           "entity": 44003050,
@@ -316,9 +316,9 @@
       "dataset": "ea-flood-monitoring",
       "url": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=50.819211&long=-0.129943&dist=3&_limit=50",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.592Z",
+      "retrievedAt": "2026-07-03T13:46:02.316Z",
       "records": [
         {
           "notation": "065WAC410",
@@ -340,18 +340,18 @@
       "dataset": "ea-flood-monitoring",
       "url": "https://environment.data.gov.uk/flood-monitoring/id/floods?lat=50.819211&long=-0.129943&dist=5",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "no_data",
-      "retrievedAt": "2026-07-03T13:14:33.592Z",
+      "retrievedAt": "2026-07-03T13:46:03.646Z",
       "detail": "The source answered but holds no records for this query."
     },
     "policeUkCrime": {
       "dataset": "police-uk-street-crime",
       "url": "https://data.police.uk/api/crimes-street/all-crime?poly=50.817211,-0.133143:50.817211,-0.126743:50.821211000000005,-0.126743:50.821211000000005,-0.133143&date=2026-04",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.593Z",
+      "retrievedAt": "2026-07-03T13:46:03.912Z",
       "records": [
         {
           "month": "2026-04",
@@ -386,9 +386,9 @@
       "dataset": "defra-road-noise-lden-round-3",
       "url": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=50.818611000000004,-0.130543,50.819811,-0.129343,urn:ogc:def:crs:EPSG::4326",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.593Z",
+      "retrievedAt": "2026-07-03T13:46:04.755Z",
       "records": [
         {
           "featureId": "Road_Noise_Lden_England_Round_3.319375",
@@ -476,9 +476,9 @@
       "dataset": "bgs-radon-indicative-atlas",
       "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer/identify?geometry=-0.129943,50.819211&geometryType=esriGeometryPoint&sr=4326&layers=all&tolerance=1&mapExtent=-0.139943,50.809211000000005,-0.11994300000000001,50.829211&imageDisplay=400,400,96&returnGeometry=false&f=json",
       "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.593Z",
+      "retrievedAt": "2026-07-03T13:46:05.086Z",
       "records": [
         {
           "tile": "TQ3103",
@@ -492,7 +492,7 @@
       "status": "data_gap",
       "dataset": "bgs-radon-indicative-atlas",
       "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer",
-      "retrievedAt": "2026-07-03T13:14:33.594Z",
+      "retrievedAt": "2026-07-03T13:46:05.086Z",
       "licence": "Contains British Geological Survey materials © UKRI (open GeoIndex viewing service)",
       "fromCache": false,
       "reason": "no_open_endpoint",
@@ -502,9 +502,9 @@
       "dataset": "dfe-gias-establishments",
       "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=BN2",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.594Z",
+      "retrievedAt": "2026-07-03T13:46:05.086Z",
       "records": [
         {
           "urn": "114350",
@@ -848,7 +848,7 @@
       "status": "data_gap",
       "dataset": "epc-domestic",
       "url": "https://api.get-energy-performance-data.communities.gov.uk/api/domestic/search?postcode=BN2%201PH&page=25",
-      "retrievedAt": "2026-07-03T13:14:33.594Z",
+      "retrievedAt": "2026-07-03T13:46:05.086Z",
       "licence": "OGL v3.0 (contains EPC data © Crown copyright)",
       "fromCache": false,
       "reason": "key_missing",
@@ -858,7 +858,7 @@
       "status": "data_gap",
       "dataset": "companies-house-register",
       "url": "https://api.company-information.service.gov.uk/search/companies?q=FLAT%208%2C%2052%2C%20MARINE%20PARADE%2C%20BRIGHTON&items_per_page=10",
-      "retrievedAt": "2026-07-03T13:14:33.594Z",
+      "retrievedAt": "2026-07-03T13:46:05.086Z",
       "licence": "OGL v3.0 (Companies House public register)",
       "fromCache": false,
       "reason": "key_missing",
@@ -868,7 +868,7 @@
       "status": "data_gap",
       "dataset": "land-registry-ccod-ocod",
       "url": "https://use-land-property-data.service.gov.uk/api/v1/datasets/ocod",
-      "retrievedAt": "2026-07-03T13:14:33.594Z",
+      "retrievedAt": "2026-07-03T13:46:05.086Z",
       "licence": "HM Land Registry Free Datasets Licence (CCOD/OCOD)",
       "fromCache": false,
       "reason": "key_missing",
@@ -878,9 +878,9 @@
       "dataset": "uk-house-price-index",
       "url": "https://landregistry.data.gov.uk/data/ukhpi/region/brighton-and-hove/month/2026-01.json",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.585Z",
+      "retrievedAt": "2026-07-03T13:45:50.684Z",
       "records": [
         {
           "recordUri": "http://landregistry.data.gov.uk/data/ukhpi/region/brighton-and-hove/month/2026-01",
@@ -897,9 +897,9 @@
       "dataset": "ons-private-housing-rental-prices",
       "url": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000008&indexandyearchange=index",
       "licence": "OGL v3.0",
-      "fromCache": true,
+      "fromCache": false,
       "status": "ok",
-      "retrievedAt": "2026-07-03T13:14:33.586Z",
+      "retrievedAt": "2026-07-03T13:45:50.885Z",
       "records": [
         {
           "recordUri": "https://api.beta.ons.gov.uk/v1/datasets/index-private-housing-rental-prices/editions/time-series/versions/41/observations?time=*&geography=E12000008&indexandyearchange=index",

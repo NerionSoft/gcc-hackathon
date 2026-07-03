@@ -1,0 +1,232 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=51.552637,-0.10677299999999999:51.552637,-0.100373:51.556637,-0.100373:51.556637,-0.10677299999999999&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=51.552637,-0.10677299999999999:51.552637,-0.100373:51.556637,-0.100373:51.556637,-0.10677299999999999&date=2026-04",
+  "retrievedAt": "2026-07-03T13:44:47.110Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.553469",
+        "street": {
+          "id": 1682445,
+          "name": "On or near Coach House Lane"
+        },
+        "longitude": "-0.103244"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134644939,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.555473",
+        "street": {
+          "id": 1682217,
+          "name": "On or near Highbury Hill"
+        },
+        "longitude": "-0.103175"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134639590,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.555188",
+        "street": {
+          "id": 1681600,
+          "name": "On or near Drayton Park"
+        },
+        "longitude": "-0.105567"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "513dbaaa708946d9597798b8cddc7e46dd7f996792b67d1ae5c67e9e8d2fdbcb",
+      "id": 134673338,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.555202",
+        "street": {
+          "id": 1682897,
+          "name": "On or near Panmure Close"
+        },
+        "longitude": "-0.100835"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "e3afc879be9acdd44c5d054b395920e62f955b84dbaf0358dfe5c57da7d44bd4",
+      "id": 134668403,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.555188",
+        "street": {
+          "id": 1681600,
+          "name": "On or near Drayton Park"
+        },
+        "longitude": "-0.105567"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "e87d31cda566bcf5fae8a4c80780eff37383273ffe1b505deb8443c99878678c",
+      "id": 134668430,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.552960",
+        "street": {
+          "id": 1681930,
+          "name": "On or near Drayton Park"
+        },
+        "longitude": "-0.105717"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "ce537019d23054644d86e3ca534ec20764ba1386dc0ea4244c88923b55b8b4f4",
+      "id": 134695770,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "theft-from-the-person",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.553653",
+        "street": {
+          "id": 1682215,
+          "name": "On or near Martineau Road"
+        },
+        "longitude": "-0.104073"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "241bd58ae029933d7a8945b69aafd810894aa389290bc87df429e99fcdd3c567",
+      "id": 134682422,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.554586",
+        "street": {
+          "id": 1682138,
+          "name": "On or near Stavordale Road"
+        },
+        "longitude": "-0.104496"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "68178db745e81b0859cad9c5ca479ecc5b304bbfc694a68ab718ccb4df42ccf2",
+      "id": 134671135,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.552728",
+        "street": {
+          "id": 1682184,
+          "name": "On or near Whistler Street"
+        },
+        "longitude": "-0.104717"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "8b7a8ef4acf323c7a13c855994a227222c4deb1d70fac1b285681662e5c5b89e",
+      "id": 134675758,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.555473",
+        "street": {
+          "id": 1682217,
+          "name": "On or near Highbury Hill"
+        },
+        "longitude": "-0.103175"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "82c4f6528bffb65590fdc98c0bf742bca918e620a6a127c928477b61d7be4615",
+      "id": 134721582,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "51.553653",
+        "street": {
+          "id": 1682215,
+          "name": "On or near Martineau Road"
+        },
+        "longitude": "-0.104073"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "eb54c99b9441e388adcb68cc61d95c17b92eea9dda101b6cdeb741a4e97bb313",
+      "id": 134716918,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

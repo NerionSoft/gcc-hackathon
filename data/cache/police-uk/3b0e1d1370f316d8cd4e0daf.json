@@ -1,0 +1,964 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=54.564398999999995,-1.250558:54.564398999999995,-1.2441579999999999:54.568399,-1.2441579999999999:54.568399,-1.250558&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=54.564398999999995,-1.250558:54.564398999999995,-1.2441579999999999:54.568399,-1.2441579999999999:54.568399,-1.250558&date=2026-04",
+  "retrievedAt": "2026-07-03T13:43:25.672Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565747",
+        "street": {
+          "id": 2072192,
+          "name": "On or near Oxford Street"
+        },
+        "longitude": "-1.244278"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134954236,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567168",
+        "street": {
+          "id": 2072030,
+          "name": "On or near Costa Street"
+        },
+        "longitude": "-1.247407"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134955399,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567268",
+        "street": {
+          "id": 2071955,
+          "name": "On or near Essex Street"
+        },
+        "longitude": "-1.248921"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134954237,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567814",
+        "street": {
+          "id": 2071915,
+          "name": "On or near Kildare Street"
+        },
+        "longitude": "-1.250163"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "ce2438f1f5d76a82f96fd5bdd81f980a4e03c64eab11adda84e2d29b7e38deab",
+      "id": 134951320,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "burglary",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567814",
+        "street": {
+          "id": 2071915,
+          "name": "On or near Kildare Street"
+        },
+        "longitude": "-1.250163"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "3406686cc226caad0d75057d3f4f2f8f94d7e7f10421b4286589311ae76a1747",
+      "id": 134954478,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567268",
+        "street": {
+          "id": 2071955,
+          "name": "On or near Essex Street"
+        },
+        "longitude": "-1.248921"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "6ac4a3c31cdfcb04f92197f828b9a12296e7cdfd4059cd83aaf9525a840a02e6",
+      "id": 134957651,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567814",
+        "street": {
+          "id": 2071915,
+          "name": "On or near Kildare Street"
+        },
+        "longitude": "-1.250163"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "c5604b204385fc69ba68decdeaefc8fb46bae7366cd426ad79ae8bbb9e06d55a",
+      "id": 134957652,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "3302f490244826085b2f50681baab14b67105fcb882142fed6d3a31db7184976",
+      "id": 134956717,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "83a5078ec59e0ce579c495288279cd188e38c5ceab628b7664b7ccd59016cb87",
+      "id": 134952745,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567814",
+        "street": {
+          "id": 2071915,
+          "name": "On or near Kildare Street"
+        },
+        "longitude": "-1.250163"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Local resolution",
+        "date": "2026-04"
+      },
+      "persistent_id": "60daf710dae82b471e2772847db2bd96794606ab0c1398e575d6e69f0cf87f99",
+      "id": 134956718,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.568365",
+        "street": {
+          "id": 2072165,
+          "name": "On or near Craven Street"
+        },
+        "longitude": "-1.244740"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Local resolution",
+        "date": "2026-04"
+      },
+      "persistent_id": "1bc0a1557cd5db428a60a5896eb086937782062b201e7c5c13caa02c6fe8578c",
+      "id": 134952818,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "drugs",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Awaiting court outcome",
+        "date": "2026-04"
+      },
+      "persistent_id": "d2825c05ac7de9ce6ec71bc65c5e99a22346b88c0ccf37c18812ff7a7cf24280",
+      "id": 134952905,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567011",
+        "street": {
+          "id": 2072066,
+          "name": "On or near Aire Street"
+        },
+        "longitude": "-1.246729"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "edac691ff9941c26869deb486fc6528b338dfca7baba63d915231756974f6698",
+      "id": 134953030,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567814",
+        "street": {
+          "id": 2071915,
+          "name": "On or near Kildare Street"
+        },
+        "longitude": "-1.250163"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "7968293e5d88e5c9deb7bd192d19b137844bd33ee3bc0eb7d643a4f344d71903",
+      "id": 134958312,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "53eb27a99c0dc84e7592a0537518457ac5a1655958ed9a37559c2564b1e96226",
+      "id": 134954343,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.568365",
+        "street": {
+          "id": 2072165,
+          "name": "On or near Craven Street"
+        },
+        "longitude": "-1.244740"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "c8d630de4795d173fe84cca819765cd7e41a2551678037aa986719a30ebd88ac",
+      "id": 134957901,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567011",
+        "street": {
+          "id": 2072066,
+          "name": "On or near Aire Street"
+        },
+        "longitude": "-1.246729"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "8af3a2b08a5a8cd3659266c4a204962a1b59e34b645c4197568946df37a9193f",
+      "id": 134954543,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567814",
+        "street": {
+          "id": 2071915,
+          "name": "On or near Kildare Street"
+        },
+        "longitude": "-1.250163"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "6e2065807104326304a7f3b6f761edc3b8451fe31a47e9b6009b809abb86afd4",
+      "id": 134955103,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567268",
+        "street": {
+          "id": 2071955,
+          "name": "On or near Essex Street"
+        },
+        "longitude": "-1.248921"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "9e7063c27a135d1097d1185e6ab77594eafddae848f474d1beb2653b10ee74f0",
+      "id": 134953031,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567168",
+        "street": {
+          "id": 2072030,
+          "name": "On or near Costa Street"
+        },
+        "longitude": "-1.247407"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "f7e6ca581d3aeb8f4b0d9e726a96ffd1799cf518e11b63cdcb47c1de5c23a5e3",
+      "id": 134953868,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.566845",
+        "street": {
+          "id": 2072086,
+          "name": "On or near Warwick Street"
+        },
+        "longitude": "-1.246021"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "91fabcee5141112aa17af72e95a5c125ba09e7123fc2005434f79c99fea87b72",
+      "id": 134957358,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567111",
+        "street": {
+          "id": 2072009,
+          "name": "On or near Harford Street"
+        },
+        "longitude": "-1.248243"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "efec5ff392023ccb6af794146c55d0a10831be388c715c2eb887e0c13235bed4",
+      "id": 134958337,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "robbery",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567814",
+        "street": {
+          "id": 2071915,
+          "name": "On or near Kildare Street"
+        },
+        "longitude": "-1.250163"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "c748c8f6e659fb42cf1232b8cde4c8f8a0f6ad1f4ae3ad7bbf83894525881d54",
+      "id": 134956613,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "robbery",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "a852e73ddbadae4d8fbb4ed344fc3804889d42a61c2365007f1ac781426032db",
+      "id": 134953149,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "robbery",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567168",
+        "street": {
+          "id": 2072030,
+          "name": "On or near Costa Street"
+        },
+        "longitude": "-1.247407"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "7ea2add308b7ff867f5add55cd242926713d1f98c747c801d2063648c232b5cf",
+      "id": 134955005,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "shoplifting",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567168",
+        "street": {
+          "id": 2072030,
+          "name": "On or near Costa Street"
+        },
+        "longitude": "-1.247407"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "a4d872ccf93386b24460741427accb2d6fcb270b2804440700c92e7fd0b94409",
+      "id": 134954915,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567112",
+        "street": {
+          "id": 2071898,
+          "name": "On or near Surrey Street"
+        },
+        "longitude": "-1.249852"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "b52fee574e0d8ce97594b0bce22b14c3de23f47524213dd4a644f4f59c2ba8a9",
+      "id": 134954544,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567112",
+        "street": {
+          "id": 2071898,
+          "name": "On or near Surrey Street"
+        },
+        "longitude": "-1.249852"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "4b442517690b8b588099896750538d805d0d9fa0c716ced20c312c960d32e847",
+      "id": 134952524,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "84965dcddfceab0fab640ab7dc5a2f1efd71f72cda2ea429fd16c9f7526fb6ec",
+      "id": 134952743,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567112",
+        "street": {
+          "id": 2071898,
+          "name": "On or near Surrey Street"
+        },
+        "longitude": "-1.249852"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "a994b1f19c2cf0fff23152aa619d3860b7eba8a61908b62553fd8eb6f17c21d1",
+      "id": 134958532,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567011",
+        "street": {
+          "id": 2072066,
+          "name": "On or near Aire Street"
+        },
+        "longitude": "-1.246729"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "60203e0f2693c1306b9ee02e4fd5e94922529fdf7126d7cd6d2afe95f901f760",
+      "id": 134957521,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567112",
+        "street": {
+          "id": 2071898,
+          "name": "On or near Surrey Street"
+        },
+        "longitude": "-1.249852"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "8a1ab5952af194f3ece20a781a702df8a0d33721528ae0949ae01cf8d5ebf1fc",
+      "id": 134955400,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "e4ea19a5b12fe593028ff1254d872d8078249407f39c0298a4c23eaacc0e2c7a",
+      "id": 134953148,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565825",
+        "street": {
+          "id": 2072118,
+          "name": "On or near Chester Street"
+        },
+        "longitude": "-1.245220"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "5c20b4285f1522c484cc3a962fe8fd3fc3a703a6e895a7097a90a8fad23a728a",
+      "id": 134769880,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565747",
+        "street": {
+          "id": 2072192,
+          "name": "On or near Oxford Street"
+        },
+        "longitude": "-1.244278"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "64c62525b860443a80eb49d0db935e19222d65fe73c58a8e3df65cde9c5ef760",
+      "id": 134958392,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567268",
+        "street": {
+          "id": 2071955,
+          "name": "On or near Essex Street"
+        },
+        "longitude": "-1.248921"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "92f6d6ba932c40383426dd6d739dc1ff48966494cd8a52ba3e1ff962f2f34d15",
+      "id": 134954344,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.566697",
+        "street": {
+          "id": 2072166,
+          "name": "On or near Worcester Street"
+        },
+        "longitude": "-1.245374"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "bc0329c02457ba147eecd2eb3c8f5e73e6bffb4721ae6266bec46f700e99e92a",
+      "id": 134955634,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.566845",
+        "street": {
+          "id": 2072086,
+          "name": "On or near Warwick Street"
+        },
+        "longitude": "-1.246021"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "3c369225b2967178d88e3ccf28ee611cfa964ce4dc9384d5f0989937af41dd7c",
+      "id": 134957265,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.568365",
+        "street": {
+          "id": 2072165,
+          "name": "On or near Craven Street"
+        },
+        "longitude": "-1.244740"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "966876e616567defd75e01b771ef02ffcc51721ddfffb3c9348aaed0a90c49d2",
+      "id": 134952897,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567011",
+        "street": {
+          "id": 2072066,
+          "name": "On or near Aire Street"
+        },
+        "longitude": "-1.246729"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "416ed82de1c707a617a0b3b618adfb8a5594651f7a922f53240b66d145525d4c",
+      "id": 134953029,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567112",
+        "street": {
+          "id": 2071898,
+          "name": "On or near Surrey Street"
+        },
+        "longitude": "-1.249852"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "3b9f2257e1ef370598029730b440cdd2a7d4f546ec7c9a28857c202b4d4020d4",
+      "id": 134955496,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567112",
+        "street": {
+          "id": 2071898,
+          "name": "On or near Surrey Street"
+        },
+        "longitude": "-1.249852"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "075595e1e3899ff6b988e379bc5e5140f123fa63fa9a29a9d041138192eb7ae6",
+      "id": 134951824,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "dac5186afcf945bc73a8d1d4f98393e6b3f84d3ae7d593fb9cb7982654010fbb",
+      "id": 134952742,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "1197ea760c15ef739f9de6ed3a5db9bdf7e7164a9d6334c18d5719cfa8228562",
+      "id": 134954015,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.565544",
+        "street": {
+          "id": 2071940,
+          "name": "On or near Ayresome Street"
+        },
+        "longitude": "-1.247731"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "78cdd354d1e43aa577a75ef699b5ac04f186ddeeeba939d30ab3f7cc66e4b38f",
+      "id": 134952744,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "54.567112",
+        "street": {
+          "id": 2071898,
+          "name": "On or near Surrey Street"
+        },
+        "longitude": "-1.249852"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "1277a48b7f8266e8ea8c8d8b2a2c8e5dc903403101b6595c53a9d74acd79ad99",
+      "id": 134951823,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

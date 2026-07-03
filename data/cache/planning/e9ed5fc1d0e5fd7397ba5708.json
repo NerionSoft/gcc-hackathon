@@ -1,0 +1,27 @@
+{
+  "key": "https://www.planning.data.gov.uk/entity.json?latitude=50.819211&longitude=-0.129943&dataset=conservation-area&dataset=listed-building-outline&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&dataset=brownfield-land&dataset=brownfield-site&limit=100&exclude_field=geometry,point",
+  "url": "https://www.planning.data.gov.uk/entity.json?latitude=50.819211&longitude=-0.129943&dataset=conservation-area&dataset=listed-building-outline&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&dataset=brownfield-land&dataset=brownfield-site&limit=100&exclude_field=geometry,point",
+  "retrievedAt": "2026-07-03T13:45:59.266Z",
+  "body": {
+    "entities": [
+      {
+        "entry-date": "2026-04-03",
+        "start-date": "1973-01-01",
+        "end-date": "",
+        "entity": 44003050,
+        "name": "East Cliff",
+        "dataset": "conservation-area",
+        "typology": "geography",
+        "reference": "2062",
+        "prefix": "conservation-area",
+        "organisation-entity": 49,
+        "quality": "some",
+        "notes": "Character Statement",
+        "document-url": "https://www.brighton-hove.gov.uk/sites/default/files/2022-08/Conservation_Area_East_Cliff_Dec_2015.pdf",
+        "documentation-url": "https://www.brighton-hove.gov.uk/planning/heritage/conservation-areas"
+      }
+    ],
+    "links": {},
+    "count": 1
+  }
+}

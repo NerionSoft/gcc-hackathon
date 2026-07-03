@@ -1,0 +1,91 @@
+{
+  "key": "district:TS8",
+  "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=TS8",
+  "retrievedAt": "2026-07-03T13:42:58.035Z",
+  "body": [
+    {
+      "urn": "134223",
+      "name": "The King's Academy",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS8 0GA",
+      "phase": "Secondary",
+      "establishmentType": "Academy sponsor led",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/134223"
+    },
+    {
+      "urn": "140503",
+      "name": "Sunnyside Academy",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS8 0RJ",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140503"
+    },
+    {
+      "urn": "140504",
+      "name": "Rose Wood Academy",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS8 0UG",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140504"
+    },
+    {
+      "urn": "140505",
+      "name": "Viewley Hill Academy",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS8 9HL",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/140505"
+    },
+    {
+      "urn": "142368",
+      "name": "St Augustine's Catholic Primary School",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS8 0TE",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/142368"
+    },
+    {
+      "urn": "142373",
+      "name": "St Gerard's RC Primary School",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS8 9HU",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/142373"
+    },
+    {
+      "urn": "145136",
+      "name": "Hemlington Hall Academy",
+      "localAuthority": "Middlesbrough",
+      "postcode": "TS8 9SJ",
+      "phase": "Primary",
+      "establishmentType": "Academy sponsor led",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/145136"
+    }
+  ]
+}

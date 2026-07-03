@@ -1,0 +1,25 @@
+{
+  "key": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer/identify?geometry=-1.249058,54.525194&geometryType=esriGeometryPoint&sr=4326&layers=all&tolerance=1&mapExtent=-1.259058,54.515194,-1.239058,54.535194&imageDisplay=400,400,96&returnGeometry=false&f=json",
+  "url": "https://map.bgs.ac.uk/arcgis/rest/services/GeoIndex_Onshore/radon/MapServer/identify?geometry=-1.249058,54.525194&geometryType=esriGeometryPoint&sr=4326&layers=all&tolerance=1&mapExtent=-1.259058,54.515194,-1.239058,54.535194&imageDisplay=400,400,96&returnGeometry=false&f=json",
+  "retrievedAt": "2026-07-03T13:42:56.841Z",
+  "body": {
+    "results": [
+      {
+        "layerId": 0,
+        "layerName": "Radon.1km",
+        "displayFieldName": "TILE",
+        "value": "NZ4814",
+        "attributes": {
+          "OBJECTID": "183535",
+          "Shape": "Polygon",
+          "TILE": "NZ4814",
+          "CLASS_MAX": "1",
+          "VERSION": "Radon Indicative Atlas GB v3",
+          "Description": "All parts of this 1km grid square are in the lowest band of radon potential. Less than 1 % of homes above the Action Level.",
+          "Shape_Length": "4000",
+          "Shape_Area": "1000000"
+        }
+      }
+    ]
+  }
+}
