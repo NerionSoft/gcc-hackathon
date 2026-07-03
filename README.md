@@ -2,51 +2,61 @@
 
 **An open-source, evidence-first property due-diligence agent team built on UK open data.**
 
-Before capital commits to a property — a council exercising first refusal, a housing association acquiring stock, a community land trust buying its first building — the big, connected players already ran their due diligence. Everyone else finds out about the flood zone, the offshore owner, or the contaminated ground *after* signing. The information is public; it is just scattered across a dozen open registers.
+Before capital commits to a property — a council exercising first refusal, a housing association acquiring stock, a community land trust buying its first building — the big, connected players already ran their due diligence. Everyone else finds out about the flood zone, the offshore owner, or the contaminated ground _after_ signing. The information is public; it is just scattered across a dozen open registers.
 
-CPI is an OSINT agent applied to property — **to the asset and its public context, never to people** — that investigates before capital commits and produces a clear, graded, **sourced** risk verdict. The agent decides severity, composite verdicts, and escalation; the human expert ("Nadia") reviews every pattern and **remains the only one who commits capital**.
+CPI is an OSINT agent applied to property — **to the asset and its public context, never to people** — that investigates before capital commits and produces a clear, graded, **sourced** risk verdict. A team of agents extracts sourced risk signals across six layers (building, unit, block, people, land, market), groups them into risk patterns, composes a plain-language disclosure, and keeps monitoring. The agent **decides** severity, composite verdicts, and escalation; the human expert ("Nadia") reviews every pattern, adjudicates every escalated case, and **remains the only one who commits capital**.
 
-> **Cardinal rule, enforced in code:** *evidence beats assertion*. No risk signal exists without a `sourceRef` (dataset + record + URL + retrieval time) and a confidence. The access layer rejects and journals anything less — it is not left to a prompt.
+> **Cardinal rule, enforced in code:** _evidence beats assertion_. No risk signal exists without a `sourceRef` (dataset + record + URL + retrieval time) and a confidence. The access layer rejects and journals anything less — it is not left to a prompt.
 
-## Status — Phases 1–3 (foundation + agent engine)
+Two doors, one engine: a **single-property lookup** (F0 — the civic door, for the first-time buyer or small council) and a **portfolio wall** at scale (F1 — the social-landlord door). A single property is just a portfolio of one; the same engine runs both, no duplicated logic.
 
-Phase 1 delivered the foundation: local SQLite data model with hard invariants, the UK open-data connector pack, the real-data fetch pipeline, and the seeded demo portfolio. Phases 2–3 (this branch) add the agent engine: the 6 Mastra investigators, the `civic-risk-scan` workflow with its human review gates (suspend/resume), the hard-coded evidence-integrity and fairness rules, the evidence-feed simulator, and the API surface for the UI. The UI itself comes in later phases (see `docs/SPEC.md`).
+## What's built
 
-### The engine in one run
+The full product is live end-to-end, real engine wired into the UI:
 
-```bash
-pnpm tsx scripts/run-engine.ts --smoke   # 3 real properties through the full pipeline
-pnpm tsx scripts/run-engine.ts           # the whole portfolio (needs OPENAI_API_KEY)
-```
+| Feature | Screen | What it does |
+| --- | --- | --- |
+| **F0** Single-property lookup | `/` search → `/property/[id]` | Address / UPRN / title / postcode / listing URL → the full sourced dossier, every finding clickable to its public record |
+| **F1** Portfolio wall | `/` | ~2,800 tiles, virtualized, filterable by status / dimension / severity / authority / capital type |
+| **F2** The condensation | `/` (Cluster by risk pattern) | Framer Motion: tiles colour by severity and migrate into risk-pattern cluster cards |
+| **F3** Cluster sheet & review gate | `/clusters` | Grouped evidence view, plain-language disclosure, **Approve / Request changes** — nothing publishes while `reviewedAt` is null |
+| **F4** Adjudication war room | `/adjudication` | Live verdict board + escalation queue; red cases never auto-resolve |
+| **F5** Impact banner | header | Live civic-impact metrics during the run |
+| **F6** Audit / provenance journal | `/audit` | Filterable, server-side-paginated ledger of every action; any verdict traces to source |
+| **F7** Director control room | `/director` | The demo console (not in the nav): scan, simulator, full reset |
 
-The script drives the real workflow through every gate and prints the sourced
-signals (dataset + record id + URL + retrieval time on every finding), the
-deterministic clusters, the review approvals, the escalations and the final
-civic-impact metrics.
-
-- `src/mastra/agents/` — the 6 layer investigators (building-inspector, unit-profiler, block-scanner, people-investigator, land-surveyor, market-analyst) + `assessment-composer` + `verdict-adjudicator`. Prompts are versioned in `src/mastra/prompts/` (English), never inline. Every LLM output crosses Zod with 1 retry (parse error fed back), then a graceful, audited fallback.
-- `src/mastra/workflows/civic-risk-scan.ts` — scanPortfolio → deterministic clusterByRiskPattern → composeAssessments → ⏸ awaitAssessmentReview → publishCluster (throws while `reviewedAt` is null) → ⏸ adjudicateEvidence (event-driven) → ⏸ awaitHumanAdjudication → closeOut.
-- `src/mastra/engine/adjudication.ts` — the two **hard-coded** rules that override any model output: evidence integrity (high-severity single source / conflicting sources → forced red + escalation) and the anti-redlining fairness guardrail (protected-characteristic proxies excluded + `fairness_guardrail_triggered`).
-- `src/mastra/simulator/` — replays the 40 pre-written seeded feed updates at a configurable pace (deterministic; no live LLM loop).
-- `src/app/api/` — scan start/status, portfolio wall, **single-property lookup** (`POST /api/lookup` — a portfolio of one, same engine), clusters + review decisions, adjudications + expert actions, audit journal, simulator controls, impact metrics.
-- LLM host: **Venice.ai** (OpenAI-compatible) serving DeepSeek models — see `.env.example`. Without a key the engine degrades gracefully: synthetic replay, deterministic verdicts and composed fallbacks still run; live investigation of real properties is skipped with a typed audit event.
+Under the hood: 6 Mastra investigator agents + `assessment-composer` + `verdict-adjudicator`, the `civic-risk-scan` workflow with suspend/resume human gates, two hard-coded rules (evidence integrity + anti-redlining fairness), the deterministic evidence-feed simulator, and 17 typed API routes. See `docs/SPEC.md` for the full specification.
 
 ## Quick start
 
 ```bash
 pnpm install
-cp .env.example .env   # optional — everything runs with zero env
-pnpm seed              # build data/cpi.db from the committed open-data cache
-pnpm dev               # http://localhost:3000
+cp .env.example .env    # optional — everything runs with zero env
+pnpm fetch-data         # optional — refresh the real open-data cache (committed, so skippable)
+pnpm seed               # build data/cpi.db: framework + 50 real + 2,750 synthetic + evidence feed
+pnpm dev                # http://localhost:3000
 ```
 
-No external services required. Optional:
+No external services required — the demo runs offline against the committed open-data cache. With an LLM key (see `.env.example`) the 50 real properties are investigated live by the agents; without one the engine degrades gracefully (deterministic verdicts, composed fallbacks, synthetic replay) and says so with a typed audit event.
 
 ```bash
-pnpm fetch-data        # re-run the live open-data pipeline (refreshes data/properties/)
-pnpm test              # invariant tests
+pnpm test               # invariant tests (Vitest)
+pnpm test:e2e           # Playwright (build + start first)
 pnpm lint && pnpm typecheck
 ```
+
+## Demo script — running the video
+
+The **`/director`** console is the filming desk. It drives the real engine routes; nothing here is faked.
+
+1. **Reset.** `/director` → _Full data reset_ → **Reset & re-seed**. The portfolio rebuilds deterministically (same 50 real + 2,750 synthetic every take). Cut to `/`.
+2. **Act 1 — the wall.** `/` shows ~2,800 tiles idle. The header impact banner reads the framework, capital under review, and freshness. From `/director`, **Start scan** kicks off `civic-risk-scan`: the six investigators extract sourced signals; tiles light up.
+3. **Act 2 — the condensation.** On `/`, click **Cluster by risk pattern**. Tiles colour by dominant severity and migrate into ~9 risk-pattern clusters (F2 — the signature shot). Deterministic group-by, not an LLM guess.
+4. **Act 3 — the review gate.** `/clusters` → open a cluster. Evidence view: each finding beside its cited source, plain-language disclosure, and the banner _"⏸ The agent is waiting for your review."_ **Approve** (or **Request changes** with a comment). Nothing publishes until Nadia signs — her name and timestamp then show permanently.
+5. **Act 4 — the war room.** `/adjudication`. From `/director`, **Start** the evidence-feed simulator (try the **Fast** speed). Pre-written open-data updates land on published cases; verdicts update; material-adverse evidence escalates to the analyst queue. Red cases offer **Confirm risk / Request more evidence / Mark resolved** — never an auto-resolve.
+6. **The receipts.** `/audit` — every step above is in the append-only provenance ledger, filterable by actor / action / entity / time, each event linking back to the exact public record.
+
+The `/director` console also exposes the campaign gate the workflow is suspended at, and simulator pace (Slow / Normal / Fast) for the shot you need.
 
 ## Architecture
 
@@ -69,8 +79,11 @@ flowchart LR
   C --> F[scripts/fetch-open-data.ts<br/>50 real properties → data/properties/]
   F --> S[scripts/seed.ts<br/>+2,750 synthetic + framework + evidence feed]
   S --> DB[(SQLite — src/db/<br/>Zod schemas + hard invariants)]
-  DB --> M[src/mastra/ agents & workflows<br/>phases 2–3]
-  M --> UI[src/app/ portfolio wall, review gates<br/>phases 4–7]
+  DB --> M[src/mastra/<br/>6 investigators + composer + adjudicator]
+  M --> W[civic-risk-scan workflow<br/>scan → cluster → compose → ⏸review → publish → ⏸adjudicate]
+  W --> API[src/app/api/<br/>18 typed routes]
+  API --> UI[src/app/ + src/presentation/<br/>F0 dossier · F1 wall · F2 condense · F3 gate · F4 war room · F6 audit · F7 director]
+  SIM[evidence-feed simulator<br/>deterministic replay] --> W
 ```
 
 `*` = needs a free API key (see below); without one the connector returns a typed **data gap**, never fake data.
@@ -79,13 +92,13 @@ flowchart LR
   - A `RiskSignal` can never be persisted or emitted without a complete `sourceRef` and `confidence` — invalid candidates are journalled as `signal_extraction_failed` audit events.
   - `audit_events` is append-only: the access module exposes no update/delete, and DB triggers abort raw attempts.
 - `src/connectors/` — one thin typed client per open source, all returning the same `ConnectorResult` (`ok | no_data | data_gap | error`), each declaring its licence. Cache-first (deterministic, offline-replayable). **Forkable**: this folder is the UK country pack; a France pack (DVF, Géorisques…) would replace it without touching anything else.
-- `scripts/fetch-open-data.ts` — harvests ~50 **real** addresses (from HM Land Registry Price Paid Data) across risk-interesting English local authorities, really queries every keyless source, caches raw bundles under `data/properties/`.
-- `scripts/seed.ts` — rebuilds `data/cpi.db`: 50 real + ~2,750 synthetic properties, the **Civic Property Risk v1** framework (6 dimensions, sourced signal definitions with British-English severity rubrics), and 40 pre-written evidence-feed updates for the demo simulator.
+- `src/mastra/` — the agent team, the `civic-risk-scan` workflow, and the two hard-coded rules (`engine/adjudication.ts`, `engine/fairness.ts`) that override any model output. Prompts are versioned in `src/mastra/prompts/` (English), never inline; every LLM output crosses Zod with 1 retry then a graceful audited fallback.
+- `src/presentation/features/` — one folder per feature surface (`portfolio`, `condensation`, `dossier`, `audit-log`, `director`…), driving the read/write routes through Zod-validated contracts.
 
 ## Data sources & licences
 
 | Source | Dataset | Key needed | Licence |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | HM Land Registry | Price Paid Data, UK House Price Index | No | OGL v3.0 |
 | Environment Agency | Real-time flood monitoring (areas + warnings) | No | OGL v3.0 |
 | MHCLG | planning.data.gov.uk (conservation, listed, brownfield, flood-risk zones…) | No | OGL v3.0 |
@@ -110,36 +123,44 @@ Without a key, those connectors return an explicit `data_gap / key_missing` resu
 
 ## Real vs simulated — the exact boundary
 
-| | Real | Simulated |
-|---|---|---|
-| ~50 cohort properties | Address, postcode, local authority, coordinates (postcode centroid), tenure, property type, **every open-data response** in `data/properties/*.json` | The investment scenario: `value`, `intendedUse`, `capitalType` (Nadia's organisation is a fictional persona) |
-| ~2,750 scale properties | — | Everything (fictional streets, sector-9 postcodes, `provenance: "synthetic"`), with pre-computed plausible signals whose `recordId`s are prefixed `synthetic:` |
-| Evidence feed (40 updates) | — | Pre-written, replayed deterministically; `recordId`s prefixed `simulated-feed:` |
+We never present a simulated part as real. The boundary is explicit in the data itself.
 
-Every property row carries a `provenance` column (`real_open_data` / `synthetic`); every bundle in `data/properties/` carries a `_provenance` block. Synthetic parts are never presented as real.
+| | Real | Simulated |
+| --- | --- | --- |
+| ~50 cohort properties | Address, postcode, local authority, coordinates (postcode centroid), tenure, property type, **every open-data response** cached in `data/properties/*.json` | The investment scenario: `value`, `intendedUse`, `capitalType` (Nadia's organisation is a fictional persona) |
+| ~2,750 scale properties | — | Everything (fictional streets, sector-9 postcodes, `provenance: "synthetic"`), with pre-computed plausible signals whose `recordId`s are prefixed `synthetic:` |
+| Evidence feed (40 updates) | — | Pre-written, replayed deterministically by the simulator |
+| Engagement scenario | — | The portfolio scale, the campaign narrative, and Nadia herself |
+
+Every property row carries a `provenance` column (`real_open_data` / `synthetic`); the tiles and dossier surface it. The 50 real properties really pass through the six investigators during the demo — the risks they carry are authentic.
 
 ## Ethics & fairness
 
-- **No redlining, enforced:** risk is measured on facts about the asset and its physical, legal, financial, and environmental context — never on protected characteristics of the people who live there. Synthetic distributions are driven only by asset context (coastal exposure, building-stock age, corporate-ownership opacity). Later phases block any protected-characteristic proxy from entering a verdict (`fairness_guardrail_triggered`).
-- **No capital decisions:** there is no "recommend buy/commit" output anywhere; the agent grades risk, the human commits.
-- **Assets, not people:** public registers only, no scraping behind authentication, no surveillance of individuals.
-- **Provenance ledger:** every action writes an immutable audit event; any verdict traces back to the exact public record.
+- **No redlining, enforced in code.** Risk is measured on facts about the asset and its physical, legal, financial, and environmental context — **never** on protected characteristics of the people who live there. Any signal derived from a protected-characteristic proxy is excluded from the verdict before it can count, and the case is marked `fairness_guardrail_triggered` (`src/mastra/engine/fairness.ts`, covered by an invariant test). Synthetic distributions are driven only by asset context (coastal exposure, building-stock age, corporate-ownership opacity) — no demographic proxy is encoded.
+- **Evidence beats assertion.** No unsourced finding can be persisted or emitted; high-severity single-source or conflicting evidence forces `red / escalated` regardless of the model's output.
+- **No capital decisions.** There is no "recommend buy/commit" output anywhere. The agent grades and sources risk; the human commits.
+- **Human-in-the-loop gates.** A cluster cannot publish until Nadia reviews it; every escalated red case suspends for her decision; red is never auto-resolved.
+- **Assets, not people.** Public registers only, no scraping behind authentication, no surveillance of individuals.
+- **Provenance ledger.** Every agent and human action writes an immutable, timestamped audit event with its rationale and a source snapshot; `/audit` makes any verdict traceable to the exact public record.
 
 ## Fork it for another country
 
-`src/connectors/` is the country pack. To build a France pack: implement the same `ConnectorResult` contract over DVF (transactions), Géorisques (flood/soil/pollution), BAN (addresses), Infogreffe/RNE (ownership), and swap the framework's signal `source` fields. Schema, invariants, agents, and UI stay untouched.
+`src/connectors/` is the country pack. To build a **France** pack: implement the same `ConnectorResult` contract over DVF (transactions), Géorisques (flood / soil / pollution / seismicity), BAN (addresses), Infogreffe / RNE (corporate ownership), and ADEME DPE (energy), then swap the framework's signal `source` fields. The schema, the hard invariants, the agents, the workflow, and the entire UI stay untouched — the risk framework and the six-layer model are country-agnostic.
 
-## Known limits
+## Known limitations
 
-- Coordinates are postcode centroids (postcodes.io/ONS), not parcel geometry.
-- EA flood *alert/warning areas* stand in for Flood Map for Planning zones 2/3 (whose spatial service is heavier to query); rubric thresholds reflect that.
-- police.uk months are pinned in the fetch script for cache determinism.
-- UPRNs are null (OS Open UPRN is bulk-only); single-property lookup in later phases resolves by address/postcode.
+- **F0 resolution** is limited to the seeded districts — the lookup resolves address / postcode / UPRN / title / listing URL against the seeded portfolio, not against a live national gazetteer.
+- **EPC, Companies House, CCOD/OCOD** need free keys; without them those layers report an honest data gap rather than fabricating.
+- **BGS ground-stability (GeoSure)** has no open query API — a permanent typed data gap; radon uses the open Indicative Atlas.
+- **Coordinates are postcode centroids** (postcodes.io / ONS), not parcel geometry.
+- **EA flood alert/warning areas** stand in for Flood Map for Planning zones 2/3 (whose spatial service is heavier to query); rubric thresholds reflect that.
+- **police.uk months** are pinned in the fetch script for cache determinism; **UPRNs** are null (OS Open UPRN is bulk-only).
+- **`/director` reset** rebuilds the SQLite business DB in place (via the seed pipeline); it is a demo convenience, not a multi-tenant admin surface.
 
 ## Scripts
 
 | Command | What it does |
-|---|---|
+| --- | --- |
 | `pnpm dev` / `build` / `start` | Next.js app |
 | `pnpm seed` | Rebuild `data/cpi.db` (framework + portfolio + evidence feed) |
 | `pnpm fetch-data` | Live open-data pipeline → `data/properties/` + `data/cache/` |
@@ -149,4 +170,4 @@ Every property row carries a `provenance` column (`real_open_data` / `synthetic`
 
 ---
 
-*Data: HM Land Registry, EPC (MHCLG), Environment Agency, police.uk, Companies House, planning.data.gov.uk, Defra, BGS, DfE, ONS — Open Government Licence v3.0 unless stated otherwise.*
+_Data: HM Land Registry, EPC (MHCLG), Environment Agency, police.uk, Companies House, planning.data.gov.uk, Defra, BGS, DfE, ONS — Open Government Licence v3.0 unless stated otherwise._

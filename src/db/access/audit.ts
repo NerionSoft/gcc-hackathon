@@ -79,13 +79,18 @@ export interface AuditEventFilter {
   entityType?: string;
   entityId?: string;
   actor?: Actor;
+  /** Exact action match (e.g. "cluster_published"). */
+  action?: string;
+  /** Inclusive lower bound on `timestamp` (ISO 8601). */
+  after?: string;
+  /** Inclusive upper bound on `timestamp` (ISO 8601). */
+  before?: string;
   limit?: number;
+  offset?: number;
 }
 
-export function listAuditEvents(
-  filter: AuditEventFilter = {},
-  db: Database.Database = getDb(),
-): AuditEvent[] {
+/** Build the shared WHERE clause + bound params for a filter (no LIMIT/OFFSET). */
+function buildWhere(filter: AuditEventFilter): { where: string; params: unknown[] } {
   const clauses: string[] = [];
   const params: unknown[] = [];
   if (filter.entityType) {
@@ -100,10 +105,68 @@ export function listAuditEvents(
     clauses.push("actor = ?");
     params.push(filter.actor);
   }
-  const where = clauses.length > 0 ? `WHERE ${clauses.join(" AND ")}` : "";
+  if (filter.action) {
+    clauses.push("action = ?");
+    params.push(filter.action);
+  }
+  if (filter.after) {
+    clauses.push("timestamp >= ?");
+    params.push(filter.after);
+  }
+  if (filter.before) {
+    clauses.push("timestamp <= ?");
+    params.push(filter.before);
+  }
+  return { where: clauses.length > 0 ? `WHERE ${clauses.join(" AND ")}` : "", params };
+}
+
+export function listAuditEvents(
+  filter: AuditEventFilter = {},
+  db: Database.Database = getDb(),
+): AuditEvent[] {
+  const { where, params } = buildWhere(filter);
   const limit = filter.limit ?? 500;
+  const offset = filter.offset ?? 0;
   const rows = db
-    .prepare(`SELECT * FROM audit_events ${where} ORDER BY timestamp DESC LIMIT ?`)
-    .all(...params, limit) as AuditRow[];
+    .prepare(
+      `SELECT * FROM audit_events ${where} ORDER BY timestamp DESC, id DESC LIMIT ? OFFSET ?`,
+    )
+    .all(...params, limit, offset) as AuditRow[];
   return rows.map(rowToEvent);
+}
+
+/** Total events matching a filter — powers server-side pagination (F6). */
+export function countAuditEvents(
+  filter: AuditEventFilter = {},
+  db: Database.Database = getDb(),
+): number {
+  const { where, params } = buildWhere(filter);
+  const row = db.prepare(`SELECT COUNT(*) AS n FROM audit_events ${where}`).get(...params) as {
+    n: number;
+  };
+  return row.n;
+}
+
+export interface AuditFacets {
+  actions: string[];
+  entityTypes: string[];
+  actors: Actor[];
+}
+
+/** Distinct filterable values, so the F6 filter bar offers only real options. */
+export function listAuditFacets(db: Database.Database = getDb()): AuditFacets {
+  const actions = db
+    .prepare("SELECT DISTINCT action FROM audit_events ORDER BY action")
+    .all() as Array<{ action: string }>;
+  const entityTypes = db
+    .prepare("SELECT DISTINCT entity_type FROM audit_events ORDER BY entity_type")
+    .all() as Array<{ entity_type: string }>;
+  const actors = db
+    .prepare("SELECT DISTINCT actor FROM audit_events ORDER BY actor")
+    .all() as Array<{ actor: string }>;
+  return {
+    actions: actions.map((r) => r.action),
+    entityTypes: entityTypes.map((r) => r.entity_type),
+    actors: actors.map((r) => r.actor as Actor),
+  };
 }
