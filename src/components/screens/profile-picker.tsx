@@ -48,7 +48,7 @@ export function ProfilePicker({
     <div className="space-y-6">
       <div>
         <h3 className="mb-3 text-sm font-medium text-ink">
-          Ce qui compte pour vous (plusieurs choix possibles)
+          What matters to you (multiple choices possible)
         </h3>
         <div className="flex flex-wrap gap-2">
           {(Object.keys(LIFE_PROFILE_LABELS) as LifeProfileTag[]).map((tag) => {
@@ -76,7 +76,7 @@ export function ProfilePicker({
       </div>
 
       <div>
-        <h3 className="mb-3 text-sm font-medium text-ink">Type de bien</h3>
+        <h3 className="mb-3 text-sm font-medium text-ink">Property type</h3>
         <div className="flex flex-wrap gap-2">
           {(Object.keys(PROPERTY_TYPE_LABELS) as PropertyType[]).map((type) => {
             const Icon = PROPERTY_ICONS[type];

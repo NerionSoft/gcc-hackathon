@@ -22,31 +22,31 @@ export type UserProfile = z.infer<typeof userProfileSchema>;
 
 export const LIFE_PROFILE_LABELS: Record<LifeProfileTag, { label: string; description: string }> = {
   famille_enfants: {
-    label: "Famille avec enfants",
-    description: "Priorité air, sécurité, écoles à proximité",
+    label: "Family with children",
+    description: "Priority on air quality, safety, nearby schools",
   },
   teletravail: {
-    label: "Télétravail",
-    description: "Priorité bruit et connectivité",
+    label: "Remote work",
+    description: "Priority on noise and connectivity",
   },
   sensibilite_air: {
-    label: "Sensibilité santé / air",
-    description: "Priorité forte sur la qualité de l'air",
+    label: "Health / air sensitivity",
+    description: "Strong priority on air quality",
   },
   investissement_locatif: {
-    label: "Investissement locatif",
-    description: "Priorité marché, prix et rendement",
+    label: "Rental investment",
+    description: "Priority on market, price, and yield",
   },
   senior_mobilite: {
-    label: "Personne âgée / mobilité",
-    description: "Priorité services de proximité, accessibilité",
+    label: "Elderly / mobility",
+    description: "Priority on nearby services and accessibility",
   },
 };
 
 export const PROPERTY_TYPE_LABELS: Record<PropertyType, string> = {
-  maison: "Maison",
-  appartement: "Appartement",
-  inconnu: "Peu importe",
+  maison: "House",
+  appartement: "Apartment",
+  inconnu: "Doesn't matter",
 };
 
 /** Domains the report scores and weights independently. */
@@ -54,19 +54,19 @@ export const domainKeySchema = z.enum(["risques", "prix", "air", "securite", "en
 export type DomainKey = z.infer<typeof domainKeySchema>;
 
 export const DOMAIN_LABELS: Record<DomainKey, string> = {
-  risques: "les risques naturels",
-  prix: "le marché immobilier",
-  air: "la qualité de l'air",
-  securite: "la sécurité",
-  energie: "l'énergie",
+  risques: "natural hazards",
+  prix: "the real estate market",
+  air: "air quality",
+  securite: "safety",
+  energie: "energy",
 };
 
 export const DOMAIN_TITLES: Record<DomainKey, string> = {
-  risques: "Risques naturels & technologiques",
-  prix: "Prix & marché",
-  air: "Qualité de l'air",
-  securite: "Sécurité",
-  energie: "Énergie",
+  risques: "Natural & technological hazards",
+  prix: "Price & market",
+  air: "Air quality",
+  securite: "Safety",
+  energie: "Energy",
 };
 
 const baseWeights: Record<DomainKey, number> = {

@@ -57,7 +57,7 @@ function toAddress(feature: BanFeature): Address {
 
 function banSource(url: string): SourceRef {
   return {
-    name: "Base Adresse Nationale (IGN Géoplateforme)",
+    name: "Base Adresse Nationale (French National Address Database, IGN Géoplateforme)",
     url,
     retrievedAt: new Date().toISOString(),
   };
@@ -73,7 +73,7 @@ export const geocodeOutputSchema = toolResultSchema(z.array(addressSchema));
 export const geocodeTool = createTool({
   id: "geocode-ban",
   description:
-    "Géocode une adresse française via la Base Adresse Nationale (point d'entrée obligatoire de TerraVista).",
+    "Geocodes a French address via the Base Adresse Nationale (TerraVista's mandatory entry point).",
   inputSchema: geocodeInputSchema,
   outputSchema: geocodeOutputSchema,
   execute: async ({ query, limit }) => {
@@ -85,16 +85,13 @@ export const geocodeTool = createTool({
       );
       const addresses = data.features.map(toAddress);
       if (addresses.length === 0) {
-        return unavailableResult(source, "Aucune adresse trouvée pour cette recherche.");
+        return unavailableResult(source, "No address found for this search.");
       }
       const confidence =
         addresses[0].score > 0.8 ? "high" : addresses[0].score > 0.5 ? "medium" : "low";
       return okResult(addresses, source, confidence);
     } catch (err) {
-      return errorResult(
-        source,
-        err instanceof Error ? err.message : "Erreur inconnue lors du géocodage.",
-      );
+      return errorResult(source, err instanceof Error ? err.message : "Unknown geocoding error.");
     }
   },
 });

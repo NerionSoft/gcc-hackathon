@@ -1,142 +1,141 @@
 # TerraVista
 
-**Un outil citoyen, gratuit et neutre pour comprendre l'environnement d'un bien immobilier avant de signer.**
+**A free, neutral, citizen-facing tool for understanding a property's environment before you sign.**
 
-Une adresse et un profil de vie en entrée ; en sortie, un rapport sourcé et pondéré — risques
-naturels, prix du marché, qualité de l'air, sécurité, énergie — produit par une équipe d'agents
-qui perçoit, planifie, collecte, croise et décide, avec traçabilité totale vers des données
-publiques officielles françaises.
+An address and a life profile go in; a sourced, weighted report comes out — natural hazards,
+market prices, air quality, safety, energy performance — produced by a team of agents that
+perceives, plans, collects, cross-references, and decides, with full traceability back to
+official French public data.
 
-## Démarrage rapide
+## Quick start
+
+Prerequisites: Node ≥ 24, pnpm 11 (`packageManager` in `package.json` — `corepack enable` handles this automatically).
 
 ```bash
 pnpm install
-cp .env.example .env      # optionnel — tout fonctionne sans clé
-pnpm fetch-data           # régénère l'index SSMSI local (committé, donc sautable)
+cp .env.example .env      # optional — everything works without a key
+pnpm fetch-data           # regenerates the local SSMSI index (committed, so skippable)
 pnpm dev                  # http://localhost:3000
 ```
 
-Aucun service externe n'est requis pour faire tourner l'application : les 6 sources sont des API
-ouvertes sans clé (sauf mention contraire ci-dessous), et le rapport se produit intégralement sans
-LLM configuré — le score, les verdicts et les red flags sont calculés par du code déterministe. Un
-LLM, s'il est configuré (`OPENAI_API_KEY` / `OPENAI_BASE_URL`, routées via le model router intégré
-de Mastra — compatible avec n'importe quel endpoint OpenAI-compatible), ne ferait que reformuler
-certains textes explicatifs — cette couche n'est pas branchée à ce jour, le rapport reste
-100% fonctionnel sans elle.
+No external service is required to run the app: the 6 sources are open APIs with no key needed
+(except where noted below), and the report is produced entirely without an LLM configured — the
+score, verdicts, and red flags are all computed by deterministic code. An LLM, if configured
+(`OPENAI_API_KEY` / `OPENAI_BASE_URL`, routed through Mastra's built-in model router — compatible
+with any OpenAI-compatible endpoint), would only reword some explanatory text — this layer isn't
+wired up yet, and the report stays 100% functional without it.
 
-Deux adresses de démonstration pré-vérifiées sont proposées directement sur l'écran de saisie
-(bouton « Essayer une adresse de démonstration ») :
+Two pre-verified demo addresses are offered directly on the search screen (the "Or try a demo
+address" section):
 
-- **8 Rue de la Paix, Paris 2e** — appartement urbain, zone inondable documentée, argile fort.
-- **Venelle de l'Église, Huelgoat (29)** — maison rurale ancienne, cavités souterraines, potentiel
-  radon élevé, historique de catastrophes naturelles répété. Déclenche deux red flags croisés
-  (vérification structurelle + arbitrage marché/risque).
+- **8 Rue de la Paix, Paris 2e** — urban apartment, documented flood zone, high clay shrink-swell risk.
+- **Venelle de l'Église, Huelgoat (29)** — old rural house, underground cavities, elevated radon
+  potential, repeated natural-disaster history. Triggers two cross-domain red flags (structural
+  check + market/risk arbitration).
 
-## Architecture — la boucle agentique
+## Architecture — the agentic loop
 
 ```
-Adresse + profil
+Address + profile
       │
       ▼
-┌─────────────┐   déterministe : pondère les 5 domaines selon le profil
-│ Planificateur│   (famille, télétravail, sensibilité air, investissement, senior)
-└──────┬──────┘   et le type de bien (maison / appartement)
+┌─────────────┐   deterministic: weighs the 5 domains by profile
+│   Planner   │   (family, remote work, air sensitivity, investment, senior)
+└──────┬──────┘   and property type (house / apartment)
        │
-       ▼ (les 5 collecteurs tournent en parallèle, chaque section s'affiche
-┌──────┴──────┐    dès qu'elle est prête — jamais un écran figé pendant 30s)
-│  Collecteurs │
-│  risques     │──▶ Géorisques (BRGM)
-│  prix        │──▶ Cerema — API Données Foncières (DVF)
-│  air         │──▶ Atmo Data
-│  sécurité    │──▶ SSMSI (index local pré-calculé)
-│  énergie     │──▶ ADEME DPE
+       ▼ (the 5 collectors run in parallel, each section renders
+┌──────┴──────┐    as soon as it's ready — never a screen frozen for 30s)
+│  Collectors │
+│  risks      │──▶ Géorisques (BRGM)
+│  prices     │──▶ Cerema — Données Foncières API (DVF)
+│  air        │──▶ Atmo Data
+│  safety     │──▶ SSMSI (pre-computed local index)
+│  energy     │──▶ ADEME DPE
 └──────┬──────┘
-       │  cascade : si inondation détectée, une recherche complémentaire
-       │  (Atlas des Zones Inondables) se déclenche automatiquement
+       │  cascade: if flooding is detected, a follow-up lookup
+       │  (Atlas des Zones Inondables) fires automatically
        ▼
-┌─────────────┐   déterministe : croise les résultats pour des constats
-│  Analyste   │   qu'aucune source seule ne donne, arbitre les contradictions
-└──────┬──────┘   entre sources (ex. risque documenté vs. prix qui n'en tient pas compte)
+┌─────────────┐   deterministic: cross-references results for findings
+│   Analyst   │   no single source gives, arbitrates contradictions
+└──────┬──────┘   between sources (e.g. documented risk vs. a price that ignores it)
        │
        ▼
-┌─────────────┐   compose le rapport final : score pondéré, red flags
-│  Conseiller │   priorisés, actions concrètes (questions, démarches officielles)
+┌─────────────┐   composes the final report: weighted score, prioritized
+│   Advisor   │   red flags, concrete actions (questions, official steps)
 └──────┬──────┘
        ▼
-  Rapport streamé (NDJSON) → écran de rapport progressif + export PDF
+  Streamed report (NDJSON) → progressive report screen + PDF export
 ```
 
-Chaque étape est un `step` d'un vrai **workflow Mastra** (`src/mastra/workflows/report-workflow.ts`),
-et chaque source est un **tool Mastra** typé Zod (`src/mastra/tools/`). Le workflow émet ses
-événements de progression via `writer.custom(...)` (mécanisme natif Mastra, vérifié de bout en
-bout), que la route `/api/report/stream` traduit en NDJSON pour le client. Le même workflow tourne
-en mode batch (`run.start(...)`, sans streaming) pour l'export PDF — une seule logique métier, deux
-modes d'exécution.
+Each stage is a `step` of a real **Mastra workflow** (`src/mastra/workflows/report-workflow.ts`),
+and each source is a Zod-typed **Mastra tool** (`src/mastra/tools/`). The workflow emits progress
+events via `writer.custom(...)` (Mastra's native mechanism, verified end to end), which the
+`/api/report/stream` route translates into NDJSON for the client. The same workflow also runs in
+batch mode (`run.start(...)`, no streaming) for PDF export — one business logic, two execution modes.
 
-**Choix d'architecture assumé** : Planificateur, Analyste et Conseiller sont du code déterministe,
-pas des appels LLM. Le rapport doit être fiable et reproductible même sans clé API configurée ; un
-modèle de langage n'aurait de valeur ajoutée que pour reformuler des textes, jamais pour produire un
-chiffre ou un verdict. Ce choix est documenté plus en détail sur `/methodologie`.
+**Deliberate architecture choice**: the Planner, Analyst, and Advisor are deterministic code, not
+LLM calls. The report has to be reliable and reproducible even with no API key configured; a
+language model would only add value by rewording text, never by producing a number or a verdict.
+This choice is documented in more detail on `/methodology`.
 
 ## Sources
 
-Six tools, chacun avec cache, retry avec backoff exponentiel, et un score de confiance sur la
-donnée retournée. Le détail de chaque source (fréquence de mise à jour, limites connues) est sur la
-page **Sources & méthodologie** (`/methodologie`) de l'application :
+Six tools, each with caching, exponential-backoff retry, and a confidence score on the data
+returned. Per-source details (update frequency, known limitations) live on the app's **Sources &
+methodology** page (`/methodology`):
 
-| Domaine | Source | Notes |
+| Domain | Source | Notes |
 | --- | --- | --- |
-| Géocodage | IGN Géoplateforme — Base Adresse Nationale | Point d'entrée obligatoire |
-| Risques | Géorisques (BRGM) | Inondation, argiles, séisme, radon, cavités, sites pollués, CatNat, AZI |
-| Prix | Cerema — API Données Foncières (DVF open data) | 5 dernières années ; ne couvre pas Mayotte / Alsace-Moselle |
-| Air | Atmo Data (indice ATMO quotidien) | Geod'air (mesures fines par polluant) nécessite une inscription, non intégré |
-| Sécurité | SSMSI (délinquance communale) | Index local pré-calculé (`pnpm fetch-data`) — le fichier source (~40 Mo) est trop lent à interroger en direct |
-| Énergie | ADEME — DPE | Anonymisé (CNIL) ; le DPE le plus récent de l'adresse exacte, ou du voisinage immédiat à défaut |
+| Geocoding | IGN Géoplateforme — Base Adresse Nationale | Mandatory entry point |
+| Risks | Géorisques (BRGM) | Flooding, clay shrink-swell, seismic, radon, cavities, contaminated sites, CatNat, AZI |
+| Prices | Cerema — Données Foncières API (DVF open data) | Last 5 years; doesn't cover Mayotte / Alsace-Moselle |
+| Air | Atmo Data (daily ATMO index) | Geod'air (fine-grained per-pollutant measurements) requires registration, not integrated |
+| Safety | SSMSI (municipal crime data) | Pre-computed local index (`pnpm fetch-data`) — the source file (~40 MB) is too slow to query live |
+| Energy | ADEME — DPE | Anonymized (CNIL); the most recent DPE for the exact address, or the immediate neighborhood otherwise |
 
-## Stack technique
+## Tech stack
 
-Next.js 16 (App Router, Turbopack) · React 19 · TypeScript strict · Mastra (agents, tools,
-workflows) · Zod · Tailwind CSS v4 · TanStack Query · MapLibre GL (fonds de carte IGN) ·
+Next.js 16 (App Router, Turbopack) · React 19 · strict TypeScript · Mastra (agents, tools,
+workflows) · Zod · Tailwind CSS v4 · TanStack Query · MapLibre GL (IGN basemaps) ·
 Framer Motion · @react-pdf/renderer · Vitest · Playwright.
 
 ## Scripts
 
 ```bash
-pnpm dev              # serveur de développement
-pnpm build            # build de production
-pnpm test             # tests unitaires (Vitest)
-pnpm test:e2e         # tests end-to-end (Playwright, réseau entièrement mocké)
+pnpm dev              # development server
+pnpm build            # production build
+pnpm test             # unit tests (Vitest)
+pnpm test:e2e         # end-to-end tests (Playwright, network fully mocked)
 pnpm lint             # ESLint
 pnpm typecheck        # tsc --noEmit
 pnpm format           # Prettier --write
-pnpm fetch-data       # régénère data/ssmsi/index.json.gz (committé — sautable en usage normal)
+pnpm fetch-data       # regenerates data/ssmsi/index.json.gz (committed — skippable in normal use)
 ```
 
-## Structure du projet
+## Project structure
 
 ```
 src/
-  app/                 routes Next.js (écrans + routes API)
+  app/                 Next.js routes (screens + API routes)
   mastra/
-    tools/             6 tools Mastra (1 par source, cache + retry + confiance)
-    agents/            Planificateur, Analyste, Conseiller (déterministes)
-    workflows/         le workflow Mastra qui orchestre le tout
-  components/screens/  UI de l'écran de saisie et du rapport
-  components/pdf/      gabarit d'export PDF
-  types/               schémas Zod partagés (adresse, profil, domaines, rapport, stream)
-  lib/                 http (retry/backoff), cache (mémoire + disque), stats, géo
+    tools/             6 Mastra tools (1 per source, cache + retry + confidence)
+    agents/            Planner, Analyst, Advisor (deterministic)
+    workflows/         the Mastra workflow that orchestrates everything
+  components/screens/  search-screen and report-screen UI
+  components/pdf/      PDF export template
+  types/               shared Zod schemas (address, profile, domains, report, stream)
+  lib/                 http (retry/backoff), cache (memory + disk), stats, geo
 scripts/
-  fetch-ssmsi.ts       pré-calcule l'index communal SSMSI (voir méthodologie)
+  fetch-ssmsi.ts       pre-computes the SSMSI municipal index (see methodology)
 tests/
   unit/                Vitest — tools, agents
-  e2e/                 Playwright — parcours critique, réseau mocké
+  e2e/                 Playwright — critical path, mocked network
 ```
 
-## Limites connues
+## Known limitations
 
-Voir la page `/methodologie` pour le détail complet. En résumé : les données de prix (DVF) peuvent
-inclure des ventes atypiques qui font varier une médiane locale ; l'API Cerema (DVF) répond parfois
-en plusieurs secondes ; la qualité de l'air fine par polluant (Geod'air) n'est pas intégrée ; le
-potentiel radon et l'aléa argile détaillé ne sont pas systématiquement diffusés par Géorisques pour
-toutes les communes ; le suivi automatique d'une adresse dans le temps (bonus du brief) n'est pas
-implémenté.
+See the `/methodology` page for full detail. In short: price data (DVF) can include atypical
+sales that skew a local median; the Cerema (DVF) API sometimes takes several seconds to respond;
+fine-grained per-pollutant air quality (Geod'air) isn't integrated; detailed radon potential and
+clay shrink-swell hazard aren't systematically published by Géorisques for every municipality;
+automatic tracking of an address over time (a bonus item from the brief) isn't implemented.

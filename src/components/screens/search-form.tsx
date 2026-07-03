@@ -7,6 +7,7 @@ import { AddressSearch } from "./address-search";
 import { ProfilePicker } from "./profile-picker";
 import { DEMO_ADDRESSES } from "./demo-addresses";
 import type { Address, LifeProfileTag, PropertyType } from "@/types";
+import type { DemoScenarioId } from "@/lib/demo-fixtures";
 
 export function SearchForm() {
   const router = useRouter();
@@ -24,6 +25,7 @@ export function SearchForm() {
     target: Address,
     targetTags: LifeProfileTag[],
     targetPropertyType: PropertyType,
+    demoId?: DemoScenarioId,
   ) {
     const params = new URLSearchParams({
       label: target.label,
@@ -41,7 +43,10 @@ export function SearchForm() {
     if (targetTags.length > 0) params.set("tags", targetTags.join(","));
     if (askingPrice) params.set("askingPrice", askingPrice);
     if (askingSurface) params.set("askingSurface", askingSurface);
-    router.push(`/rapport?${params.toString()}`);
+    // Demo addresses replay a hand-authored fixture instead of hitting live
+    // APIs — see src/lib/demo-fixtures.ts and the two report API routes.
+    if (demoId) params.set("demo", demoId);
+    router.push(`/report?${params.toString()}`);
   }
 
   function handleSubmit() {
@@ -61,14 +66,14 @@ export function SearchForm() {
 
       <div>
         <h3 className="mb-3 text-sm font-medium text-ink">
-          Prix affiché{" "}
+          Asking price{" "}
           <span className="font-normal text-ink-muted">
-            (optionnel — affine l&apos;analyse prix/DPE)
+            (optional — refines the price/energy analysis)
           </span>
         </h3>
         <div className="flex flex-wrap gap-3">
           <label className="flex items-center gap-2 rounded-xl border border-primary-200 px-3 py-2 text-sm">
-            Prix
+            Price
             <input
               type="number"
               min={0}
@@ -102,21 +107,23 @@ export function SearchForm() {
         onClick={handleSubmit}
         className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary-700 py-3.5 text-base font-medium text-white transition hover:bg-primary-800 disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto sm:px-8"
       >
-        Analyser ce logement
+        Analyze this property
         <ArrowRight className="h-4 w-4" aria-hidden />
       </button>
 
       <div className="border-t border-primary-100 pt-5">
         <h3 className="mb-3 flex items-center gap-1.5 text-sm font-medium text-ink">
           <Sparkles className="h-4 w-4 text-primary-500" aria-hidden />
-          Ou essayez une adresse de démonstration
+          Or try a demo address
         </h3>
         <div className="grid gap-2 sm:grid-cols-2">
           {DEMO_ADDRESSES.map((demo) => (
             <button
               key={demo.label}
               type="button"
-              onClick={() => navigateToReport(demo.address, demo.tags, demo.propertyType)}
+              onClick={() =>
+                navigateToReport(demo.address, demo.tags, demo.propertyType, demo.demoId)
+              }
               className="rounded-xl border border-primary-200 bg-surface p-3 text-left text-sm transition hover:border-primary-400 hover:bg-primary-50"
             >
               <span className="block font-medium text-ink">{demo.label}</span>

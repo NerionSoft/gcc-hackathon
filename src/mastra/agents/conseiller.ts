@@ -43,7 +43,7 @@ function indisponibleSection(
     domain,
     title: DOMAIN_TITLES[domain],
     verdict: "indisponible",
-    summary: "Donnée indisponible pour cette adresse.",
+    summary: "Data unavailable for this address.",
     detail: reason,
     sources: [source],
     confidence: "low",
@@ -57,7 +57,7 @@ export function buildRisquesSection(risks: ToolResult<RisksData>, weight: number
       "risques",
       risks.source,
       weight,
-      risks.error ?? risks.warnings[0] ?? "Géorisques indisponible.",
+      risks.error ?? risks.warnings[0] ?? "Géorisques unavailable.",
     );
   const d = risks.data;
 
@@ -76,26 +76,28 @@ export function buildRisquesSection(risks: ToolResult<RisksData>, weight: number
   const verdict: Verdict =
     severe >= 2 ? "alerte" : severe === 1 || moderate >= 1 ? "vigilance" : "favorable";
 
+  const levelLabel: Record<string, string> = { faible: "low", moyen: "medium", fort: "high", inconnu: "unknown" };
+
   const detail = [
     d.summary.inondation.expose
-      ? "Zone exposée au risque d'inondation."
-      : "Pas d'exposition notable au risque d'inondation identifiée par Géorisques.",
-    `Aléa retrait-gonflement des argiles : ${d.summary.argiles.niveau}.`,
+      ? "Area exposed to flood risk."
+      : "No notable flood risk exposure identified by Géorisques.",
+    `Clay shrink-swell hazard: ${levelLabel[d.summary.argiles.niveau] ?? d.summary.argiles.niveau}.`,
     d.summary.sismicite.zone
-      ? `Zone de sismicité réglementaire : ${d.summary.sismicite.zone}/5.`
-      : "Zone de sismicité non déterminée.",
+      ? `Regulatory seismic zone: ${d.summary.sismicite.zone}/5.`
+      : "Seismic zone not determined.",
     d.summary.radon.classe
-      ? `Potentiel radon : classe ${d.summary.radon.classe}/3.`
-      : "Potentiel radon non diffusé pour cette commune.",
+      ? `Radon potential: class ${d.summary.radon.classe}/3.`
+      : "Radon potential not published for this commune.",
     d.summary.cavites.present
-      ? `${d.summary.cavites.nombre ?? "Une ou plusieurs"} cavité(s) souterraine(s) recensée(s) à proximité.`
-      : "Aucune cavité souterraine recensée à proximité.",
+      ? `${d.summary.cavites.nombre ?? "One or more"} underground cavity(ies) recorded nearby.`
+      : "No underground cavities recorded nearby.",
     d.summary.sitesPollues.nombre > 0
-      ? `${d.summary.sitesPollues.nombre} site(s) potentiellement pollué(s) recensé(s) dans un rayon de 200m.`
-      : "Aucun site potentiellement pollué recensé à moins de 200m.",
-    `${d.catnat.length} arrêté(s) de catastrophe naturelle recensé(s) sur la commune depuis 1982.`,
+      ? `${d.summary.sitesPollues.nombre} potentially contaminated site(s) recorded within a 200m radius.`
+      : "No potentially contaminated site recorded within 200m.",
+    `${d.catnat.length} natural-disaster declaration(s) recorded for the commune since 1982.`,
     d.aziZones && d.aziZones.length > 0
-      ? `Zone(s) inondable(s) documentée(s) (AZI) : ${d.aziZones.map((z) => z.libelle).join(", ")}.`
+      ? `Documented flood zone(s) (AZI): ${d.aziZones.map((z) => z.libelle).join(", ")}.`
       : "",
   ]
     .filter(Boolean)
@@ -103,10 +105,10 @@ export function buildRisquesSection(risks: ToolResult<RisksData>, weight: number
 
   const summary =
     severe >= 2
-      ? "Plusieurs aléas significatifs cumulés sur cette adresse."
+      ? "Several significant hazards combine at this address."
       : severe === 1 || moderate >= 1
-        ? "Un aléa mérite votre attention."
-        : "Aucun aléa majeur détecté par Géorisques.";
+        ? "One hazard deserves your attention."
+        : "No major hazard detected by Géorisques.";
 
   return {
     domain: "risques",
@@ -130,7 +132,7 @@ export function buildPrixSection(
       "prix",
       prices.source,
       weight,
-      prices.error ?? "DVF indisponible pour cette zone.",
+      prices.error ?? "DVF unavailable for this area.",
     );
   const d = prices.data;
   if (d.coverageExcluded) {
@@ -138,9 +140,9 @@ export function buildPrixSection(
       domain: "prix",
       title: DOMAIN_TITLES.prix,
       verdict: "indisponible",
-      summary: "DVF ne couvre pas ce territoire.",
+      summary: "DVF doesn't cover this territory.",
       detail:
-        "Mayotte et les départements d'Alsace-Moselle (droit local) ne sont pas couverts par les Demandes de Valeurs Foncières.",
+        "Mayotte and the Alsace-Moselle départements (local law) are not covered by the Demandes de Valeurs Foncières (property transaction records).",
       sources: [prices.source],
       confidence: "high",
       weight,
@@ -156,14 +158,14 @@ export function buildPrixSection(
 
   const summary =
     d.medianPriceM2 !== null
-      ? `Médiane du secteur : ${Math.round(d.medianPriceM2).toLocaleString("fr-FR")} €/m² (${d.sampleSize} transaction(s), 5 ans).`
-      : "Trop peu de transactions comparables pour établir une médiane fiable.";
+      ? `Local median: €${Math.round(d.medianPriceM2).toLocaleString("en-US")}/m² (${d.sampleSize} transaction(s), 5 years).`
+      : "Too few comparable transactions to establish a reliable median.";
 
   const detail = [
-    `${d.transactions.length} transaction(s) référencée(s) à proximité (Cerema / DVF, 5 dernières années).`,
+    `${d.transactions.length} transaction(s) referenced nearby (Cerema / DVF, last 5 years).`,
     listingM2 !== null && d.medianPriceM2 !== null
-      ? `Le prix affiché (${Math.round(listingM2).toLocaleString("fr-FR")} €/m²) représente ${Math.round((listingM2 / d.medianPriceM2) * 100)}% de la médiane locale.`
-      : "Renseignez un prix affiché et une surface pour comparer ce bien à la médiane locale.",
+      ? `The asking price (€${Math.round(listingM2).toLocaleString("en-US")}/m²) is ${Math.round((listingM2 / d.medianPriceM2) * 100)}% of the local median.`
+      : "Enter an asking price and surface area to compare this property against the local median.",
   ].join(" ");
 
   return {
@@ -184,13 +186,13 @@ export function buildAirSection(air: ToolResult<AirData>, weight: number): Domai
       "air",
       air.source,
       weight,
-      air.error ?? "Indice ATMO non disponible pour cette commune.",
+      air.error ?? "ATMO index not available for this commune.",
     );
   }
   const idx = air.data.atmoIndex;
   const verdict: Verdict = idx <= 2 ? "favorable" : idx === 3 ? "vigilance" : "alerte";
-  const summary = `Indice ATMO du jour : ${air.data.atmoLabel} (${idx}/6).`;
-  const detail = `Mesure du ${air.data.date}${air.data.nearestStation ? ` pour la zone "${air.data.nearestStation}"` : ""}. L'indice ATMO synthétise les concentrations de particules fines (PM10, PM2.5), NO2, O3 et SO2 en un score journalier unique (échelle nationale officielle).`;
+  const summary = `Today's ATMO index: ${air.data.atmoLabel} (${idx}/6).`;
+  const detail = `Measured on ${air.data.date}${air.data.nearestStation ? ` for the "${air.data.nearestStation}" zone` : ""}. The ATMO index summarises fine-particle (PM10, PM2.5), NO2, O3 and SO2 concentrations into a single daily score (official national scale).`;
   return {
     domain: "air",
     title: DOMAIN_TITLES.air,
@@ -203,13 +205,15 @@ export function buildAirSection(air: ToolResult<AirData>, weight: number): Domai
   };
 }
 
+const TREND_LABEL: Record<string, string> = { hausse: "rising", baisse: "falling", stable: "stable" };
+
 export function buildSecuriteSection(crime: ToolResult<CrimeData>, weight: number): DomainSection {
   if (!crime.data)
     return indisponibleSection(
       "securite",
       crime.source,
       weight,
-      crime.error ?? "Aucune statistique SSMSI disponible.",
+      crime.error ?? "No SSMSI statistics available.",
     );
   const diffused = crime.data.indicateurs.filter((i) => !i.supprime);
   if (diffused.length === 0) {
@@ -217,9 +221,9 @@ export function buildSecuriteSection(crime: ToolResult<CrimeData>, weight: numbe
       domain: "securite",
       title: DOMAIN_TITLES.securite,
       verdict: "indisponible",
-      summary: "Statistiques non diffusées pour cette commune.",
+      summary: "Statistics not published for this commune.",
       detail:
-        "Le SSMSI ne diffuse pas de données pour les communes ayant enregistré moins de 5 faits sur 3 années successives, pour éviter des taux peu fiables ou individualisants. Ce n'est pas une absence de délinquance, seulement une absence de donnée exploitable.",
+        "SSMSI doesn't publish data for communes with fewer than 5 recorded incidents over 3 consecutive years, to avoid unreliable or individually-identifying rates. This isn't an absence of crime, only an absence of usable data.",
       sources: [crime.source],
       confidence: "low",
       weight,
@@ -227,12 +231,12 @@ export function buildSecuriteSection(crime: ToolResult<CrimeData>, weight: numbe
   }
   const hausseCount = diffused.filter((i) => i.tendance === "hausse").length;
   const verdict: Verdict = hausseCount / diffused.length > 0.5 ? "vigilance" : "favorable";
-  const summary = `${diffused.length} indicateur(s) diffusé(s) pour ${crime.data.annee}, dont ${hausseCount} en hausse.`;
+  const summary = `${diffused.length} indicator(s) published for ${crime.data.annee}, ${hausseCount} of which are rising.`;
   const detail = [
-    "Données communales annuelles (taux pour 1000 habitants) — pas une carte du crime rue par rue.",
+    "Annual communal data (rate per 1000 residents) — never a street-by-street crime map.",
     ...diffused.map(
       (i) =>
-        `${i.indicateur} : ${i.tauxPour1000?.toFixed(2)} ‰${i.tendance ? ` (${i.tendance})` : ""}.`,
+        `${i.indicateur}: ${i.tauxPour1000?.toFixed(2)} ‰${i.tendance ? ` (${TREND_LABEL[i.tendance] ?? i.tendance})` : ""}.`,
     ),
   ].join(" ");
   return {
@@ -253,7 +257,7 @@ export function buildEnergieSection(energy: ToolResult<EnergyData>, weight: numb
       "energie",
       energy.source,
       weight,
-      energy.error ?? "Aucun diagnostic DPE trouvé à proximité.",
+      energy.error ?? "No energy performance diagnostic found nearby.",
     );
   }
   const r = energy.data.mostRecent;
@@ -262,16 +266,14 @@ export function buildEnergieSection(energy: ToolResult<EnergyData>, weight: numb
     : (["D", "E"] as string[]).includes(r.etiquetteDpe)
       ? "vigilance"
       : "alerte";
-  const summary = `DPE ${r.etiquetteDpe} (GES ${r.etiquetteGes}).`;
+  const summary = `Energy rating ${r.etiquetteDpe} (climate ${r.etiquetteGes}).`;
   const detail = [
-    `Étiquette énergie ${r.etiquetteDpe}, étiquette climat (GES) ${r.etiquetteGes}.`,
-    r.anneeConstruction
-      ? `Logement construit en ${r.anneeConstruction}.`
-      : "Année de construction non renseignée.",
-    r.surfaceHabitable ? `Surface habitable diagnostiquée : ${r.surfaceHabitable} m².` : "",
-    `Diagnostic établi le ${r.dateDpe}.`,
+    `Energy label ${r.etiquetteDpe}, climate (GHG) label ${r.etiquetteGes}.`,
+    r.anneeConstruction ? `Built in ${r.anneeConstruction}.` : "Year of construction not provided.",
+    r.surfaceHabitable ? `Diagnosed living area: ${r.surfaceHabitable} m².` : "",
+    `Diagnostic performed on ${r.dateDpe}.`,
     energy.data.records.length > 1
-      ? `${energy.data.records.length} diagnostics recensés pour ce bâtiment (immeuble collectif) — le plus récent est présenté.`
+      ? `${energy.data.records.length} diagnostics recorded for this building (multi-unit) — the most recent is shown.`
       : "",
   ]
     .filter(Boolean)
@@ -315,10 +317,10 @@ function computeGlobalScore(
 
   const missing = sections.length - available.length;
   const explanation = [
-    `Moyenne pondérée des ${available.length} domaine(s) disponible(s) selon votre profil`,
-    missing > 0 ? `, ${missing} domaine(s) indisponible(s) exclu(s) du calcul` : "",
+    `Weighted average of the ${available.length} available domain(s) based on your profile`,
+    missing > 0 ? `, ${missing} unavailable domain(s) excluded from the calculation` : "",
     redFlags.length > 0
-      ? `, ajustée de ${redFlags.length} point(s) de vigilance croisés détectés par l'Analyste`
+      ? `, adjusted by ${redFlags.length} cross-domain flag(s) detected by the Analyst`
       : "",
     ".",
   ].join("");
@@ -332,9 +334,9 @@ function buildActionItems(input: ConseillerInput): ActionItem[] {
   const energyData = input.energy.data;
 
   actions.push({
-    title: "Commander l'état des risques et pollutions (ERP) officiel",
+    title: "Order the official risk and pollution disclosure (ERP)",
     category: "demarche_officielle",
-    reason: "Document légalement obligatoire avant la signature du compromis de vente.",
+    reason: "Legally required document before signing the preliminary sale agreement.",
   });
 
   if (
@@ -342,29 +344,28 @@ function buildActionItems(input: ConseillerInput): ActionItem[] {
     risksData?.catnat.some((c) => c.libelleRisqueJo.toLowerCase().includes("sécheresse"))
   ) {
     actions.push({
-      title:
-        "Demander si des fissures ont été constatées et si un diagnostic structure a été réalisé",
+      title: "Ask whether any cracks have been noticed and whether a structural diagnostic was done",
       category: "question_vendeur",
-      reason: "Aléa argile fort et/ou historique CatNat sécheresse détecté sur la commune.",
+      reason: "High clay shrink-swell hazard and/or drought disaster history detected for the commune.",
     });
   }
   if (risksData && risksData.summary.sitesPollues.nombre > 0) {
     actions.push({
-      title: "Demander une étude de sol avant tous travaux touchant les fondations",
+      title: "Ask for a soil survey before any work touching the foundations",
       category: "verification",
-      reason: "Site potentiellement pollué recensé à moins de 200m.",
+      reason: "A potentially contaminated site is recorded within 200m.",
     });
     actions.push({
-      title: "Consulter le PLU en mairie pour vérifier d'éventuelles servitudes environnementales",
+      title: "Check the local urban plan (PLU) at the town hall for environmental easements",
       category: "demarche_officielle",
-      reason: "Site potentiellement pollué recensé à proximité.",
+      reason: "A potentially contaminated site is recorded nearby.",
     });
   }
   if (risksData?.summary.radon.classe === 3) {
     actions.push({
-      title: "Se renseigner sur la ventilation/aération existante (potentiel radon élevé)",
+      title: "Ask about existing ventilation (high radon potential)",
       category: "verification",
-      reason: "Commune classée en potentiel radon 3/3.",
+      reason: "Commune classified as radon potential 3/3.",
     });
   }
   if (
@@ -372,15 +373,14 @@ function buildActionItems(input: ConseillerInput): ActionItem[] {
     (["F", "G"] as string[]).includes(energyData.mostRecent.etiquetteDpe)
   ) {
     actions.push({
-      title: "Demander le détail des factures énergétiques des deux dernières années",
+      title: "Ask for the last two years of energy bills",
       category: "question_vendeur",
-      reason: `DPE ${energyData.mostRecent.etiquetteDpe} — passoire thermique.`,
+      reason: `Energy rating ${energyData.mostRecent.etiquetteDpe} — energy-inefficient property.`,
     });
     actions.push({
-      title:
-        "Faire chiffrer les travaux de rénovation énergétique par un professionnel avant de signer",
+      title: "Get energy renovation work quoted by a professional before signing",
       category: "verification",
-      reason: `DPE ${energyData.mostRecent.etiquetteDpe}.`,
+      reason: `Energy rating ${energyData.mostRecent.etiquetteDpe}.`,
     });
   }
   if (
@@ -389,10 +389,9 @@ function buildActionItems(input: ConseillerInput): ActionItem[] {
     input.prices.data.sampleSize >= 3
   ) {
     actions.push({
-      title:
-        "Demander au notaire une copie des actes de vente comparables récents dans le quartier",
+      title: "Ask the notary for a copy of recent comparable sale deeds in the neighbourhood",
       category: "question_notaire",
-      reason: "Vérifier la cohérence du prix affiché avec les transactions locales récentes.",
+      reason: "Check the asking price against recent local transactions.",
     });
   }
 

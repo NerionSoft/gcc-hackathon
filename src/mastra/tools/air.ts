@@ -37,10 +37,26 @@ interface AtmoResponse {
 
 function atmoSource(url: string): SourceRef {
   return {
-    name: "Atmo Data (fédération des AASQA, indice ATMO)",
+    name: "Atmo Data (AASQA federation, ATMO index)",
     url,
     retrievedAt: new Date().toISOString(),
   };
+}
+
+/** The WFS layer publishes these 8 fixed French labels (codes 0-7) — translate for display. */
+const ATMO_LABEL_TRANSLATIONS: Record<string, string> = {
+  Absent: "No data",
+  Bon: "Good",
+  Moyen: "Moderate",
+  Dégradé: "Degraded",
+  Mauvais: "Poor",
+  "Très mauvais": "Very poor",
+  "Extrêmement mauvais": "Extremely poor",
+  Événement: "Pollution event",
+};
+
+function translateAtmoLabel(label: string): string {
+  return ATMO_LABEL_TRANSLATIONS[label] ?? label;
 }
 
 export const airInputSchema = z.object({ citycode: z.string() });
@@ -48,8 +64,7 @@ export const airOutputSchema = toolResultSchema(airDataSchema);
 
 export const airTool = createTool({
   id: "air-atmo",
-  description:
-    "Indice ATMO quotidien de qualité de l'air pour une commune (Atmo Data, réseau des AASQA).",
+  description: "Daily ATMO air-quality index for a commune (Atmo Data, AASQA network).",
   inputSchema: airInputSchema,
   outputSchema: airOutputSchema,
   execute: async ({ citycode }): Promise<z.infer<typeof airOutputSchema>> => {
@@ -62,7 +77,7 @@ export const airTool = createTool({
       if (data.features.length === 0) {
         return unavailableResult(
           source,
-          "Indice ATMO non diffusé pour cette commune — probablement hors couverture du réseau de mesure local (communes rurales notamment).",
+          "ATMO index not published for this commune — likely outside the local measurement network's coverage (rural communes especially).",
         );
       }
       const today = new Date().toISOString().slice(0, 10);
@@ -71,17 +86,16 @@ export const airTool = createTool({
       const p = feature.properties;
       const result: AirData = {
         atmoIndex: p.code_qual,
-        atmoLabel: p.lib_qual,
+        atmoLabel: translateAtmoLabel(p.lib_qual),
         date: p.date_ech,
         nearestStation: p.lib_zone,
       };
-      const warnings =
-        p.code_qual === 0 ? ["Aucune mesure disponible pour la date la plus récente."] : [];
+      const warnings = p.code_qual === 0 ? ["No measurement available for the most recent date."] : [];
       return okResult(result, source, "high", warnings);
     } catch (err) {
       return errorResult(
         source,
-        `Atmo Data indisponible : ${err instanceof Error ? err.message : "erreur"}.`,
+        `Atmo Data unavailable: ${err instanceof Error ? err.message : "error"}.`,
       );
     }
   },

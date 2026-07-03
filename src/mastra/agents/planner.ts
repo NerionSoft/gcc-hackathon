@@ -28,15 +28,15 @@ export function planCollection(profile: UserProfile): PlanResult {
 
   const propertyNote =
     profile.propertyType === "maison"
-      ? " (maison — les risques structurels comptent double)"
+      ? " (house — structural risks count double)"
       : profile.propertyType === "appartement"
-        ? " (appartement — air et sécurité au premier plan)"
+        ? " (apartment — air quality and safety come first)"
         : "";
 
   const reasoning =
     profile.tags.length > 0
-      ? `Priorité à ${DOMAIN_LABELS[top[0]]} et ${DOMAIN_LABELS[top[1]]} d'après le profil sélectionné${propertyNote}.`
-      : `Analyse équilibrée des 5 domaines${propertyNote} — sélectionnez un profil pour affiner la pondération.`;
+      ? `Priority given to ${DOMAIN_LABELS[top[0]]} and ${DOMAIN_LABELS[top[1]]} based on the selected profile${propertyNote}.`
+      : `Balanced analysis across all 5 domains${propertyNote} — pick a profile to fine-tune the weighting.`;
 
   return { toolsPlanned, weights, reasoning };
 }

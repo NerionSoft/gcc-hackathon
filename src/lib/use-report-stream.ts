@@ -84,7 +84,7 @@ export function useReportStream(queryString: string | null): ReportStreamState {
     async function run() {
       try {
         const res = await fetch(`/api/report/stream?${queryString}`, { signal: controller.signal });
-        if (!res.body) throw new Error("Le serveur n'a pas retourné de flux.");
+        if (!res.body) throw new Error("The server did not return a stream.");
         const reader = res.body.getReader();
         const decoder = new TextDecoder();
         let buffer = "";
@@ -108,7 +108,7 @@ export function useReportStream(queryString: string | null): ReportStreamState {
           ...prev,
           errors: [
             ...prev.errors,
-            err instanceof Error ? err.message : "Erreur de connexion au flux.",
+            err instanceof Error ? err.message : "Stream connection error.",
           ],
           isDone: true,
         }));

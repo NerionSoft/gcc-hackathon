@@ -85,7 +85,7 @@ describe("risksTool", () => {
     expect(result.data?.catnat[0].libelleRisqueJo).toBe("Sécheresse");
     // Closer site should sort first.
     expect(result.data?.summary.sitesPollues.sites[0].nom).toBe("Proche");
-    expect(result.warnings.some((w) => w.includes("argile"))).toBe(true);
+    expect(result.warnings.some((w) => w.includes("clay"))).toBe(true);
   });
 
   it("degrades to partial confidence when a sub-source fails, without dropping the report", async () => {
@@ -104,7 +104,7 @@ describe("risksTool", () => {
     expect(result.status).toBe("partial");
     expect(result.confidence).toBe("medium");
     expect(result.data?.summary.sismicite.zone).toBeNull();
-    expect(result.warnings.some((w) => w.includes("sismi"))).toBe(true);
+    expect(result.warnings.some((w) => w.includes("seismic"))).toBe(true);
   });
 
   it("returns an error result when the core risk summary itself is unavailable", async () => {

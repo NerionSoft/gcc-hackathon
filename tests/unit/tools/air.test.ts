@@ -37,7 +37,7 @@ describe("airTool", () => {
 
     expect(result.status).toBe("ok");
     expect(result.data?.atmoIndex).toBe(2);
-    expect(result.data?.atmoLabel).toBe("Moyen");
+    expect(result.data?.atmoLabel).toBe("Moderate");
   });
 
   it("returns unavailable for communes outside the measurement network", async () => {

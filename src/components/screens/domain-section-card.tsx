@@ -31,7 +31,7 @@ export function DomainSectionCard({ section }: { section: DomainSection }) {
         aria-expanded={expanded}
         className="mt-3 flex items-center gap-1 text-sm font-medium text-primary-700 hover:text-primary-800"
       >
-        {expanded ? "Masquer le détail" : "Voir le détail"}
+        {expanded ? "Hide details" : "View details"}
         <ChevronDown
           className={`h-4 w-4 transition-transform ${expanded ? "rotate-180" : ""}`}
           aria-hidden

@@ -7,14 +7,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "TerraVista — Analysez votre futur logement",
+  title: "TerraVista — Analyze your future home",
   description:
-    "Un assistant citoyen gratuit qui croise les données publiques françaises (risques, prix, air, sécurité, énergie) pour éclairer un achat immobilier.",
+    "A free citizen assistant that cross-references French public data (risks, prices, air, safety, energy) to inform a property purchase.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={inter.variable}>
+    <html lang="en" className={inter.variable}>
       <body>
         <QueryProvider>
           <SiteHeader />

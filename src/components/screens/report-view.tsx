@@ -30,7 +30,7 @@ export function ReportView() {
   return (
     <main className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6">
       <header className="space-y-1">
-        <p className="text-sm font-medium uppercase tracking-wide text-primary-500">Rapport</p>
+        <p className="text-sm font-medium uppercase tracking-wide text-primary-500">Report</p>
         <h1 className="text-2xl font-semibold text-ink sm:text-3xl">{label}</h1>
         {state.planReasoning && <p className="text-sm text-ink-muted">{state.planReasoning}</p>}
       </header>
@@ -52,13 +52,13 @@ export function ReportView() {
         <div
           className="h-40 animate-pulse rounded-2xl bg-primary-50"
           aria-busy="true"
-          aria-label="Calcul du score en cours"
+          aria-label="Computing score"
         />
       )}
 
       {state.redFlags.length > 0 && (
         <section className="space-y-3">
-          <h2 className="text-lg font-semibold text-ink">Points de vigilance prioritaires</h2>
+          <h2 className="text-lg font-semibold text-ink">Priority red flags</h2>
           <div className="space-y-3">
             {state.redFlags.map((f) => (
               <RedFlagCard key={f.id} finding={f} />
@@ -72,7 +72,7 @@ export function ReportView() {
       )}
 
       <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-ink">Analyse par domaine</h2>
+        <h2 className="text-lg font-semibold text-ink">Analysis by domain</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           {/* Fixed slot order (not arrival order) so the grid doesn't reflow as sections stream in. */}
           {allDomains.map((domain) => {
@@ -95,7 +95,7 @@ export function ReportView() {
               className="flex items-center gap-2 rounded-xl border border-primary-200 px-4 py-2.5 text-sm font-medium text-primary-700 hover:bg-primary-50"
             >
               <Download className="h-4 w-4" aria-hidden />
-              Exporter en PDF
+              Export as PDF
             </a>
           </div>
         </>

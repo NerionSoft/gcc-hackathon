@@ -60,7 +60,7 @@ function toDpeRecord(row: AdemeRow): DpeRecord {
 
 function ademeSource(url: string): SourceRef {
   return {
-    name: "ADEME — Diagnostics de performance énergétique (DPE)",
+    name: "ADEME — Energy Performance Diagnostics (DPE)",
     url,
     retrievedAt: new Date().toISOString(),
   };
@@ -76,8 +76,7 @@ export const energyOutputSchema = toolResultSchema(energyDataSchema);
 
 export const energyTool = createTool({
   id: "energy-ademe-dpe",
-  description:
-    "Diagnostics de performance énergétique (ADEME) pour le bâtiment le plus proche de l'adresse.",
+  description: "Energy performance diagnostics (ADEME) for the building nearest the address.",
   inputSchema: energyInputSchema,
   outputSchema: energyOutputSchema,
   execute: async ({ lat, lon, housenumber }): Promise<z.infer<typeof energyOutputSchema>> => {
@@ -94,12 +93,12 @@ export const energyTool = createTool({
     } catch (err) {
       return errorResult(
         source,
-        `ADEME DPE indisponible : ${err instanceof Error ? err.message : "erreur"}.`,
+        `ADEME DPE unavailable: ${err instanceof Error ? err.message : "error"}.`,
       );
     }
 
     if (response.results.length === 0) {
-      return unavailableResult(source, "Aucun diagnostic DPE trouvé à proximité de cette adresse.");
+      return unavailableResult(source, "No energy performance diagnostic found near this address.");
     }
 
     const warnings: string[] = [];
@@ -112,7 +111,7 @@ export const energyTool = createTool({
         matched = sameBuilding;
       } else {
         warnings.push(
-          "Aucun DPE exactement à ce numéro — DPE du voisinage immédiat utilisé à la place.",
+          "No diagnostic found at this exact house number — using the diagnostic from the immediate neighbourhood instead.",
         );
       }
     }
@@ -121,7 +120,7 @@ export const energyTool = createTool({
     const data: EnergyData = { records: records.slice(0, 10), mostRecent: records[0] ?? null };
     if (matched.length > 1) {
       warnings.push(
-        `${matched.length} diagnostics trouvés pour ce bâtiment (immeuble multi-logements) — le plus récent est retenu.`,
+        `${matched.length} diagnostics found for this building (multi-unit) — the most recent one is used.`,
       );
     }
     return okResult(

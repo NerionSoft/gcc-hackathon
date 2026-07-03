@@ -26,7 +26,7 @@ import {
  */
 const CEREMA_BASE = "https://apidf-preprod.cerema.fr/dvf_opendata/geomutations";
 const LOOKBACK_YEARS = 5;
-const RADIUS_DEG_LAT = 0.006; // ~650m — DVF's own "5 dernières années" window is date-based, this is the spatial window.
+const RADIUS_DEG_LAT = 0.006; // ~650m — DVF's own "last 5 years" window is date-based, this is the spatial window.
 
 interface MultiPolygonGeom {
   type: "MultiPolygon" | "Polygon";
@@ -77,7 +77,7 @@ function parseTypeLocal(libelle: string): DvfTransaction["typeLocal"] {
 
 function ceremaSource(url: string): SourceRef {
   return {
-    name: "Cerema — API Données Foncières (DVF open data)",
+    name: "Cerema — Land Data API (DVF open data)",
     url,
     retrievedAt: new Date().toISOString(),
   };
@@ -94,7 +94,7 @@ export const pricesOutputSchema = toolResultSchema(pricesDataSchema);
 export const pricesTool = createTool({
   id: "prices-dvf",
   description:
-    "Interroge les Demandes de Valeurs Foncières (DVF) autour d'une adresse via l'API ouverte du Cerema.",
+    "Queries property transaction records (DVF) around an address via the Cerema open API.",
   inputSchema: pricesInputSchema,
   outputSchema: pricesOutputSchema,
   execute: async ({
@@ -118,7 +118,7 @@ export const pricesTool = createTool({
         confidence: "high",
         source,
         warnings: [
-          "DVF ne couvre pas ce territoire (Mayotte ou droit local d'Alsace-Moselle) — aucune donnée de transaction disponible ici.",
+          "DVF doesn't cover this territory (Mayotte or Alsace-Moselle local law) — no transaction data available here.",
         ],
       };
     }
@@ -141,7 +141,7 @@ export const pricesTool = createTool({
     } catch (err) {
       return errorResult(
         source,
-        `DVF indisponible pour cette zone : ${err instanceof Error ? err.message : "erreur"}.`,
+        `DVF unavailable for this area: ${err instanceof Error ? err.message : "error"}.`,
       );
     }
 
@@ -178,12 +178,12 @@ export const pricesTool = createTool({
     const warnings: string[] = [];
     if (response.count > response.features.length) {
       warnings.push(
-        `${response.count} mutations recensées dans la zone, ${response.features.length} récupérées (limite de page) — l'échantillon est représentatif mais pas exhaustif.`,
+        `${response.count} transactions recorded in the area, ${response.features.length} retrieved (page limit) — the sample is representative but not exhaustive.`,
       );
     }
     if (transactions.length < 5) {
       warnings.push(
-        "Peu de transactions comparables dans le rayon retenu — la médiane est peu fiable statistiquement.",
+        "Few comparable transactions within the chosen radius — the median is statistically unreliable.",
       );
     }
 

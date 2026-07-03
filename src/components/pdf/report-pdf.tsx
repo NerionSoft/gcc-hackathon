@@ -49,8 +49,8 @@ const styles = StyleSheet.create({
 const VERDICT_LABEL: Record<Verdict, string> = {
   favorable: "FAVORABLE",
   vigilance: "VIGILANCE",
-  alerte: "ALERTE",
-  indisponible: "DONNÉE INDISPONIBLE",
+  alerte: "ALERT",
+  indisponible: "DATA UNAVAILABLE",
 };
 
 const VERDICT_COLOR: Record<Verdict, string> = {
@@ -61,14 +61,14 @@ const VERDICT_COLOR: Record<Verdict, string> = {
 };
 
 export function ReportPdf({ report }: { report: Report }) {
-  const generated = new Date(report.generatedAt).toLocaleString("fr-FR");
+  const generated = new Date(report.generatedAt).toLocaleString("en-GB");
 
   return (
     <Document title={`TerraVista — ${report.address.label}`}>
       <Page size="A4" style={styles.page}>
-        <Text style={styles.title}>TerraVista — Rapport d&apos;analyse</Text>
+        <Text style={styles.title}>TerraVista — Property report</Text>
         <Text style={styles.subtitle}>
-          {report.address.label} — généré le {generated}
+          {report.address.label} — generated on {generated}
         </Text>
 
         <View style={styles.scoreRow}>
@@ -80,7 +80,7 @@ export function ReportPdf({ report }: { report: Report }) {
 
         {report.redFlags.length > 0 && (
           <View>
-            <Text style={styles.sectionTitle}>Points de vigilance prioritaires</Text>
+            <Text style={styles.sectionTitle}>Priority red flags</Text>
             {report.redFlags.map((f) => (
               <View key={f.id} style={styles.card}>
                 <Text style={styles.cardTitle}>{f.title}</Text>
@@ -90,7 +90,7 @@ export function ReportPdf({ report }: { report: Report }) {
           </View>
         )}
 
-        <Text style={styles.sectionTitle}>Analyse par domaine</Text>
+        <Text style={styles.sectionTitle}>Analysis by domain</Text>
         {report.sections.map((s) => (
           <View key={s.domain} style={styles.card} wrap={false}>
             <Text style={[styles.badge, { color: VERDICT_COLOR[s.verdict] }]}>
@@ -99,14 +99,14 @@ export function ReportPdf({ report }: { report: Report }) {
             <Text style={styles.cardTitle}>{s.title}</Text>
             <Text style={styles.detail}>{s.detail}</Text>
             <Text style={styles.sourceLine}>
-              Source : {s.sources.map((src) => src.name).join(", ")}
+              Source: {s.sources.map((src) => src.name).join(", ")}
             </Text>
           </View>
         ))}
 
         {report.actions.length > 0 && (
           <View break>
-            <Text style={styles.sectionTitle}>À faire avant de signer</Text>
+            <Text style={styles.sectionTitle}>Before you sign</Text>
             {report.actions.map((a, i) => (
               <View key={i} style={styles.actionRow}>
                 <Text style={styles.actionBullet}>—</Text>
@@ -120,7 +120,7 @@ export function ReportPdf({ report }: { report: Report }) {
 
         {report.warnings.length > 0 && (
           <View>
-            <Text style={styles.sectionTitle}>Limites et données manquantes</Text>
+            <Text style={styles.sectionTitle}>Limitations and missing data</Text>
             {report.warnings.map((w, i) => (
               <Text key={i} style={styles.detail}>
                 • {w}
@@ -130,9 +130,9 @@ export function ReportPdf({ report }: { report: Report }) {
         )}
 
         <Text style={styles.footer} fixed>
-          TerraVista — outil citoyen gratuit et neutre, données publiques uniquement. Voir la page «
-          Sources & méthodologie » pour le détail de chaque source et ses limites. Ce document ne
-          remplace pas les diagnostics officiels obligatoires.
+          TerraVista — a free, neutral citizen tool, public data only. See the &quot;Sources &amp;
+          methodology&quot; page for details on each source and its limitations. This document does
+          not replace the officially required diagnostics.
         </Text>
       </Page>
     </Document>

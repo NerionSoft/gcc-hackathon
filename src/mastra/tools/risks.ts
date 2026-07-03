@@ -89,7 +89,7 @@ function parseNiveau(detail: RisqueDetail): "faible" | "moyen" | "fort" | "incon
 
 function georisquesSource(url: string): SourceRef {
   return {
-    name: "Géorisques (BRGM / ministère de la Transition écologique)",
+    name: "Géorisques (BRGM / French Ministry for Ecological Transition)",
     url,
     retrievedAt: new Date().toISOString(),
   };
@@ -141,7 +141,7 @@ export const risksOutputSchema = toolResultSchema(risksDataSchema);
 export const risksTool = createTool({
   id: "risks-georisques",
   description:
-    "Interroge Géorisques (BRGM) : risques naturels, sismicité, radon, cavités, sites et sols pollués (buffer 200m), arrêtés CatNat.",
+    "Queries Géorisques (BRGM): natural hazards, seismicity, radon, cavities, contaminated sites (200m buffer), CatNat natural-disaster declarations.",
   inputSchema: risksInputSchema,
   outputSchema: risksOutputSchema,
   execute: async ({ lat, lon, citycode }): Promise<z.infer<typeof risksOutputSchema>> => {
@@ -163,7 +163,7 @@ export const risksTool = createTool({
     } catch (err) {
       return errorResult(
         source,
-        `Géorisques indisponible pour cette adresse : ${err instanceof Error ? err.message : "erreur"}.`,
+        `Géorisques unavailable for this address: ${err instanceof Error ? err.message : "error"}.`,
       );
     }
 
@@ -192,7 +192,7 @@ export const risksTool = createTool({
     ]);
 
     const catnat = extractValue(catnatRes);
-    if (!catnat) warnings.push("Historique des arrêtés CatNat indisponible.");
+    if (!catnat) warnings.push("CatNat natural-disaster history unavailable.");
     const catnatList: CatNatArrete[] = (catnat?.data ?? []).map((row) => ({
       libelleRisqueJo: row.libelle_risque_jo,
       dateDebut: row.date_debut_evt,
@@ -202,25 +202,25 @@ export const risksTool = createTool({
     }));
 
     const seisme = extractValue(seismeRes);
-    if (!seisme) warnings.push("Zone de sismicité réglementaire indisponible.");
+    if (!seisme) warnings.push("Regulatory seismic zone unavailable.");
     const seismeRow = seisme?.data[0];
     const seismeZone = seismeRow ? (Number(seismeRow.code_zone) as 1 | 2 | 3 | 4 | 5) : null;
 
     const radon = extractValue(radonRes);
     if (!radon || radon.data.length === 0)
-      warnings.push("Classe de potentiel radon non diffusée pour cette commune.");
+      warnings.push("Radon potential class not published for this commune.");
     const radonClasse = radon?.data[0]
       ? (Number(radon.data[0].classe_potentiel) as 1 | 2 | 3)
       : null;
 
     const cavites = extractValue(cavitesRes);
-    if (!cavites) warnings.push("Cavités souterraines : donnée indisponible.");
+    if (!cavites) warnings.push("Underground cavities: data unavailable.");
 
     const casias = extractValue(casiasRes);
-    if (!casias) warnings.push("Sites et sols pollués (CASIAS) : donnée indisponible.");
+    if (!casias) warnings.push("Contaminated sites (CASIAS): data unavailable.");
     const sitesPollues = (casias?.data ?? [])
       .map((row) => ({
-        nom: row.nom_etablissement ?? "Site sans nom renseigné",
+        nom: row.nom_etablissement ?? "Unnamed site",
         lat: row.geom.coordinates[1],
         lon: row.geom.coordinates[0],
         distanceM: Math.round(
@@ -235,7 +235,7 @@ export const risksTool = createTool({
       summary.risquesNaturels.retraitGonflementArgile.libelleStatutAdresse === "Risque non Connu"
     ) {
       warnings.push(
-        "Niveau argile précis à l'adresse indisponible ; niveau communal utilisé en repli.",
+        "Precise clay-hazard level unavailable at the address; commune-level value used as a fallback.",
       );
     }
 

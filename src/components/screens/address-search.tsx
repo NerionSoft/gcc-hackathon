@@ -32,7 +32,7 @@ export function AddressSearch({ selected, onSelect }: AddressSearchProps) {
   return (
     <div className="relative">
       <label htmlFor="address-input" className="mb-2 block text-sm font-medium text-ink">
-        Adresse du bien
+        Property address
       </label>
       <div className="relative">
         <Search
@@ -101,7 +101,7 @@ export function AddressSearch({ selected, onSelect }: AddressSearchProps) {
 
       {isOpen && debouncedQuery.length >= 2 && !isFetching && suggestions.length === 0 && (
         <div className="absolute z-10 mt-2 w-full rounded-xl border border-primary-100 bg-surface p-4 text-sm text-ink-muted shadow-lg">
-          Aucune adresse trouvée. Vérifiez l&apos;orthographe ou précisez la commune.
+          No address found. Check the spelling or narrow down the commune.
         </div>
       )}
     </div>

@@ -89,7 +89,7 @@ export function ReportMap({ lat, lon, layers }: ReportMapProps) {
           .setPopup(
             new maplibregl.Popup().setText(
               tx.prixM2
-                ? `${Math.round(tx.prixM2).toLocaleString("fr-FR")} €/m² — ${tx.dateMutation}`
+                ? `€${Math.round(tx.prixM2).toLocaleString("en-GB")}/m² — ${tx.dateMutation}`
                 : tx.dateMutation,
             ),
           )
@@ -109,7 +109,7 @@ export function ReportMap({ lat, lon, layers }: ReportMapProps) {
               checked={visible.sitesPollues}
               onChange={(e) => setVisible((v) => ({ ...v, sitesPollues: e.target.checked }))}
             />
-            Sites et sols pollués ({layers.sitesPollues.length})
+            Contaminated sites ({layers.sitesPollues.length})
           </label>
         )}
         {layers && layers.transactions.length > 0 && (
@@ -119,7 +119,7 @@ export function ReportMap({ lat, lon, layers }: ReportMapProps) {
               checked={visible.transactions}
               onChange={(e) => setVisible((v) => ({ ...v, transactions: e.target.checked }))}
             />
-            Transactions DVF alentour ({layers.transactions.length})
+            Nearby DVF transactions ({layers.transactions.length})
           </label>
         )}
       </div>
@@ -127,7 +127,7 @@ export function ReportMap({ lat, lon, layers }: ReportMapProps) {
         ref={containerRef}
         className="h-80 w-full sm:h-96"
         role="img"
-        aria-label="Carte du bien et de son environnement"
+        aria-label="Map of the property and its surroundings"
       />
     </div>
   );

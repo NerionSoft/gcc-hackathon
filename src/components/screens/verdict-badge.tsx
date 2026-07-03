@@ -15,9 +15,9 @@ const VERDICT_STYLES: Record<
     icon: AlertTriangle,
     className: "bg-vigilance-bg text-vigilance",
   },
-  alerte: { label: "Alerte", icon: AlertCircle, className: "bg-alerte-bg text-alerte" },
+  alerte: { label: "Alert", icon: AlertCircle, className: "bg-alerte-bg text-alerte" },
   indisponible: {
-    label: "Donnée indisponible",
+    label: "Data unavailable",
     icon: HelpCircle,
     className: "bg-indisponible-bg text-indisponible",
   },

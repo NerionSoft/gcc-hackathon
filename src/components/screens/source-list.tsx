@@ -2,9 +2,9 @@ import { ExternalLink } from "lucide-react";
 import type { ConfidenceLevel, SourceRef } from "@/types";
 
 const CONFIDENCE_LABELS: Record<ConfidenceLevel, string> = {
-  high: "Confiance élevée",
-  medium: "Confiance moyenne",
-  low: "Confiance faible",
+  high: "High confidence",
+  medium: "Medium confidence",
+  low: "Low confidence",
 };
 
 export function SourceList({
@@ -32,7 +32,7 @@ export function SourceList({
               <ExternalLink className="h-3 w-3" aria-hidden />
             </a>
             <span className="ml-1.5 text-xs text-ink-muted">
-              consulté le {new Date(source.retrievedAt).toLocaleDateString("fr-FR")}
+              retrieved {new Date(source.retrievedAt).toLocaleDateString("en-GB")}
               {source.datasetVintage ? ` · ${source.datasetVintage}` : ""}
             </span>
           </li>

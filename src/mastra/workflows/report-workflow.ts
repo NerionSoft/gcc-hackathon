@@ -166,7 +166,7 @@ const collectStep = createStep({
       await emit(writer, {
         type: "cascade",
         reasoning:
-          "Exposition au risque d'inondation détectée — recherche automatique de la zone inondable précise (Atlas des Zones Inondables) pour enrichir le rapport.",
+          "Flood risk exposure detected — automatically looking up the precise flood zone (Atlas des Zones Inondables) to enrich the report.",
         extraTools: [],
       });
       try {

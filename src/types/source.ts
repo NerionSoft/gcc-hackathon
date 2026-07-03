@@ -8,7 +8,7 @@ export const sourceRefSchema = z.object({
   url: z.string(),
   /** ISO timestamp of the actual HTTP call, not of the dataset itself. */
   retrievedAt: z.string(),
-  /** Best-known freshness of the underlying dataset (e.g. "DVF 2024 T4", "millésime 2023"), when the source states one. */
+  /** Best-known freshness of the underlying dataset (e.g. "DVF 2024 Q4", "2023 vintage"), when the source states one. */
   datasetVintage: z.string().optional(),
 });
 export type SourceRef = z.infer<typeof sourceRefSchema>;
@@ -19,7 +19,7 @@ export type ToolStatus = z.infer<typeof toolStatusSchema>;
 /**
  * Every collector tool returns this envelope, never raw data. `data` is null
  * whenever status is "unavailable" or "error" — the report renders a typed
- * "donnée manquante" state instead of inventing a value.
+ * "data missing" state instead of inventing a value.
  */
 export function toolResultSchema<T extends z.ZodTypeAny>(dataSchema: T) {
   return z.object({

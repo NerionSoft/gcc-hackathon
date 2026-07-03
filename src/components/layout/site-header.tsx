@@ -10,8 +10,8 @@ export function SiteHeader() {
           <span className="text-lg font-semibold tracking-tight">TerraVista</span>
         </Link>
         <nav className="flex items-center gap-4 text-sm text-ink-muted">
-          <Link href="/methodologie" className="hover:text-primary-700">
-            Sources &amp; méthodologie
+          <Link href="/methodology" className="hover:text-primary-700">
+            Sources &amp; methodology
           </Link>
         </nav>
       </div>

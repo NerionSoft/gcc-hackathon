@@ -22,7 +22,7 @@ export function ScoreGauge({ score, explanation }: { score: number; explanation:
         aria-valuenow={score}
         aria-valuemin={0}
         aria-valuemax={100}
-        aria-label="Score global du logement"
+        aria-label="Overall property score"
       >
         <svg viewBox="0 0 120 120" className="h-full w-full -rotate-90">
           <circle
@@ -53,7 +53,7 @@ export function ScoreGauge({ score, explanation }: { score: number; explanation:
         </div>
       </div>
       <div>
-        <h2 className="text-lg font-semibold text-ink">Score global pondéré</h2>
+        <h2 className="text-lg font-semibold text-ink">Overall weighted score</h2>
         <p className="mt-1 text-sm text-ink-muted">{explanation}</p>
       </div>
     </div>

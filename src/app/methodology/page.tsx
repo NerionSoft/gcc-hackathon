@@ -101,8 +101,8 @@ export default function MethodologyPage() {
           <li>
             <strong className="text-ink">Analyst</strong> — cross-references the results to
             produce insights no single source gives on its own (e.g. high clay hazard + drought
-            declaration + old house ⇒ cracking risk), and explicitly flags when the market doesn't
-            seem to price in a documented risk.
+            declaration + old house ⇒ cracking risk), and explicitly flags when the market
+            doesn&apos;t seem to price in a documented risk.
           </li>
           <li>
             <strong className="text-ink">Advisor</strong> — composes the final report: weighted
@@ -157,11 +157,11 @@ export default function MethodologyPage() {
       <section className="space-y-3">
         <h2 className="text-xl font-semibold text-ink">Confidence and resilience</h2>
         <p className="text-sm text-ink-muted">
-          Every source returns a status ("ok", "partial", "unavailable", or "error") and a
-          confidence level (high / medium / low). If a source is unavailable, the report is still
-          produced: the corresponding section explicitly shows "data unavailable" instead of an
-          invented value, and the domain is excluded from the global score calculation (it is
-          neither favoured nor penalised for being absent).
+          Every source returns a status (&quot;ok&quot;, &quot;partial&quot;, &quot;unavailable&quot;,
+          or &quot;error&quot;) and a confidence level (high / medium / low). If a source is
+          unavailable, the report is still produced: the corresponding section explicitly shows
+          &quot;data unavailable&quot; instead of an invented value, and the domain is excluded from
+          the global score calculation (it is neither favoured nor penalised for being absent).
         </p>
       </section>
 
@@ -185,16 +185,16 @@ export default function MethodologyPage() {
             arrive after the others.
           </li>
           <li>
-            Fine-grained per-pollutant air quality (Geod'air) isn't integrated — only the daily
-            ATMO index is.
+            Fine-grained per-pollutant air quality (Geod&apos;air) isn&apos;t integrated — only the
+            daily ATMO index is.
           </li>
           <li>
-            Radon potential and the detailed clay hazard aren't systematically published by
+            Radon potential and the detailed clay hazard aren&apos;t systematically published by
             Géorisques for every commune.
           </li>
           <li>
             Automatically monitoring an address over time (new building permit, new CatNat
-            declaration) isn't implemented yet.
+            declaration) isn&apos;t implemented yet.
           </li>
         </ul>
       </section>

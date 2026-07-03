@@ -1,10 +1,10 @@
 import { z } from "zod";
 
 /**
- * ATMO index, national daily air-quality index. 1 (bon) to 6 (extrêmement
- * mauvais) is the normal scale; 0 means "absent" (no measurement that day)
- * and 7 flags an active pollution episode ("événement") — both real values
- * the live WFS feed can return, not something to reject as invalid.
+ * ATMO index, national daily air-quality index. 1 (good) to 6 (extremely
+ * poor) is the normal scale; 0 means "absent" (no measurement that day)
+ * and 7 flags an active pollution event — both real values the live WFS
+ * feed can return, not something to reject as invalid.
  */
 export const atmoIndexSchema = z.number().int().min(0).max(7);
 

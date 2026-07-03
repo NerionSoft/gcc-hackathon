@@ -85,7 +85,7 @@ describe("energyTool", () => {
     );
 
     expect(result.status).toBe("ok");
-    expect(result.warnings.some((w) => w.includes("voisinage"))).toBe(true);
+    expect(result.warnings.some((w) => w.includes("neighbourhood"))).toBe(true);
   });
 
   it("returns unavailable when no DPE exists nearby", async () => {

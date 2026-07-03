@@ -55,7 +55,7 @@ export function analyzeCrossRules(input: AnalystInput): CrossRuleFinding[] {
     anneeConstruction !== null &&
     anneeConstruction < OLD_CONSTRUCTION_YEAR;
 
-  // R1 — argile fort + arrêté sécheresse + maison ancienne -> risque structurel (fissures).
+  // R1 — high clay hazard + drought declaration + old house -> structural risk (cracking).
   if (risksData && energyData && isOldHouse) {
     const hasSecheresseArrete = risksData.catnat.some((c) =>
       c.libelleRisqueJo.toLowerCase().includes("sécheresse"),
@@ -63,17 +63,17 @@ export function analyzeCrossRules(input: AnalystInput): CrossRuleFinding[] {
     if (risksData.summary.argiles.niveau === "fort" && hasSecheresseArrete) {
       findings.push({
         id: "argile-secheresse-maison-ancienne",
-        title: "Risque de fissures liées au retrait-gonflement des argiles",
+        title: "Cracking risk from clay shrink-swell",
         severity: "alerte",
         domains: ["risques", "energie"],
-        explanation: `Le sol est classé en aléa argile fort et la commune a déjà été reconnue en état de catastrophe naturelle "sécheresse". Sur une maison construite avant ${OLD_CONSTRUCTION_YEAR} (donc sans étude de sol ni fondations adaptées à ce risque), demandez un diagnostic fissures avant achat.`,
+        explanation: `The soil is classified as high clay shrink-swell hazard, and the commune has already had a "drought" natural-disaster declaration. On a house built before ${OLD_CONSTRUCTION_YEAR} (so without soil study or foundations suited to this risk), ask for a cracking diagnostic before buying.`,
         sources: [risks.source, energy.source],
         confidence: worstConfidence([risks.confidence, energy.confidence]),
       });
     }
   }
 
-  // R2 — DPE F/G + prix affiché au-dessus de la médiane du secteur -> sur-évaluation potentielle.
+  // R2 — poor energy rating + asking price above the local median -> potential overvaluation.
   if (energyData?.mostRecent && pricesData?.medianPriceM2 !== null && pricesData) {
     const label = energyData.mostRecent.etiquetteDpe;
     const listingM2 = askingPriceM2(listing);
@@ -88,34 +88,34 @@ export function analyzeCrossRules(input: AnalystInput): CrossRuleFinding[] {
       );
       findings.push({
         id: "dpe-mauvais-prix-eleve",
-        title: "Prix affiché supérieur à la médiane du secteur pour un DPE passoire thermique",
+        title: "Asking price above the local median for an energy-inefficient property",
         severity: "vigilance",
         domains: ["energie", "prix"],
-        explanation: `Le DPE le plus récent classe le logement ${label}, et le prix affiché (${Math.round(listingM2)} €/m²) dépasse de ${overshoot}% la médiane locale (${Math.round(pricesData.medianPriceM2)} €/m², DVF 5 ans). Chiffrez le coût des travaux de rénovation énergétique avant de négocier.`,
+        explanation: `The most recent energy rating classifies the property as ${label}, and the asking price (€${Math.round(listingM2)}/m²) exceeds the local median by ${overshoot}% (€${Math.round(pricesData.medianPriceM2)}/m², 5-year DVF data). Get renovation costs quoted before negotiating.`,
         sources: [energy.source, prices.source],
         confidence: worstConfidence([energy.confidence, prices.confidence]),
       });
     }
   }
 
-  // R3 — sismicité ≥3 ou cavités + maison ancienne -> vérification structurelle.
+  // R3 — seismicity >=3 or cavities + old house -> structural check.
   if (risksData && isOldHouse) {
     const seismicHigh = (risksData.summary.sismicite.zone ?? 0) >= 3;
     const cavites = risksData.summary.cavites.present;
     if (seismicHigh || cavites) {
       findings.push({
         id: "structurel-sismicite-cavites-ancienne",
-        title: "Vérification structurelle recommandée",
+        title: "Structural check recommended",
         severity: "vigilance",
         domains: ["risques", "energie"],
-        explanation: `${seismicHigh ? "La commune est en zone de sismicité renforcée" : "Une cavité souterraine est recensée à proximité"}, sur une maison construite avant ${OLD_CONSTRUCTION_YEAR}. Demandez si des travaux de renforcement ont été réalisés depuis la construction.`,
+        explanation: `${seismicHigh ? "The commune is in a heightened seismic zone" : "An underground cavity is recorded nearby"}, on a house built before ${OLD_CONSTRUCTION_YEAR}. Ask whether reinforcement work has been done since construction.`,
         sources: [risks.source, energy.source],
         confidence: worstConfidence([risks.confidence, energy.confidence]),
       });
     }
   }
 
-  // R4 — air dégradé + prix affiché au-dessus du marché local -> arbitrage (prime payée malgré l'air).
+  // R4 — degraded air + asking price above the local market -> arbitrage (premium paid despite the air).
   if (airData && pricesData?.medianPriceM2 !== null && pricesData) {
     const listingM2 = askingPriceM2(listing);
     if (
@@ -126,34 +126,34 @@ export function analyzeCrossRules(input: AnalystInput): CrossRuleFinding[] {
     ) {
       findings.push({
         id: "air-degrade-prix-superieur-marche",
-        title: "Prime payée au-dessus du marché local malgré une qualité de l'air dégradée",
+        title: "Premium paid above the local market despite degraded air quality",
         severity: "vigilance",
         domains: ["air", "prix"],
-        explanation: `L'indice ATMO du jour (${airData.atmoLabel}) indique un air dégradé, et le prix affiché dépasse la médiane des transactions récentes dans le secteur. La qualité de l'air ne semble pas se refléter dans une décote de prix.`,
+        explanation: `Today's ATMO index (${airData.atmoLabel}) indicates degraded air quality, and the asking price exceeds the median of recent transactions in the area. Air quality doesn't seem to be reflected in a lower price.`,
         sources: [air.source, prices.source],
         confidence: worstConfidence([air.confidence, prices.confidence]),
       });
     }
   }
 
-  // R5 — arbitrage : historique de risque répété (CatNat) vs. marché qui ne l'intègre pas.
+  // R5 — arbitrage: repeated risk history (CatNat) vs. a market that doesn't price it in.
   if (risksData && pricesData && !pricesData.coverageExcluded) {
     const repeatedCatnat = risksData.catnat.length >= 3;
     const trend = priceTrendFromTransactions(pricesData.transactions);
     if (repeatedCatnat && trend !== null && trend !== "baisse") {
       findings.push({
         id: "catnat-repete-prix-stables",
-        title: "Le marché ne semble pas intégrer un historique de risque répété",
+        title: "The market doesn't seem to price in a repeated risk history",
         severity: "info",
         domains: ["risques", "prix"],
-        explanation: `${risksData.catnat.length} arrêtés de catastrophe naturelle ont été recensés sur cette commune, mais les prix DVF y sont ${trend === "hausse" ? "en hausse" : "stables"} sur 5 ans. Ce n'est pas contradictoire en soi (bien d'autres facteurs pèsent sur les prix), mais cela mérite d'être signalé : le risque documenté n'est pas nécessairement "payé" par le marché.`,
+        explanation: `${risksData.catnat.length} natural-disaster declarations have been recorded for this commune, yet DVF prices here are ${trend === "hausse" ? "rising" : "stable"} over 5 years. This isn't necessarily contradictory (many other factors affect prices), but it's worth flagging: the documented risk isn't necessarily "priced in" by the market.`,
         sources: [risks.source, prices.source],
         confidence: worstConfidence([risks.confidence, prices.confidence]),
       });
     }
   }
 
-  // R6 — site potentiellement pollué proche + DPE mauvais -> vigilance travaux + étude de sol.
+  // R6 — potentially contaminated site nearby + poor energy rating -> renovation/soil-survey caution.
   if (risksData && energyData?.mostRecent) {
     const nearbySite = risksData.summary.sitesPollues.sites.find(
       (s) => s.distanceM < 100 && s.etatActivite !== "En activité",
@@ -162,10 +162,10 @@ export function analyzeCrossRules(input: AnalystInput): CrossRuleFinding[] {
     if (nearbySite && (label === "F" || label === "G")) {
       findings.push({
         id: "site-pollue-dpe-mauvais",
-        title: "Site potentiellement pollué à proximité et rénovation énergétique lourde à prévoir",
+        title: "Potentially contaminated site nearby and heavy energy renovation ahead",
         severity: "vigilance",
         domains: ["risques", "energie"],
-        explanation: `Un site industriel ou de service ancien ("${nearbySite.nom}") est recensé à moins de 100m, et le DPE est classé ${label}. Si des travaux de rénovation touchant le sol ou les fondations sont envisagés, une étude de sol est recommandée avant de s'engager.`,
+        explanation: `A former industrial or service site ("${nearbySite.nom}") is recorded less than 100m away, and the property is rated ${label}. If renovation work touching the soil or foundations is planned, a soil survey is recommended before committing.`,
         sources: [risks.source, energy.source],
         confidence: worstConfidence([risks.confidence, energy.confidence]),
       });
@@ -176,11 +176,11 @@ export function analyzeCrossRules(input: AnalystInput): CrossRuleFinding[] {
   if (crime.status === "unavailable" && profile.tags.includes("famille_enfants")) {
     findings.push({
       id: "securite-donnee-non-diffusee",
-      title: "Donnée de sécurité non diffusée pour cette commune",
+      title: "Safety data not published for this commune",
       severity: "info",
       domains: ["securite"],
       explanation:
-        "Le SSMSI ne diffuse pas de statistiques pour cette commune (moins de 5 faits enregistrés sur 3 années successives) — cela ne signifie pas une commune sans délinquance, seulement une commune trop petite pour un taux fiable. Fiez-vous plutôt à votre ressenti sur place et aux données de communes voisines plus grandes.",
+        "SSMSI doesn't publish statistics for this commune (fewer than 5 recorded incidents over 3 consecutive years) — this doesn't mean the commune is crime-free, only that it's too small for a reliable rate. Rely instead on your own impression on the ground and on data from larger neighbouring communes.",
       sources: [crime.source],
       confidence: "low",
     });

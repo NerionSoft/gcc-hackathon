@@ -32,8 +32,8 @@ function domainSection(domain: string, title: string, verdict: string) {
     domain,
     title,
     verdict,
-    summary: `Résumé ${title}`,
-    detail: `Détail complet pour ${title}.`,
+    summary: `Summary ${title}`,
+    detail: `Full detail for ${title}.`,
     sources: [SOURCE],
     confidence: "high",
     weight: 1,
@@ -44,25 +44,25 @@ const STREAM_EVENTS = [
   {
     type: "plan",
     toolsPlanned: ["risques", "prix", "air", "securite", "energie"],
-    reasoning: "Analyse équilibrée des 5 domaines.",
+    reasoning: "Balanced analysis across all 5 domains.",
   },
   { type: "tool-start", tool: "risques" },
   {
     type: "section-ready",
-    section: domainSection("risques", "Risques naturels & technologiques", "alerte"),
+    section: domainSection("risques", "Natural & technological hazards", "alerte"),
   },
-  { type: "section-ready", section: domainSection("prix", "Prix & marché", "favorable") },
-  { type: "section-ready", section: domainSection("air", "Qualité de l'air", "favorable") },
-  { type: "section-ready", section: domainSection("securite", "Sécurité", "favorable") },
-  { type: "section-ready", section: domainSection("energie", "Énergie", "vigilance") },
+  { type: "section-ready", section: domainSection("prix", "Price & market", "favorable") },
+  { type: "section-ready", section: domainSection("air", "Air quality", "favorable") },
+  { type: "section-ready", section: domainSection("securite", "Safety", "favorable") },
+  { type: "section-ready", section: domainSection("energie", "Energy", "vigilance") },
   {
     type: "redflag",
     finding: {
       id: "test-finding",
-      title: "Risque de fissures liées au retrait-gonflement des argiles",
+      title: "Cracking risk from clay shrink-swell",
       severity: "alerte",
       domains: ["risques", "energie"],
-      explanation: "Aléa argile fort et arrêté sécheresse recensés.",
+      explanation: "High clay hazard and drought declaration recorded.",
       sources: [SOURCE],
       confidence: "high",
     },
@@ -78,30 +78,30 @@ const STREAM_EVENTS = [
       },
       generatedAt: "2026-07-03T00:00:00.000Z",
       globalScore: 62,
-      scoreExplanation: "Moyenne pondérée des 5 domaines disponibles.",
+      scoreExplanation: "Weighted average of the 5 available domains.",
       redFlags: [
         {
           id: "test-finding",
-          title: "Risque de fissures liées au retrait-gonflement des argiles",
+          title: "Cracking risk from clay shrink-swell",
           severity: "alerte",
           domains: ["risques", "energie"],
-          explanation: "Aléa argile fort et arrêté sécheresse recensés.",
+          explanation: "High clay hazard and drought declaration recorded.",
           sources: [SOURCE],
           confidence: "high",
         },
       ],
       sections: [
-        domainSection("risques", "Risques naturels & technologiques", "alerte"),
-        domainSection("prix", "Prix & marché", "favorable"),
-        domainSection("air", "Qualité de l'air", "favorable"),
-        domainSection("securite", "Sécurité", "favorable"),
-        domainSection("energie", "Énergie", "vigilance"),
+        domainSection("risques", "Natural & technological hazards", "alerte"),
+        domainSection("prix", "Price & market", "favorable"),
+        domainSection("air", "Air quality", "favorable"),
+        domainSection("securite", "Safety", "favorable"),
+        domainSection("energie", "Energy", "vigilance"),
       ],
       actions: [
         {
-          title: "Commander l'état des risques et pollutions (ERP) officiel",
+          title: "Order the official risk and pollution disclosure (ERP)",
           category: "demarche_officielle",
-          reason: "Obligatoire.",
+          reason: "Mandatory.",
         },
       ],
       mapLayers: { sitesPollues: [], cavites: { present: false }, transactions: [] },
@@ -121,36 +121,34 @@ test("home -> address search -> profile -> streamed report", async ({ page }) =>
   );
 
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Analysez votre futur logement" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Analyze your future home" })).toBeVisible();
 
-  await page.getByLabel("Adresse du bien").fill("8 rue de la paix");
+  await page.getByLabel("Property address").fill("8 rue de la paix");
   await page.getByRole("option", { name: /8 Rue de la Paix/ }).click();
 
-  await page.getByRole("button", { name: "Famille avec enfants" }).click();
+  await page.getByRole("button", { name: "Family with children" }).click();
 
-  await page.getByRole("button", { name: "Analyser ce logement" }).click();
+  await page.getByRole("button", { name: "Analyze this property" }).click();
 
-  await expect(page).toHaveURL(/\/rapport\?/);
+  await expect(page).toHaveURL(/\/report\?/);
   await expect(page.getByRole("heading", { name: "8 Rue de la Paix 75002 Paris" })).toBeVisible();
 
   // Streamed sections and the final score should all render.
   await expect(page.getByText("62")).toBeVisible();
-  await expect(page.getByText("Points de vigilance prioritaires")).toBeVisible();
+  await expect(page.getByText("Priority red flags")).toBeVisible();
+  await expect(page.getByText("Cracking risk from clay shrink-swell")).toBeVisible();
   await expect(
-    page.getByText("Risque de fissures liées au retrait-gonflement des argiles"),
+    page.getByRole("heading", { name: "Natural & technological hazards" }),
   ).toBeVisible();
-  await expect(
-    page.getByRole("heading", { name: "Risques naturels & technologiques" }),
-  ).toBeVisible();
-  await expect(page.getByText("À faire avant de signer")).toBeVisible();
-  await expect(page.getByRole("link", { name: "Exporter en PDF" })).toBeVisible();
+  await expect(page.getByText("Before you sign")).toBeVisible();
+  await expect(page.getByRole("link", { name: "Export as PDF" })).toBeVisible();
 });
 
-test("methodologie page lists every source", async ({ page }) => {
-  await page.goto("/methodologie");
-  await expect(page.getByRole("heading", { name: "Sources & méthodologie" })).toBeVisible();
+test("methodology page lists every source", async ({ page }) => {
+  await page.goto("/methodology");
+  await expect(page.getByRole("heading", { name: "Sources & methodology" })).toBeVisible();
   await expect(
-    page.getByText("Géorisques (BRGM / ministère de la Transition écologique)"),
+    page.getByText("Géorisques (BRGM / French Ministry for Ecological Transition)"),
   ).toBeVisible();
-  await expect(page.getByText("SSMSI (ministère de l'Intérieur)")).toBeVisible();
+  await expect(page.getByText("SSMSI (Ministry of the Interior)")).toBeVisible();
 });
