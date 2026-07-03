@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { fetchClusters, fetchPortfolio, fetchPortfolioSummary } from "@/presentation/data/api";
 import type {
   ClustersResponse,
@@ -13,40 +13,44 @@ interface PortfolioData {
   summary: PortfolioSummary | null;
   clusters: ClustersResponse | null;
   error: string | null;
+  /** Re-pull the engine's persisted clusters (after the scan/cluster step). */
+  refetchClusters: () => Promise<void>;
 }
 
 /**
  * One load of the three read endpoints the wall needs. Everything flows
- * through `presentation/data/api.ts`, so pointing the wall at the engine
- * worker's live endpoints (or turning this into a poll) touches only the
- * data layer.
+ * through `presentation/data/api.ts`. `refetchClusters` lets the view swap the
+ * deterministic signature preview for the engine's real persisted clusters
+ * once the campaign has clustered.
  */
 export function usePortfolioData(): PortfolioData {
-  const [data, setData] = useState<PortfolioData>({
-    tiles: null,
-    summary: null,
-    clusters: null,
-    error: null,
-  });
+  const [tiles, setTiles] = useState<PortfolioTile[] | null>(null);
+  const [summary, setSummary] = useState<PortfolioSummary | null>(null);
+  const [clusters, setClusters] = useState<ClustersResponse | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  const refetchClusters = useCallback(async () => {
+    const next = await fetchClusters();
+    setClusters(next);
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
     Promise.all([fetchPortfolio(), fetchPortfolioSummary(), fetchClusters()])
-      .then(([portfolio, summary, clusters]) => {
+      .then(([portfolio, portfolioSummary, clustersResponse]) => {
         if (cancelled) return;
-        setData({ tiles: portfolio.properties, summary, clusters, error: null });
+        setTiles(portfolio.properties);
+        setSummary(portfolioSummary);
+        setClusters(clustersResponse);
       })
-      .catch((error: unknown) => {
+      .catch((err: unknown) => {
         if (cancelled) return;
-        setData((prev) => ({
-          ...prev,
-          error: error instanceof Error ? error.message : "Failed to load portfolio",
-        }));
+        setError(err instanceof Error ? err.message : "Failed to load portfolio");
       });
     return () => {
       cancelled = true;
     };
   }, []);
 
-  return data;
+  return { tiles, summary, clusters, error, refetchClusters };
 }
