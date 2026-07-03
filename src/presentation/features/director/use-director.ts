@@ -10,6 +10,7 @@ import {
   type CampaignStatusDTO,
   type SimulatorStateDTO,
 } from "@/presentation/features/director/contracts";
+import { fetchClusters, reviewCluster } from "@/presentation/data/api";
 
 async function postJson<T>(path: string, schema: ZodType<T>, body?: unknown): Promise<T> {
   const res = await fetch(path, {
@@ -93,6 +94,57 @@ export function useCampaignControl(): CampaignControl {
   }, []);
 
   return { status, idle: runId === null, busy, error, start };
+}
+
+// ---------------------------------------------------------------------------
+// Bulk review — demo fast-forward through the assessment-review gate.
+// Approves every pending cluster on the reviewer's behalf via the SAME review
+// endpoint the cluster sheet uses, so reviewedBy/reviewedAt are stamped and
+// publishCluster's hard gate still holds. It only moves the campaign past the
+// gate — it never bypasses it.
+// ---------------------------------------------------------------------------
+
+export interface ReviewAllControl {
+  busy: boolean;
+  error: string | null;
+  result: string | null;
+  approveAll: () => Promise<void>;
+}
+
+export function useReviewAllControl(): ReviewAllControl {
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [result, setResult] = useState<string | null>(null);
+
+  const approveAll = useCallback(async () => {
+    setBusy(true);
+    setError(null);
+    setResult(null);
+    try {
+      const { clusters, preview } = await fetchClusters();
+      const pending = preview ? [] : clusters.filter((c) => c.status === "pending_review");
+      if (pending.length === 0) {
+        setResult("No clusters are awaiting review.");
+        return;
+      }
+      let approved = 0;
+      for (const cluster of pending) {
+        await reviewCluster(
+          cluster.id,
+          "approve",
+          "Approved from the director console (demo fast-forward).",
+        );
+        approved += 1;
+      }
+      setResult(`Approved & published ${approved} cluster${approved === 1 ? "" : "s"}.`);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setBusy(false);
+    }
+  }, []);
+
+  return { busy, error, result, approveAll };
 }
 
 // ---------------------------------------------------------------------------
