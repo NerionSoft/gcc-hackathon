@@ -1,0 +1,2565 @@
+{
+  "key": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=BN3%201HA&_pageSize=25",
+  "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=BN3%201HA&_pageSize=25",
+  "retrievedAt": "2026-07-03T13:06:31.900Z",
+  "body": {
+    "format": "linked-data-api",
+    "version": "0.2",
+    "result": {
+      "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=BN3%201HA",
+      "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=BN3%201HA",
+      "extendedMetadataVersion": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=BN3%201HA&_metadata=all",
+      "first": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=0&propertyAddress.postcode=BN3%201HA",
+      "isPartOf": {
+        "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=BN3%201HA",
+        "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=BN3%201HA",
+        "hasPart": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=BN3%201HA",
+        "type": [
+          "http://purl.org/linked-data/api/vocab#ListEndpoint"
+        ]
+      },
+      "items": [
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/E6B09F70-B199-4F19-9BCF-38CC7D71F9A4/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/E6B09F70-B199-4F19-9BCF-38CC7D71F9A4",
+          "newBuild": false,
+          "pricePaid": 60000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/0ac76a7ff1fa7dfbb6e824216e8aaa8d3763fc8a",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 8",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 18 Oct 1996",
+          "transactionId": "E6B09F70-B199-4F19-9BCF-38CC7D71F9A4",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/3FE95458-BE37-49E7-A115-5876A67101BD/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/3FE95458-BE37-49E7-A115-5876A67101BD",
+          "newBuild": false,
+          "pricePaid": 95000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/0ac76a7ff1fa7dfbb6e824216e8aaa8d3763fc8a",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 8",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 11 Aug 1997",
+          "transactionId": "3FE95458-BE37-49E7-A115-5876A67101BD",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/31F45CC2-095B-41B6-9D8C-0B1562218B48/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/31F45CC2-095B-41B6-9D8C-0B1562218B48",
+          "newBuild": false,
+          "pricePaid": 99950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/0ac76a7ff1fa7dfbb6e824216e8aaa8d3763fc8a",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 8",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 12 Jun 1998",
+          "transactionId": "31F45CC2-095B-41B6-9D8C-0B1562218B48",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/36D26BD1-0626-40B0-8444-BAA4A6BEEB27/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/36D26BD1-0626-40B0-8444-BAA4A6BEEB27",
+          "newBuild": true,
+          "pricePaid": 66000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/2e55299820b6c3aa3cdf7fed5ca4c64672405f32",
+            "county": "EAST SUSSEX",
+            "district": "HOVE",
+            "locality": "HOVE",
+            "paon": "40",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 4",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 11 Apr 1996",
+          "transactionId": "36D26BD1-0626-40B0-8444-BAA4A6BEEB27",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/5A31EC96-9C3E-45FB-8D70-A296274A5B48/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/5A31EC96-9C3E-45FB-8D70-A296274A5B48",
+          "newBuild": false,
+          "pricePaid": 34500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/b97c12cfc2c3c66b7bb6d0229c4cc20ee623de01",
+            "county": "EAST SUSSEX",
+            "district": "HOVE",
+            "locality": "HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "BASEMENT FLAT",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 22 Jul 1996",
+          "transactionId": "5A31EC96-9C3E-45FB-8D70-A296274A5B48",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/295999C5-0332-43FD-B7CB-1D506725145D/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/295999C5-0332-43FD-B7CB-1D506725145D",
+          "newBuild": true,
+          "pricePaid": 58000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/a7f792ed3d597122a687289e7119d4afa0f1006f",
+            "county": "EAST SUSSEX",
+            "district": "HOVE",
+            "locality": "HOVE",
+            "paon": "40",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 5",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 11 Sep 1996",
+          "transactionId": "295999C5-0332-43FD-B7CB-1D506725145D",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/2D2170B5-4472-40B4-BE77-E75D05025713/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/2D2170B5-4472-40B4-BE77-E75D05025713",
+          "newBuild": false,
+          "pricePaid": 65000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/45714e7b217ed49b8a379674b3023eb81fac3f4a",
+            "county": "EAST SUSSEX",
+            "district": "HOVE",
+            "locality": "HOVE",
+            "paon": "40",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 1",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 12 Jan 1996",
+          "transactionId": "2D2170B5-4472-40B4-BE77-E75D05025713",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/3AD44E86-2AE3-4F46-ABFA-F3961C07000E/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/3AD44E86-2AE3-4F46-ABFA-F3961C07000E",
+          "newBuild": false,
+          "pricePaid": 35500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/3034d098d8d071d2bdab85f9ae0af899dc5bb116",
+            "county": "EAST SUSSEX",
+            "district": "HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 5",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 20 Dec 1996",
+          "transactionId": "3AD44E86-2AE3-4F46-ABFA-F3961C07000E",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/8B095086-BC18-428E-88B5-CEB781E58C33/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/8B095086-BC18-428E-88B5-CEB781E58C33",
+          "newBuild": false,
+          "pricePaid": 75000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/84383cbdce67ec040008049ac80110df8a6d1b35",
+            "county": "EAST SUSSEX",
+            "district": "HOVE",
+            "paon": "36",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 11",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 03 Jun 1996",
+          "transactionId": "8B095086-BC18-428E-88B5-CEB781E58C33",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/26F0F0C5-145B-471C-9ECE-83442B3CC3B4/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/26F0F0C5-145B-471C-9ECE-83442B3CC3B4",
+          "newBuild": false,
+          "pricePaid": 28000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/7f983c6e39021384836f04a47b7dbdb04263abe0",
+            "county": "EAST SUSSEX",
+            "district": "HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 7",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 04 Sep 1996",
+          "transactionId": "26F0F0C5-145B-471C-9ECE-83442B3CC3B4",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/043A20C9-76B4-464F-83E9-DB938382D337/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/043A20C9-76B4-464F-83E9-DB938382D337",
+          "newBuild": false,
+          "pricePaid": 89000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/3db24a1ec263e1dc25f0a6e00f44dbb75a168e72",
+            "county": "EAST SUSSEX",
+            "district": "HOVE",
+            "paon": "33B",
+            "postcode": "BN3 1HA",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 10 Feb 1997",
+          "transactionId": "043A20C9-76B4-464F-83E9-DB938382D337",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/DA7AA12A-49FC-49E8-9C67-796C4E41BD63/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/DA7AA12A-49FC-49E8-9C67-796C4E41BD63",
+          "newBuild": false,
+          "pricePaid": 49000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/729e902500b22d2553482500cb38edc241a57731",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "HOVE",
+            "paon": "36",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 2",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 28 Apr 1997",
+          "transactionId": "DA7AA12A-49FC-49E8-9C67-796C4E41BD63",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/344244FA-E0B0-4670-82F1-3A7E04DF73C8/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/344244FA-E0B0-4670-82F1-3A7E04DF73C8",
+          "newBuild": false,
+          "pricePaid": 152000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/729e902500b22d2553482500cb38edc241a57731",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "HOVE",
+            "paon": "36",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 2",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 07 May 2004",
+          "transactionId": "344244FA-E0B0-4670-82F1-3A7E04DF73C8",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/56AC36B6-4218-4215-8DD4-188D315C8FCC/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/56AC36B6-4218-4215-8DD4-188D315C8FCC",
+          "newBuild": false,
+          "pricePaid": 169000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c1fededf71270796c3bc247fbf4c90b79a11c528",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "HOVE",
+            "paon": "38",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 7",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 24 Sep 1997",
+          "transactionId": "56AC36B6-4218-4215-8DD4-188D315C8FCC",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/C91F41F7-C7B0-4DDC-99FD-11ED120447E1/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/C91F41F7-C7B0-4DDC-99FD-11ED120447E1",
+          "newBuild": false,
+          "pricePaid": 110000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/46db9b7552614ff21b59e81dcf20f853acddbfeb",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "HOVE",
+            "paon": "39",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 6",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 22 Dec 1997",
+          "transactionId": "C91F41F7-C7B0-4DDC-99FD-11ED120447E1",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/F77D0FBF-AE0F-4E7D-A8A6-6DC4DDB429DA/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/F77D0FBF-AE0F-4E7D-A8A6-6DC4DDB429DA",
+          "newBuild": false,
+          "pricePaid": 250000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/46db9b7552614ff21b59e81dcf20f853acddbfeb",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "HOVE",
+            "paon": "39",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 6",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 04 Jul 2003",
+          "transactionId": "F77D0FBF-AE0F-4E7D-A8A6-6DC4DDB429DA",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/9EC7B967-2FE1-4E21-A7DB-D4D9438E7EB3/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/9EC7B967-2FE1-4E21-A7DB-D4D9438E7EB3",
+          "newBuild": false,
+          "pricePaid": 43250,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/42c0c58fde44aaea84b9bdd7d209fc6b57b0d8cb",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 6",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 25 Aug 1998",
+          "transactionId": "9EC7B967-2FE1-4E21-A7DB-D4D9438E7EB3",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/CF3102D3-C20F-40E3-A4CA-BE6EB6C1984E/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/CF3102D3-C20F-40E3-A4CA-BE6EB6C1984E",
+          "newBuild": false,
+          "pricePaid": 125000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/42c0c58fde44aaea84b9bdd7d209fc6b57b0d8cb",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 6",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 11 Nov 2005",
+          "transactionId": "CF3102D3-C20F-40E3-A4CA-BE6EB6C1984E",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/75D71E68-B455-4033-BC2E-C72210885B06/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/75D71E68-B455-4033-BC2E-C72210885B06",
+          "newBuild": false,
+          "pricePaid": 169995,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/42c0c58fde44aaea84b9bdd7d209fc6b57b0d8cb",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 6",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 30 Jun 2014",
+          "transactionId": "75D71E68-B455-4033-BC2E-C72210885B06",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/39140479-8F11-3206-E050-A8C063057647/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/39140479-8F11-3206-E050-A8C063057647",
+          "newBuild": false,
+          "pricePaid": 225000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/42c0c58fde44aaea84b9bdd7d209fc6b57b0d8cb",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 6",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 01 Jul 2016",
+          "transactionId": "39140479-8F11-3206-E050-A8C063057647",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/68BA319C-2CEA-4A81-8D6D-25673104DC98/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/68BA319C-2CEA-4A81-8D6D-25673104DC98",
+          "newBuild": false,
+          "pricePaid": 29000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/51554070ad211ddcdf7e274dc6c6e272a14e0272",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "HOVE",
+            "paon": "39",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 2",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 04 Sep 1998",
+          "transactionId": "68BA319C-2CEA-4A81-8D6D-25673104DC98",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/CD756CEA-5F3E-43A4-A231-5D4614B2982F/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/CD756CEA-5F3E-43A4-A231-5D4614B2982F",
+          "newBuild": false,
+          "pricePaid": 248000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/3ae6ff0de45a427e3c8c1a3914712dabd448c42f",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "36 - 37",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 12",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 12 Nov 1998",
+          "transactionId": "CD756CEA-5F3E-43A4-A231-5D4614B2982F",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/D9D898EA-3143-42CC-8A53-1AAC75239321/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/D9D898EA-3143-42CC-8A53-1AAC75239321",
+          "newBuild": false,
+          "pricePaid": 154500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/bc230e800a43be8f0e86da3738f56fb48e036cdb",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "33",
+            "postcode": "BN3 1HA",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 28 Aug 1998",
+          "transactionId": "D9D898EA-3143-42CC-8A53-1AAC75239321",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/97DB5CFB-DECC-41B2-92CF-A1462962E840/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/97DB5CFB-DECC-41B2-92CF-A1462962E840",
+          "newBuild": false,
+          "pricePaid": 75000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/406693b907e855366e4867f61127b74fcf029f1e",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "36",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 11",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 04 Dec 1998",
+          "transactionId": "97DB5CFB-DECC-41B2-92CF-A1462962E840",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/E21424E4-7730-4095-87A4-D865EDBF1071/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/leasehold",
+            "label": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Leasehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/E21424E4-7730-4095-87A4-D865EDBF1071",
+          "newBuild": false,
+          "pricePaid": 102000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/406693b907e855366e4867f61127b74fcf029f1e",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "36",
+            "postcode": "BN3 1HA",
+            "saon": "FLAT 11",
+            "street": "BRUNSWICK TERRACE",
+            "town": "HOVE",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/flat-maisonette",
+            "label": [
+              {
+                "_value": "Flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "flat-maisonette",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 02 Jul 1999",
+          "transactionId": "E21424E4-7730-4095-87A4-D865EDBF1071",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "itemsPerPage": 25,
+      "next": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=1&propertyAddress.postcode=BN3%201HA",
+      "page": 0,
+      "startIndex": 1,
+      "type": [
+        "http://purl.org/linked-data/api/vocab#Page"
+      ]
+    }
+  }
+}

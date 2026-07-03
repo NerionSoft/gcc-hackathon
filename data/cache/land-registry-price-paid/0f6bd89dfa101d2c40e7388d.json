@@ -1,0 +1,2547 @@
+{
+  "key": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=BN1%207GG&_pageSize=25",
+  "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=BN1%207GG&_pageSize=25",
+  "retrievedAt": "2026-07-03T12:49:17.039Z",
+  "body": {
+    "format": "linked-data-api",
+    "version": "0.2",
+    "result": {
+      "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=BN1%207GG",
+      "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=BN1%207GG",
+      "extendedMetadataVersion": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=BN1%207GG&_metadata=all",
+      "first": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=0&propertyAddress.postcode=BN1%207GG",
+      "isPartOf": {
+        "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=BN1%207GG",
+        "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=BN1%207GG",
+        "hasPart": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=BN1%207GG",
+        "type": [
+          "http://purl.org/linked-data/api/vocab#ListEndpoint"
+        ]
+      },
+      "items": [
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/7A7FED8B-9CD5-4760-B006-84EF0BCB7D27/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/7A7FED8B-9CD5-4760-B006-84EF0BCB7D27",
+          "newBuild": false,
+          "pricePaid": 57950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e1b918a9a1bdefe1d278dc1bb0e3b359d94de672",
+            "county": "EAST SUSSEX",
+            "district": "BRIGHTON",
+            "locality": "BRIGHTON",
+            "paon": "9",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 06 Sep 1996",
+          "transactionId": "7A7FED8B-9CD5-4760-B006-84EF0BCB7D27",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/4F4F6875-B691-414D-A8CC-9E37B1C3CC89/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/4F4F6875-B691-414D-A8CC-9E37B1C3CC89",
+          "newBuild": false,
+          "pricePaid": 60000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/099d80ec041a4c2df3d9b9e0fa52e819276c4fec",
+            "county": "EAST SUSSEX",
+            "district": "BRIGHTON",
+            "locality": "BRIGHTON",
+            "paon": "61",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 04 Jul 1996",
+          "transactionId": "4F4F6875-B691-414D-A8CC-9E37B1C3CC89",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/478B0176-196D-49E6-91C6-FC2F4CFAA55E/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/478B0176-196D-49E6-91C6-FC2F4CFAA55E",
+          "newBuild": false,
+          "pricePaid": 62000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/51f620c5b14af5c68c6fdcabaf8f48e6fb37fd2f",
+            "county": "EAST SUSSEX",
+            "district": "BRIGHTON",
+            "locality": "BRIGHTON",
+            "paon": "65",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 29 Mar 1996",
+          "transactionId": "478B0176-196D-49E6-91C6-FC2F4CFAA55E",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/7D3EE413-904B-486D-8CEF-DAF7ED0793D9/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/7D3EE413-904B-486D-8CEF-DAF7ED0793D9",
+          "newBuild": false,
+          "pricePaid": 59000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/d1a4e829b8d187cb77d2e32768d5429b5709d98c",
+            "county": "EAST SUSSEX",
+            "district": "BRIGHTON",
+            "locality": "BRIGHTON",
+            "paon": "27",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 26 Apr 1996",
+          "transactionId": "7D3EE413-904B-486D-8CEF-DAF7ED0793D9",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/6C010B5C-E3F7-426E-B4D1-B44112A98071/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/6C010B5C-E3F7-426E-B4D1-B44112A98071",
+          "newBuild": false,
+          "pricePaid": 57000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/9f687a27419ae80727fb2588fa2dd0b4d24f492a",
+            "county": "EAST SUSSEX",
+            "district": "BRIGHTON",
+            "locality": "BRIGHTON",
+            "paon": "71",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 07 May 1996",
+          "transactionId": "6C010B5C-E3F7-426E-B4D1-B44112A98071",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/3154C183-28AF-4F6E-A442-9D7AC9F9F276/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/3154C183-28AF-4F6E-A442-9D7AC9F9F276",
+          "newBuild": false,
+          "pricePaid": 59000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/ad81b1fa61c380a0c5f84dc709907ede35bc34fc",
+            "county": "EAST SUSSEX",
+            "district": "BRIGHTON",
+            "locality": "BRIGHTON",
+            "paon": "31",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 25 Jul 1996",
+          "transactionId": "3154C183-28AF-4F6E-A442-9D7AC9F9F276",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/0CB4C291-B85F-40B9-AA5A-BEB3703D54E4/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/0CB4C291-B85F-40B9-AA5A-BEB3703D54E4",
+          "newBuild": false,
+          "pricePaid": 81000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/306d109a88b9db28d5fda25f3d1ae12964b919d9",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "BRIGHTON",
+            "paon": "1B",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 17 Oct 1997",
+          "transactionId": "0CB4C291-B85F-40B9-AA5A-BEB3703D54E4",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/E7B9A296-2E92-401C-B9A7-7243D5040B1F/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/E7B9A296-2E92-401C-B9A7-7243D5040B1F",
+          "newBuild": false,
+          "pricePaid": 113000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/7301ca167192d8cbddb78b90e24b054b33b50421",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "BRIGHTON",
+            "paon": "7",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 14 Dec 1998",
+          "transactionId": "E7B9A296-2E92-401C-B9A7-7243D5040B1F",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/C82D808C-E282-4D85-BCA5-5AB95E99621E/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/C82D808C-E282-4D85-BCA5-5AB95E99621E",
+          "newBuild": false,
+          "pricePaid": 67000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/0150384a7f2ef13aa2609f0d65fbd0ac248393aa",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "BRIGHTON",
+            "paon": "57",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 23 Oct 1998",
+          "transactionId": "C82D808C-E282-4D85-BCA5-5AB95E99621E",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/AA5F007E-7511-4447-BAA8-CFBE605396AC/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/AA5F007E-7511-4447-BAA8-CFBE605396AC",
+          "newBuild": false,
+          "pricePaid": 185000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/0150384a7f2ef13aa2609f0d65fbd0ac248393aa",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "BRIGHTON",
+            "paon": "57",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 15 Aug 2002",
+          "transactionId": "AA5F007E-7511-4447-BAA8-CFBE605396AC",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/97B23C60-2868-42AF-9E3D-B60119A2B51B/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/97B23C60-2868-42AF-9E3D-B60119A2B51B",
+          "newBuild": false,
+          "pricePaid": 81750,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/d001cdf4e7ebaa2992daac06b0cd0d2b5588e01a",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "BRIGHTON",
+            "paon": "75",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 30 Jan 1998",
+          "transactionId": "97B23C60-2868-42AF-9E3D-B60119A2B51B",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/4A61FFBB-424C-41EA-9402-32E27605FB80/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/4A61FFBB-424C-41EA-9402-32E27605FB80",
+          "newBuild": false,
+          "pricePaid": 211600,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/d001cdf4e7ebaa2992daac06b0cd0d2b5588e01a",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "BRIGHTON",
+            "paon": "75",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 09 Sep 2003",
+          "transactionId": "4A61FFBB-424C-41EA-9402-32E27605FB80",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/701505FE-49B5-4A19-B4A0-4F06C41D7099/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/701505FE-49B5-4A19-B4A0-4F06C41D7099",
+          "newBuild": false,
+          "pricePaid": 85000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/44db20c746bb79182c9efad3bbc1a6b9543d1ee0",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "77",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 29 Apr 1999",
+          "transactionId": "701505FE-49B5-4A19-B4A0-4F06C41D7099",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/1C8D3A44-AA9E-4158-AFA7-0F9030D98E0A/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/1C8D3A44-AA9E-4158-AFA7-0F9030D98E0A",
+          "newBuild": false,
+          "pricePaid": 387000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/44db20c746bb79182c9efad3bbc1a6b9543d1ee0",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "77",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 24 Jul 2015",
+          "transactionId": "1C8D3A44-AA9E-4158-AFA7-0F9030D98E0A",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/63A4BD1C-BFBF-449D-AFF5-9DA394D06AB5/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/63A4BD1C-BFBF-449D-AFF5-9DA394D06AB5",
+          "newBuild": false,
+          "pricePaid": 72250,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c40b96378ddca6c4d62cd695b6a016ca1b045fbf",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "25",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 18 Jun 1999",
+          "transactionId": "63A4BD1C-BFBF-449D-AFF5-9DA394D06AB5",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/98C75471-BCE4-72E9-E053-6B04A8C042F0/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/98C75471-BCE4-72E9-E053-6B04A8C042F0",
+          "newBuild": false,
+          "pricePaid": 450500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c40b96378ddca6c4d62cd695b6a016ca1b045fbf",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "25",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 08 Nov 2019",
+          "transactionId": "98C75471-BCE4-72E9-E053-6B04A8C042F0",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/6C8842C9-5CB7-487D-9648-71D27629B118/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/6C8842C9-5CB7-487D-9648-71D27629B118",
+          "newBuild": false,
+          "pricePaid": 80000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/212908d716e9dc3ac99ffd5e212cb425aeff9807",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "5",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 30 Mar 1999",
+          "transactionId": "6C8842C9-5CB7-487D-9648-71D27629B118",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/3A244CA8-E971-4B18-B69C-479F296CC087/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/3A244CA8-E971-4B18-B69C-479F296CC087",
+          "newBuild": false,
+          "pricePaid": 112000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/620fda06261337eed3a804e4ee663ff5f4c54885",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "53",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 15 Aug 2000",
+          "transactionId": "3A244CA8-E971-4B18-B69C-479F296CC087",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/1C3E72FE-0F47-F410-E063-4804A8C0DFA6/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/1C3E72FE-0F47-F410-E063-4804A8C0DFA6",
+          "newBuild": false,
+          "pricePaid": 618500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/620fda06261337eed3a804e4ee663ff5f4c54885",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "53",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 25 Jan 2024",
+          "transactionId": "1C3E72FE-0F47-F410-E063-4804A8C0DFA6",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/CF479CE9-253B-4EEE-A2E0-ED719DD63A21/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/CF479CE9-253B-4EEE-A2E0-ED719DD63A21",
+          "newBuild": false,
+          "pricePaid": 139950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/f623b69538e3a98768b2b66e9aac93861d878089",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "37",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 30 Jun 2000",
+          "transactionId": "CF479CE9-253B-4EEE-A2E0-ED719DD63A21",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/2D9DCF25-F0F8-48FC-945F-79CEDA4E44CB/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/2D9DCF25-F0F8-48FC-945F-79CEDA4E44CB",
+          "newBuild": false,
+          "pricePaid": 149000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6a33e38a53498c2165abd4822c388a5f651d2a52",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "9",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 16 Nov 2000",
+          "transactionId": "2D9DCF25-F0F8-48FC-945F-79CEDA4E44CB",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/BC8936BB-F652-0E2C-E053-6C04A8C0DBF4/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/BC8936BB-F652-0E2C-E053-6C04A8C0DBF4",
+          "newBuild": false,
+          "pricePaid": 537000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6a33e38a53498c2165abd4822c388a5f651d2a52",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "paon": "9",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 11 Dec 2020",
+          "transactionId": "BC8936BB-F652-0E2C-E053-6C04A8C0DBF4",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/26F4B265-F9C8-4EE3-ABFF-86D029A889AB/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/26F4B265-F9C8-4EE3-ABFF-86D029A889AB",
+          "newBuild": false,
+          "pricePaid": 149950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c64c0409085c5f8970798dae06ec37145994015c",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "BRIGHTON",
+            "paon": "27",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 05 Oct 2001",
+          "transactionId": "26F4B265-F9C8-4EE3-ABFF-86D029A889AB",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/0AD92978-DA75-446B-8E69-5A95A6259BF9/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/0AD92978-DA75-446B-8E69-5A95A6259BF9",
+          "newBuild": false,
+          "pricePaid": 176500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c64c0409085c5f8970798dae06ec37145994015c",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "BRIGHTON",
+            "paon": "27",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 19 Feb 2003",
+          "transactionId": "0AD92978-DA75-446B-8E69-5A95A6259BF9",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/6FA4882C-5ADE-4933-90F6-223D8321ADF6/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/6FA4882C-5ADE-4933-90F6-223D8321ADF6",
+          "newBuild": false,
+          "pricePaid": 168000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/1ed3e84f2c882b5d5c4d40b299e342e7ea0612ad",
+            "county": "BRIGHTON AND HOVE",
+            "district": "BRIGHTON AND HOVE",
+            "locality": "BRIGHTON",
+            "paon": "23",
+            "postcode": "BN1 7GG",
+            "street": "HERTFORD ROAD",
+            "town": "BRIGHTON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 18 Dec 2001",
+          "transactionId": "6FA4882C-5ADE-4933-90F6-223D8321ADF6",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "itemsPerPage": 25,
+      "next": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=1&propertyAddress.postcode=BN1%207GG",
+      "page": 0,
+      "startIndex": 1,
+      "type": [
+        "http://purl.org/linked-data/api/vocab#Page"
+      ]
+    }
+  }
+}

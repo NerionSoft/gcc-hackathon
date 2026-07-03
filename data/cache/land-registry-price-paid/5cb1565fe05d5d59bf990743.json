@@ -1,0 +1,2551 @@
+{
+  "key": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=HU5%203NN&_pageSize=25",
+  "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=HU5%203NN&_pageSize=25",
+  "retrievedAt": "2026-07-03T12:59:08.547Z",
+  "body": {
+    "format": "linked-data-api",
+    "version": "0.2",
+    "result": {
+      "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=HU5%203NN",
+      "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=HU5%203NN",
+      "extendedMetadataVersion": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=HU5%203NN&_metadata=all",
+      "first": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=0&propertyAddress.postcode=HU5%203NN",
+      "isPartOf": {
+        "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=HU5%203NN",
+        "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=HU5%203NN",
+        "hasPart": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=HU5%203NN",
+        "type": [
+          "http://purl.org/linked-data/api/vocab#ListEndpoint"
+        ]
+      },
+      "items": [
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/BA68D506-A285-4E15-8BAA-45B29471DEEA/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/BA68D506-A285-4E15-8BAA-45B29471DEEA",
+          "newBuild": false,
+          "pricePaid": 24950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6fe1fa52f8cc77d6427520f5fb05d30628fd9f7f",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "2",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 08 May 1996",
+          "transactionId": "BA68D506-A285-4E15-8BAA-45B29471DEEA",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/B69E3118-8C08-4F7F-8567-0FA94FE13015/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/B69E3118-8C08-4F7F-8567-0FA94FE13015",
+          "newBuild": false,
+          "pricePaid": 26950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6fe1fa52f8cc77d6427520f5fb05d30628fd9f7f",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "2",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 26 Apr 2002",
+          "transactionId": "B69E3118-8C08-4F7F-8567-0FA94FE13015",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/FB695BFC-1659-46E5-B4F6-D51843FF7876/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/FB695BFC-1659-46E5-B4F6-D51843FF7876",
+          "newBuild": false,
+          "pricePaid": 18000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e428c7a8f2360b714a9feb0fc5fb2467b7a5339a",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "paon": "1",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 31 Aug 2000",
+          "transactionId": "FB695BFC-1659-46E5-B4F6-D51843FF7876",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/A11377AD-555B-4589-A769-23C29A9053A0/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/A11377AD-555B-4589-A769-23C29A9053A0",
+          "newBuild": false,
+          "pricePaid": 25950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/adbfeb0c23f332a941d672608a3f99f70b6d3049",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "9",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 26 Jul 2002",
+          "transactionId": "A11377AD-555B-4589-A769-23C29A9053A0",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/B1B93262-0C4A-42F6-8071-036C867DD73E/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/B1B93262-0C4A-42F6-8071-036C867DD73E",
+          "newBuild": false,
+          "pricePaid": 66500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/adbfeb0c23f332a941d672608a3f99f70b6d3049",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "9",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 05 Jul 2006",
+          "transactionId": "B1B93262-0C4A-42F6-8071-036C867DD73E",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/2CE5DD7C-5A0B-4C7F-850F-FAD24B158305/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/2CE5DD7C-5A0B-4C7F-850F-FAD24B158305",
+          "newBuild": false,
+          "pricePaid": 22950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6d70ff80851df8ed9e881afcdc2096cddb2bd4e3",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "8",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 10 Apr 2002",
+          "transactionId": "2CE5DD7C-5A0B-4C7F-850F-FAD24B158305",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/EC70E8F4-006B-44C0-A405-C77DDC2F72A6/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/EC70E8F4-006B-44C0-A405-C77DDC2F72A6",
+          "newBuild": false,
+          "pricePaid": 63050,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6d70ff80851df8ed9e881afcdc2096cddb2bd4e3",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "8",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 16 Jul 2004",
+          "transactionId": "EC70E8F4-006B-44C0-A405-C77DDC2F72A6",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/01C7934C-0D7B-45D2-9834-3E42F06E1261/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/01C7934C-0D7B-45D2-9834-3E42F06E1261",
+          "newBuild": false,
+          "pricePaid": 26250,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c51a4215eaaa8c914d5909399b5f3b81df258b38",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "11",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 13 Nov 2003",
+          "transactionId": "01C7934C-0D7B-45D2-9834-3E42F06E1261",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/6D0F25FF-1D96-46AC-96CC-490B7C7DFD13/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/6D0F25FF-1D96-46AC-96CC-490B7C7DFD13",
+          "newBuild": false,
+          "pricePaid": 39950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c51a4215eaaa8c914d5909399b5f3b81df258b38",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "11",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 13 Nov 2003",
+          "transactionId": "6D0F25FF-1D96-46AC-96CC-490B7C7DFD13",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/22257AF1-EA77-4173-BA42-8138CEB96432/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/22257AF1-EA77-4173-BA42-8138CEB96432",
+          "newBuild": false,
+          "pricePaid": 64995,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c51a4215eaaa8c914d5909399b5f3b81df258b38",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "11",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 29 Jul 2005",
+          "transactionId": "22257AF1-EA77-4173-BA42-8138CEB96432",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/F42F088C-FF4A-4084-90B3-98F27C888398/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/F42F088C-FF4A-4084-90B3-98F27C888398",
+          "newBuild": false,
+          "pricePaid": 15000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/800e63564823b008bdf4fbc594ef982318995f8c",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "5",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 30 Mar 2004",
+          "transactionId": "F42F088C-FF4A-4084-90B3-98F27C888398",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/FC1235B7-FEEB-4EB0-A307-15B7994A1054/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/FC1235B7-FEEB-4EB0-A307-15B7994A1054",
+          "newBuild": false,
+          "pricePaid": 62000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/800e63564823b008bdf4fbc594ef982318995f8c",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "5",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 28 Oct 2005",
+          "transactionId": "FC1235B7-FEEB-4EB0-A307-15B7994A1054",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/61289C84-1548-44D4-A0CA-54479620539B/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/61289C84-1548-44D4-A0CA-54479620539B",
+          "newBuild": false,
+          "pricePaid": 85950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/800e63564823b008bdf4fbc594ef982318995f8c",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "5",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 23 Oct 2006",
+          "transactionId": "61289C84-1548-44D4-A0CA-54479620539B",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/32132C0D-DE9F-4CA9-969C-D05D17AE6574/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/32132C0D-DE9F-4CA9-969C-D05D17AE6574",
+          "newBuild": false,
+          "pricePaid": 59000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/b3d97be85a906cc9858dd5ff6de492c0a4119822",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "6",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 01 Mar 2004",
+          "transactionId": "32132C0D-DE9F-4CA9-969C-D05D17AE6574",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/10E3A88A-FF8D-4553-B640-FA2415A29179/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/10E3A88A-FF8D-4553-B640-FA2415A29179",
+          "newBuild": false,
+          "pricePaid": 87000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/b3d97be85a906cc9858dd5ff6de492c0a4119822",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "6",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 11 Aug 2006",
+          "transactionId": "10E3A88A-FF8D-4553-B640-FA2415A29179",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/76E708EF-5FA4-4972-89F1-CCBDE09BC442/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/76E708EF-5FA4-4972-89F1-CCBDE09BC442",
+          "newBuild": false,
+          "pricePaid": 49000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e8e91050738169583474e8bdb29cb6b9b8d01d44",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "14",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 24 May 2004",
+          "transactionId": "76E708EF-5FA4-4972-89F1-CCBDE09BC442",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/61BCEFE6-E175-48BA-8573-3FD93973A620/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/61BCEFE6-E175-48BA-8573-3FD93973A620",
+          "newBuild": false,
+          "pricePaid": 64000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/9091828b4435f444681a2762cb9aab5603cf5660",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "15",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 12 Jul 2005",
+          "transactionId": "61BCEFE6-E175-48BA-8573-3FD93973A620",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/75913767-7D62-4BF7-81DF-09CD5E762F7D/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/75913767-7D62-4BF7-81DF-09CD5E762F7D",
+          "newBuild": false,
+          "pricePaid": 68000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/997376daaaca3e97a1fe007a2ca6d815b9c7f2f3",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "17",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 31 May 2005",
+          "transactionId": "75913767-7D62-4BF7-81DF-09CD5E762F7D",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/8EC26A0D-6CC4-41C4-AA3E-E7D45D7A93E9/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/8EC26A0D-6CC4-41C4-AA3E-E7D45D7A93E9",
+          "newBuild": false,
+          "pricePaid": 84950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/997376daaaca3e97a1fe007a2ca6d815b9c7f2f3",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "17",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 01 Aug 2007",
+          "transactionId": "8EC26A0D-6CC4-41C4-AA3E-E7D45D7A93E9",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/A9F9DF0E-411C-4BE7-A156-24F08FBC4119/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/A9F9DF0E-411C-4BE7-A156-24F08FBC4119",
+          "newBuild": false,
+          "pricePaid": 62000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6e82bf52328f279590e3b1d62026bbb678bd31c8",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "locality": "HULL",
+            "paon": "13",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 18 Dec 2006",
+          "transactionId": "A9F9DF0E-411C-4BE7-A156-24F08FBC4119",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/0435D833-3A37-46F5-9952-3E3C66D1D477/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/0435D833-3A37-46F5-9952-3E3C66D1D477",
+          "newBuild": false,
+          "pricePaid": 65000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/fc5457e1acb96c16c56e9f2db13bfde33ff2bc10",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "paon": "15",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 24 Sep 2010",
+          "transactionId": "0435D833-3A37-46F5-9952-3E3C66D1D477",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/D15EB830-1D9F-4E8A-AA88-117BD226FEB7/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/D15EB830-1D9F-4E8A-AA88-117BD226FEB7",
+          "newBuild": false,
+          "pricePaid": 48000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/4c2943b6d515d641b315271b4bd4b554f5b2c177",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "paon": "3",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 22 Nov 2013",
+          "transactionId": "D15EB830-1D9F-4E8A-AA88-117BD226FEB7",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/CB594C20-1FD6-41F0-B89E-5BC389E7271B/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/CB594C20-1FD6-41F0-B89E-5BC389E7271B",
+          "newBuild": false,
+          "pricePaid": 65250,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/4c2943b6d515d641b315271b4bd4b554f5b2c177",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "paon": "3",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 25 Jul 2014",
+          "transactionId": "CB594C20-1FD6-41F0-B89E-5BC389E7271B",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/82ABCA11-0E33-4788-BC10-33843EEC4435/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/82ABCA11-0E33-4788-BC10-33843EEC4435",
+          "newBuild": false,
+          "pricePaid": 68000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/9dc274ae026efcdd0ae629aa551e795bba34cd6a",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "paon": "6",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 23 Dec 2014",
+          "transactionId": "82ABCA11-0E33-4788-BC10-33843EEC4435",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/55BDCAE6-054D-521D-E053-6B04A8C0DD7A/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/55BDCAE6-054D-521D-E053-6B04A8C0DD7A",
+          "newBuild": false,
+          "pricePaid": 59000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/91e3cd80c63041ed51dbd3f57f9661ae38203e78",
+            "county": "CITY OF KINGSTON UPON HULL",
+            "district": "CITY OF KINGSTON UPON HULL",
+            "paon": "9",
+            "postcode": "HU5 3NN",
+            "street": "LANARK STREET",
+            "town": "HULL",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 06 Jun 2017",
+          "transactionId": "55BDCAE6-054D-521D-E053-6B04A8C0DD7A",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "itemsPerPage": 25,
+      "next": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=1&propertyAddress.postcode=HU5%203NN",
+      "page": 0,
+      "startIndex": 1,
+      "type": [
+        "http://purl.org/linked-data/api/vocab#Page"
+      ]
+    }
+  }
+}

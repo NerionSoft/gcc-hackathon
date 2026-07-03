@@ -4,8 +4,15 @@ import { toConnectorError } from "@/connectors/base";
 import { okResult, type ConnectorMeta, type ConnectorResult } from "@/connectors/types";
 
 /**
- * police.uk street-level crime around a point (1-mile radius), by month.
- * No key required. Used for the BLOCK-INCIDENT signal. Data lags ~2 months.
+ * police.uk street-level crime, by month, within a small block-sized
+ * polygon (~450 m square) around the point — the default lat/lng endpoint
+ * uses a fixed 1-mile radius, which swamps urban blocks with thousands of
+ * unrelated records. No key required. Used for the BLOCK-INCIDENT signal.
+ * Data lags ~2 months.
+ *
+ * The connector returns one aggregate record per month (totals + category
+ * breakdown), which is what the severity rubric consumes; per-incident raw
+ * data stays in the response cache.
  */
 
 export const meta: ConnectorMeta = {
@@ -19,15 +26,15 @@ export const meta: ConnectorMeta = {
 
 const rawItemsSchema = z.array(z.record(z.string(), z.unknown()));
 
-export const streetCrimeSchema = z.object({
-  id: z.number(),
-  category: z.string(),
+export const crimeSummarySchema = z.object({
   month: z.string(),
-  streetName: z.string().nullable(),
-  outcome: z.string().nullable(),
+  totalIncidents: z.number(),
+  byCategory: z.record(z.string(), z.number()),
+  /** Up to five distinct street names with incidents, for readable findings. */
+  sampleStreets: z.array(z.string()),
   recordUrl: z.string(),
 });
-export type StreetCrime = z.infer<typeof streetCrimeSchema>;
+export type CrimeSummary = z.infer<typeof crimeSummarySchema>;
 
 /**
  * @param month "YYYY-MM"; police.uk publishes with ~2 months' lag.
@@ -36,8 +43,16 @@ export async function streetCrimesNear(
   lat: number,
   lng: number,
   month: string,
-): Promise<ConnectorResult<StreetCrime>> {
-  const url = `${meta.endpoint}?lat=${lat}&lng=${lng}&date=${month}`;
+): Promise<ConnectorResult<CrimeSummary>> {
+  const dLat = 0.002; // ≈ 220 m
+  const dLng = 0.0032;
+  const poly = [
+    `${lat - dLat},${lng - dLng}`,
+    `${lat - dLat},${lng + dLng}`,
+    `${lat + dLat},${lng + dLng}`,
+    `${lat + dLat},${lng - dLng}`,
+  ].join(":");
+  const url = `${meta.endpoint}?poly=${poly}&date=${month}`;
   // police.uk asks for modest request rates on the open endpoint.
   const fetched = await fetchJson(url, { sourceId: meta.id, minIntervalMs: 600 });
   if (!fetched.ok) return toConnectorError(meta, fetched);
@@ -55,33 +70,28 @@ export async function streetCrimesNear(
     };
   }
 
-  const records: StreetCrime[] = [];
+  const byCategory: Record<string, number> = {};
+  const streets = new Set<string>();
   for (const raw of items.data) {
-    const id = typeof raw["id"] === "number" ? raw["id"] : null;
-    const category = typeof raw["category"] === "string" ? raw["category"] : null;
-    if (id === null || !category) continue;
+    const category = typeof raw["category"] === "string" ? raw["category"] : "unknown";
+    byCategory[category] = (byCategory[category] ?? 0) + 1;
     const location = raw["location"] as { street?: { name?: unknown } } | undefined;
-    const streetName = typeof location?.street?.name === "string" ? location.street.name : null;
-    const outcomeStatus = raw["outcome_status"] as { category?: unknown } | null | undefined;
-    records.push(
-      streetCrimeSchema.parse({
-        id,
-        category,
-        month: typeof raw["month"] === "string" ? raw["month"] : month,
-        streetName,
-        outcome: typeof outcomeStatus?.category === "string" ? outcomeStatus.category : null,
-        recordUrl: `https://data.police.uk/api/crimes-street/all-crime?lat=${lat}&lng=${lng}&date=${month}#${id}`,
-      }),
-    );
+    if (typeof location?.street?.name === "string" && streets.size < 5) {
+      streets.add(location.street.name);
+    }
   }
 
+  const summary = crimeSummarySchema.parse({
+    month,
+    totalIncidents: items.data.length,
+    byCategory,
+    sampleStreets: [...streets],
+    recordUrl: fetched.url,
+  });
+
   return okResult(
-    {
-      dataset: meta.dataset,
-      url: fetched.url,
-      licence: meta.licence,
-      fromCache: fetched.fromCache,
-    },
-    records,
+    { dataset: meta.dataset, url: fetched.url, licence: meta.licence, fromCache: fetched.fromCache },
+    // A month with zero incidents is still a real, sourced observation.
+    [summary],
   );
 }

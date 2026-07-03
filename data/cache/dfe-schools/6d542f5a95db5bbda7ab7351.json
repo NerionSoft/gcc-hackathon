@@ -1,0 +1,127 @@
+{
+  "key": "district:SE12",
+  "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=SE12",
+  "retrievedAt": "2026-07-03T12:48:56.773Z",
+  "body": [
+    {
+      "urn": "100200",
+      "name": "Riverston School",
+      "localAuthority": "Greenwich",
+      "postcode": "SE12 8UF",
+      "phase": "Not applicable",
+      "establishmentType": "Other independent school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100200"
+    },
+    {
+      "urn": "100202",
+      "name": "Colfe's School",
+      "localAuthority": "Greenwich",
+      "postcode": "SE12 8AW",
+      "phase": "Not applicable",
+      "establishmentType": "Other independent school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100202"
+    },
+    {
+      "urn": "100673",
+      "name": "Baring Primary School",
+      "localAuthority": "Lewisham",
+      "postcode": "SE12 0NB",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100673"
+    },
+    {
+      "urn": "100676",
+      "name": "Cooper's Lane Primary School",
+      "localAuthority": "Lewisham",
+      "postcode": "SE12 0LF",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100676"
+    },
+    {
+      "urn": "100696",
+      "name": "Marvels Lane Primary School",
+      "localAuthority": "Lewisham",
+      "postcode": "SE12 9RA",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100696"
+    },
+    {
+      "urn": "100717",
+      "name": "Brindishe Lee School",
+      "localAuthority": "Lewisham",
+      "postcode": "SE12 8NA",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100717"
+    },
+    {
+      "urn": "100749",
+      "name": "Trinity Church of England School, Lewisham",
+      "localAuthority": "Lewisham",
+      "postcode": "SE12 8PD",
+      "phase": "All-through",
+      "establishmentType": "Voluntary aided school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/100749"
+    },
+    {
+      "urn": "130856",
+      "name": "Abbey Manor College",
+      "localAuthority": "Lewisham",
+      "postcode": "SE12 8JP",
+      "phase": "Not applicable",
+      "establishmentType": "Pupil referral unit",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/130856"
+    },
+    {
+      "urn": "142456",
+      "name": "St Winifred's RC Primary School",
+      "localAuthority": "Lewisham",
+      "postcode": "SE12 0SJ",
+      "phase": "Primary",
+      "establishmentType": "Voluntary aided school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/142456"
+    },
+    {
+      "urn": "143598",
+      "name": "Horn Park Primary School",
+      "localAuthority": "Greenwich",
+      "postcode": "SE12 9BT",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/143598"
+    }
+  ]
+}

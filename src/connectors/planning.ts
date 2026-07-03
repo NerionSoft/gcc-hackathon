@@ -51,7 +51,9 @@ export async function entitiesAtPoint(
   datasets: readonly string[] = DEFAULT_DATASETS,
 ): Promise<ConnectorResult<PlanningEntity>> {
   const datasetParams = datasets.map((d) => `dataset=${encodeURIComponent(d)}`).join("&");
-  const url = `${meta.endpoint}?latitude=${lat}&longitude=${lng}&${datasetParams}&limit=100`;
+  // exclude_field keeps the (large) polygon geometries out of the cache;
+  // the entity URL still leads to the full record.
+  const url = `${meta.endpoint}?latitude=${lat}&longitude=${lng}&${datasetParams}&limit=100&exclude_field=geometry,point`;
   const fetched = await fetchJson(url, { sourceId: meta.id });
   if (!fetched.ok) return toConnectorError(meta, fetched);
 

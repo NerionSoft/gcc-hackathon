@@ -1,0 +1,1741 @@
+{
+  "key": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=N1%208DJ&_pageSize=25",
+  "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=N1%208DJ&_pageSize=25",
+  "retrievedAt": "2026-07-03T13:03:41.836Z",
+  "body": {
+    "format": "linked-data-api",
+    "version": "0.2",
+    "result": {
+      "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=N1%208DJ",
+      "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=N1%208DJ",
+      "extendedMetadataVersion": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=N1%208DJ&_metadata=all",
+      "first": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=0&propertyAddress.postcode=N1%208DJ",
+      "isPartOf": {
+        "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=N1%208DJ",
+        "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=N1%208DJ",
+        "hasPart": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=N1%208DJ",
+        "type": [
+          "http://purl.org/linked-data/api/vocab#ListEndpoint"
+        ]
+      },
+      "items": [
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/E031ACB5-B188-4571-9A9B-1C6A8D1F0796/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/E031ACB5-B188-4571-9A9B-1C6A8D1F0796",
+          "newBuild": false,
+          "pricePaid": 212500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/924ef475f8f37ee74be05874770565b7ce951c61",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "7",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 11 Apr 1996",
+          "transactionId": "E031ACB5-B188-4571-9A9B-1C6A8D1F0796",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/768811A4-ABC6-41E5-AB6E-E0A4110D2F0F/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/768811A4-ABC6-41E5-AB6E-E0A4110D2F0F",
+          "newBuild": false,
+          "pricePaid": 300000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/924ef475f8f37ee74be05874770565b7ce951c61",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "7",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 30 Jul 1998",
+          "transactionId": "768811A4-ABC6-41E5-AB6E-E0A4110D2F0F",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/EDA6F1C4-1757-414A-A426-D6179E471643/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/EDA6F1C4-1757-414A-A426-D6179E471643",
+          "newBuild": false,
+          "pricePaid": 230000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/3c95e2df0f3dc8ebb880004c3433d1cef13bcaf0",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "11",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 04 Sep 1996",
+          "transactionId": "EDA6F1C4-1757-414A-A426-D6179E471643",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/3D25A349-1A47-4F42-9602-BCE822B146E5/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/3D25A349-1A47-4F42-9602-BCE822B146E5",
+          "newBuild": false,
+          "pricePaid": 315000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/1bbaf0884b307a82646163675c2b860982166669",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "4",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 18 Dec 1998",
+          "transactionId": "3D25A349-1A47-4F42-9602-BCE822B146E5",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/8A329D8B-23F4-4FFE-8F8C-0AAB6CFF9AC2/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/8A329D8B-23F4-4FFE-8F8C-0AAB6CFF9AC2",
+          "newBuild": false,
+          "pricePaid": 725000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/1bbaf0884b307a82646163675c2b860982166669",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "4",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 29 Feb 2008",
+          "transactionId": "8A329D8B-23F4-4FFE-8F8C-0AAB6CFF9AC2",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/4B97DF91-5B93-46B2-A5A1-796BE124356B/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/4B97DF91-5B93-46B2-A5A1-796BE124356B",
+          "newBuild": false,
+          "pricePaid": 269950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/38ee687c7fcfd6284fead9107c98a72bdeff9636",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "10",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 11 Jun 1998",
+          "transactionId": "4B97DF91-5B93-46B2-A5A1-796BE124356B",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/C257F0EC-0E45-4FE8-8830-909D97697807/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/C257F0EC-0E45-4FE8-8830-909D97697807",
+          "newBuild": false,
+          "pricePaid": 302000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/2c695277fb25c66b59ce16d8a801a72a455783eb",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "paon": "1",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 01 Dec 1999",
+          "transactionId": "C257F0EC-0E45-4FE8-8830-909D97697807",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/31C68071-AA4D-FEE3-E063-4804A8C04F37/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/31C68071-AA4D-FEE3-E063-4804A8C04F37",
+          "newBuild": false,
+          "pricePaid": 1375000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/2c695277fb25c66b59ce16d8a801a72a455783eb",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "paon": "1",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 14 Feb 2025",
+          "transactionId": "31C68071-AA4D-FEE3-E063-4804A8C04F37",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/C5E7230F-AAF2-47AF-B96F-E9E766D4982D/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/C5E7230F-AAF2-47AF-B96F-E9E766D4982D",
+          "newBuild": false,
+          "pricePaid": 317000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e0858da99e50ab8b5b5cce4f4a058da01cc9fda1",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "paon": "9",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 27 Oct 1999",
+          "transactionId": "C5E7230F-AAF2-47AF-B96F-E9E766D4982D",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/F31AD534-7478-4677-9F4B-922160C17299/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/F31AD534-7478-4677-9F4B-922160C17299",
+          "newBuild": false,
+          "pricePaid": 409000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/19eebb742b5ec3ce88c2f650b78fa900e3a3da4c",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "paon": "4",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 18 Aug 2000",
+          "transactionId": "F31AD534-7478-4677-9F4B-922160C17299",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/1EAE3DF6-B10B-9EB1-E063-4704A8C09D02/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/1EAE3DF6-B10B-9EB1-E063-4704A8C09D02",
+          "newBuild": false,
+          "pricePaid": 1330000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/19eebb742b5ec3ce88c2f650b78fa900e3a3da4c",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "paon": "4",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 14 Jun 2024",
+          "transactionId": "1EAE3DF6-B10B-9EB1-E063-4704A8C09D02",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/A699A3E0-9C23-454D-9267-8E35BAF430A4/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/A699A3E0-9C23-454D-9267-8E35BAF430A4",
+          "newBuild": false,
+          "pricePaid": 495000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/4a9ced64954d71074d79de01df145f83b1f183b2",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "1",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 29 Oct 2004",
+          "transactionId": "A699A3E0-9C23-454D-9267-8E35BAF430A4",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/598DD78D-314D-43D5-A76D-A51E81A586CF/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/598DD78D-314D-43D5-A76D-A51E81A586CF",
+          "newBuild": false,
+          "pricePaid": 595000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e7d12d371c669cdd8da3c35abd9b185aa51ba803",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "8",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 30 Jun 2006",
+          "transactionId": "598DD78D-314D-43D5-A76D-A51E81A586CF",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/77F71805-A512-4049-A3DE-4DA6F2B8BF95/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/77F71805-A512-4049-A3DE-4DA6F2B8BF95",
+          "newBuild": false,
+          "pricePaid": 220000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/482123097356921a99d8fdd48979b8c82f1a792c",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "3",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 29 Sep 1995",
+          "transactionId": "77F71805-A512-4049-A3DE-4DA6F2B8BF95",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/64B7ADFB-C735-4AB5-AAD2-A579EE9E3140/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/64B7ADFB-C735-4AB5-AAD2-A579EE9E3140",
+          "newBuild": false,
+          "pricePaid": 180000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/2add67074d3e419f33667b8d384e12e87fa418aa",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "locality": "LONDON",
+            "paon": "2",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 24 Apr 1995",
+          "transactionId": "64B7ADFB-C735-4AB5-AAD2-A579EE9E3140",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/E53EDD2E-029A-83EC-E053-6B04A8C03A59/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/E53EDD2E-029A-83EC-E053-6B04A8C03A59",
+          "newBuild": false,
+          "pricePaid": 1245000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/a75ff57375f3d0268c5ff21956eb2daff947dcd4",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "paon": "10",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 20 Jun 2022",
+          "transactionId": "E53EDD2E-029A-83EC-E053-6B04A8C03A59",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/2859C1AC-D51C-52B4-E063-4804A8C05948/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/2859C1AC-D51C-52B4-E063-4804A8C05948",
+          "newBuild": false,
+          "pricePaid": 1165000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/04a3d63c18cbdcea25f705bfc6885ec49694ab49",
+            "county": "GREATER LONDON",
+            "district": "ISLINGTON",
+            "paon": "12",
+            "postcode": "N1 8DJ",
+            "street": "COOMBS STREET",
+            "town": "LONDON",
+            "type": [
+              "http://landregistry.data.gov.uk/def/common/BS7666Address"
+            ]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/additionalPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Additional price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Additional price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 08 Jan 2024",
+          "transactionId": "2859C1AC-D51C-52B4-E063-4804A8C05948",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "itemsPerPage": 25,
+      "page": 0,
+      "startIndex": 1,
+      "type": [
+        "http://purl.org/linked-data/api/vocab#Page"
+      ]
+    }
+  }
+}

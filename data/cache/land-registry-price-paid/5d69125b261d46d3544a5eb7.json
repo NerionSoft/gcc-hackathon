@@ -1,0 +1,2501 @@
+{
+  "key": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=TS1%204PG&_pageSize=25",
+  "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=TS1%204PG&_pageSize=25",
+  "retrievedAt": "2026-07-03T12:43:33.541Z",
+  "body": {
+    "format": "linked-data-api",
+    "version": "0.2",
+    "result": {
+      "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=TS1%204PG",
+      "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=TS1%204PG",
+      "extendedMetadataVersion": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=TS1%204PG&_metadata=all",
+      "first": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=0&propertyAddress.postcode=TS1%204PG",
+      "isPartOf": {
+        "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=TS1%204PG",
+        "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=TS1%204PG",
+        "hasPart": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=TS1%204PG",
+        "type": ["http://purl.org/linked-data/api/vocab#ListEndpoint"]
+      },
+      "items": [
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/59AF70B1-3FA5-4BA9-83DB-F1A8D528390F/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/59AF70B1-3FA5-4BA9-83DB-F1A8D528390F",
+          "newBuild": false,
+          "pricePaid": 28000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/9cc52986c54beb5329740bba6f05eed66a58cd3c",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "81",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 03 Oct 1996",
+          "transactionId": "59AF70B1-3FA5-4BA9-83DB-F1A8D528390F",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/DEBDEF65-2559-4F0B-AF7E-433E1E9E5E5A/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/DEBDEF65-2559-4F0B-AF7E-433E1E9E5E5A",
+          "newBuild": false,
+          "pricePaid": 58000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/9cc52986c54beb5329740bba6f05eed66a58cd3c",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "81",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 09 Mar 2006",
+          "transactionId": "DEBDEF65-2559-4F0B-AF7E-433E1E9E5E5A",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/9F31EE60-7DB3-44CE-A4FD-530912942B8F/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/9F31EE60-7DB3-44CE-A4FD-530912942B8F",
+          "newBuild": false,
+          "pricePaid": 28200,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6bfcd3d6c99d4f6661daf1cb03fa13cb631bd8de",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "64",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 10 Apr 1996",
+          "transactionId": "9F31EE60-7DB3-44CE-A4FD-530912942B8F",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/E89729A7-9CFE-48A2-8ECD-DF04B804C0D9/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/E89729A7-9CFE-48A2-8ECD-DF04B804C0D9",
+          "newBuild": false,
+          "pricePaid": 25000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6bfcd3d6c99d4f6661daf1cb03fa13cb631bd8de",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "64",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 28 Mar 2002",
+          "transactionId": "E89729A7-9CFE-48A2-8ECD-DF04B804C0D9",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/3E1B9E17-DC4A-4545-870C-56CA2333AC55/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/3E1B9E17-DC4A-4545-870C-56CA2333AC55",
+          "newBuild": false,
+          "pricePaid": 73000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6bfcd3d6c99d4f6661daf1cb03fa13cb631bd8de",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "64",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 22 Sep 2006",
+          "transactionId": "3E1B9E17-DC4A-4545-870C-56CA2333AC55",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/39E2B7EB-C125-4388-A6D5-305B7F44A587/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/39E2B7EB-C125-4388-A6D5-305B7F44A587",
+          "newBuild": false,
+          "pricePaid": 20500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e3b64a384b2383c2cde7e1666f18bc3ce92e381d",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "51",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 27 Jun 1996",
+          "transactionId": "39E2B7EB-C125-4388-A6D5-305B7F44A587",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/DBC9F23F-343C-4A59-939B-6EBA4DE79EC4/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/DBC9F23F-343C-4A59-939B-6EBA4DE79EC4",
+          "newBuild": false,
+          "pricePaid": 19000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e3b64a384b2383c2cde7e1666f18bc3ce92e381d",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "51",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 06 Mar 2001",
+          "transactionId": "DBC9F23F-343C-4A59-939B-6EBA4DE79EC4",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/ABA3FDF1-79C9-4BB4-8FC7-7AD0F0328389/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/ABA3FDF1-79C9-4BB4-8FC7-7AD0F0328389",
+          "newBuild": false,
+          "pricePaid": 32500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e3b64a384b2383c2cde7e1666f18bc3ce92e381d",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "51",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 17 Mar 2004",
+          "transactionId": "ABA3FDF1-79C9-4BB4-8FC7-7AD0F0328389",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/21652F31-9231-440E-8976-6BE8B54C70AF/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/21652F31-9231-440E-8976-6BE8B54C70AF",
+          "newBuild": false,
+          "pricePaid": 71000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e3b64a384b2383c2cde7e1666f18bc3ce92e381d",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "51",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 13 Nov 2007",
+          "transactionId": "21652F31-9231-440E-8976-6BE8B54C70AF",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/FB51FDC5-41C0-45D0-957D-60A9413F45C8/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/FB51FDC5-41C0-45D0-957D-60A9413F45C8",
+          "newBuild": false,
+          "pricePaid": 21500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/3d1b0b214d97398611b02669dc18beaf7798b58b",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "92",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 16 Aug 1996",
+          "transactionId": "FB51FDC5-41C0-45D0-957D-60A9413F45C8",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/4E179C74-010A-4E37-9C6E-2BCD2A8B034C/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/4E179C74-010A-4E37-9C6E-2BCD2A8B034C",
+          "newBuild": false,
+          "pricePaid": 61000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/3d1b0b214d97398611b02669dc18beaf7798b58b",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "92",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 16 Dec 2005",
+          "transactionId": "4E179C74-010A-4E37-9C6E-2BCD2A8B034C",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/6C862039-8BD2-483C-83BE-22B8D7648939/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/6C862039-8BD2-483C-83BE-22B8D7648939",
+          "newBuild": false,
+          "pricePaid": 18500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/48d0113eedc69e1588efee5fd6164713d16077ab",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "79",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 12 Dec 1997",
+          "transactionId": "6C862039-8BD2-483C-83BE-22B8D7648939",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/72E8F8B3-70FE-4229-9F68-2951BB170586/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/72E8F8B3-70FE-4229-9F68-2951BB170586",
+          "newBuild": false,
+          "pricePaid": 24995,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/48d0113eedc69e1588efee5fd6164713d16077ab",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "79",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 01 Jun 1998",
+          "transactionId": "72E8F8B3-70FE-4229-9F68-2951BB170586",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/DE431D8D-4C84-4D8D-8066-0B6491A6BF8B/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/DE431D8D-4C84-4D8D-8066-0B6491A6BF8B",
+          "newBuild": false,
+          "pricePaid": 31950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/48d0113eedc69e1588efee5fd6164713d16077ab",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "79",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 18 Nov 2003",
+          "transactionId": "DE431D8D-4C84-4D8D-8066-0B6491A6BF8B",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/BF43F4C2-44DA-4A4E-A039-FF38034C09B3/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/BF43F4C2-44DA-4A4E-A039-FF38034C09B3",
+          "newBuild": false,
+          "pricePaid": 28500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/21163cf0346bf570bd2f1fc1020fc8b1598755fb",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "56",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 29 Sep 1997",
+          "transactionId": "BF43F4C2-44DA-4A4E-A039-FF38034C09B3",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/F1DFBCA6-233B-487C-8669-B10ABAA14C88/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/F1DFBCA6-233B-487C-8669-B10ABAA14C88",
+          "newBuild": false,
+          "pricePaid": 45995,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/21163cf0346bf570bd2f1fc1020fc8b1598755fb",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "56",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 09 Jun 2004",
+          "transactionId": "F1DFBCA6-233B-487C-8669-B10ABAA14C88",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/51A84F95-5580-4824-96BA-475E296C4A6D/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/51A84F95-5580-4824-96BA-475E296C4A6D",
+          "newBuild": false,
+          "pricePaid": 67000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/21163cf0346bf570bd2f1fc1020fc8b1598755fb",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "56",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 13 Jun 2006",
+          "transactionId": "51A84F95-5580-4824-96BA-475E296C4A6D",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/37C3448C-3807-42A5-954A-B4B9D748C32D/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/37C3448C-3807-42A5-954A-B4B9D748C32D",
+          "newBuild": false,
+          "pricePaid": 31000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/bb1e247549bbf092ca8dee98355302b752e90a82",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "84",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 08 Apr 1997",
+          "transactionId": "37C3448C-3807-42A5-954A-B4B9D748C32D",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/4F172DA0-9606-4013-9973-13FAF6EA812C/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/4F172DA0-9606-4013-9973-13FAF6EA812C",
+          "newBuild": false,
+          "pricePaid": 59000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/bb1e247549bbf092ca8dee98355302b752e90a82",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "84",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 07 Oct 2005",
+          "transactionId": "4F172DA0-9606-4013-9973-13FAF6EA812C",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/2B827021-95EA-4389-B934-CC571DAD2B77/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/2B827021-95EA-4389-B934-CC571DAD2B77",
+          "newBuild": false,
+          "pricePaid": 26500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e4df4c342f088dd5ea1ad082510c8eb12fc03ded",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "50",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 07 Feb 1997",
+          "transactionId": "2B827021-95EA-4389-B934-CC571DAD2B77",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/985F2742-5CC9-403D-9D18-6C3099CA9C18/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/985F2742-5CC9-403D-9D18-6C3099CA9C18",
+          "newBuild": false,
+          "pricePaid": 21000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e4df4c342f088dd5ea1ad082510c8eb12fc03ded",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "50",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 06 Apr 2001",
+          "transactionId": "985F2742-5CC9-403D-9D18-6C3099CA9C18",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/6BF49498-8674-4D07-8B6D-FA362C1188BB/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/6BF49498-8674-4D07-8B6D-FA362C1188BB",
+          "newBuild": false,
+          "pricePaid": 54000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e4df4c342f088dd5ea1ad082510c8eb12fc03ded",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "50",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 13 Apr 2006",
+          "transactionId": "6BF49498-8674-4D07-8B6D-FA362C1188BB",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/4E554B38-1952-4F09-8A7F-331FDC92B986/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/4E554B38-1952-4F09-8A7F-331FDC92B986",
+          "newBuild": false,
+          "pricePaid": 70000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/e4df4c342f088dd5ea1ad082510c8eb12fc03ded",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "locality": "MIDDLESBROUGH",
+            "paon": "50",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 17 Jan 2007",
+          "transactionId": "4E554B38-1952-4F09-8A7F-331FDC92B986",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/36170747-BE94-4D2F-8322-B020756578EB/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/36170747-BE94-4D2F-8322-B020756578EB",
+          "newBuild": false,
+          "pricePaid": 30000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/a154ac49bafdced9340de424f27b11f02a4ccbff",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "paon": "80",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 30 Apr 1999",
+          "transactionId": "36170747-BE94-4D2F-8322-B020756578EB",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/E7B085FB-DE1E-7E31-E053-6C04A8C0E67F/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/E7B085FB-DE1E-7E31-E053-6C04A8C0E67F",
+          "newBuild": false,
+          "pricePaid": 65000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/a154ac49bafdced9340de424f27b11f02a4ccbff",
+            "county": "MIDDLESBROUGH",
+            "district": "MIDDLESBROUGH",
+            "paon": "80",
+            "postcode": "TS1 4PG",
+            "street": "AIRE STREET",
+            "town": "MIDDLESBROUGH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 20 May 2022",
+          "transactionId": "E7B085FB-DE1E-7E31-E053-6C04A8C0E67F",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "itemsPerPage": 25,
+      "next": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=1&propertyAddress.postcode=TS1%204PG",
+      "page": 0,
+      "startIndex": 1,
+      "type": ["http://purl.org/linked-data/api/vocab#Page"]
+    }
+  }
+}

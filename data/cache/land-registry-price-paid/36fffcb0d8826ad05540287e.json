@@ -1,0 +1,2503 @@
+{
+  "key": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=NR29%204AJ&_pageSize=25",
+  "url": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=NR29%204AJ&_pageSize=25",
+  "retrievedAt": "2026-07-03T12:38:16.216Z",
+  "body": {
+    "format": "linked-data-api",
+    "version": "0.2",
+    "result": {
+      "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=NR29%204AJ",
+      "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=NR29%204AJ",
+      "extendedMetadataVersion": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=NR29%204AJ&_metadata=all",
+      "first": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=0&propertyAddress.postcode=NR29%204AJ",
+      "isPartOf": {
+        "_about": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?propertyAddress.postcode=NR29%204AJ",
+        "definition": "https://landregistry.data.gov.uk/meta/data/ppi/transaction-record.json?propertyAddress.postcode=NR29%204AJ",
+        "hasPart": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&propertyAddress.postcode=NR29%204AJ",
+        "type": ["http://purl.org/linked-data/api/vocab#ListEndpoint"]
+      },
+      "items": [
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/A6A7532D-BB4D-42EF-86EB-1FBEDF9CF59A/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/A6A7532D-BB4D-42EF-86EB-1FBEDF9CF59A",
+          "newBuild": false,
+          "pricePaid": 39000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/f552f790774dc7bb35d22c71cbf44f29439699ed",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "LYNDON VILLA",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 24 May 1996",
+          "transactionId": "A6A7532D-BB4D-42EF-86EB-1FBEDF9CF59A",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/F38354DF-F22E-474B-AD57-5083590C70A0/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/F38354DF-F22E-474B-AD57-5083590C70A0",
+          "newBuild": false,
+          "pricePaid": 129950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/f552f790774dc7bb35d22c71cbf44f29439699ed",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "LYNDON VILLA",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 08 Apr 2004",
+          "transactionId": "F38354DF-F22E-474B-AD57-5083590C70A0",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/600BAABB-A418-43F5-A6D8-08552B112569/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/600BAABB-A418-43F5-A6D8-08552B112569",
+          "newBuild": false,
+          "pricePaid": 179950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/f552f790774dc7bb35d22c71cbf44f29439699ed",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "LYNDON VILLA",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 18 Dec 2014",
+          "transactionId": "600BAABB-A418-43F5-A6D8-08552B112569",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/DE2D0CDF-F898-51EE-E053-6C04A8C00671/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/DE2D0CDF-F898-51EE-E053-6C04A8C00671",
+          "newBuild": false,
+          "pricePaid": 282500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/f552f790774dc7bb35d22c71cbf44f29439699ed",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "LYNDON VILLA",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 08 Apr 2022",
+          "transactionId": "DE2D0CDF-F898-51EE-E053-6C04A8C00671",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/F1CF9A2A-ED3D-4F3D-A271-ACE7ED903E54/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/F1CF9A2A-ED3D-4F3D-A271-ACE7ED903E54",
+          "newBuild": false,
+          "pricePaid": 40500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/26eaaabff3dd6bddc5b0128286c57350ce3585f8",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "CROSSWAYS",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 26 Sep 1996",
+          "transactionId": "F1CF9A2A-ED3D-4F3D-A271-ACE7ED903E54",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/C133E7E9-AEE7-4781-929E-8417DEA8BBFE/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/C133E7E9-AEE7-4781-929E-8417DEA8BBFE",
+          "newBuild": false,
+          "pricePaid": 73500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/26eaaabff3dd6bddc5b0128286c57350ce3585f8",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "CROSSWAYS",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 25 Jan 2002",
+          "transactionId": "C133E7E9-AEE7-4781-929E-8417DEA8BBFE",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/A96E4ACC-61D1-9205-E053-6C04A8C0DA09/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/A96E4ACC-61D1-9205-E053-6C04A8C0DA09",
+          "newBuild": false,
+          "pricePaid": 234000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/26eaaabff3dd6bddc5b0128286c57350ce3585f8",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "CROSSWAYS",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 01 Apr 2020",
+          "transactionId": "A96E4ACC-61D1-9205-E053-6C04A8C0DA09",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/237B17FE-42BD-22AC-E063-4804A8C0EA3A/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/237B17FE-42BD-22AC-E063-4804A8C0EA3A",
+          "newBuild": false,
+          "pricePaid": 290000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/26eaaabff3dd6bddc5b0128286c57350ce3585f8",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "CROSSWAYS",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 13 Sep 2024",
+          "transactionId": "237B17FE-42BD-22AC-E063-4804A8C0EA3A",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/6B839FEA-E9F6-4CBC-807C-3C799980B97D/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/6B839FEA-E9F6-4CBC-807C-3C799980B97D",
+          "newBuild": false,
+          "pricePaid": 31500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/a79ffdfd425df272db5b04ab79bcbabeaf099eed",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "BEATRICE COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Wed, 07 Jul 1999",
+          "transactionId": "6B839FEA-E9F6-4CBC-807C-3C799980B97D",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/55BDCAE6-48D7-521D-E053-6B04A8C0DD7A/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/55BDCAE6-48D7-521D-E053-6B04A8C0DD7A",
+          "newBuild": false,
+          "pricePaid": 155000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/a79ffdfd425df272db5b04ab79bcbabeaf099eed",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "BEATRICE COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 30 Jun 2017",
+          "transactionId": "55BDCAE6-48D7-521D-E053-6B04A8C0DD7A",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/D4D42646-1A8A-27F6-E053-6C04A8C0A572/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/D4D42646-1A8A-27F6-E053-6C04A8C0A572",
+          "newBuild": false,
+          "pricePaid": 255000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/a79ffdfd425df272db5b04ab79bcbabeaf099eed",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "BEATRICE COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 16 Dec 2021",
+          "transactionId": "D4D42646-1A8A-27F6-E053-6C04A8C0A572",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/1FA6EA6B-B332-41FE-9B88-BF3DDABC739A/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/1FA6EA6B-B332-41FE-9B88-BF3DDABC739A",
+          "newBuild": false,
+          "pricePaid": 43500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/401e32283a37fe835aa6507e2723e37b5cf31f78",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "ROSE COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/terraced",
+            "label": [
+              {
+                "_value": "Terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "terraced",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 18 May 1999",
+          "transactionId": "1FA6EA6B-B332-41FE-9B88-BF3DDABC739A",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/B4BF8740-2645-42E5-9530-E7E2857B40B4/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/B4BF8740-2645-42E5-9530-E7E2857B40B4",
+          "newBuild": false,
+          "pricePaid": 81500,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c6f79303db772e62630832a697caccf10e25a8fb",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "MOONFLEET",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 22 Sep 2000",
+          "transactionId": "B4BF8740-2645-42E5-9530-E7E2857B40B4",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/7FFA4A48-0C7D-46BC-A879-C4BD849566E3/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/7FFA4A48-0C7D-46BC-A879-C4BD849566E3",
+          "newBuild": false,
+          "pricePaid": 162000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c6f79303db772e62630832a697caccf10e25a8fb",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "MOONFLEET",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 25 Jul 2003",
+          "transactionId": "7FFA4A48-0C7D-46BC-A879-C4BD849566E3",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/BFAC2817-0D1D-4B72-BCD4-60B1FD202CB9/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/BFAC2817-0D1D-4B72-BCD4-60B1FD202CB9",
+          "newBuild": false,
+          "pricePaid": 210000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c6f79303db772e62630832a697caccf10e25a8fb",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "MOONFLEET",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 01 Feb 2007",
+          "transactionId": "BFAC2817-0D1D-4B72-BCD4-60B1FD202CB9",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/A2479555-7A5E-74C7-E053-6B04A8C0887D/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/A2479555-7A5E-74C7-E053-6B04A8C0887D",
+          "newBuild": false,
+          "pricePaid": 325000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/c6f79303db772e62630832a697caccf10e25a8fb",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "MOONFLEET",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 28 Feb 2020",
+          "transactionId": "A2479555-7A5E-74C7-E053-6B04A8C0887D",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/90703D34-F39F-49B1-B0FB-B0D926C7E2BC/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/90703D34-F39F-49B1-B0FB-B0D926C7E2BC",
+          "newBuild": false,
+          "pricePaid": 159000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/87b874344bcc19174b4a6f1dc94a9118460df89d",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "LABURNUM COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 04 Jan 2002",
+          "transactionId": "90703D34-F39F-49B1-B0FB-B0D926C7E2BC",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/FB931DF3-16B0-4244-80AC-7F82BFAC529D/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/FB931DF3-16B0-4244-80AC-7F82BFAC529D",
+          "newBuild": false,
+          "pricePaid": 89950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/72b41cc895f7c07d6a344f4e0be4d575625d2108",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "HOME COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 03 May 2002",
+          "transactionId": "FB931DF3-16B0-4244-80AC-7F82BFAC529D",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/19FB972D-F208-479C-A148-397D412CC1F4/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/19FB972D-F208-479C-A148-397D412CC1F4",
+          "newBuild": false,
+          "pricePaid": 119950,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/72b41cc895f7c07d6a344f4e0be4d575625d2108",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "HOME COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Tue, 25 Feb 2003",
+          "transactionId": "19FB972D-F208-479C-A148-397D412CC1F4",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/E24E1866-8241-4D40-96CD-F99377FAB373/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/E24E1866-8241-4D40-96CD-F99377FAB373",
+          "newBuild": false,
+          "pricePaid": 141000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/72b41cc895f7c07d6a344f4e0be4d575625d2108",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "HOME COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Thu, 08 Jan 2009",
+          "transactionId": "E24E1866-8241-4D40-96CD-F99377FAB373",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/2AC10E4F-D151-1AF6-E050-A8C063052BA1/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/2AC10E4F-D151-1AF6-E050-A8C063052BA1",
+          "newBuild": false,
+          "pricePaid": 195000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/72b41cc895f7c07d6a344f4e0be4d575625d2108",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "HOME COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 07 Dec 2015",
+          "transactionId": "2AC10E4F-D151-1AF6-E050-A8C063052BA1",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/9DBAD222-0471-6EB3-E053-6B04A8C0F257/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/9DBAD222-0471-6EB3-E053-6B04A8C0F257",
+          "newBuild": false,
+          "pricePaid": 238000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/72b41cc895f7c07d6a344f4e0be4d575625d2108",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "HOME COTTAGE",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/semi-detached",
+            "label": [
+              {
+                "_value": "Semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "semi-detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Mon, 20 Jan 2020",
+          "transactionId": "9DBAD222-0471-6EB3-E053-6B04A8C0F257",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/8009B39E-62FD-4F49-A1AF-AF27B0E8E90C/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/8009B39E-62FD-4F49-A1AF-AF27B0E8E90C",
+          "newBuild": false,
+          "pricePaid": 200000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6cd8b247402480af5527b3be5a9dadfeef816d65",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "EASTERN LIGHTS",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 29 Nov 2002",
+          "transactionId": "8009B39E-62FD-4F49-A1AF-AF27B0E8E90C",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/8D993620-E83F-483C-A906-45CE64FEDEDE/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/8D993620-E83F-483C-A906-45CE64FEDEDE",
+          "newBuild": false,
+          "pricePaid": 100000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6cd8b247402480af5527b3be5a9dadfeef816d65",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "EASTERN LIGHTS",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 06 Mar 2009",
+          "transactionId": "8D993620-E83F-483C-A906-45CE64FEDEDE",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_about": "http://landregistry.data.gov.uk/data/ppi/transaction/98C75472-21BF-72E9-E053-6B04A8C042F0/current",
+          "estateType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/freehold",
+            "label": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Freehold",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "hasTransaction": "http://landregistry.data.gov.uk/data/ppi/transaction/98C75472-21BF-72E9-E053-6B04A8C042F0",
+          "newBuild": false,
+          "pricePaid": 550000,
+          "propertyAddress": {
+            "_about": "http://landregistry.data.gov.uk/data/ppi/address/6cd8b247402480af5527b3be5a9dadfeef816d65",
+            "county": "NORFOLK",
+            "district": "GREAT YARMOUTH",
+            "locality": "WINTERTON ON SEA",
+            "paon": "EASTERN LIGHTS",
+            "postcode": "NR29 4AJ",
+            "street": "BEACH ROAD",
+            "town": "GREAT YARMOUTH",
+            "type": ["http://landregistry.data.gov.uk/def/common/BS7666Address"]
+          },
+          "propertyType": {
+            "_about": "http://landregistry.data.gov.uk/def/common/detached",
+            "label": [
+              {
+                "_value": "Detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "detached",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "recordStatus": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/add",
+            "label": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Add",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionCategory": {
+            "_about": "http://landregistry.data.gov.uk/def/ppi/standardPricePaidTransaction",
+            "label": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ],
+            "prefLabel": [
+              {
+                "_value": "Standard price paid transaction",
+                "_datatype": "langString",
+                "_lang": "en"
+              }
+            ]
+          },
+          "transactionDate": "Fri, 25 Oct 2019",
+          "transactionId": "98C75472-21BF-72E9-E053-6B04A8C042F0",
+          "type": [
+            {
+              "_about": "http://landregistry.data.gov.uk/def/ppi/TransactionRecord",
+              "label": [
+                {
+                  "_value": "TransactionRecord",
+                  "_datatype": "langString",
+                  "_lang": "en"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "itemsPerPage": 25,
+      "next": "https://landregistry.data.gov.uk/data/ppi/transaction-record.json?_pageSize=25&_page=1&propertyAddress.postcode=NR29%204AJ",
+      "page": 0,
+      "startIndex": 1,
+      "type": ["http://purl.org/linked-data/api/vocab#Page"]
+    }
+  }
+}

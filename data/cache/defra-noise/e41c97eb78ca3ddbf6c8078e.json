@@ -1,0 +1,141 @@
+{
+  "key": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=54.579596,-1.1764109999999999,54.580796,-1.175211,urn:ogc:def:crs:EPSG::4326",
+  "url": "https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-3/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=dataset-f9970e51-7ff4-4a0c-a80c-08c9d0299116%3ARoad_Noise_Lden_England_Round_3&count=25&propertyName=noiseclass&outputFormat=application/json&srsName=EPSG:4326&bbox=54.579596,-1.1764109999999999,54.580796,-1.175211,urn:ogc:def:crs:EPSG::4326",
+  "retrievedAt": "2026-07-03T13:11:52.739Z",
+  "body": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1121254",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "60.0-64.9"
+        },
+        "bbox": [
+          -1.175903,
+          54.580194,
+          -1.175436,
+          54.580375
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1129546",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "60.0-64.9"
+        },
+        "bbox": [
+          -1.175283,
+          54.580188,
+          -1.174659,
+          54.580549
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.143368",
+        "geometry": null,
+        "properties": {
+          "noiseclass": ">=75.0"
+        },
+        "bbox": [
+          -1.182417,
+          54.577465,
+          -1.157702,
+          54.581093
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1136156",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "60.0-64.9"
+        },
+        "bbox": [
+          -1.178388,
+          54.579574,
+          -1.175903,
+          54.580199
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.661486",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "55.0-59.9"
+        },
+        "bbox": [
+          -1.176058,
+          54.580196,
+          -1.175902,
+          54.580287
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.705903",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "55.0-59.9"
+        },
+        "bbox": [
+          -1.1798,
+          54.57869,
+          -1.17529,
+          54.580195
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.661479",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "55.0-59.9"
+        },
+        "bbox": [
+          -1.175438,
+          54.580282,
+          -1.175281,
+          54.580373
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1439440",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "65.0-69.9"
+        },
+        "bbox": [
+          -1.201986,
+          54.575605,
+          -1.174657,
+          54.58073
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "Road_Noise_Lden_England_Round_3.1596046",
+        "geometry": null,
+        "properties": {
+          "noiseclass": "70.0-74.9"
+        },
+        "bbox": [
+          -1.218282,
+          54.569338,
+          -1.114903,
+          54.603582
+        ]
+      }
+    ],
+    "totalFeatures": 9,
+    "numberMatched": 9,
+    "numberReturned": 9,
+    "timeStamp": "2026-07-03T13:11:52.254Z",
+    "crs": null
+  }
+}

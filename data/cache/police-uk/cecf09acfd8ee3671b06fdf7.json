@@ -1,0 +1,310 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=50.826854999999995,-0.132771:50.826854999999995,-0.12637099999999998:50.830855,-0.12637099999999998:50.830855,-0.132771&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=50.826854999999995,-0.132771:50.826854999999995,-0.12637099999999998:50.830855,-0.12637099999999998:50.830855,-0.132771&date=2026-04",
+  "retrievedAt": "2026-07-03T13:13:31.129Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.830028",
+        "street": {
+          "id": 2197064,
+          "name": "On or near Hanover Terrace"
+        },
+        "longitude": "-0.129993"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134934621,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828072",
+        "street": {
+          "id": 2197098,
+          "name": "On or near Holland Street"
+        },
+        "longitude": "-0.128637"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936220,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.827388",
+        "street": {
+          "id": 2196924,
+          "name": "On or near Grove Hill"
+        },
+        "longitude": "-0.132512"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936357,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.830214",
+        "street": {
+          "id": 2196946,
+          "name": "On or near Southover Place"
+        },
+        "longitude": "-0.130979"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134936358,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.829736",
+        "street": {
+          "id": 2197167,
+          "name": "On or near Jackson Street"
+        },
+        "longitude": "-0.128045"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "7861346953b41d19027748ac36b91ad877f8cd66498ea2d13b1b83fa480f011f",
+      "id": 134929967,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828182",
+        "street": {
+          "id": 2197204,
+          "name": "On or near Finsbury Road"
+        },
+        "longitude": "-0.126502"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "9368275c08a2f3d928d0862e1b1732dd4e2d8be17625bb3ef3cd8a100d9a53e9",
+      "id": 134928831,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.829736",
+        "street": {
+          "id": 2197167,
+          "name": "On or near Jackson Street"
+        },
+        "longitude": "-0.128045"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "721447d34d09255437501531de9766140e482e403875b7e9aad1aa78b76dadf7",
+      "id": 134929617,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-theft",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828581",
+        "street": {
+          "id": 2197011,
+          "name": "On or near Belgrave Street"
+        },
+        "longitude": "-0.130647"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "cd6299c888c7357dd1b646a5b33b51b159cbc1cc7a2e7a05b387b2df577efc18",
+      "id": 134930319,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828072",
+        "street": {
+          "id": 2197098,
+          "name": "On or near Holland Street"
+        },
+        "longitude": "-0.128637"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "9031bd80b6f5a3bb700435f98943eb8060ef1f713acb47b0b5a5a8c9a43d6c79",
+      "id": 134933690,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "public-order",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828581",
+        "street": {
+          "id": 2197011,
+          "name": "On or near Belgrave Street"
+        },
+        "longitude": "-0.130647"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Investigation complete; no suspect identified",
+        "date": "2026-04"
+      },
+      "persistent_id": "21f48104720d4ddf2720b298c87b923ca3b7a72dc4baaa4e6234720ccba66607",
+      "id": 134932956,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.826934",
+        "street": {
+          "id": 2197166,
+          "name": "On or near Toronto Terrace"
+        },
+        "longitude": "-0.127163"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "e598e2899fd2fb1ba71fbe3c771f81459a494547cdb97806c2d61465225b370c",
+      "id": 134933324,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.826934",
+        "street": {
+          "id": 2197166,
+          "name": "On or near Toronto Terrace"
+        },
+        "longitude": "-0.127163"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "d7f13384e457981699d9a5d3e1961b047b2d36fcda981795412975889aae39a4",
+      "id": 134934092,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828182",
+        "street": {
+          "id": 2197204,
+          "name": "On or near Finsbury Road"
+        },
+        "longitude": "-0.126502"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "80e7355a7d9252cda5a2928e82101dc5878fd980d9cc9561a23afc80408c821a",
+      "id": 134925733,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.826898",
+        "street": {
+          "id": 2197046,
+          "name": "On or near Scotland Street"
+        },
+        "longitude": "-0.129976"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Unable to prosecute suspect",
+        "date": "2026-04"
+      },
+      "persistent_id": "00065c40f8ac28868d25e0c3080274c2afbe99902dde5cbae4b41e5ef4f1d2ed",
+      "id": 134927600,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.828244",
+        "street": {
+          "id": 2196959,
+          "name": "On or near Newhaven Street"
+        },
+        "longitude": "-0.132606"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "fb52c1bec314497fbf999a05f0af813db598c43e823de72ea8cb0fb2f535b3c3",
+      "id": 134927270,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

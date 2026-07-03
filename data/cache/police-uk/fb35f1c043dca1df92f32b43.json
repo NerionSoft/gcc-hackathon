@@ -1,0 +1,49 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=52.713895,1.689806:52.713895,1.696206:52.717895000000006,1.696206:52.717895000000006,1.689806&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=52.713895,1.689806:52.713895,1.696206:52.717895000000006,1.696206:52.717895000000006,1.689806&date=2026-04",
+  "retrievedAt": "2026-07-03T13:11:42.031Z",
+  "body": [
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.715011",
+        "street": {
+          "id": 2029333,
+          "name": "On or near King Street"
+        },
+        "longitude": "1.693637"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "d311f7467d0c3c155c4f1e67acdf492b9f5497f53e620d034004878b8edf25a2",
+      "id": 134578027,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.715011",
+        "street": {
+          "id": 2029333,
+          "name": "On or near King Street"
+        },
+        "longitude": "1.693637"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "e5e2b7185a88a09743a387704f6b6f5fe47422ccfda2e00504672fede703c0f0",
+      "id": 134578220,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

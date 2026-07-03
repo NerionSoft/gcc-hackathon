@@ -1,0 +1,139 @@
+{
+  "key": "district:NR29",
+  "url": "https://ea-edubase-api-prod.azurewebsites.net/edubase/downloads/public/edubasealldata.csv#district=NR29",
+  "retrievedAt": "2026-07-03T12:41:25.372Z",
+  "body": [
+    {
+      "urn": "120816",
+      "name": "Hemsby Primary School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 4LH",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/120816"
+    },
+    {
+      "urn": "120840",
+      "name": "Ormesby Village Infant School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 3RY",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/120840"
+    },
+    {
+      "urn": "120917",
+      "name": "Ormesby Village Junior School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 3LA",
+      "phase": "Primary",
+      "establishmentType": "Community school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/120917"
+    },
+    {
+      "urn": "121081",
+      "name": "Fleggburgh CofE Primary School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 3AG",
+      "phase": "Primary",
+      "establishmentType": "Voluntary controlled school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/121081"
+    },
+    {
+      "urn": "121202",
+      "name": "Rollesby Primary School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 5EH",
+      "phase": "Primary",
+      "establishmentType": "Foundation school",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/121202"
+    },
+    {
+      "urn": "136356",
+      "name": "Martham Academy and Nursery",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 4PR",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/136356"
+    },
+    {
+      "urn": "141496",
+      "name": "Filby Primary School",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 3HJ",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/141496"
+    },
+    {
+      "urn": "145501",
+      "name": "Flegg High Ormiston Academy",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 4QD",
+      "phase": "Secondary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/145501"
+    },
+    {
+      "urn": "146757",
+      "name": "Winterton Primary School and Nursery",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 4AP",
+      "phase": "Primary",
+      "establishmentType": "Academy sponsor led",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/146757"
+    },
+    {
+      "urn": "150583",
+      "name": "Catfield CofE Primary Academy",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 5DA",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/150583"
+    },
+    {
+      "urn": "152549",
+      "name": "Ludham Primary School and Nursery",
+      "localAuthority": "Norfolk",
+      "postcode": "NR29 5QN",
+      "phase": "Primary",
+      "establishmentType": "Academy converter",
+      "status": "Open",
+      "ofstedRating": null,
+      "ofstedLastInspection": null,
+      "recordUrl": "https://get-information-schools.service.gov.uk/Establishments/Establishment/Details/152549"
+    }
+  ]
+}

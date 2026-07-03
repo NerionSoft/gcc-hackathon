@@ -61,7 +61,8 @@ describe("evidence rule: no RiskSignal without complete sourceRef + confidence",
 
   it("rejects a signal missing its sourceRef and journals a failed extraction", () => {
     const db = makeDb();
-    const { sourceRef: _dropped, ...unsourced } = validSignal;
+    const unsourced: Partial<typeof validSignal> = { ...validSignal };
+    delete unsourced.sourceRef;
     const result = insertRiskSignal(unsourced, db);
     expect(result.ok).toBe(false);
     expect(countSignals(db)).toBe(0);
@@ -83,7 +84,8 @@ describe("evidence rule: no RiskSignal without complete sourceRef + confidence",
 
   it("rejects a signal without confidence, even when fully sourced", () => {
     const db = makeDb();
-    const { confidence: _dropped, ...noConfidence } = validSignal;
+    const noConfidence: Partial<typeof validSignal> = { ...validSignal };
+    delete noConfidence.confidence;
     expect(validateEmittableSignal(noConfidence).ok).toBe(false);
     const result = insertRiskSignal(noConfidence, db);
     expect(result.ok).toBe(false);

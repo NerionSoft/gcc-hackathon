@@ -1,0 +1,53 @@
+{
+  "key": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=50.82639&long=-0.139624&dist=3&_limit=50",
+  "url": "https://environment.data.gov.uk/flood-monitoring/id/floodAreas?lat=50.82639&long=-0.139624&dist=3&_limit=50",
+  "retrievedAt": "2026-07-03T13:07:39.708Z",
+  "body": {
+    "@context": "http://environment.data.gov.uk/flood-monitoring/meta/context.jsonld",
+    "meta": {
+      "publisher": "Environment Agency",
+      "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "documentation": "http://environment.data.gov.uk/flood-monitoring/doc/reference",
+      "version": "0.9",
+      "comment": "Status: Beta service",
+      "hasFormat": [
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.csv?lat=50.82639&long=-0.139624&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.rdf?lat=50.82639&long=-0.139624&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.ttl?lat=50.82639&long=-0.139624&dist=3&_limit=50",
+        "http://environment.data.gov.uk/flood-monitoring/id/floodAreas.html?lat=50.82639&long=-0.139624&dist=3&_limit=50"
+      ],
+      "limit": 50
+    },
+    "items": [
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/065WAC410",
+        "county": "Brighton and Hove",
+        "description": "Coastal areas of Brighton Marina Village including the Strand",
+        "eaAreaName": "Solent and South Downs",
+        "fwdCode": "065WAC410",
+        "label": "Coastal areas of Brighton Marina",
+        "lat": 50.8112,
+        "long": -0.10097,
+        "notation": "065WAC410",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/065WAC410/polygon",
+        "quickDialNumber": "216036",
+        "riverOrSea": "English Channel"
+      },
+      {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/065FWC3101",
+        "county": "Brighton and Hove",
+        "description": "Coastal areas of Brighton Marina Village including the Strand",
+        "eaAreaName": "Solent and South Downs",
+        "floodWatchArea": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/065WAC410",
+        "fwdCode": "065FWC3101",
+        "label": "Brighton Marina",
+        "lat": 50.8112,
+        "long": -0.10097,
+        "notation": "065FWC3101",
+        "polygon": "http://environment.data.gov.uk/flood-monitoring/id/floodAreas/065FWC3101/polygon",
+        "quickDialNumber": "316040",
+        "riverOrSea": "English Channel"
+      }
+    ]
+  }
+}

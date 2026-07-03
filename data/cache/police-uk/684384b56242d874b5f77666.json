@@ -1,0 +1,214 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=52.990458999999994,-2.131756:52.990458999999994,-2.125356:52.994459,-2.125356:52.994459,-2.131756&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=52.990458999999994,-2.131756:52.990458999999994,-2.125356:52.994459,-2.125356:52.994459,-2.131756&date=2026-04",
+  "retrievedAt": "2026-07-03T13:12:18.407Z",
+  "body": [
+    {
+      "category": "anti-social-behaviour",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.991654",
+        "street": {
+          "id": 1752914,
+          "name": "On or near Dobell Grove"
+        },
+        "longitude": "-2.125694"
+      },
+      "context": "",
+      "outcome_status": null,
+      "persistent_id": "",
+      "id": 134842006,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.994411",
+        "street": {
+          "id": 1752799,
+          "name": "On or near Somerton Way"
+        },
+        "longitude": "-2.127728"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "82f9c257d1b74e8de7c91c8f6cffe8a8cb5721650cf5829cc0d9066450a35966",
+      "id": 134838833,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.994411",
+        "street": {
+          "id": 1752799,
+          "name": "On or near Somerton Way"
+        },
+        "longitude": "-2.127728"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "bdf3fb194a801e50f39084310266b54cfcf62aa4ab04eb917522eea463ac73fa",
+      "id": 134838818,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.994359",
+        "street": {
+          "id": 1752884,
+          "name": "On or near Addington Way"
+        },
+        "longitude": "-2.126208"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "5ac6256174981cdb1513479803491c3ca5d99c52ffe55c5a25ef8b479538cf81",
+      "id": 134835291,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "criminal-damage-arson",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.994359",
+        "street": {
+          "id": 1752884,
+          "name": "On or near Addington Way"
+        },
+        "longitude": "-2.126208"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "e3bc5afa712988fab8ab66c45a2a674847d2a1d1d3e84f47ea290d1291ad28af",
+      "id": 134835306,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.994411",
+        "street": {
+          "id": 1752799,
+          "name": "On or near Somerton Way"
+        },
+        "longitude": "-2.127728"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "6f86bddaf3f7b5b5ac5eaf9952f09d5d650f69b79c40fc084e3d853bd26e8122",
+      "id": 134834854,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.991855",
+        "street": {
+          "id": 1752594,
+          "name": "On or near Plant Street"
+        },
+        "longitude": "-2.131013"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "2f555022d3b12bbe210eccb5a694f3f5b300e469c3ab16e85f65cb7b2583235c",
+      "id": 134841194,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.994359",
+        "street": {
+          "id": 1752884,
+          "name": "On or near Addington Way"
+        },
+        "longitude": "-2.126208"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "53733f0b03fe1b30f51d87694d5a36f834b6bc43e369ed3b877f58afa27e0951",
+      "id": 134835326,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.994006",
+        "street": {
+          "id": 1752736,
+          "name": "On or near B5039"
+        },
+        "longitude": "-2.128084"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "961615c1d5c50bbc03025a58644e9f33cc9abe457e4714a4382e6e81db4b701d",
+      "id": 134837864,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "52.994006",
+        "street": {
+          "id": 1752736,
+          "name": "On or near B5039"
+        },
+        "longitude": "-2.128084"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "d8f750554e48a3f8cf7708a1d055e4fcae4a02e93cc736ce84c8caf74eb35029",
+      "id": 134835037,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

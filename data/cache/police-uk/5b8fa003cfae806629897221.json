@@ -1,0 +1,70 @@
+{
+  "key": "https://data.police.uk/api/crimes-street/all-crime?poly=50.846509,-0.18587:50.846509,-0.17947:50.850509,-0.17947:50.850509,-0.18587&date=2026-04",
+  "url": "https://data.police.uk/api/crimes-street/all-crime?poly=50.846509,-0.18587:50.846509,-0.17947:50.850509,-0.17947:50.850509,-0.18587&date=2026-04",
+  "retrievedAt": "2026-07-03T13:13:33.855Z",
+  "body": [
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.849632",
+        "street": {
+          "id": 2194683,
+          "name": "On or near Clayton Way"
+        },
+        "longitude": "-0.185736"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "6b84eafec022b7831d5976d6685776c8b8f6c259bdafcbb5e6c6c8778cab1666",
+      "id": 134929529,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "violent-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.849632",
+        "street": {
+          "id": 2194683,
+          "name": "On or near Clayton Way"
+        },
+        "longitude": "-0.185736"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "3bc5f26ba225498d6b0e3f4ded803958978023748ce68e85986523317ce7a673",
+      "id": 134932575,
+      "location_subtype": "",
+      "month": "2026-04"
+    },
+    {
+      "category": "other-crime",
+      "location_type": "Force",
+      "location": {
+        "latitude": "50.847549",
+        "street": {
+          "id": 2194810,
+          "name": "On or near Goldstone Way"
+        },
+        "longitude": "-0.181342"
+      },
+      "context": "",
+      "outcome_status": {
+        "category": "Under investigation",
+        "date": "2026-04"
+      },
+      "persistent_id": "a67473ec7249af84bfacf28e9b0720368b761cdf4bd6679b2742b073f7c3fbc4",
+      "id": 134928329,
+      "location_subtype": "",
+      "month": "2026-04"
+    }
+  ]
+}

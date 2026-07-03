@@ -1,0 +1,26 @@
+{
+  "key": "https://www.planning.data.gov.uk/entity.json?latitude=53.016071&longitude=-2.166427&dataset=conservation-area&dataset=listed-building-outline&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&dataset=brownfield-land&dataset=brownfield-site&limit=100&exclude_field=geometry,point",
+  "url": "https://www.planning.data.gov.uk/entity.json?latitude=53.016071&longitude=-2.166427&dataset=conservation-area&dataset=listed-building-outline&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&dataset=brownfield-land&dataset=brownfield-site&limit=100&exclude_field=geometry,point",
+  "retrievedAt": "2026-07-03T13:12:17.027Z",
+  "body": {
+    "entities": [
+      {
+        "entry-date": "2023-08-24",
+        "start-date": "",
+        "end-date": "",
+        "entity": 65366099,
+        "name": "",
+        "dataset": "flood-risk-zone",
+        "typology": "geography",
+        "reference": "366100/2",
+        "prefix": "flood-risk-zone",
+        "organisation-entity": 600009,
+        "quality": "authoritative",
+        "flood-risk-type": "Fluvial Models",
+        "flood-risk-level": "2"
+      }
+    ],
+    "links": {},
+    "count": 1
+  }
+}
