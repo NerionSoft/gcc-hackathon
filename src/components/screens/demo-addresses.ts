@@ -1,4 +1,5 @@
 import type { Address, LifeProfileTag, PropertyType } from "@/types";
+import type { DemoScenarioId } from "@/lib/demo-fixtures";
 
 export interface DemoAddress {
   label: string;
@@ -6,19 +7,21 @@ export interface DemoAddress {
   address: Address;
   tags: LifeProfileTag[];
   propertyType: PropertyType;
+  /** Selects the hand-authored fixture replayed by /api/report/stream and /api/report/pdf — see src/lib/demo-fixtures.ts. */
+  demoId: DemoScenarioId;
 }
 
 /**
- * Pre-verified against the live APIs (see the workflow smoke tests run during
- * development) — both reliably surface non-trivial, real findings, so the
- * demo doesn't depend on picking the right address live during a
- * presentation. Neither depends on the LLM being configured.
+ * Backed by hand-authored fixtures (src/lib/demo-fixtures.ts), replayed as
+ * canned NDJSON/PDF whenever `demoId` is appended to the report URL — so the
+ * demo never depends on live government APIs or network availability during
+ * a presentation. Neither depends on the LLM being configured.
  */
 export const DEMO_ADDRESSES: DemoAddress[] = [
   {
     label: "8 Rue de la Paix, Paris 2e",
     blurb:
-      "Appartement urbain — zone inondable documentée, argile fort, sécurité et air à surveiller.",
+      "City-centre apartment — clean report overall, one ageing-building energy rating to watch.",
     address: {
       label: "8 Rue de la Paix 75002 Paris",
       lat: 48.868831,
@@ -33,11 +36,12 @@ export const DEMO_ADDRESSES: DemoAddress[] = [
     },
     tags: ["famille_enfants"],
     propertyType: "appartement",
+    demoId: "urban",
   },
   {
     label: "Venelle de l'Église, Huelgoat (29)",
     blurb:
-      "Maison rurale ancienne — cavités souterraines, potentiel radon élevé, historique CatNat répété.",
+      "Old rural house — underground cavities, high radon potential, a flood-prone valley, and a repeated natural-disaster history.",
     address: {
       label: "Venelle de l'Eglise 29690 Huelgoat",
       lat: 48.364193,
@@ -51,5 +55,6 @@ export const DEMO_ADDRESSES: DemoAddress[] = [
     },
     tags: ["senior_mobilite"],
     propertyType: "maison",
+    demoId: "rural",
   },
 ];
