@@ -1,5 +1,4 @@
 import "dotenv/config";
-/* eslint-disable no-console */
 import { getDb } from "@/db/client";
 import { listAdjudications } from "@/db/access/adjudications";
 import { listAuditEvents } from "@/db/access/audit";
