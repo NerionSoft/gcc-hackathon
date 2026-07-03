@@ -55,7 +55,10 @@ function applyEvent(state: ReportStreamState, event: ReportStreamEvent): ReportS
         toolsPlanned: [...new Set([...state.toolsPlanned, ...event.extraTools])],
       };
     case "redflag":
-      return { ...state, redFlags: [...state.redFlags, event.finding] };
+      return {
+        ...state,
+        redFlags: [...state.redFlags.filter((f) => f.id !== event.finding.id), event.finding],
+      };
     case "report-complete":
       return { ...state, report: event.report, isDone: true };
     case "error":
@@ -106,10 +109,7 @@ export function useReportStream(queryString: string | null): ReportStreamState {
         if (controller.signal.aborted) return;
         setState((prev) => ({
           ...prev,
-          errors: [
-            ...prev.errors,
-            err instanceof Error ? err.message : "Stream connection error.",
-          ],
+          errors: [...prev.errors, err instanceof Error ? err.message : "Stream connection error."],
           isDone: true,
         }));
       }

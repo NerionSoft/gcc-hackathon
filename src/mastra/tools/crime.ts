@@ -90,7 +90,10 @@ export const crimeTool = createTool({
     const source = ssmsiSource();
     const index = loadIndex();
     if (!index) {
-      return errorResult(source, "Local SSMSI index not found — run `pnpm fetch-data` to generate it.");
+      return errorResult(
+        source,
+        "Local SSMSI index not found — run `pnpm fetch-data` to generate it.",
+      );
     }
 
     // Unlike some Géorisques sub-datasets, SSMSI genuinely publishes real
@@ -114,7 +117,9 @@ export const crimeTool = createTool({
     const suppressedCount = data.indicateurs.filter((i) => i.supprime).length;
     const warnings =
       suppressedCount > 0
-        ? [`${suppressedCount} indicator(s) not published (fewer than 5 recorded incidents over 3 consecutive years).`]
+        ? [
+            `${suppressedCount} indicator(s) not published (fewer than 5 recorded incidents over 3 consecutive years).`,
+          ]
         : [];
     return okResult(data, source, "high", warnings);
   },
