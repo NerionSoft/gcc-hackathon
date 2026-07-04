@@ -134,7 +134,7 @@ describe("composeReport", () => {
     expect(withFlags.globalScore).toBeLessThan(withoutFlags.globalScore);
   });
 
-  it("always includes the ERP démarche officielle action", () => {
+  it("always includes the ERP official-step action", () => {
     const report = composeReport(baseInput());
     expect(
       report.actions.some((a) => a.category === "demarche_officielle" && a.title.includes("ERP")),

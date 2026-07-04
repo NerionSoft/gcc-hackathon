@@ -90,7 +90,8 @@ export const airTool = createTool({
         date: p.date_ech,
         nearestStation: p.lib_zone,
       };
-      const warnings = p.code_qual === 0 ? ["No measurement available for the most recent date."] : [];
+      const warnings =
+        p.code_qual === 0 ? ["No measurement available for the most recent date."] : [];
       return okResult(result, source, "high", warnings);
     } catch (err) {
       return errorResult(

@@ -6,6 +6,7 @@ import { haversineDistanceM } from "@/lib/geo";
 import { resolveWholeCityCommuneCode } from "@/lib/commune";
 import {
   risksDataSchema,
+  aziZoneSchema,
   toolResultSchema,
   okResult,
   errorResult,
@@ -281,10 +282,10 @@ interface AziRow {
 }
 
 /**
- * Cascade step, not part of the default plan: the Planner calls this only
- * after risksTool reports flood exposure, to fetch the precise flood-zone
- * name (Atlas des Zones Inondables) — "relance une recherche de contexte
- * (zone inondable, historique)" per the brief, made concrete.
+ * Follow-up lookup: fetch the precise flood-zone name(s) from the Atlas des
+ * Zones Inondables. Exposed both as a plain function (deterministic cascade)
+ * and as `floodZoneTool` below (so the agentic Investigator can decide to
+ * call it itself after seeing flood exposure).
  */
 export async function fetchAziZones(citycode: string): Promise<AziZone[]> {
   const data = await fetchCommuneIndexed<AziRow>(
@@ -299,3 +300,29 @@ export async function fetchAziZones(citycode: string): Promise<AziZone[]> {
     risques: row.liste_libelle_risque.map((r) => r.libelle_risque_long),
   }));
 }
+
+export const floodZoneOutputSchema = toolResultSchema(z.object({ zones: z.array(aziZoneSchema) }));
+
+export const floodZoneTool = createTool({
+  id: "flood-zone-azi",
+  description:
+    "Follow-up on flood exposure: looks up the named flood zone(s) for a commune (Atlas des Zones Inondables, Géorisques). Call this after risks-georisques reports flood exposure to name the specific zone.",
+  inputSchema: z.object({ citycode: z.string() }),
+  outputSchema: floodZoneOutputSchema,
+  execute: async ({ citycode }): Promise<z.infer<typeof floodZoneOutputSchema>> => {
+    const source: SourceRef = {
+      name: "Géorisques (BRGM / French Ministry for Ecological Transition) — Atlas des Zones Inondables",
+      url: `${GEORISQUES_BASE}/gaspar/azi?code_insee=${resolveWholeCityCommuneCode(citycode)}`,
+      retrievedAt: new Date().toISOString(),
+    };
+    try {
+      const zones = await fetchAziZones(citycode);
+      return okResult({ zones }, source, zones.length > 0 ? "high" : "medium");
+    } catch (err) {
+      return errorResult(
+        source,
+        `Flood-zone lookup unavailable: ${err instanceof Error ? err.message : "error"}.`,
+      );
+    }
+  },
+});

@@ -76,7 +76,12 @@ export function buildRisquesSection(risks: ToolResult<RisksData>, weight: number
   const verdict: Verdict =
     severe >= 2 ? "alerte" : severe === 1 || moderate >= 1 ? "vigilance" : "favorable";
 
-  const levelLabel: Record<string, string> = { faible: "low", moyen: "medium", fort: "high", inconnu: "unknown" };
+  const levelLabel: Record<string, string> = {
+    faible: "low",
+    moyen: "medium",
+    fort: "high",
+    inconnu: "unknown",
+  };
 
   const detail = [
     d.summary.inondation.expose
@@ -205,7 +210,11 @@ export function buildAirSection(air: ToolResult<AirData>, weight: number): Domai
   };
 }
 
-const TREND_LABEL: Record<string, string> = { hausse: "rising", baisse: "falling", stable: "stable" };
+const TREND_LABEL: Record<string, string> = {
+  hausse: "rising",
+  baisse: "falling",
+  stable: "stable",
+};
 
 export function buildSecuriteSection(crime: ToolResult<CrimeData>, weight: number): DomainSection {
   if (!crime.data)
@@ -297,7 +306,7 @@ const VERDICT_SCORE: Record<Verdict, number> = {
   indisponible: 0,
 };
 
-function computeGlobalScore(
+export function computeGlobalScore(
   sections: DomainSection[],
   redFlags: CrossRuleFinding[],
 ): { score: number; explanation: string } {
@@ -344,9 +353,11 @@ function buildActionItems(input: ConseillerInput): ActionItem[] {
     risksData?.catnat.some((c) => c.libelleRisqueJo.toLowerCase().includes("sécheresse"))
   ) {
     actions.push({
-      title: "Ask whether any cracks have been noticed and whether a structural diagnostic was done",
+      title:
+        "Ask whether any cracks have been noticed and whether a structural diagnostic was done",
       category: "question_vendeur",
-      reason: "High clay shrink-swell hazard and/or drought disaster history detected for the commune.",
+      reason:
+        "High clay shrink-swell hazard and/or drought disaster history detected for the commune.",
     });
   }
   if (risksData && risksData.summary.sitesPollues.nombre > 0) {
@@ -398,21 +409,29 @@ function buildActionItems(input: ConseillerInput): ActionItem[] {
   return actions;
 }
 
-function buildMapLayers(input: ConseillerInput): MapLayers {
+/** Build the map layers straight from the two data sources — shared by the deterministic and agentic composers. */
+export function mapLayersFrom(
+  risksData: RisksData | null,
+  pricesData: PricesData | null,
+): MapLayers {
   return {
-    sitesPollues: (input.risks.data?.summary.sitesPollues.sites ?? []).map((s) => ({
+    sitesPollues: (risksData?.summary.sitesPollues.sites ?? []).map((s) => ({
       lat: s.lat,
       lon: s.lon,
       nom: s.nom,
     })),
-    cavites: { present: input.risks.data?.summary.cavites.present ?? false },
-    transactions: (input.prices.data?.transactions ?? []).map((t) => ({
+    cavites: { present: risksData?.summary.cavites.present ?? false },
+    transactions: (pricesData?.transactions ?? []).map((t) => ({
       lat: t.lat,
       lon: t.lon,
       prixM2: t.prixM2,
       dateMutation: t.dateMutation,
     })),
   };
+}
+
+function buildMapLayers(input: ConseillerInput): MapLayers {
+  return mapLayersFrom(input.risks.data, input.prices.data);
 }
 
 /**

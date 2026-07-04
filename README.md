@@ -18,12 +18,25 @@ pnpm fetch-data           # regenerates the local SSMSI index (committed, so ski
 pnpm dev                  # http://localhost:3000
 ```
 
-No external service is required to run the app: the 6 sources are open APIs with no key needed
-(except where noted below), and the report is produced entirely without an LLM configured — the
-score, verdicts, and red flags are all computed by deterministic code. An LLM, if configured
-(`OPENAI_API_KEY` / `OPENAI_BASE_URL`, routed through Mastra's built-in model router — compatible
-with any OpenAI-compatible endpoint), would only reword some explanatory text — this layer isn't
-wired up yet, and the report stays 100% functional without it.
+TerraVista runs one of two report paths behind a single streaming contract:
+
+- **Agentic path** — active when `DEEPSEEK_API_KEY` is set. An **Investigator** LLM agent is handed
+  the six data tools and *decides for itself* which sources to query, in what order, and when to dig
+  deeper (sees flood exposure → calls the flood-zone tool; weighs a contaminated site against the
+  energy rating). An **Assessor** LLM agent then forms its *own* verdicts, cross-domain red flags,
+  and buyer actions from the gathered evidence. This is a real agentic loop — the agents do the
+  research and the reasoning, not a fixed pipeline. (Native DeepSeek provider via Mastra's model
+  router; see `src/mastra/agents/investigator.ts` and `agentic-report.ts`.)
+- **Deterministic path** — the fallback when no key is set, or if the agentic path fails for any
+  reason. A rule engine + templated composer (optionally polished by a narrator agent). It exists so
+  a report is *always* produced, even fully offline.
+
+**Numbers stay grounded in both paths.** The agents never invent a figure: every section is built
+from the real tool result, the map from real geometry, and the global score is computed
+deterministically from the verdicts the agent assigned. The LLM decides *what to investigate and how
+to interpret it*; the data itself always comes from the live official sources. No external service
+is required to run the app at all — the 6 sources are open APIs (except where noted below), and with
+no key the deterministic path produces a complete report.
 
 Two pre-verified demo addresses are offered directly on the search screen (the "Or try a demo
 address" section):
@@ -38,45 +51,40 @@ address" section):
 ```
 Address + profile
       │
-      ▼
-┌─────────────┐   deterministic: weighs the 5 domains by profile
-│   Planner   │   (family, remote work, air sensitivity, investment, senior)
-└──────┬──────┘   and property type (house / apartment)
+      ▼  (agentic path — when DEEPSEEK_API_KEY is set)
+┌──────────────┐   an LLM agent handed the 6 data tools. It DECIDES which
+│ Investigator │   sources to query, in what order, and follows up on its own
+│    (agent)   │   (flood exposure → flood-zone lookup; contaminated site →
+└──────┬───────┘   weighs it against the energy rating and the buyer's plans).
+       │           Tools return REAL data from the live official sources:
+       │             risks ▸ Géorisques   prices ▸ Cerema/DVF   air ▸ Atmo
+       │             safety ▸ SSMSI       energy ▸ ADEME DPE
+       │           Grounded sections stream in as each tool returns.
+       ▼
+┌──────────────┐   a second LLM agent forms its OWN verdicts per domain,
+│   Assessor   │   surfaces cross-domain red flags no single source reveals,
+│    (agent)   │   and recommends concrete buyer actions — weighing the profile.
+└──────┬───────┘   It cites only figures present in the gathered evidence.
        │
-       ▼ (the 5 collectors run in parallel, each section renders
-┌──────┴──────┐    as soon as it's ready — never a screen frozen for 30s)
-│  Collectors │
-│  risks      │──▶ Géorisques (BRGM)
-│  prices     │──▶ Cerema — Données Foncières API (DVF)
-│  air        │──▶ Atmo Data
-│  safety     │──▶ SSMSI (pre-computed local index)
-│  energy     │──▶ ADEME DPE
-└──────┬──────┘
-       │  cascade: if flooding is detected, a follow-up lookup
-       │  (Atlas des Zones Inondables) fires automatically
-       ▼
-┌─────────────┐   deterministic: cross-references results for findings
-│   Analyst   │   no single source gives, arbitrates contradictions
-└──────┬──────┘   between sources (e.g. documented risk vs. a price that ignores it)
-       │
-       ▼
-┌─────────────┐   composes the final report: weighted score, prioritized
-│   Advisor   │   red flags, concrete actions (questions, official steps)
-└──────┬──────┘
-       ▼
+       ▼           Score = deterministic function of the agent's verdicts.
   Streamed report (NDJSON) → progressive report screen + PDF export
+       ▲
+       │  (deterministic fallback — no key, or agentic failure)
+       │  Planner (weights) → Collectors (same tools, run in parallel) →
+       │  Analyst (rule engine) → Advisor (templated composer) → narrator polish
 ```
 
-Each stage is a `step` of a real **Mastra workflow** (`src/mastra/workflows/report-workflow.ts`),
-and each source is a Zod-typed **Mastra tool** (`src/mastra/tools/`). The workflow emits progress
-events via `writer.custom(...)` (Mastra's native mechanism, verified end to end), which the
-`/api/report/stream` route translates into NDJSON for the client. The same workflow also runs in
-batch mode (`run.start(...)`, no streaming) for PDF export — one business logic, two execution modes.
+Each stage runs inside a real **Mastra workflow** (`src/mastra/workflows/report-workflow.ts`), the
+agents are **Mastra `Agent`s** with the sources attached as **Mastra tools** (`src/mastra/tools/`),
+and the workflow emits progress via `writer.custom(...)` which the `/api/report/stream` route turns
+into NDJSON. The same workflow runs in batch mode (`run.start(...)`) for PDF export — one logic, two
+execution modes.
 
-**Deliberate architecture choice**: the Planner, Analyst, and Advisor are deterministic code, not
-LLM calls. The report has to be reliable and reproducible even with no API key configured; a
-language model would only add value by rewording text, never by producing a number or a verdict.
-This choice is documented in more detail on `/methodology`.
+**The key design line**: the *reasoning and orchestration* are genuinely agentic (the Investigator
+does the research and decides; the Assessor judges and adds its own findings), but the *facts stay
+grounded* — every number, source, and the score itself is derived from the real tool results, never
+generated by the model. And because the whole thing degrades to a deterministic rule engine with no
+key, a report is always produced. This split is documented in more detail on `/methodology`.
 
 ## Sources
 
@@ -119,7 +127,7 @@ src/
   app/                 Next.js routes (screens + API routes)
   mastra/
     tools/             6 Mastra tools (1 per source, cache + retry + confidence)
-    agents/            Planner, Analyst, Advisor (deterministic)
+    agents/            Investigator + Assessor (agentic path); Planner/Analyst/Advisor/Narrator (deterministic fallback)
     workflows/         the Mastra workflow that orchestrates everything
   components/screens/  search-screen and report-screen UI
   components/pdf/      PDF export template
